@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/static/js/main.8a3a1799.chunk.js",
-    "main.js.map": "/static/js/main.8a3a1799.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7d1826ff.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7d1826ff.js.map",
-    "static/js/2.a5d02885.chunk.js": "/static/js/2.a5d02885.chunk.js",
-    "static/js/2.a5d02885.chunk.js.map": "/static/js/2.a5d02885.chunk.js.map",
-    "static/js/3.3641dbf1.chunk.js": "/static/js/3.3641dbf1.chunk.js",
-    "static/js/3.3641dbf1.chunk.js.map": "/static/js/3.3641dbf1.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.a5d02885.chunk.js.LICENSE.txt": "/static/js/2.a5d02885.chunk.js.LICENSE.txt",
-    "static/media/crowcraft-logo.6ce24c58.svg": "/static/media/crowcraft-logo.6ce24c58.svg"
+    "main.css": "/crowcraft/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/crowcraft/static/js/main.8a3a1799.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.8a3a1799.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.aefeae25.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.aefeae25.js.map",
+    "static/js/2.a5d02885.chunk.js": "/crowcraft/static/js/2.a5d02885.chunk.js",
+    "static/js/2.a5d02885.chunk.js.map": "/crowcraft/static/js/2.a5d02885.chunk.js.map",
+    "static/js/3.3641dbf1.chunk.js": "/crowcraft/static/js/3.3641dbf1.chunk.js",
+    "static/js/3.3641dbf1.chunk.js.map": "/crowcraft/static/js/3.3641dbf1.chunk.js.map",
+    "index.html": "/crowcraft/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/crowcraft/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.a5d02885.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.a5d02885.chunk.js.LICENSE.txt",
+    "static/media/crowcraft-logo.6ce24c58.svg": "/crowcraft/static/media/crowcraft-logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7d1826ff.js",
+    "static/js/runtime-main.aefeae25.js",
     "static/js/2.a5d02885.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.8a3a1799.chunk.js"
