@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./global.css";
+import { Crafting } from "./components/Crafting";
+import { Layout } from "./components/layout";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Crowcraft
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <Layout>
+        <Crafting />
+    </Layout>
+);
 
 export default App;
