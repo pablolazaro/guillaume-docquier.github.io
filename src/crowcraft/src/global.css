@@ -1,19 +1,57 @@
-.bg-something {
-    background-color: darkslategrey;
-}
-
-.bg-something-else {
-    background-color: black;
-}
-
-.bg-something-other {
-    background-color: darkgray;
-}
-
+/* Margins */
 .nmt5 {
     margin-top: -4rem;
 }
 
 .nmb5 {
     margin-bottom: -4rem;
+}
+
+/* Color Palette */
+.verdigris {
+    color: #00AFB9;
+}
+
+.light-yellow {
+    color: #FDFCDC;
+}
+
+.peach-puff {
+    color: #FED9B7;
+}
+
+.charcoal {
+    color: #3A4454;
+}
+
+.bittersweet {
+    color: #F07167;
+}
+
+.mauve-taupe {
+    color: #925E78;
+}
+
+.bg-verdigris {
+    background-color: #00AFB9;
+}
+
+.bg-light-yellow {
+    background-color: #FDFCDC;
+}
+
+.bg-peach-puff {
+    background-color: #FED9B7;
+}
+
+.bg-charcoal {
+    background-color: #3A4454;
+}
+
+.bg-bittersweet {
+    background-color: #F07167;
+}
+
+.bg-mauve-taupe {
+    background-color: #925E78;
 }
