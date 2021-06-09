@@ -14,6 +14,11 @@ export const Crafting = () => {
     const [selectedFilters, setSelectedFilters] = useState([]);
     const [currentFilter, setCurrentFilter] = useState(filters.craftingType);
 
+    const revertSteps = index => () => {
+        setSelectedFilters(selectedFilters.slice(0, index))
+        setCurrentFilter(selectedFilters[index].filter);
+    }
+
     const completeStep = choice => {
         setSelectedFilters([...selectedFilters, new SelectedFilter(currentFilter, choice)])
         setCurrentFilter(filters[choice.nextFilterId]);
@@ -21,9 +26,9 @@ export const Crafting = () => {
 
     return (
         <div className="mv3">
-            {selectedFilters.map(selectedFilter => 
-                <div className="mb3">
-                    <CompletedStep key={selectedFilter.filter.id} name={selectedFilter.name} choice={selectedFilter.choice} />
+            {selectedFilters.map((selectedFilter, i) => 
+                <div className="mb3" key={selectedFilter.filter.id}>
+                    <CompletedStep name={selectedFilter.name} choice={selectedFilter.choice} onStepCanceled={revertSteps(i)} />
                 </div>
             )}
             {!currentFilter ? null :
