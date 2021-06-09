@@ -1,4 +1,4 @@
-class Option {
+export class Option {
     constructor(id, name, nextFilterId) {
         this.id = id;
         this.name = name;
@@ -6,7 +6,7 @@ class Option {
     }
 }
 
-class Filter {
+export class Filter {
     constructor(id, name, optionIds) {
         this.id = id;
         this.name = name;
