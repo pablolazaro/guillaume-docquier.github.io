@@ -1,5 +1,5 @@
 import "./global.css";
-import { Crafting } from "./components/Crafting";
+import { Crafting } from "./components/crafting";
 import { Layout } from "./components/layout";
 
 const App = () => (
