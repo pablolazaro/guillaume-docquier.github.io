@@ -1,14 +1,36 @@
 import { CompletedStep, StepToComplete } from "./steps"
+import { filters, options } from "./data";
+import { useState } from "react";
+
+class SelectedFilter {
+    constructor(filter, choice) {
+        this.name = filter.name;
+        this.filter = filter;
+        this.choice = choice
+    }
+}
 
 export const Crafting = () => {
+    const [selectedFilters, setSelectedFilters] = useState([]);
+    const [currentFilter, setCurrentFilter] = useState(filters.craftingType);
+
+    const completeStep = choice => {
+        setSelectedFilters([...selectedFilters, new SelectedFilter(currentFilter, choice)])
+        setCurrentFilter(filters[choice.nextFilterId]);
+    }
+
     return (
         <div className="mv3">
-            <div className="mb3">
-                <CompletedStep title={"Crafting type"} choices={[{ name: "Armor" }]} />
-            </div>
-            <div className="mb3">
-                <StepToComplete title={"Choose an armor rating"} options={[{ name: "Leather" }, { name: "Mail" }, { name: "Plate" }]} />
-            </div>
+            {selectedFilters.map(selectedFilter => 
+                <div className="mb3">
+                    <CompletedStep key={selectedFilter.filter.id} name={selectedFilter.name} choice={selectedFilter.choice} />
+                </div>
+            )}
+            {!currentFilter ? null :
+                <div className="mb3">
+                    <StepToComplete name={currentFilter.name} options={currentFilter.optionIds.map(optionId => options[optionId])} onStepCompleted={completeStep} />
+                </div>
+            }
         </div>
     )
 }

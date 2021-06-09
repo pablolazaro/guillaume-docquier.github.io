@@ -1,12 +1,13 @@
 import { Choice } from "./Choice";
+import { String } from "utils";
 
-export const CompletedStep = ({ title, choices }) => (
+export const CompletedStep = ({ name, choice }) => (
     <div>
         <div className="mb1">
-            {title}
+            {String.capitalize(name)}
         </div>
         <div>
-            {choices.map(choice => <div className="mr2"><Choice name={choice.name} /></div>)}
+            <Choice name={choice.name} />
         </div>
     </div>
 );
