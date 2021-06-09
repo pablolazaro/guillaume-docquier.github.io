@@ -1,6 +1,6 @@
 import { CompletedStep, StepToComplete } from "./steps"
 import { filters, options, Filter, Option } from "./crafting-filters";
-import { items } from "./data";
+import { gear, items } from "./data";
 import { useState } from "react";
 
 class SelectedFilter {
@@ -21,13 +21,15 @@ export const Crafting = () => {
         setSelectedFilters(selectedFilters.slice(0, index))
         setCurrentFilter(selectedFilters[index].filter);
         setItemToCraft(null);
+        revertSelectedRarity();
     }
 
     const completeStep = choice => {
         setSelectedFilters([...selectedFilters, new SelectedFilter(currentFilter, choice)])
         setCurrentFilter(filters[choice.nextFilterId]);
         if (!choice.nextFilterId) {
-            setItemToCraft(items[choice.id]);
+            setItemToCraft(gear[choice.id]);
+            console.log(gear[choice.id]);
         }
     }
 
@@ -37,6 +39,11 @@ export const Crafting = () => {
 
     const completeRarityStep = rarity => {
         setSelectedRarity(rarity);
+    }
+
+    let c = null;
+    if (!!itemToCraft && !!selectedRarity) {
+        c = itemToCraft.getCraftingOrder();
     }
 
     return (
@@ -59,6 +66,12 @@ export const Crafting = () => {
             {!!itemToCraft && !!selectedRarity ?
                 <div className="mb3">
                     <CompletedStep name={"rarity"} choice={selectedRarity} onStepCanceled={revertSelectedRarity} />
+                </div> : null
+            }
+            {!!itemToCraft && !!selectedRarity ?
+                <div className="mb3 flex flex-column">
+                    <div>Raw crafting materials:</div>
+                    {c.rawMaterials.map(rawMaterial => <div>{rawMaterial.quantity}x {rawMaterial.item.name}</div>)}
                 </div> : null
             }
         </div>

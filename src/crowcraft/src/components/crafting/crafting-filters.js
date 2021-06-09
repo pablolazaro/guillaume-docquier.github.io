@@ -62,8 +62,8 @@ export const filters = {
     leatherArmor: new Filter("leatherArmor", "armor", ["leatherBoots", "leatherCap", "leatherGloves", "leatherTunic"]),
     mailArmor: new Filter("mailArmor", "armor", ["mailBoots", "mailCoif", "mailGloves", "mailHauberk"]),
     plateArmor: new Filter("plateArmor", "armor", ["plateBoots", "plateBreastplate", "plateGloves", "plateHelmet"]),
-    oneHandedWeapon: new Filter("oneHandedWeapon", "weapon", ["axe", "dagger", "mace", "rapier", "shortSword"]),
-    twoHandedWeapon: new Filter("twoHandedWeapon", "weapon", ["greatAxe", "greatMace", "greatSword", "longsword", ]),
+    oneHandedWeapon: new Filter("oneHandedWeapon", "weapon", ["axe", "dagger", "mace", "rapier", "shortSword", "longsword"]),
+    twoHandedWeapon: new Filter("twoHandedWeapon", "weapon", ["greatAxe", "greatMace", "greatSword", ]),
     rangedWeapon: new Filter("rangedWeapon", "weapon", ["mysticalThrowingHammer", "pistol", "sickle"]),
     shieldWeapon: new Filter("shieldWeapon", "weapon", ["smallBuckler", "mediumShield", "towerShield"]),
     magicalWeapon: new Filter("magicalWeapon", "weapon", ["frostcaster"])

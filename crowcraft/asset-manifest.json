@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.a78f0307.chunk.css",
-    "main.js": "/crowcraft/static/js/main.da8b9c47.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.da8b9c47.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.5ece9a11.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.5ece9a11.js.map",
-    "static/js/2.20bcef21.chunk.js": "/crowcraft/static/js/2.20bcef21.chunk.js",
-    "static/js/2.20bcef21.chunk.js.map": "/crowcraft/static/js/2.20bcef21.chunk.js.map",
-    "static/js/3.435f28ad.chunk.js": "/crowcraft/static/js/3.435f28ad.chunk.js",
-    "static/js/3.435f28ad.chunk.js.map": "/crowcraft/static/js/3.435f28ad.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.cd52ff06.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.cd52ff06.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.1cf9d090.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.1cf9d090.js.map",
+    "static/js/2.429b6b83.chunk.js": "/crowcraft/static/js/2.429b6b83.chunk.js",
+    "static/js/2.429b6b83.chunk.js.map": "/crowcraft/static/js/2.429b6b83.chunk.js.map",
+    "static/js/3.406a3a89.chunk.js": "/crowcraft/static/js/3.406a3a89.chunk.js",
+    "static/js/3.406a3a89.chunk.js.map": "/crowcraft/static/js/3.406a3a89.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.a78f0307.chunk.css.map": "/crowcraft/static/css/main.a78f0307.chunk.css.map",
-    "static/js/2.20bcef21.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.20bcef21.chunk.js.LICENSE.txt",
+    "static/js/2.429b6b83.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.429b6b83.chunk.js.LICENSE.txt",
     "static/media/logo.8e1908b1.png": "/crowcraft/static/media/logo.8e1908b1.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.5ece9a11.js",
-    "static/js/2.20bcef21.chunk.js",
+    "static/js/runtime-main.1cf9d090.js",
+    "static/js/2.429b6b83.chunk.js",
     "static/css/main.a78f0307.chunk.css",
-    "static/js/main.da8b9c47.chunk.js"
+    "static/js/main.cd52ff06.chunk.js"
   ]
 }

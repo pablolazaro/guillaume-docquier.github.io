@@ -1,8 +1,6 @@
-import { armors } from "./armors";
-import { weapons } from "./weapons";
+import { armors, weapons } from "./items";
 
-export { armors, weapons };
-export const items = {
+export const gear = {
     ...armors,
     ...weapons
 };
