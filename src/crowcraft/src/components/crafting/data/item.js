@@ -13,10 +13,10 @@ export class Craft {
 }
 
 export class Item {
-    constructor(id, name, profession, rarities, craftingMaterials, craftingQuantity) {
+    constructor(id, name, professions, rarities, craftingMaterials, craftingQuantity) {
         this.id = id;
         this.name = name;
-        this.profession = profession;
+        this.professions = professions;
         this.rarities = rarities;
         this.craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
