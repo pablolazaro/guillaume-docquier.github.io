@@ -9,6 +9,6 @@ export const RawMaterials = ({ rawMaterials }) => (
 
 export const RawMaterial = ({ rawMaterial }) => (
     <div className="nowrap">
-        {rawMaterial.quantity}x {String.capitalize(rawMaterial.item.name)}
+        {rawMaterial.quantity}x {String.capitalize(rawMaterial.item.name)} ({rawMaterial.item.rarity})
     </div>
 );

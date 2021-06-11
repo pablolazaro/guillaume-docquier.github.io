@@ -1,7 +1,7 @@
 import { CompletedStep, StepToComplete } from "./steps"
 import { filters, options, Option } from "./crafting-filters";
 import { gear } from "./data";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { RawMaterials } from "./RawMaterials";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./ItemCustomizer";
@@ -22,6 +22,15 @@ export const Crafting = () => {
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
 
+    useEffect(
+        () => {
+            if (itemToCraft) {
+                itemToCraft.setRarity((selectedRarity || {}).id);
+            }
+        },
+        [itemToCraft, selectedRarity]
+    );
+
     const revertSteps = index => () => {
         setSelectedFilters(selectedFilters.slice(0, index))
         setCurrentFilter(selectedFilters[index].filter);
@@ -39,6 +48,7 @@ export const Crafting = () => {
 
     const revertSelectedRarity = () => {
         setSelectedRarity(null);
+        itemToCraft.setRarity(null);
         setRawMaterials(null);
         setCrafts(null);
     };

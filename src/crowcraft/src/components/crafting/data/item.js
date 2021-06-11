@@ -21,6 +21,20 @@ export class Item {
         this.craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
         this.craftingRank = this.getCraftingRank();
+        this.rarity = rarities[0];
+    }
+
+    setRarity(rarity) {
+        if (this.rarities.includes(rarity)) {
+            this.rarity = rarity;
+        }
+        else {
+            this.rarity = this.rarities[0]
+        }
+
+        for (const craftingMaterial of this.craftingMaterials) {
+            craftingMaterial.item.setRarity(this.rarity);
+        }
     }
 
     getCustomizableComponents() {
@@ -108,6 +122,7 @@ export class CustomizableComponent extends Item {
         this.id = other.id;
         this.name = other.name;
         this.craftingMaterials = other.craftingMaterials;
+        this.setRarity(this.rarity);
     }
 }
 
