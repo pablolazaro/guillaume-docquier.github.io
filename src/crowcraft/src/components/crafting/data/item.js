@@ -23,13 +23,22 @@ export class Item {
         this.craftingRank = this.getCraftingRank();
     }
 
+    getCustomizableComponents() {
+        let customizableComponents = [];
+        for (const craftingMaterial of this.craftingMaterials) {
+            customizableComponents = customizableComponents.concat(craftingMaterial.item.getCustomizableComponents());
+        }
+
+        return customizableComponents;
+    }
+
     getCraftingRank() {
         return Math.max(...this.craftingMaterials.map(mat => mat.item.craftingRank)) + 1;
     }
 
-    getCraftingOrder() {
+    getCraftingRundown() {
         const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(1, this))];
-        let rawMaterials = this.craftingMaterials;
+        let rawMaterials = [...this.craftingMaterials];
         let rank = this.craftingRank;
         while (rank > 1) {
             rank -= 1;
@@ -74,45 +83,31 @@ export class Item {
             rawMaterials: Object.values(rawMaterialsSet)
         }
     }
-
-    getRawMaterials() {
-        const rawMaterials = Object.values(this._getRawMaterials());
-        for (const rawMaterial of rawMaterials) {
-            rawMaterial.quantity = Math.ceil(rawMaterial.quantity);
-        }
-
-        return rawMaterials;
-    }
-
-    _getRawMaterials() {
-        const rawMaterials = {};
-        for (const craftingMaterial of this.craftingMaterials) {
-            const materials = craftingMaterial.item._getRawMaterials();
-            const numberOfCrafts = craftingMaterial.quantity / craftingMaterial.item.craftingQuantity;
-            for (const material of Object.values(materials)) {
-                if (rawMaterials[material.item.id] === undefined) {
-                    rawMaterials[material.item.id] = material
-                    rawMaterials[material.item.id].quantity *= numberOfCrafts;
-                }
-                else {
-                    rawMaterials[material.item.id].quantity += material.quantity * numberOfCrafts;
-                }
-            }
-        }
-
-        return rawMaterials;
-    }
 };
 
 export class RawMaterial extends Item {
     getCraftingRank() {
-        return 0
+        return 0;
+    }
+}
+
+export class CustomizableComponent extends Item {
+    getCustomizableComponents() {
+        return [this];
     }
 
-    _getRawMaterials() {
-        return {
-            [this.id]: new CraftingMaterial(1, this)
-        }
+    getCustomizationOptions() {
+        throw `${this.id} must implement getCustomizationOptions`;
+    }
+
+    getCustomizationEffect() {
+        throw `${this.id} must implement getCustomizationEffect`;
+    }
+
+    customize(other) {
+        this.id = other.id;
+        this.name = other.name;
+        this.craftingMaterials = other.craftingMaterials;
     }
 }
 

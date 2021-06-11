@@ -1,7 +1,7 @@
 import { MailCoif } from "./mail-coif";
 
 export const armors = {
-    [MailCoif.id]: new MailCoif()
+    [MailCoif.id]: MailCoif
 };
 
 export const weapons = {

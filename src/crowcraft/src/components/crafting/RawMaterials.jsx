@@ -3,7 +3,7 @@ import { String } from "utils";
 export const RawMaterials = ({ rawMaterials }) => (
     <div className="flex flex-column">
         <div>Raw materials:</div>
-        {rawMaterials.map(rawMaterial => <RawMaterial key={rawMaterial.item.id} rawMaterial={rawMaterial} />)}
+        {rawMaterials.map((rawMaterial, i) => <RawMaterial key={`${rawMaterial.item.id}.${i}`} rawMaterial={rawMaterial} />)}
     </div>
 );
 

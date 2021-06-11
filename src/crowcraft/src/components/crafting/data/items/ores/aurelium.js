@@ -1,11 +1,11 @@
-import { Rarities } from "../item";
+import { Rarities } from "components/crafting/data/item";
 import { Ore } from "./ore";
 
-export class Iron extends Ore {
+export class Aurelium extends Ore {
     constructor() {
         super(
-            "iron",
-            "iron",
+            "aurelium",
+            "aurelium",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

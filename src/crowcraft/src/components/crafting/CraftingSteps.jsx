@@ -11,7 +11,7 @@ export const CraftingSteps = ({ crafts }) => (
 const CraftingStep = ({ craft }) => (
     <div className="flex nowrap">
         {craft.craftingMaterials.map((craftingMaterial, i) => (
-            <div key={craftingMaterial.item.id} className="flex">
+            <div key={`${craftingMaterial.item.id}.${i}`} className="flex">
                 {i > 0 ? <div className="mh1">+</div> : null}
                 <RawMaterial rawMaterial={craftingMaterial} />
             </div>

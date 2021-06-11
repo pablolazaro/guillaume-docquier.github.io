@@ -1,9 +1,10 @@
 import { CompletedStep, StepToComplete } from "./steps"
-import { filters, options, Filter, Option } from "./crafting-filters";
-import { gear, items } from "./data";
+import { filters, options, Option } from "./crafting-filters";
+import { gear } from "./data";
 import { useState } from "react";
 import { RawMaterials } from "./RawMaterials";
 import { CraftingSteps } from "./CraftingSteps";
+import { ItemCustomizer } from "./ItemCustomizer";
 
 class SelectedFilter {
     constructor(filter, choice) {
@@ -32,7 +33,7 @@ export const Crafting = () => {
         setSelectedFilters([...selectedFilters, new SelectedFilter(currentFilter, choice)])
         setCurrentFilter(filters[choice.nextFilterId]);
         if (!choice.nextFilterId) {
-            setItemToCraft(gear[choice.id]);
+            setItemToCraft(new gear[choice.id]());
         }
     };
 
@@ -44,11 +45,17 @@ export const Crafting = () => {
 
     const completeRarityStep = rarity => {
         setSelectedRarity(rarity);
+    };
 
-        const { rawMaterials, crafts } = itemToCraft.getCraftingOrder();
+    const completeItemCustomization = () => {
+        computeCrafts();
+    };
+
+    const computeCrafts = () => {
+        const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
         setRawMaterials(rawMaterials);
         setCrafts(crafts);
-    };
+    }
 
     return (
         <div className="mv3">
@@ -72,6 +79,7 @@ export const Crafting = () => {
                     <CompletedStep name={"rarity"} choice={selectedRarity} onStepCanceled={revertSelectedRarity} />
                 </div> : null
             }
+            <ItemCustomizer active={!!selectedRarity} className="mb3" item={itemToCraft} onItemCustomized={completeItemCustomization} />
             {!!rawMaterials ?
                 <div className="mb3">
                     <RawMaterials rawMaterials={rawMaterials} />

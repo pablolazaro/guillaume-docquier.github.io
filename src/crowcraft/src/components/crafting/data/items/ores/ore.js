@@ -1,4 +1,4 @@
-import { RawMaterial, Rarities } from "../item";
+import { RawMaterial, Rarities } from "components/crafting/data/item";
 
 export class Ore extends RawMaterial {
     constructor(
