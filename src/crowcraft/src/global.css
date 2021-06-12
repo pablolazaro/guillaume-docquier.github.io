@@ -32,6 +32,10 @@
     color: #925E78;
 }
 
+.marine {
+    color: #22293C;
+}
+
 .bg-verdigris {
     background-color: #00AFB9;
 }
@@ -54,6 +58,10 @@
 
 .bg-mauve-taupe {
     background-color: #925E78;
+}
+
+.bg-marine {
+    background-color: #22293C;
 }
 
 /* Rarities */
