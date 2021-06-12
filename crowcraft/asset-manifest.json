@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.053deb90.chunk.css",
-    "main.js": "/crowcraft/static/js/main.2ddcd559.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.2ddcd559.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.99802282.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.99802282.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.18dd4623.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.18dd4623.js.map",
     "static/js/2.cb2814df.chunk.js": "/crowcraft/static/js/2.cb2814df.chunk.js",
@@ -13,10 +13,17 @@
     "static/css/main.053deb90.chunk.css.map": "/crowcraft/static/css/main.053deb90.chunk.css.map",
     "static/js/2.cb2814df.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.cb2814df.chunk.js.LICENSE.txt",
     "static/media/aurelium.450b092b.svg": "/crowcraft/static/media/aurelium.450b092b.svg",
+    "static/media/aureliumSteelMetalScales.152aaf3f.svg": "/crowcraft/static/media/aureliumSteelMetalScales.152aaf3f.svg",
+    "static/media/blueSteelMetalScales.152aaf3f.svg": "/crowcraft/static/media/blueSteelMetalScales.152aaf3f.svg",
+    "static/media/brightSteelMetalScales.152aaf3f.svg": "/crowcraft/static/media/brightSteelMetalScales.152aaf3f.svg",
     "static/media/coal.965b3dc3.svg": "/crowcraft/static/media/coal.965b3dc3.svg",
     "static/media/copper.1b71c9df.svg": "/crowcraft/static/media/copper.1b71c9df.svg",
+    "static/media/darkBronzeMetalScales.152aaf3f.svg": "/crowcraft/static/media/darkBronzeMetalScales.152aaf3f.svg",
+    "static/media/darkElectrumMetalScales.152aaf3f.svg": "/crowcraft/static/media/darkElectrumMetalScales.152aaf3f.svg",
     "static/media/etherealDust.67bffd87.svg": "/crowcraft/static/media/etherealDust.67bffd87.svg",
+    "static/media/forestAureliumMetalScales.152aaf3f.svg": "/crowcraft/static/media/forestAureliumMetalScales.152aaf3f.svg",
     "static/media/hide.12e58281.svg": "/crowcraft/static/media/hide.12e58281.svg",
+    "static/media/invarMetalScales.152aaf3f.svg": "/crowcraft/static/media/invarMetalScales.152aaf3f.svg",
     "static/media/iron.fb1caf88.svg": "/crowcraft/static/media/iron.fb1caf88.svg",
     "static/media/lacingSinew.f0d65a1e.svg": "/crowcraft/static/media/lacingSinew.f0d65a1e.svg",
     "static/media/leatherPadding.c4bdfad1.svg": "/crowcraft/static/media/leatherPadding.c4bdfad1.svg",
@@ -26,8 +33,11 @@
     "static/media/metalScales.152aaf3f.svg": "/crowcraft/static/media/metalScales.152aaf3f.svg",
     "static/media/ore.4f9101d8.svg": "/crowcraft/static/media/ore.4f9101d8.svg",
     "static/media/silver.319be524.svg": "/crowcraft/static/media/silver.319be524.svg",
+    "static/media/silveredIronMetalScales.152aaf3f.svg": "/crowcraft/static/media/silveredIronMetalScales.152aaf3f.svg",
     "static/media/slag.0272de84.svg": "/crowcraft/static/media/slag.0272de84.svg",
+    "static/media/steelMetalScales.152aaf3f.svg": "/crowcraft/static/media/steelMetalScales.152aaf3f.svg",
     "static/media/stone.78c1385e.svg": "/crowcraft/static/media/stone.78c1385e.svg",
+    "static/media/tigerIronMetalScales.152aaf3f.svg": "/crowcraft/static/media/tigerIronMetalScales.152aaf3f.svg",
     "static/media/tin.699df579.svg": "/crowcraft/static/media/tin.699df579.svg",
     "static/media/wood.754c05c6.svg": "/crowcraft/static/media/wood.754c05c6.svg"
   },
@@ -35,6 +45,6 @@
     "static/js/runtime-main.18dd4623.js",
     "static/js/2.cb2814df.chunk.js",
     "static/css/main.053deb90.chunk.css",
-    "static/js/main.2ddcd559.chunk.js"
+    "static/js/main.99802282.chunk.js"
   ]
 }

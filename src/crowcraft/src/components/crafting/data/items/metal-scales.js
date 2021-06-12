@@ -99,7 +99,7 @@ class BrightSteelMetalScales extends MetalScales {
 class AureliumSteelMetalScales extends MetalScales {
     constructor() {
         super(
-            "aureliumSTeelMetalScales",
+            "aureliumSteelMetalScales",
             "metal scales (aurelium steel)",
             [
                 new CraftingMaterial(16, new Iron()),
