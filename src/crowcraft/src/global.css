@@ -97,3 +97,8 @@
 .cursor-default {
     cursor: default;
 }
+
+a:link,
+a:visited {
+    color: #F07167; /* Bittersweet */
+}
