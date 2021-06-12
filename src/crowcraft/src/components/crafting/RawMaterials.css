@@ -8,7 +8,7 @@
     padding: 6px 6px 6px 6px;
     box-sizing: content-box;
     border-radius: 5px;
-    box-shadow: 0 3px 4px rgba(0, 0, 0, .3);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
 }
 
 .resource-count {
