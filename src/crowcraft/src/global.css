@@ -55,3 +55,37 @@
 .bg-mauve-taupe {
     background-color: #925E78;
 }
+
+/* Rarities */
+.bg-rarity-grey {
+    background: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 25%) 100%);
+}
+
+.bg-rarity-white {
+    background: linear-gradient(180deg, hsl(0, 0%, 23%) 0%, hsl(0, 0%, 70%) 100%);
+}
+
+.bg-rarity-green {
+    background: linear-gradient(180deg, hsl(116, 55%, 13%) 0%, hsl(116, 55%, 40%) 100%);
+}
+
+.bg-rarity-blue {
+    background: linear-gradient(180deg, hsl(217, 55%, 13%) 0%, hsl(217, 55%, 40%) 100%);
+}
+
+.bg-rarity-purple {
+    background: linear-gradient(180deg, hsl(273, 55%, 13%) 0%, hsl(273, 55%, 40%) 100%);
+}
+
+.bg-rarity-orange {
+    background: linear-gradient(180deg, hsl(17, 55%, 13%) 0%, hsl(17, 55%, 40%) 100%);
+}
+
+/* Misc */
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.cursor-default {
+    cursor: default;
+}

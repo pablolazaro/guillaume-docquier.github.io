@@ -1,23 +1,40 @@
 {
   "files": {
-    "main.css": "/crowcraft/static/css/main.d40cee53.chunk.css",
-    "main.js": "/crowcraft/static/js/main.6c429652.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.6c429652.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.1cf9d090.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.1cf9d090.js.map",
+    "main.css": "/crowcraft/static/css/main.053deb90.chunk.css",
+    "main.js": "/crowcraft/static/js/main.2ddcd559.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.2ddcd559.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.18dd4623.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.18dd4623.js.map",
     "static/js/2.cb2814df.chunk.js": "/crowcraft/static/js/2.cb2814df.chunk.js",
     "static/js/2.cb2814df.chunk.js.map": "/crowcraft/static/js/2.cb2814df.chunk.js.map",
-    "static/js/3.406a3a89.chunk.js": "/crowcraft/static/js/3.406a3a89.chunk.js",
-    "static/js/3.406a3a89.chunk.js.map": "/crowcraft/static/js/3.406a3a89.chunk.js.map",
+    "static/js/3.e1fe7fdc.chunk.js": "/crowcraft/static/js/3.e1fe7fdc.chunk.js",
+    "static/js/3.e1fe7fdc.chunk.js.map": "/crowcraft/static/js/3.e1fe7fdc.chunk.js.map",
     "index.html": "/crowcraft/index.html",
-    "static/css/main.d40cee53.chunk.css.map": "/crowcraft/static/css/main.d40cee53.chunk.css.map",
+    "static/css/main.053deb90.chunk.css.map": "/crowcraft/static/css/main.053deb90.chunk.css.map",
     "static/js/2.cb2814df.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.cb2814df.chunk.js.LICENSE.txt",
-    "static/media/logo.8e1908b1.png": "/crowcraft/static/media/logo.8e1908b1.png"
+    "static/media/aurelium.450b092b.svg": "/crowcraft/static/media/aurelium.450b092b.svg",
+    "static/media/coal.965b3dc3.svg": "/crowcraft/static/media/coal.965b3dc3.svg",
+    "static/media/copper.1b71c9df.svg": "/crowcraft/static/media/copper.1b71c9df.svg",
+    "static/media/etherealDust.67bffd87.svg": "/crowcraft/static/media/etherealDust.67bffd87.svg",
+    "static/media/hide.12e58281.svg": "/crowcraft/static/media/hide.12e58281.svg",
+    "static/media/iron.fb1caf88.svg": "/crowcraft/static/media/iron.fb1caf88.svg",
+    "static/media/lacingSinew.f0d65a1e.svg": "/crowcraft/static/media/lacingSinew.f0d65a1e.svg",
+    "static/media/leatherPadding.c4bdfad1.svg": "/crowcraft/static/media/leatherPadding.c4bdfad1.svg",
+    "static/media/logo.8e1908b1.png": "/crowcraft/static/media/logo.8e1908b1.png",
+    "static/media/mailCoif.0559e556.svg": "/crowcraft/static/media/mailCoif.0559e556.svg",
+    "static/media/meat.f65f2e48.svg": "/crowcraft/static/media/meat.f65f2e48.svg",
+    "static/media/metalScales.152aaf3f.svg": "/crowcraft/static/media/metalScales.152aaf3f.svg",
+    "static/media/ore.4f9101d8.svg": "/crowcraft/static/media/ore.4f9101d8.svg",
+    "static/media/silver.319be524.svg": "/crowcraft/static/media/silver.319be524.svg",
+    "static/media/slag.0272de84.svg": "/crowcraft/static/media/slag.0272de84.svg",
+    "static/media/stone.78c1385e.svg": "/crowcraft/static/media/stone.78c1385e.svg",
+    "static/media/tin.699df579.svg": "/crowcraft/static/media/tin.699df579.svg",
+    "static/media/wood.754c05c6.svg": "/crowcraft/static/media/wood.754c05c6.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1cf9d090.js",
+    "static/js/runtime-main.18dd4623.js",
     "static/js/2.cb2814df.chunk.js",
-    "static/css/main.d40cee53.chunk.css",
-    "static/js/main.6c429652.chunk.js"
+    "static/css/main.053deb90.chunk.css",
+    "static/js/main.2ddcd559.chunk.js"
   ]
 }
