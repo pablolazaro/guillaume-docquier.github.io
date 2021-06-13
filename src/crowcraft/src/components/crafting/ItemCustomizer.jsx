@@ -30,7 +30,7 @@ const ComponentCustomizer = memo(({ component, onComponentCustomized, componentI
             component.customize(option);
             onComponentCustomized();
         },
-        []
+        [setSelectedIndex, component, onComponentCustomized]
     );
 
     return (

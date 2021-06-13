@@ -28,6 +28,10 @@ const assets = {
     meat: require("./meat.svg").default
 };
 
+
+
 export const getAsset = assetId => {
+    const x = require.context("./", true, /\.svg$/);
+    debugger;
     return assets[assetId] || "";
 };

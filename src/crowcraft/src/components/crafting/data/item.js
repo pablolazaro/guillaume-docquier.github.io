@@ -111,11 +111,11 @@ export class CustomizableComponent extends Item {
     }
 
     getCustomizationOptions() {
-        throw `${this.id} must implement getCustomizationOptions`;
+        throw new Error(`${this.id} must implement getCustomizationOptions`);
     }
 
     getCustomizationEffect() {
-        throw `${this.id} must implement getCustomizationEffect`;
+        throw new Error(`${this.id} must implement getCustomizationEffect`);
     }
 
     customize(other) {
