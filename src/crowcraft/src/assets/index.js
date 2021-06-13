@@ -32,6 +32,6 @@ const assets = {
 
 export const getAsset = assetId => {
     const x = require.context("./", true, /\.svg$/);
-    debugger;
+    console.log(x.keys());
     return assets[assetId] || "";
 };
