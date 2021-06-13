@@ -23,7 +23,7 @@ export const RawMaterial = ({ rawMaterial }) => {
     return (
         <div className={`resource-container bg-rarity-${item.rarity} | relative cursor-default`} title={itemName}>
             <img src={getAsset(item.id)} alt={itemName} className="resource-image" />
-            <div class="resource-count | absolute">{quantity}</div>
+            <div className="resource-count | absolute">{quantity}</div>
         </div>
     )
 };

@@ -6,8 +6,8 @@ export const CraftingSteps = ({ crafts }) => (
         <div className="mb2">Crafting steps:</div>
         <div>
             {crafts.map(craft => (
-                <div className="mb2">
-                    <CraftingStep key={craft.craftingResult.item.id} craft={craft} />
+                <div className="mb2" key={craft.craftingResult.item.id}>
+                    <CraftingStep craft={craft} />
                 </div>
             ))}
         </div>
