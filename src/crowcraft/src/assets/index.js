@@ -1,59 +1,31 @@
-import aurelium from "./aurelium.svg";
-import coal from "./coal.svg";
-import copper from "./copper.svg";
-import etherealDust from "./etherealDust.svg";
-import iron from "./iron.svg";
-import lacingSinew from "./lacingSinew.svg";
-import leatherPadding from "./leatherPadding.svg";
-import mailCoif from "./mailCoif.svg";
-import metalScales from "./metalScales.svg";
-import brightSteelMetalScales from "./brightSteelMetalScales.svg";
-import darkBronzeMetalScales from "./darkBronzeMetalScales.svg";
-import aureliumSteelMetalScales from "./aureliumSteelMetalScales.svg";
-import steelMetalScales from "./steelMetalScales.svg";
-import invarMetalScales from "./invarMetalScales.svg";
-import silveredIronMetalScales from "./silveredIronMetalScales.svg";
-import tigerIronMetalScales from "./tigerIronMetalScales.svg";
-import blueSteelMetalScales from "./blueSteelMetalScales.svg";
-import forestAureliumMetalScales from "./forestAureliumMetalScales.svg";
-import darkElectrumMetalScales from "./darkElectrumMetalScales.svg";
-import silver from "./silver.svg";
-import slag from "./slag.svg";
-import tin from "./tin.svg";
-import ore from "./ore.svg";
-import stone from "./stone.svg";
-import wood from "./wood.svg";
-import hide from "./hide.svg";
-import meat from "./meat.svg";
-
 const assets = {
-    aurelium,
-    coal,
-    copper,
-    etherealDust,
-    iron,
-    lacingSinew,
-    leatherPadding,
-    mailCoif,
-    metalScales,
-    brightSteelMetalScales,
-    darkBronzeMetalScales,
-    aureliumSteelMetalScales,
-    steelMetalScales,
-    invarMetalScales,
-    silveredIronMetalScales,
-    tigerIronMetalScales,
-    blueSteelMetalScales,
-    forestAureliumMetalScales,
-    darkElectrumMetalScales,
-    silver,
-    slag,
-    tin,
-    ore,
-    stone,
-    wood,
-    hide,
-    meat
+    aurelium: require("./aurelium.svg").default,
+    coal: require("./coal.svg").default,
+    copper: require("./copper.svg").default,
+    etherealDust: require("./etherealDust.svg").default,
+    iron: require("./iron.svg").default,
+    lacingSinew: require("./lacingSinew.svg").default,
+    leatherPadding: require("./leatherPadding.svg").default,
+    mailCoif: require("./mailCoif.svg").default,
+    metalScales: require("./metalScales.svg").default,
+    brightSteelMetalScales: require("./brightSteelMetalScales.svg").default,
+    darkBronzeMetalScales: require("./darkBronzeMetalScales.svg").default,
+    aureliumSteelMetalScales: require("./aureliumSteelMetalScales.svg").default,
+    steelMetalScales: require("./steelMetalScales.svg").default,
+    invarMetalScales: require("./invarMetalScales.svg").default,
+    silveredIronMetalScales: require("./silveredIronMetalScales.svg").default,
+    tigerIronMetalScales: require("./tigerIronMetalScales.svg").default,
+    blueSteelMetalScales: require("./blueSteelMetalScales.svg").default,
+    forestAureliumMetalScales: require("./forestAureliumMetalScales.svg").default,
+    darkElectrumMetalScales: require("./darkElectrumMetalScales.svg").default,
+    silver: require("./silver.svg").default,
+    slag: require("./slag.svg").default,
+    tin: require("./tin.svg").default,
+    ore: require("./ore.svg").default,
+    stone: require("./stone.svg").default,
+    wood: require("./wood.svg").default,
+    hide: require("./hide.svg").default,
+    meat: require("./meat.svg").default
 };
 
 export const getAsset = assetId => {
