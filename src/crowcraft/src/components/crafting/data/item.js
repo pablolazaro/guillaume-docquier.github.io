@@ -23,6 +23,7 @@ export class Item {
         this.craftingQuantity = craftingQuantity;
 
         this.id = String.decapitalize(this.constructor.name);
+        console.log(this.id);
         this.craftingRank = this.getCraftingRank();
         this.rarity = rarities[0];
         this.isCraftable = true;
