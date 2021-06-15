@@ -4,7 +4,6 @@ import { Coal } from "./coal";
 
 export class MetalScales extends CustomizableComponent {
     constructor(
-        id = "metalScales",
         name = "metal scales",
         craftingMaterials = [
             new CraftingMaterial(16, new Iron()),
@@ -14,7 +13,6 @@ export class MetalScales extends CustomizableComponent {
         ]
     ) {
         super(
-            id,
             name,
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
@@ -42,7 +40,6 @@ export class MetalScales extends CustomizableComponent {
 class SteelMetalScales extends MetalScales {
     constructor() {
         super(
-            "steelMetalScales",
             "metal scales (steel)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -61,7 +58,6 @@ class SteelMetalScales extends MetalScales {
 class DarkBronzeMetalScales extends MetalScales {
     constructor() {
         super(
-            "darkBronzeMetalScales",
             "metal scales (dark bronze)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -80,7 +76,6 @@ class DarkBronzeMetalScales extends MetalScales {
 class BrightSteelMetalScales extends MetalScales {
     constructor() {
         super(
-            "brightSteelMetalScales",
             "metal scales (bright steel)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -99,7 +94,6 @@ class BrightSteelMetalScales extends MetalScales {
 class AureliumSteelMetalScales extends MetalScales {
     constructor() {
         super(
-            "aureliumSteelMetalScales",
             "metal scales (aurelium steel)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -118,7 +112,6 @@ class AureliumSteelMetalScales extends MetalScales {
 class InvarMetalScales extends MetalScales {
     constructor() {
         super(
-            "invarMetalScales",
             "metal scales (invar)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -137,7 +130,6 @@ class InvarMetalScales extends MetalScales {
 class SilveredIronMetalScales extends MetalScales {
     constructor() {
         super(
-            "silveredIronMetalScales",
             "metal scales (silvered iron)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -156,7 +148,6 @@ class SilveredIronMetalScales extends MetalScales {
 class TigerIronMetalScales extends MetalScales {
     constructor() {
         super(
-            "tigerIronMetalScales",
             "metal scales (tiger iron)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -175,7 +166,6 @@ class TigerIronMetalScales extends MetalScales {
 class BlueSteelMetalScales extends MetalScales {
     constructor() {
         super(
-            "blueSteelMetalScales",
             "metal scales (blue steel)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -194,7 +184,6 @@ class BlueSteelMetalScales extends MetalScales {
 class ForestAureliumMetalScales extends MetalScales {
     constructor() {
         super(
-            "forestAureliumMetalScales",
             "metal scales (forest aurelium)",
             [
                 new CraftingMaterial(16, new Iron()),
@@ -213,7 +202,6 @@ class ForestAureliumMetalScales extends MetalScales {
 class DarkElectrumMetalScales extends MetalScales {
     constructor() {
         super(
-            "darkElectrumMetalScales",
             "metal scales (dark electrum)",
             [
                 new CraftingMaterial(16, new Iron()),

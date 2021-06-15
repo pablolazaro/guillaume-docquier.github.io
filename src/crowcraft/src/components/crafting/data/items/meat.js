@@ -4,7 +4,6 @@ export class Meat extends RawMaterial {
     constructor() {
         super(
             "meat",
-            "meat",
             [],
             [Rarities.Common],
             [],

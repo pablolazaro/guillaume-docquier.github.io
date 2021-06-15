@@ -6,7 +6,6 @@ export class Coal extends Item {
     constructor() {
         super(
             "coal",
-            "coal",
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common],
             [

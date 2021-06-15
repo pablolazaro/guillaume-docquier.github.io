@@ -1,3 +1,5 @@
+import { String } from "utils";
+
 export class CraftingMaterial {
     constructor(quantity, item) {
         this.quantity = quantity;
@@ -13,14 +15,14 @@ export class Craft {
 }
 
 export class Item {
-    constructor(id, name, professions, rarities, craftingMaterials, craftingQuantity) {
-        this.id = id;
+    constructor(name, professions, rarities, craftingMaterials, craftingQuantity) {
         this.name = name;
         this.professions = professions;
         this.rarities = rarities;
         this.craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
 
+        this.id = String.decapitalize(this.constructor.name);
         this.craftingRank = this.getCraftingRank();
         this.rarity = rarities[0];
         this.isCraftable = true;

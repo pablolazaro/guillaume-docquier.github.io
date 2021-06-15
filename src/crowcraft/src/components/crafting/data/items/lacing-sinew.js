@@ -5,7 +5,6 @@ import { EtherealDust } from "./ethereal-dust";
 export class LacingSinew extends Item {
     constructor() {
         super(
-            "lacingSinew",
             "lacing sinew",
             [Professions.Leatherworker],
             [Rarities.Common],

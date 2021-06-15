@@ -4,11 +4,8 @@ import { LeatherPadding } from "./leather-padding";
 import { EtherealDust } from "./ethereal-dust";
 
 export class MailCoif extends Item {
-    static id = "mailCoif";
-
     constructor() {
         super(
-            MailCoif.id,
             "mail coif",
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],

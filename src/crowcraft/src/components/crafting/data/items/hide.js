@@ -4,7 +4,6 @@ export class Hide extends RawMaterial {
     constructor() {
         super(
             "hide",
-            "hide",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

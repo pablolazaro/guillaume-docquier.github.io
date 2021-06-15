@@ -5,7 +5,6 @@ export class Aurelium extends Ore {
     constructor() {
         super(
             "aurelium",
-            "aurelium",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

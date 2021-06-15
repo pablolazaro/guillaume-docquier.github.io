@@ -5,7 +5,6 @@ export class Iron extends Ore {
     constructor() {
         super(
             "iron",
-            "iron",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

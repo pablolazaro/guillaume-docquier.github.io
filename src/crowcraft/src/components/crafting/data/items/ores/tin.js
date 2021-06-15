@@ -5,7 +5,6 @@ export class Tin extends Ore {
     constructor() {
         super(
             "tin",
-            "tin",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

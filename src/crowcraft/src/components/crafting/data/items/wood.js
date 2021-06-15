@@ -4,7 +4,6 @@ export class Wood extends RawMaterial {
     constructor() {
         super(
             "wood",
-            "wood",
             [],
             [Rarities.Poor, Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

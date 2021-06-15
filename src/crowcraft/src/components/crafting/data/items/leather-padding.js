@@ -5,7 +5,6 @@ import { LacingSinew } from "./lacing-sinew";
 export class LeatherPadding extends Item {
     constructor() {
         super(
-            "leatherPadding",
             "leather padding",
             [Professions.Leatherworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
