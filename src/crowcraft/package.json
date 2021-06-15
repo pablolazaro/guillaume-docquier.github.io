@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build --profile",
     "move-build": "rm -rf ../../crowcraft && mkdir ..\\..\\crowcraft && cp -r ./build/* ../../crowcraft",
     "deploy": "npm run build && npm run move-build",
     "test": "react-scripts test",
