@@ -1,26 +1,25 @@
 import { CompletedStep, StepToComplete } from "./steps"
-import { filters, options, Option } from "./crafting-filters";
-import { gear } from "./data";
 import { useState, useCallback, useEffect } from "react";
 import { RawMaterials } from "./RawMaterials";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./ItemCustomizer";
+import { ItemSearch } from "./ItemSearch";
 
-class SelectedFilter {
-    constructor(filter, choice) {
-        this.name = filter.name;
-        this.filter = filter;
-        this.choice = choice
+// TODO Make a component for rarity selection
+class Option {
+    constructor(id, name, nextFilterId) {
+        this.id = id;
+        this.name = name;
+        this.nextFilterId = nextFilterId;
     }
 }
 
 export const Crafting = () => {
-    const [selectedFilters, setSelectedFilters] = useState([]);
-    const [currentFilter, setCurrentFilter] = useState(filters.craftingType);
     const [itemToCraft, setItemToCraft] = useState(null);
     const [selectedRarity, setSelectedRarity] = useState(null);
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
+    const [isItemReadyToCraft, setIsItemReadyToCraft] = useState(null);
 
     useEffect(
         () => {
@@ -31,53 +30,44 @@ export const Crafting = () => {
         [itemToCraft, selectedRarity]
     );
 
-    const revertSteps = index => () => {
-        setSelectedFilters(selectedFilters.slice(0, index))
-        setCurrentFilter(selectedFilters[index].filter);
-        setItemToCraft(null);
-        revertSelectedRarity();
+    useEffect(
+        () => {
+            if (isItemReadyToCraft) {
+                const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
+                setRawMaterials(rawMaterials);
+                setCrafts(crafts);
+            }
+        },
+        [isItemReadyToCraft, itemToCraft, setRawMaterials, setCrafts]
+    );
+
+    const selectItemToCraft = item => {
+        setItemToCraft(item);
+        reset();
     };
 
-    const completeStep = choice => {
-        setSelectedFilters([...selectedFilters, new SelectedFilter(currentFilter, choice)])
-        setCurrentFilter(filters[choice.nextFilterId]);
-        if (!choice.nextFilterId) {
-            setItemToCraft(new gear[choice.id]());
-        }
-    };
-
-    const revertSelectedRarity = () => {
+    const reset = () => {
         setSelectedRarity(null);
-        itemToCraft.setRarity(null);
         setRawMaterials(null);
         setCrafts(null);
+        setIsItemReadyToCraft(null);
     };
 
     const completeRarityStep = rarity => {
         setSelectedRarity(rarity);
+        setIsItemReadyToCraft(!itemToCraft.isCustomizable());
     };
 
     const completeItemCustomization = useCallback(
         () => {
-            const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
-            setRawMaterials(rawMaterials);
-            setCrafts(crafts);
+            setIsItemReadyToCraft(true);
         },
-        [itemToCraft, setRawMaterials, setCrafts]
+        [setIsItemReadyToCraft]
     );
 
     return (
         <div className="mv3">
-            {selectedFilters.map((selectedFilter, i) => 
-                <div className="mb3" key={selectedFilter.filter.id}>
-                    <CompletedStep name={selectedFilter.name} choice={selectedFilter.choice} onStepCanceled={revertSteps(i)} />
-                </div>
-            )}
-            {!!currentFilter ?
-                <div className="mb3">
-                    <StepToComplete name={currentFilter.name} options={currentFilter.optionIds.map(optionId => options[optionId])} onStepCompleted={completeStep} />
-                </div> : null
-            }
+            <ItemSearch onItemSelected={selectItemToCraft} />
             {!!itemToCraft && !selectedRarity ?
                 <div className="mb3">
                     <StepToComplete name={"rarity"} options={itemToCraft.rarities.map(rarity => new Option(rarity, rarity, null))} onStepCompleted={completeRarityStep} />
@@ -85,10 +75,10 @@ export const Crafting = () => {
             }
             {!!selectedRarity ?
                 <div className="mb3">
-                    <CompletedStep name={"rarity"} choice={selectedRarity} onStepCanceled={revertSelectedRarity} />
+                    <CompletedStep name={"rarity"} choice={selectedRarity} onStepCanceled={reset} />
                 </div> : null
             }
-            {!!selectedRarity ?
+            {!!selectedRarity && itemToCraft.isCustomizable() ?
                 <div className="mb3">
                     <ItemCustomizer item={itemToCraft} onItemCustomized={completeItemCustomization} />
                 </div> : null

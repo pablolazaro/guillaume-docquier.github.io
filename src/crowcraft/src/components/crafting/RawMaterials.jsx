@@ -21,9 +21,9 @@ export const RawMaterial = ({ rawMaterial }) => {
     const itemName = String.capitalize(item.name);
 
     return (
-        <div className={`resource-container bg-rarity-${item.rarity} | relative cursor-default`} title={itemName}>
+        <div className={`resource-container bg-rarity-${item.rarity} | relative`} title={itemName}>
             <img src={getAsset(item.id)} alt={itemName} className="resource-image" />
-            <div className="resource-count | absolute">{quantity}</div>
+            <div className="resource-count | absolute cursor-default">{quantity}</div>
         </div>
     )
 };

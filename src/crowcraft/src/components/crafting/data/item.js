@@ -20,8 +20,10 @@ export class Item {
         this.rarities = rarities;
         this.craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
+
         this.craftingRank = this.getCraftingRank();
         this.rarity = rarities[0];
+        this.isCraftable = true;
     }
 
     setRarity(rarity) {
@@ -35,6 +37,10 @@ export class Item {
         for (const craftingMaterial of this.craftingMaterials) {
             craftingMaterial.item.setRarity(this.rarity);
         }
+    }
+
+    isCustomizable() {
+        return this.getCustomizableComponents().length > 0;
     }
 
     getCustomizableComponents() {
@@ -100,6 +106,12 @@ export class Item {
 };
 
 export class RawMaterial extends Item {
+    constructor(id, name, professions, rarities, craftingMaterials, craftingQuantity) {
+        super(id, name, professions, rarities, craftingMaterials, craftingQuantity);
+
+        this.isCraftable = false;
+    }
+
     getCraftingRank() {
         return 0;
     }
