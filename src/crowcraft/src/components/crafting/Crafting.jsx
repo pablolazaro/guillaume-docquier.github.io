@@ -19,7 +19,7 @@ export const Crafting = () => {
     const [selectedRarity, setSelectedRarity] = useState(null);
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
-    const [isItemReadyToCraft, setIsItemReadyToCraft] = useState(null);
+    const [triggerItemCraft, setTriggerItemCraft] = useState(false);
 
     useEffect(
         () => {
@@ -32,13 +32,14 @@ export const Crafting = () => {
 
     useEffect(
         () => {
-            if (isItemReadyToCraft) {
+            if (triggerItemCraft) {
                 const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
                 setRawMaterials(rawMaterials);
                 setCrafts(crafts);
+                setTriggerItemCraft(false);
             }
         },
-        [isItemReadyToCraft, itemToCraft, setRawMaterials, setCrafts]
+        [triggerItemCraft, itemToCraft, setRawMaterials, setCrafts]
     );
 
     const selectItemToCraft = item => {
@@ -50,19 +51,19 @@ export const Crafting = () => {
         setSelectedRarity(null);
         setRawMaterials(null);
         setCrafts(null);
-        setIsItemReadyToCraft(null);
+        setTriggerItemCraft(false);
     };
 
     const completeRarityStep = rarity => {
         setSelectedRarity(rarity);
-        setIsItemReadyToCraft(!itemToCraft.isCustomizable());
+        setTriggerItemCraft(!itemToCraft.isCustomizable());
     };
 
     const completeItemCustomization = useCallback(
         () => {
-            setIsItemReadyToCraft(true);
+            setTriggerItemCraft(true);
         },
-        [setIsItemReadyToCraft]
+        [setTriggerItemCraft]
     );
 
     return (

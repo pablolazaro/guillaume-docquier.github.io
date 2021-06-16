@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/crowcraft/static/css/main.322bab6e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.71aff8f4.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.71aff8f4.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.290ec8c6.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.290ec8c6.js.map",
-    "static/js/2.00c0af48.chunk.js": "/crowcraft/static/js/2.00c0af48.chunk.js",
-    "static/js/2.00c0af48.chunk.js.map": "/crowcraft/static/js/2.00c0af48.chunk.js.map",
-    "static/js/3.de2ea080.chunk.js": "/crowcraft/static/js/3.de2ea080.chunk.js",
-    "static/js/3.de2ea080.chunk.js.map": "/crowcraft/static/js/3.de2ea080.chunk.js.map",
+    "main.css": "/crowcraft/static/css/main.e039fc32.chunk.css",
+    "main.js": "/crowcraft/static/js/main.ca1def99.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.ca1def99.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.4e103210.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.4e103210.js.map",
+    "static/js/2.b2e35cc3.chunk.js": "/crowcraft/static/js/2.b2e35cc3.chunk.js",
+    "static/js/2.b2e35cc3.chunk.js.map": "/crowcraft/static/js/2.b2e35cc3.chunk.js.map",
+    "static/js/3.c1e9a724.chunk.js": "/crowcraft/static/js/3.c1e9a724.chunk.js",
+    "static/js/3.c1e9a724.chunk.js.map": "/crowcraft/static/js/3.c1e9a724.chunk.js.map",
     "index.html": "/crowcraft/index.html",
-    "static/css/main.322bab6e.chunk.css.map": "/crowcraft/static/css/main.322bab6e.chunk.css.map",
-    "static/js/2.00c0af48.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.00c0af48.chunk.js.LICENSE.txt",
+    "static/css/main.e039fc32.chunk.css.map": "/crowcraft/static/css/main.e039fc32.chunk.css.map",
+    "static/js/2.b2e35cc3.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.b2e35cc3.chunk.js.LICENSE.txt",
     "static/media/aurelium.svg": "/crowcraft/static/media/aurelium.c6ecf8c4.svg",
     "static/media/aureliumSteelMetalScales.svg": "/crowcraft/static/media/aureliumSteelMetalScales.4a446dd5.svg",
     "static/media/blueSteelMetalScales.svg": "/crowcraft/static/media/blueSteelMetalScales.4a446dd5.svg",
@@ -42,9 +42,9 @@
     "static/media/wood.svg": "/crowcraft/static/media/wood.c60d0b62.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.290ec8c6.js",
-    "static/js/2.00c0af48.chunk.js",
-    "static/css/main.322bab6e.chunk.css",
-    "static/js/main.71aff8f4.chunk.js"
+    "static/js/runtime-main.4e103210.js",
+    "static/js/2.b2e35cc3.chunk.js",
+    "static/css/main.e039fc32.chunk.css",
+    "static/js/main.ca1def99.chunk.js"
   ]
 }

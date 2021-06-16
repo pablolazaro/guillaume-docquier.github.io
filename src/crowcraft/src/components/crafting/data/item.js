@@ -28,6 +28,11 @@ export class Item {
         this.isCraftable = true;
     }
 
+    createNew() {
+        // return this;
+        return new this.constructor();
+    }
+
     setRarity(rarity) {
         if (this.rarities.includes(rarity)) {
             this.rarity = rarity;
