@@ -64,6 +64,34 @@
     background-color: #22293C;
 }
 
+.b--verdigris {
+    border-color: #00AFB9;
+}
+
+.b--light-yellow {
+    border-color: #FDFCDC;
+}
+
+.b--peach-puff {
+    border-color: #FED9B7;
+}
+
+.b--charcoal {
+    border-color: #3A4454;
+}
+
+.b--bittersweet {
+    border-color: #F07167;
+}
+
+.b--mauve-taupe {
+    border-color: #925E78;
+}
+
+.b--marine {
+    border-color: #22293C;
+}
+
 /* Rarities */
 .bg-rarity-grey {
     background: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 25%) 100%);

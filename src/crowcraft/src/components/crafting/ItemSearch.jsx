@@ -1,3 +1,5 @@
+import "./ItemSearch.css";
+
 import { CraftingMaterial } from "./data/item";
 import { RawMaterial } from "./RawMaterials";
 import { items } from "./data";
@@ -14,6 +16,7 @@ export const ItemSearch = ({ onItemSelected }) => {
     ));
 
     const [keywords, setKeywords] = useState([]);
+    const [selectedItemId, setSelectedItemId] = useState(null);
 
     const filterItems = e => {
         const search = e.target.value;
@@ -28,6 +31,11 @@ export const ItemSearch = ({ onItemSelected }) => {
         return keywords.some(keyword => item.name.includes(keyword));
     };
 
+    const selectItem = item => {
+        setSelectedItemId(item.id);
+        onItemSelected(item.createNew());
+    };
+
     return (
         <div>
             <div className="mb2">Select an item you want to craft:</div>
@@ -37,7 +45,7 @@ export const ItemSearch = ({ onItemSelected }) => {
             <div className="flex mb3">
                 {allItems.filter(hasKeywordMatch).map(item => (
                     <div className="mr2" key={item.id}>
-                        <Item item={item} onItemSelected={onItemSelected} />
+                        <Item item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
                     </div>
                 ))}
             </div>
@@ -45,13 +53,15 @@ export const ItemSearch = ({ onItemSelected }) => {
     );
 };
 
-const Item = ({ item, onItemSelected }) => {
+const Item = ({ item, onItemSelected, isSelected }) => {
     const selectItem = () => {
-        onItemSelected(item.createNew());
+        onItemSelected(item);
     };
 
+    const selectionClassName = isSelected ? "selected-item" : "";
+
     return (
-        <div className="mr2 pointer" onClick={selectItem}>
+        <div className={`mr2 pointer ${selectionClassName}`} onClick={selectItem}>
             <RawMaterial rawMaterial={new CraftingMaterial(null, item)} />
         </div>
     );
