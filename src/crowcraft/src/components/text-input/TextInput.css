@@ -1,6 +1,6 @@
 .text-input {
     border: none;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0);
@@ -11,3 +11,8 @@
     border: 1px solid rgba(0, 175, 185, 1);
     box-shadow: 0 0 3px 1px rgba(0, 175, 185, 0.7);
 }
+
+.text-input::placeholder {
+    color: #3A4454;
+    opacity: 1;
+  }

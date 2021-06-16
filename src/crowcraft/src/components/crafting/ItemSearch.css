@@ -1,4 +1,6 @@
-.selected-item {
+.item.selected,
+.item:hover {
     border-radius: 6px;
     box-shadow: 0 0 2px 2px #00AFB9;
+    transition: box-shadow 0.2s ease;
 }

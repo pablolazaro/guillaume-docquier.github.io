@@ -40,7 +40,7 @@ export const ItemSearch = ({ onItemSelected }) => {
         <div>
             <div className="mb2">Select an item you want to craft:</div>
             <div className="mb3">
-                <TextInput id="item-meta" name="item-meta" placeholder="Try 'mail'" onInputChanged={filterItems} />
+                <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={filterItems} />
             </div>
             <div className="flex mb3">
                 {allItems.filter(hasKeywordMatch).map(item => (
@@ -58,10 +58,10 @@ const Item = ({ item, onItemSelected, isSelected }) => {
         onItemSelected(item);
     };
 
-    const selectionClassName = isSelected ? "selected-item" : "";
+    const selectionClassName = isSelected ? "selected" : "";
 
     return (
-        <div className={`mr2 pointer ${selectionClassName}`} onClick={selectItem}>
+        <div className={`item ${selectionClassName} | mr2 pointer`} onClick={selectItem}>
             <RawMaterial rawMaterial={new CraftingMaterial(null, item)} />
         </div>
     );
