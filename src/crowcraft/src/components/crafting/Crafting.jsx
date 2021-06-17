@@ -1,9 +1,9 @@
+import { ItemSearch } from "./item-search";
+import { RawMaterials } from "./raw-materials";
 import { CompletedStep, StepToComplete } from "./steps"
-import { useState, useCallback, useEffect } from "react";
-import { RawMaterials } from "./RawMaterials";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./ItemCustomizer";
-import { ItemSearch } from "./ItemSearch";
+import { useState, useCallback, useEffect } from "react";
 
 // TODO Make a component for rarity selection
 class Option {
@@ -71,7 +71,7 @@ export const Crafting = () => {
             <ItemSearch onItemSelected={selectItemToCraft} />
             {!!itemToCraft && !selectedRarity ?
                 <div className="mb3">
-                    <StepToComplete name={"rarity"} options={itemToCraft.rarities.map(rarity => new Option(rarity, rarity, null))} onStepCompleted={completeRarityStep} />
+                    <StepToComplete name={"rarity"} options={itemToCraft.rarities.map(rarity => new Option(rarity.name, rarity.name, null))} onStepCompleted={completeRarityStep} />
                 </div> : null
             }
             {!!selectedRarity ?

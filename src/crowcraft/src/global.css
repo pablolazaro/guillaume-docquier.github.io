@@ -93,27 +93,27 @@
 }
 
 /* Rarities */
-.bg-rarity-grey {
+.bg-rarity-poor {
     background: linear-gradient(180deg, hsl(0, 0%, 8%) 0%, hsl(0, 0%, 25%) 100%);
 }
 
-.bg-rarity-white {
+.bg-rarity-common {
     background: linear-gradient(180deg, hsl(0, 0%, 23%) 0%, hsl(0, 0%, 70%) 100%);
 }
 
-.bg-rarity-green {
+.bg-rarity-uncommon {
     background: linear-gradient(180deg, hsl(116, 55%, 13%) 0%, hsl(116, 55%, 40%) 100%);
 }
 
-.bg-rarity-blue {
+.bg-rarity-rare {
     background: linear-gradient(180deg, hsl(217, 55%, 13%) 0%, hsl(217, 55%, 40%) 100%);
 }
 
-.bg-rarity-purple {
+.bg-rarity-epic {
     background: linear-gradient(180deg, hsl(273, 55%, 13%) 0%, hsl(273, 55%, 40%) 100%);
 }
 
-.bg-rarity-orange {
+.bg-rarity-legendary {
     background: linear-gradient(180deg, hsl(17, 55%, 13%) 0%, hsl(17, 55%, 40%) 100%);
 }
 

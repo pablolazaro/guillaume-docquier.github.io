@@ -1,4 +1,4 @@
-import { RawMaterial } from "./RawMaterials";
+import { RawMaterial } from "./raw-materials";
 import { String } from "utils";
 
 export const CraftingSteps = ({ crafts }) => (
