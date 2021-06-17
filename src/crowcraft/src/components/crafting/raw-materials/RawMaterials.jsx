@@ -8,7 +8,7 @@ export const RawMaterials = ({ rawMaterials }) => (
         <div className="mb2">Raw materials:</div>
         <div className="flex">
             {rawMaterials.map((rawMaterial, i) => (
-                <div className="mr2" key={`${rawMaterial.item.id}.${i}`}>
+                <div key={`${rawMaterial.item.id}.${i}`} className="mr2">
                     <RawMaterial rawMaterial={rawMaterial} />
                 </div>
             ))}

@@ -44,7 +44,7 @@ export const ItemSearch = ({ onItemSelected }) => {
             </div>
             <div className="flex mb3">
                 {allItems.filter(hasKeywordMatch).map(item => (
-                    <div className="mr2" key={item.id}>
+                    <div key={item.id} className="mr2">
                         <Item item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
                     </div>
                 ))}

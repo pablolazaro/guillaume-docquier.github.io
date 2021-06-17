@@ -17,6 +17,6 @@ export class CustomizableComponent extends Item {
         this.id = other.id;
         this.name = other.name;
         this.craftingMaterials = other.craftingMaterials;
-        this.setRarity(this.rarity.name);
+        this.setRarity(this.rarity);
     }
 };

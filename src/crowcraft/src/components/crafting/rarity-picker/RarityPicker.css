@@ -1,0 +1,11 @@
+.rarity {
+    border-radius: 5px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+}
+
+.rarity.selected,
+.rarity:hover {
+    border-radius: 6px;
+    box-shadow: 0 0 2px 2px #00AFB9;
+    transition: box-shadow 0.2s ease;
+}

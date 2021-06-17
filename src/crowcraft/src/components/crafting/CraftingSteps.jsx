@@ -1,18 +1,21 @@
 import { RawMaterial } from "./raw-materials";
 import { String } from "utils";
 
-export const CraftingSteps = ({ crafts }) => (
-    <div className="flex flex-column">
-        <div className="mb2">Crafting steps:</div>
-        <div>
-            {crafts.map(craft => (
-                <div className="mb2" key={craft.craftingResult.item.id}>
-                    <CraftingStep craft={craft} />
-                </div>
-            ))}
+export const CraftingSteps = ({ crafts }) => {
+    console.log("CraftingSteps RENDERING");
+    return (
+        <div className="flex flex-column">
+            <div className="mb2">Crafting steps:</div>
+            <div>
+                {crafts.map(craft => (
+                    <div key={craft.craftingResult.item.id} className="mb2">
+                        <CraftingStep craft={craft} />
+                    </div>
+                ))}
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 const CraftingStep = ({ craft }) => (
     <div className="flex items-center">

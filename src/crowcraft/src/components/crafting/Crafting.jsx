@@ -1,18 +1,9 @@
 import { ItemSearch } from "./item-search";
 import { RawMaterials } from "./raw-materials";
-import { CompletedStep, StepToComplete } from "./steps"
+import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./ItemCustomizer";
 import { useState, useCallback, useEffect } from "react";
-
-// TODO Make a component for rarity selection
-class Option {
-    constructor(id, name, nextFilterId) {
-        this.id = id;
-        this.name = name;
-        this.nextFilterId = nextFilterId;
-    }
-}
 
 export const Crafting = () => {
     const [itemToCraft, setItemToCraft] = useState(null);
@@ -23,8 +14,9 @@ export const Crafting = () => {
 
     useEffect(
         () => {
+            console.log("SETTING RARITY", itemToCraft, selectedRarity);
             if (itemToCraft) {
-                itemToCraft.setRarity((selectedRarity || {}).id);
+                itemToCraft.setRarity(selectedRarity);
             }
         },
         [itemToCraft, selectedRarity]
@@ -32,6 +24,7 @@ export const Crafting = () => {
 
     useEffect(
         () => {
+            console.log("CRAFTING ITEM", triggerItemCraft, itemToCraft);
             if (triggerItemCraft) {
                 const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
                 setRawMaterials(rawMaterials);
@@ -54,9 +47,9 @@ export const Crafting = () => {
         setTriggerItemCraft(false);
     };
 
-    const completeRarityStep = rarity => {
+    const selectRarity = rarity => {
         setSelectedRarity(rarity);
-        setTriggerItemCraft(!itemToCraft.isCustomizable());
+        setTriggerItemCraft(selectedRarity || !itemToCraft.isCustomizable());
     };
 
     const completeItemCustomization = useCallback(
@@ -69,14 +62,9 @@ export const Crafting = () => {
     return (
         <div className="mv3">
             <ItemSearch onItemSelected={selectItemToCraft} />
-            {!!itemToCraft && !selectedRarity ?
+            {!!itemToCraft ?
                 <div className="mb3">
-                    <StepToComplete name={"rarity"} options={itemToCraft.rarities.map(rarity => new Option(rarity.name, rarity.name, null))} onStepCompleted={completeRarityStep} />
-                </div> : null
-            }
-            {!!selectedRarity ?
-                <div className="mb3">
-                    <CompletedStep name={"rarity"} choice={selectedRarity} onStepCanceled={reset} />
+                    <RarityPicker rarities={itemToCraft.rarities} onRaritySelected={selectRarity} />
                 </div> : null
             }
             {!!selectedRarity && itemToCraft.isCustomizable() ?

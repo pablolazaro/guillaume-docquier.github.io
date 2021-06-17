@@ -20,9 +20,8 @@ export class Item {
         return new this.constructor();
     }
 
-    setRarity(rarityName) {
-        const rarity = this.rarities.find(rarity => rarity.name === rarityName)
-        if (rarity) {
+    setRarity(rarity) {
+        if (this.rarities.includes(rarity)) {
             this.rarity = rarity;
         }
         else {
@@ -30,7 +29,7 @@ export class Item {
         }
 
         for (const craftingMaterial of this.craftingMaterials) {
-            craftingMaterial.item.setRarity(this.rarity.name);
+            craftingMaterial.item.setRarity(this.rarity);
         }
     }
 
