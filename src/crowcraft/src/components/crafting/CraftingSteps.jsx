@@ -2,7 +2,6 @@ import { RawMaterial } from "./raw-materials";
 import { String } from "utils";
 
 export const CraftingSteps = ({ crafts }) => {
-    console.log("CraftingSteps RENDERING");
     return (
         <div className="flex flex-column">
             <div className="mb2">Crafting steps:</div>

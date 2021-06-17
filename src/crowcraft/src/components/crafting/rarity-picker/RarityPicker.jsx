@@ -1,15 +1,15 @@
 import "./RarityPicker.css";
 
 import { String } from "utils";
-import { useState } from "react";
 
-export const RarityPicker = ({ rarities, onRaritySelected }) => {
-    const [selectedRarity, setSelectedRarity] = useState(null);
-
+export const RarityPicker = ({ rarities, selectedRarity, onRaritySelected }) => {
     const selectRarity = rarity => {
-        setSelectedRarity(rarity);
         onRaritySelected(rarity);
     };
+
+    if (rarities.length === 1 && ! selectedRarity) {
+        selectRarity(rarities[0]);
+    }
 
     return (
         <div>

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/crowcraft/static/css/main.72a98439.chunk.css",
-    "main.js": "/crowcraft/static/js/main.22cd67d4.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.22cd67d4.chunk.js.map",
+    "main.css": "/crowcraft/static/css/main.0f5eb6f6.chunk.css",
+    "main.js": "/crowcraft/static/js/main.bc154576.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.bc154576.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.6f442ef7.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.6f442ef7.js.map",
     "static/js/2.12addfb2.chunk.js": "/crowcraft/static/js/2.12addfb2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ddd994b4.chunk.js": "/crowcraft/static/js/3.ddd994b4.chunk.js",
     "static/js/3.ddd994b4.chunk.js.map": "/crowcraft/static/js/3.ddd994b4.chunk.js.map",
     "index.html": "/crowcraft/index.html",
-    "static/css/main.72a98439.chunk.css.map": "/crowcraft/static/css/main.72a98439.chunk.css.map",
+    "static/css/main.0f5eb6f6.chunk.css.map": "/crowcraft/static/css/main.0f5eb6f6.chunk.css.map",
     "static/js/2.12addfb2.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.12addfb2.chunk.js.LICENSE.txt",
     "static/media/aurelium.svg": "/crowcraft/static/media/aurelium.c6ecf8c4.svg",
     "static/media/aureliumSteelMetalScales.svg": "/crowcraft/static/media/aureliumSteelMetalScales.4a446dd5.svg",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.6f442ef7.js",
     "static/js/2.12addfb2.chunk.js",
-    "static/css/main.72a98439.chunk.css",
-    "static/js/main.22cd67d4.chunk.js"
+    "static/css/main.0f5eb6f6.chunk.css",
+    "static/js/main.bc154576.chunk.js"
   ]
 }

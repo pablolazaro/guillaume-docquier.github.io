@@ -11,10 +11,10 @@ export const Crafting = () => {
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
     const [triggerItemCraft, setTriggerItemCraft] = useState(false);
+    const [itemIsCustomized, setItemIsCustomized] = useState(false);
 
     useEffect(
         () => {
-            console.log("SETTING RARITY", itemToCraft, selectedRarity);
             if (itemToCraft) {
                 itemToCraft.setRarity(selectedRarity);
             }
@@ -24,7 +24,6 @@ export const Crafting = () => {
 
     useEffect(
         () => {
-            console.log("CRAFTING ITEM", triggerItemCraft, itemToCraft);
             if (triggerItemCraft) {
                 const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
                 setRawMaterials(rawMaterials);
@@ -36,8 +35,8 @@ export const Crafting = () => {
     );
 
     const selectItemToCraft = item => {
-        setItemToCraft(item);
         reset();
+        setItemToCraft(item);
     };
 
     const reset = () => {
@@ -45,16 +44,18 @@ export const Crafting = () => {
         setRawMaterials(null);
         setCrafts(null);
         setTriggerItemCraft(false);
+        setItemIsCustomized(false);
     };
 
     const selectRarity = rarity => {
         setSelectedRarity(rarity);
-        setTriggerItemCraft(selectedRarity || !itemToCraft.isCustomizable());
+        setTriggerItemCraft(itemIsCustomized || !itemToCraft.isCustomizable());
     };
 
     const completeItemCustomization = useCallback(
         () => {
             setTriggerItemCraft(true);
+            setItemIsCustomized(true);
         },
         [setTriggerItemCraft]
     );
@@ -64,7 +65,7 @@ export const Crafting = () => {
             <ItemSearch onItemSelected={selectItemToCraft} />
             {!!itemToCraft ?
                 <div className="mb3">
-                    <RarityPicker rarities={itemToCraft.rarities} onRaritySelected={selectRarity} />
+                    <RarityPicker rarities={itemToCraft.rarities} onRaritySelected={selectRarity} selectedRarity={selectedRarity} />
                 </div> : null
             }
             {!!selectedRarity && itemToCraft.isCustomizable() ?
