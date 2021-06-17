@@ -62,24 +62,26 @@ export const Crafting = () => {
 
     return (
         <div className="mv3">
-            <ItemSearch onItemSelected={selectItemToCraft} />
+            <div className="mb4">
+                <ItemSearch onItemSelected={selectItemToCraft} />
+            </div>
             {!!itemToCraft ?
-                <div className="mb3">
+                <div className="mb4">
                     <RarityPicker rarities={itemToCraft.rarities} onRaritySelected={selectRarity} selectedRarity={selectedRarity} />
                 </div> : null
             }
             {!!selectedRarity && itemToCraft.isCustomizable() ?
-                <div className="mb3">
+                <div className="mb4">
                     <ItemCustomizer item={itemToCraft} onItemCustomized={completeItemCustomization} />
                 </div> : null
             }
             {!!rawMaterials ?
-                <div className="mb3">
+                <div className="mb4">
                     <RawMaterials rawMaterials={rawMaterials} />
                 </div> : null
             }
             {!!crafts ?
-                <div className="mb3">
+                <div className="mb4">
                     <CraftingSteps crafts={crafts} />
                 </div> : null
             }

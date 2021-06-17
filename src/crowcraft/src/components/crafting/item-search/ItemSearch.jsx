@@ -38,11 +38,11 @@ export const ItemSearch = ({ onItemSelected }) => {
 
     return (
         <div>
-            <div className="mb2">Select an item you want to craft:</div>
+            <div className="mb2 f3 fw5">Find an item</div>
             <div className="mb3">
                 <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={filterItems} />
             </div>
-            <div className="flex mb3">
+            <div className="flex">
                 {allItems.filter(hasKeywordMatch).map(item => (
                     <div key={item.id} className="mr2">
                         <Item item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />

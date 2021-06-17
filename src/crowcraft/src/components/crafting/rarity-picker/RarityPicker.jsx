@@ -13,7 +13,7 @@ export const RarityPicker = ({ rarities, selectedRarity, onRaritySelected }) => 
 
     return (
         <div>
-            <div className="mb2">Choose a rarity</div>
+            <div className="mb2 f3 fw5">Choose a rarity</div>
             <div className="flex">
                 {rarities.map(rarity => (
                     <div key={rarity.name} className="mr2 pointer">

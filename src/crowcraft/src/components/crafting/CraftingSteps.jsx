@@ -4,7 +4,7 @@ import { String } from "utils";
 export const CraftingSteps = ({ crafts }) => {
     return (
         <div className="flex flex-column">
-            <div className="mb2">Crafting steps:</div>
+            <div className="mb2 f3 fw5">Crafting steps</div>
             <div>
                 {crafts.map(craft => (
                     <div key={craft.craftingResult.item.id} className="mb2">

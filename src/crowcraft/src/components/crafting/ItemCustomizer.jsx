@@ -14,7 +14,7 @@ export const ItemCustomizer = memo(({ item, onItemCustomized }) => {
 
     return (
         <>
-            <div className="mb2">Choose your stats</div>
+            <div className="mb2 f3 fw5">Choose your stats</div>
             {customizableComponents.map((component, i) => <ComponentCustomizer key={`${component.id}.${i}`} component={component} onComponentCustomized={() => onComponentCustomized(i)} componentIndex={i + 1} />)}
         </>
     );
