@@ -1,9 +1,7 @@
 import "./ItemSearch.css";
 
-import { CraftingMaterial } from "models";
-import { RawMaterial } from "components/crafting/raw-materials";
 import { items } from "data";
-import { TextInput } from "components";
+import { TextInput, Item } from "components";
 import { useState } from "react";
 import { Sorting } from "utils";
 
@@ -45,7 +43,7 @@ export const ItemSearch = ({ onItemSelected }) => {
             <div className="flex">
                 {allItems.filter(hasKeywordMatch).map(item => (
                     <div key={item.id} className="mr2">
-                        <Item item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
+                        <SelectableItem item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
                     </div>
                 ))}
             </div>
@@ -53,7 +51,7 @@ export const ItemSearch = ({ onItemSelected }) => {
     );
 };
 
-const Item = ({ item, onItemSelected, isSelected }) => {
+const SelectableItem = ({ item, onItemSelected, isSelected }) => {
     const selectItem = () => {
         onItemSelected(item);
     };
@@ -62,7 +60,7 @@ const Item = ({ item, onItemSelected, isSelected }) => {
 
     return (
         <div className={`item ${selectionClassName} | mr2 pointer w4 h4`} onClick={selectItem}>
-            <RawMaterial rawMaterial={new CraftingMaterial(null, item)} />
+            <Item item={item} />
         </div>
     );
 };

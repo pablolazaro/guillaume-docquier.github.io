@@ -1,4 +1,4 @@
-import { RawMaterial } from "./raw-materials";
+import { Item } from "components";
 import { String } from "utils";
 
 export const CraftingSteps = ({ crafts }) => {
@@ -22,13 +22,13 @@ const CraftingStep = ({ craft }) => (
             <div key={`${craftingMaterial.item.id}.${i}`} className="flex items-center">
                 {i > 0 ? <div className="mh1">+</div> : null}
                 <div className="w3 h3 f5">
-                    <RawMaterial rawMaterial={craftingMaterial} />
+                    <Item item={craftingMaterial.item} quantity={craftingMaterial.quantity} />
                 </div>
             </div>
         ))}
         <div className="mh1">=</div>
         <div className="w3 h3 f5">
-            <RawMaterial rawMaterial={craft.craftingResult} />
+            <Item item={craft.craftingResult.item} quantity={craft.craftingResult.quantity} />
         </div>
         <div className="ml1">({craft.craftingResult.item.professions.map(p => String.capitalize(p)).join(" or ")})</div>
     </div>

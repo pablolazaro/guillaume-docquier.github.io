@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/crowcraft/static/css/main.aa36390e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.a4caa180.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.a4caa180.chunk.js.map",
+    "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
+    "main.js": "/crowcraft/static/js/main.f3531f65.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.f3531f65.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.258fa088.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.258fa088.js.map",
-    "static/js/2.c2a5c825.chunk.js": "/crowcraft/static/js/2.c2a5c825.chunk.js",
-    "static/js/2.c2a5c825.chunk.js.map": "/crowcraft/static/js/2.c2a5c825.chunk.js.map",
+    "static/js/2.26fe9c43.chunk.js": "/crowcraft/static/js/2.26fe9c43.chunk.js",
+    "static/js/2.26fe9c43.chunk.js.map": "/crowcraft/static/js/2.26fe9c43.chunk.js.map",
     "static/js/3.79771e3e.chunk.js": "/crowcraft/static/js/3.79771e3e.chunk.js",
     "static/js/3.79771e3e.chunk.js.map": "/crowcraft/static/js/3.79771e3e.chunk.js.map",
     "index.html": "/crowcraft/index.html",
-    "static/css/main.aa36390e.chunk.css.map": "/crowcraft/static/css/main.aa36390e.chunk.css.map",
-    "static/js/2.c2a5c825.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.c2a5c825.chunk.js.LICENSE.txt",
+    "static/css/main.78f0c62e.chunk.css.map": "/crowcraft/static/css/main.78f0c62e.chunk.css.map",
+    "static/js/2.26fe9c43.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.26fe9c43.chunk.js.LICENSE.txt",
     "static/media/aurelium.svg": "/crowcraft/static/media/aurelium.c6ecf8c4.svg",
     "static/media/aureliumSteelMetalScales.svg": "/crowcraft/static/media/aureliumSteelMetalScales.4a446dd5.svg",
     "static/media/blueSteelMetalScales.svg": "/crowcraft/static/media/blueSteelMetalScales.4a446dd5.svg",
@@ -43,8 +43,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.258fa088.js",
-    "static/js/2.c2a5c825.chunk.js",
-    "static/css/main.aa36390e.chunk.css",
-    "static/js/main.a4caa180.chunk.js"
+    "static/js/2.26fe9c43.chunk.js",
+    "static/css/main.78f0c62e.chunk.css",
+    "static/js/main.f3531f65.chunk.js"
   ]
 }

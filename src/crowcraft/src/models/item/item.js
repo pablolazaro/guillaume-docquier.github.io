@@ -20,6 +20,10 @@ export class Item {
         return new this.constructor();
     }
 
+    getAssetId() {
+        return this.id;
+    }
+
     setRarity(rarity) {
         if (this.rarities.includes(rarity)) {
             this.rarity = rarity;

@@ -1,7 +1,6 @@
 import "./ItemCustomizer.css";
 
-import { CraftingMaterial } from "models";
-import { RawMaterial } from "components/crafting/raw-materials";
+import { Item } from "components";
 import { useState, memo } from "react";
 
 export const ItemCustomizer = memo(({ item, onItemCustomized }) => {
@@ -43,7 +42,7 @@ const ComponentCustomizer = memo(({ component, onComponentCustomized, componentI
     return (
         <div className="flex items-center">
             <div className="h4 w4">
-                <RawMaterial rawMaterial={new CraftingMaterial(null, component)} />
+                <Item item={component} />
             </div>
             <div className="flex flex-column ml2 space-between">
                 <label className="mb1" htmlFor={selectId}>Stats for {component.name} #{componentIndex}</label>
