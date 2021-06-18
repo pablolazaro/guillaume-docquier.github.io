@@ -15,15 +15,6 @@ export const Crafting = () => {
 
     useEffect(
         () => {
-            if (itemToCraft) {
-                itemToCraft.setRarity(selectedRarity);
-            }
-        },
-        [itemToCraft, selectedRarity]
-    );
-
-    useEffect(
-        () => {
             if (triggerItemCraft) {
                 const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
                 setRawMaterials(rawMaterials);
@@ -41,6 +32,10 @@ export const Crafting = () => {
 
     const reset = () => {
         setSelectedRarity(null);
+        if (itemToCraft) {
+            itemToCraft.setRarity(null);
+        }
+
         setRawMaterials(null);
         setCrafts(null);
         setTriggerItemCraft(false);
@@ -49,6 +44,7 @@ export const Crafting = () => {
 
     const selectRarity = rarity => {
         setSelectedRarity(rarity);
+        itemToCraft.setRarity(rarity);
         setTriggerItemCraft(itemIsCustomized || !itemToCraft.isCustomizable());
     };
 
