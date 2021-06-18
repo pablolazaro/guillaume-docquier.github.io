@@ -52,16 +52,16 @@ export class Item {
 
     getCraftingRundown() {
         const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(1, this))];
-        let rawMaterials = [...this.craftingMaterials];
+        let craftingMaterials = [...this.craftingMaterials];
         let rank = this.craftingRank;
         while (rank > 1) {
             rank -= 1;
-            rawMaterials.sort(Sorting.descending(rawMaterial => rawMaterial.craftingRank));
+            craftingMaterials.sort(Sorting.descending(rawMaterial => rawMaterial.item.craftingRank));
 
             const craftingSet = {};
             let i = 0;
-            for (i; rawMaterials[i].item.craftingRank === rank; i++) {
-                const materialToCraft = rawMaterials[i];
+            for (i; craftingMaterials[i].item.craftingRank === rank; i++) {
+                const materialToCraft = craftingMaterials[i];
                 if (craftingSet[materialToCraft.item.id] === undefined) {
                     craftingSet[materialToCraft.item.id] = new CraftingMaterial(materialToCraft.quantity, materialToCraft.item);
                 }
@@ -70,25 +70,25 @@ export class Item {
                 }
             }
 
-            rawMaterials = rawMaterials.slice(i, rawMaterials.length);
+            craftingMaterials = craftingMaterials.slice(i, craftingMaterials.length);
 
             for (const materialToCraft of Object.values(craftingSet)) {
                 const numberOfCrafts = Math.ceil(materialToCraft.quantity / materialToCraft.item.craftingQuantity);
                 const materialsForThisCraft = materialToCraft.item.craftingMaterials.map(mat => new CraftingMaterial(mat.quantity * numberOfCrafts, mat.item));
                 crafts.push(new Craft(materialsForThisCraft, new CraftingMaterial(numberOfCrafts * materialToCraft.item.craftingQuantity, materialToCraft.item)));
-                rawMaterials = rawMaterials.concat(materialsForThisCraft);
+                craftingMaterials = craftingMaterials.concat(materialsForThisCraft);
             }
         }
 
         crafts.reverse();
 
         const rawMaterialsSet = {};
-        for (const rawMaterial of rawMaterials) {
-            if (rawMaterialsSet[rawMaterial.item.id] === undefined) {
-                rawMaterialsSet[rawMaterial.item.id] = new CraftingMaterial(rawMaterial.quantity, rawMaterial.item);
+        for (const craftingMaterial of craftingMaterials) {
+            if (rawMaterialsSet[craftingMaterial.item.id] === undefined) {
+                rawMaterialsSet[craftingMaterial.item.id] = new CraftingMaterial(craftingMaterial.quantity, craftingMaterial.item);
             }
             else {
-                rawMaterialsSet[rawMaterial.item.id].quantity += rawMaterial.quantity;
+                rawMaterialsSet[craftingMaterial.item.id].quantity += craftingMaterial.quantity;
             }
         }
 
