@@ -2,7 +2,7 @@ import { ItemSearch } from "./item-search";
 import { RawMaterials } from "./raw-materials";
 import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
-import { ItemCustomizer } from "./ItemCustomizer";
+import { ItemCustomizer } from "./item-customizer";
 import { useState, useCallback, useEffect } from "react";
 
 export const Crafting = () => {

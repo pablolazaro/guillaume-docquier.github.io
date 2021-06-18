@@ -21,11 +21,15 @@ const CraftingStep = ({ craft }) => (
         {craft.craftingMaterials.map((craftingMaterial, i) => (
             <div key={`${craftingMaterial.item.id}.${i}`} className="flex items-center">
                 {i > 0 ? <div className="mh1">+</div> : null}
-                <RawMaterial rawMaterial={craftingMaterial} />
+                <div className="w3 h3 f5">
+                    <RawMaterial rawMaterial={craftingMaterial} />
+                </div>
             </div>
         ))}
         <div className="mh1">=</div>
-        <RawMaterial rawMaterial={craft.craftingResult} />
+        <div className="w3 h3 f5">
+            <RawMaterial rawMaterial={craft.craftingResult} />
+        </div>
         <div className="ml1">({craft.craftingResult.item.professions.map(p => String.capitalize(p)).join(" or ")})</div>
     </div>
 );

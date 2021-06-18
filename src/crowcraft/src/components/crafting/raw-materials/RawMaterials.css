@@ -1,11 +1,10 @@
-.resource-image,
-.resource-container {
-    width: 24px;
-    height: 24px;
+.resource-image {
+    width: 68%;
+    height: 68%;
+    padding: 16% 16% 16% 16%;
 }
 
 .resource-container {
-    padding: 6px 6px 6px 6px;
     box-sizing: content-box;
     border-radius: 5px;
     box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
@@ -15,6 +14,5 @@
     bottom: 1px;
     right: 2px;
     font-weight: 500;
-    font-size: 14px;
     text-shadow: #000 0px 0px 3px;
 }

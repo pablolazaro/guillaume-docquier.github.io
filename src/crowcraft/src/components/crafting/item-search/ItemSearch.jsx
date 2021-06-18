@@ -37,7 +37,7 @@ export const ItemSearch = ({ onItemSelected }) => {
     };
 
     return (
-        <div>
+        <>
             <div className="mb2 f3 fw5">Find an item</div>
             <div className="mb3">
                 <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={filterItems} />
@@ -49,7 +49,7 @@ export const ItemSearch = ({ onItemSelected }) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </>
     );
 };
 
@@ -61,7 +61,7 @@ const Item = ({ item, onItemSelected, isSelected }) => {
     const selectionClassName = isSelected ? "selected" : "";
 
     return (
-        <div className={`item ${selectionClassName} | mr2 pointer`} onClick={selectItem}>
+        <div className={`item ${selectionClassName} | mr2 pointer w4 h4`} onClick={selectItem}>
             <RawMaterial rawMaterial={new CraftingMaterial(null, item)} />
         </div>
     );
