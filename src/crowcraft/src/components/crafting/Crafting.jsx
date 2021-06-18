@@ -3,7 +3,7 @@ import { RawMaterials } from "./raw-materials";
 import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./item-customizer";
-import { useState, useCallback, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export const Crafting = () => {
     const [itemToCraft, setItemToCraft] = useState(null);
@@ -52,13 +52,10 @@ export const Crafting = () => {
         setTriggerItemCraft(itemIsCustomized || !itemToCraft.isCustomizable());
     };
 
-    const completeItemCustomization = useCallback(
-        () => {
-            setTriggerItemCraft(true);
-            setItemIsCustomized(true);
-        },
-        [setTriggerItemCraft]
-    );
+    const completeItemCustomization = () => {
+        setTriggerItemCraft(true);
+        setItemIsCustomized(true);
+    }
 
     return (
         <div className="mv3">
@@ -67,7 +64,7 @@ export const Crafting = () => {
             </div>
             {!!itemToCraft ?
                 <div className="mb4">
-                    <RarityPicker rarities={itemToCraft.rarities} onRaritySelected={selectRarity} selectedRarity={selectedRarity} />
+                    <RarityPicker rarities={itemToCraft.rarities} selectedRarity={selectedRarity} onRaritySelected={selectRarity} />
                 </div> : null
             }
             {!!selectedRarity && itemToCraft.isCustomizable() ?

@@ -4,16 +4,28 @@ import { CraftingMaterial } from "../crafting-material";
 
 export class Item {
     constructor(name, professions, rarities, craftingMaterials, craftingQuantity) {
-        this.name = name;
+        this._name = name;
         this.professions = professions;
         this.rarities = rarities.sort(Sorting.ascending(rar => rar.rank));
-        this.craftingMaterials = craftingMaterials;
+        this._craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
 
-        this.id = String.decapitalize(this.constructor.name);
+        this._id = String.decapitalize(this.constructor.name);
         this.craftingRank = this.getCraftingRank();
         this.rarity = this.rarities[0];
         this.isCraftable = true;
+    }
+
+    get id() {
+        return this._id;
+    }
+
+    get name() {
+        return this._name;
+    }
+
+    get craftingMaterials() {
+        return this._craftingMaterials;
     }
 
     createNew() {

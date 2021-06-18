@@ -1,218 +1,242 @@
-import { CustomizableComponent, CraftingMaterial, Rarities, Professions } from "models";
+import { CustomizableComponent, Customization, CustomizationEffect, CraftingMaterial, Rarities, Professions } from "models";
 import { Ore, Aurelium, Copper, Iron, Silver, Tin } from "./ores";
 import { Coal } from "./coal";
 
 export class MetalScales extends CustomizableComponent {
-    constructor(
-        name = "metal scales",
-        craftingMaterials = [
-            new CraftingMaterial(16, new Iron()),
-            new CraftingMaterial(10, new Ore()),
-            new CraftingMaterial(10, new Ore()),
-            new CraftingMaterial(12, new Coal())
-        ]
-    ) {
+    constructor() {
         super(
-            name,
+            "metal scales",
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            craftingMaterials,
-            1
+            [
+                new CraftingMaterial(16, new Iron()),
+                new CraftingMaterial(10, new Ore()),
+                new CraftingMaterial(10, new Ore()),
+                new CraftingMaterial(12, new Coal())
+            ],
+            1,
+            [
+                new SteelMetalScalesCustomization(),
+                new DarkBronzeMetalScalesCustomization(),
+                new BrightSteelMetalScalesCustomization(),
+                new AureliumSteelMetalScalesCustomization(),
+                new InvarMetalScalesCustomization(),
+                new SilveredIronMetalScalesCustomization(),
+                new TigerIronMetalScalesCustomization(),
+                new BlueSteelMetalScalesCustomization(),
+                new ForestAureliumMetalScalesCustomization(),
+                new DarkElectrumMetalScalesCustomization(),
+            ]
         );
     }
-
-    getCustomizationOptions() {
-        return [
-            new SteelMetalScales(),
-            new DarkBronzeMetalScales(),
-            new BrightSteelMetalScales(),
-            new AureliumSteelMetalScales(),
-            new InvarMetalScales(),
-            new SilveredIronMetalScales(),
-            new TigerIronMetalScales(),
-            new BlueSteelMetalScales(),
-            new ForestAureliumMetalScales(),
-            new DarkElectrumMetalScales(),
-        ];
-    }
 }
 
-class SteelMetalScales extends MetalScales {
+class SteelMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (steel)",
+            "steel",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Copper()),
                 new CraftingMaterial(10, new Iron()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("bleed resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("bleed resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("bleed resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("bleed resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("bleed resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "bleed resistance";
     }
 }
 
-class DarkBronzeMetalScales extends MetalScales {
+class DarkBronzeMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (dark bronze)",
+            "dark bronze",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Copper()),
                 new CraftingMaterial(10, new Tin()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("fire resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("fire resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("fire resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("fire resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("fire resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "fire resistance";
     }
 }
 
-class BrightSteelMetalScales extends MetalScales {
+class BrightSteelMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (bright steel)",
+            "bright steel",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Copper()),
                 new CraftingMaterial(10, new Silver()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("ice resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("ice resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("ice resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("ice resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("ice resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "ice resistance";
     }
 }
 
-class AureliumSteelMetalScales extends MetalScales {
+class AureliumSteelMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (aurelium steel)",
+            "aurelium steel",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Copper()),
                 new CraftingMaterial(10, new Aurelium()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("electricity resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("electricity resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("electricity resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("electricity resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("electricity resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "electricity resistance";
     }
 }
 
-class InvarMetalScales extends MetalScales {
+class InvarMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (invar)",
+            "invar",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Iron()),
                 new CraftingMaterial(10, new Tin()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("nature resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("nature resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("nature resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("nature resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("nature resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "nature resistance";
     }
 }
 
-class SilveredIronMetalScales extends MetalScales {
+class SilveredIronMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (silvered iron)",
+            "silvered iron",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Iron()),
                 new CraftingMaterial(10, new Silver()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("poison resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("poison resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("poison resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("poison resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("poison resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "poison resistance";
     }
 }
 
-class TigerIronMetalScales extends MetalScales {
+class TigerIronMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (tiger iron)",
+            "tiger iron",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Iron()),
                 new CraftingMaterial(10, new Aurelium()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("disease resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("disease resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("disease resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("disease resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("disease resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "disease resistance";
     }
 }
 
-class BlueSteelMetalScales extends MetalScales {
+class BlueSteelMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (blue steel)",
+            "blue steel",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Tin()),
                 new CraftingMaterial(10, new Silver()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("slashing resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("slashing resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("slashing resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("slashing resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("slashing resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "slashing resistance";
     }
 }
 
-class ForestAureliumMetalScales extends MetalScales {
+class ForestAureliumMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (forest aurelium)",
+            "forest aurelium",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Tin()),
                 new CraftingMaterial(10, new Aurelium()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("crushing resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("crushing resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("crushing resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("crushing resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("crushing resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "crushing resistance";
     }
 }
 
-class DarkElectrumMetalScales extends MetalScales {
+class DarkElectrumMetalScalesCustomization extends Customization {
     constructor() {
         super(
-            "metal scales (dark electrum)",
+            "dark electrum",
             [
                 new CraftingMaterial(16, new Iron()),
                 new CraftingMaterial(10, new Silver()),
                 new CraftingMaterial(10, new Aurelium()),
                 new CraftingMaterial(12, new Coal())
-            ]
+            ],
+            {
+                [Rarities.Common.name]: [new CustomizationEffect("piercing resistance", 8.31)],
+                [Rarities.Uncommon.name]: [new CustomizationEffect("piercing resistance", 9.33)],
+                [Rarities.Rare.name]: [new CustomizationEffect("piercing resistance", 9.85)],
+                [Rarities.Epic.name]: [new CustomizationEffect("piercing resistance", 10.58)],
+                [Rarities.Legendary.name]: [new CustomizationEffect("piercing resistance", 11.24)]
+            }
         )
-    }
-
-    getCustomizationEffect() {
-        return "piercing resistance";
     }
 }
