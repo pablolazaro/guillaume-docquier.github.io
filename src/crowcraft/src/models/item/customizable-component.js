@@ -14,7 +14,7 @@ export class CustomizableComponent extends Item {
             return this._id;
         }
 
-        return `${this.customization.id}${String.capitalize(this._id)}`;
+        return `${this._id}${String.capitalize(this.customization.id)}`;
     }
 
     get name() {
