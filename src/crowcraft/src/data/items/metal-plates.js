@@ -2,10 +2,10 @@ import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Profe
 import { Ore, Aurelium, Copper, Iron, Silver, Tin } from "./ores";
 import { Coal } from "./coal";
 
-export class MetalScales extends CustomizableComponent {
+export class MetalPlates extends CustomizableComponent {
     constructor() {
         super(
-            "metal scales",
+            "metal plates",
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
@@ -16,22 +16,22 @@ export class MetalScales extends CustomizableComponent {
             ],
             1,
             [
-                new SteelMetalScalesCustomization(),
-                new DarkBronzeMetalScalesCustomization(),
-                new BrightSteelMetalScalesCustomization(),
-                new AureliumSteelMetalScalesCustomization(),
-                new InvarMetalScalesCustomization(),
-                new SilveredIronMetalScalesCustomization(),
-                new TigerIronMetalScalesCustomization(),
-                new BlueSteelMetalScalesCustomization(),
-                new ForestAureliumMetalScalesCustomization(),
-                new DarkElectrumMetalScalesCustomization(),
+                new SteelMetalPlatesCustomization(),
+                new DarkBronzeMetalPlatesCustomization(),
+                new BrightSteelMetalPlatesCustomization(),
+                new AureliumSteelMetalPlatesCustomization(),
+                new InvarMetalPlatesCustomization(),
+                new SilveredIronMetalPlatesCustomization(),
+                new TigerIronMetalPlatesCustomization(),
+                new BlueSteelMetalPlatesCustomization(),
+                new ForestAureliumMetalPlatesCustomization(),
+                new DarkElectrumMetalPlatesCustomization(),
             ]
         );
     }
 }
 
-class SteelMetalScalesCustomization extends Customization {
+class SteelMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "steel",
@@ -52,7 +52,7 @@ class SteelMetalScalesCustomization extends Customization {
     }
 }
 
-class DarkBronzeMetalScalesCustomization extends Customization {
+class DarkBronzeMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "dark bronze",
@@ -73,7 +73,7 @@ class DarkBronzeMetalScalesCustomization extends Customization {
     }
 }
 
-class BrightSteelMetalScalesCustomization extends Customization {
+class BrightSteelMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "bright steel",
@@ -94,7 +94,7 @@ class BrightSteelMetalScalesCustomization extends Customization {
     }
 }
 
-class AureliumSteelMetalScalesCustomization extends Customization {
+class AureliumSteelMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "aurelium steel",
@@ -115,7 +115,7 @@ class AureliumSteelMetalScalesCustomization extends Customization {
     }
 }
 
-class InvarMetalScalesCustomization extends Customization {
+class InvarMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "invar",
@@ -136,7 +136,7 @@ class InvarMetalScalesCustomization extends Customization {
     }
 }
 
-class SilveredIronMetalScalesCustomization extends Customization {
+class SilveredIronMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "silvered iron",
@@ -157,7 +157,7 @@ class SilveredIronMetalScalesCustomization extends Customization {
     }
 }
 
-class TigerIronMetalScalesCustomization extends Customization {
+class TigerIronMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "tiger iron",
@@ -178,7 +178,7 @@ class TigerIronMetalScalesCustomization extends Customization {
     }
 }
 
-class BlueSteelMetalScalesCustomization extends Customization {
+class BlueSteelMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "blue steel",
@@ -199,7 +199,7 @@ class BlueSteelMetalScalesCustomization extends Customization {
     }
 }
 
-class ForestAureliumMetalScalesCustomization extends Customization {
+class ForestAureliumMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "forest aurelium",
@@ -220,7 +220,7 @@ class ForestAureliumMetalScalesCustomization extends Customization {
     }
 }
 
-class DarkElectrumMetalScalesCustomization extends Customization {
+class DarkElectrumMetalPlatesCustomization extends Customization {
     constructor() {
         super(
             "dark electrum",
