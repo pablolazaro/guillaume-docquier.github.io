@@ -155,6 +155,48 @@ class ArmorPenetration extends ItemStat {
     }
 }
 
+class DamageBonus extends ItemStat {
+    static types = {
+        fire: "fire",
+        ice: "ice",
+        electricity: "electricity",
+        nature: "nature",
+        poison: "poison",
+        disease: "disease",
+        slashing: "slashing",
+        crushing: "crushing",
+        piercing: "piercing",
+    }
+
+    constructor(resistanceType) {
+        super(
+            `${resistanceType} damage bonus`,
+            {
+                [Rarities.Common.name]: 0.36,
+                [Rarities.Uncommon.name]: 0.4,
+                [Rarities.Rare.name]: 0.43,
+                [Rarities.Epic.name]: 0.45,
+                [Rarities.Legendary.name]: 0.48
+            }
+        );
+    }
+}
+
+class BleedDamageBonus extends ItemStat {
+    constructor() {
+        super(
+            "bleed damage bonus",
+            {
+                [Rarities.Common.name]: 0.15,
+                [Rarities.Uncommon.name]: 0.17,
+                [Rarities.Rare.name]: 0.18,
+                [Rarities.Epic.name]: 0.19,
+                [Rarities.Legendary.name]: 0.2
+            }
+        );
+    }
+}
+
 export const ItemsStats = {
     BleedResistance: new Resistance(Resistance.types.bleed),
     FireResistance: new Resistance(Resistance.types.fire),
@@ -179,4 +221,14 @@ export const ItemsStats = {
     SlashingArmorPenetration: new ArmorPenetration(ArmorPenetration.types.slashing),
     CrushingArmorPenetration: new ArmorPenetration(ArmorPenetration.types.crushing),
     PiercingArmorPenetration: new ArmorPenetration(ArmorPenetration.types.piercing),
+    BleedDamageBonus: new BleedDamageBonus(),
+    FireDamageBonus: new DamageBonus(DamageBonus.types.fire),
+    IceDamageBonus: new DamageBonus(DamageBonus.types.ice),
+    ElectricityDamageBonus: new DamageBonus(DamageBonus.types.electricity),
+    NatureDamageBonus: new DamageBonus(DamageBonus.types.nature),
+    PoisonDamageBonus: new DamageBonus(DamageBonus.types.poison),
+    DiseaseDamageBonus: new DamageBonus(DamageBonus.types.disease),
+    SlashingDamageBonus: new DamageBonus(DamageBonus.types.slashing),
+    CrushingDamageBonus: new DamageBonus(DamageBonus.types.crushing),
+    PiercingDamageBonus: new DamageBonus(DamageBonus.types.piercing),
 };
