@@ -17,9 +17,9 @@ export const ItemCustomizer = ({ item, onItemCustomized }) => {
     return (
         <>
             <div className="mb2 f3 fw5">Choose your stats ({numberOfCustomizedComponents}/{customizableComponents.length})</div>
-            <div className="flex">
+            <div className="flex flex-wrap">
                 {customizableComponents.map((customizableComponent, i) => (
-                    <div key={`${customizableComponent.id}.${i}`} className="mr3">
+                    <div key={`${customizableComponent.id}.${i}`} className="mr3 mb3">
                         <ComponentCustomizer customizableComponent={customizableComponent} componentIndex={i + 1} onComponentCustomized={() => onComponentCustomized(i)} />
                     </div>
                 ))}
@@ -46,7 +46,7 @@ const ComponentCustomizer = ({ customizableComponent, componentIndex, onComponen
                 <Item item={customizableComponent} />
             </div>
             <div className="flex flex-column ml2 space-between">
-                <label className="mb1" htmlFor={selectId}>Stats for {customizableComponent.baseName} #{componentIndex}</label>
+                <label className="mb1" htmlFor={selectId}>Stats for {customizableComponent.baseName}</label>
                 <select className="stat-selector | w-100 peach-puff bg-marine pointer" name={selectId} id={selectId} onChange={customizeComponent} defaultValue={defaultSelectValue}>
                     <option disabled value="default"> -- select a stat -- </option>
                     {customizationOptions.map((customizationOption, i) => (
