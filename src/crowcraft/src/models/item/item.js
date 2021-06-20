@@ -71,12 +71,13 @@ export class Item {
         let craftingMaterials = [...this.craftingMaterials];
         let rank = this.craftingRank;
         while (rank > 1) {
+            debugger;
             rank -= 1;
             craftingMaterials.sort(Sorting.descending(rawMaterial => rawMaterial.item.craftingRank));
 
             const craftingSet = {};
             let i = 0;
-            for (i; craftingMaterials[i].item.craftingRank === rank; i++) {
+            for (i; i < craftingMaterials.length && craftingMaterials[i].item.craftingRank === rank; i++) {
                 const materialToCraft = craftingMaterials[i];
                 if (craftingSet[materialToCraft.item.id] === undefined) {
                     craftingSet[materialToCraft.item.id] = new CraftingMaterial(materialToCraft.quantity, materialToCraft.item);

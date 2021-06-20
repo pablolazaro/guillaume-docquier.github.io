@@ -1,9 +1,9 @@
 IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE
 		Wood Processing						
-No	No	Arrow Shaft Bundle	Woodworker	white - orange	3x Non- Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
-No	No	Composite Wood Plank	Woodworker	white - orange	6x Non- Basic Wood, 6x Non-Basic Wood, 6x Non-Basic Wood, 5x Sandpaper	1	Yes	Yes
+No	No	Arrow Shaft Bundle	Woodworker	white - orange	3x Non-Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
+No	No	Composite Wood Plank	Woodworker	white - orange	6x Non-Basic Wood, 6x Non-Basic Wood, 6x Non-Basic Wood, 5x Sandpaper	1	Yes	Yes
 No	No	Parchment Paper	Woodworker	white	1x Wood	1	No	No
-No	No	Wooden Board	Woodworker	white-orange	3x Non- Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
+No	No	Wooden Board	Woodworker	white-orange	3x Non-Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
 								
 		Fuel						
 No	No	Sandpaper	Woodworker	white	2x Wood, 1x Stone, 3x Ethereal Dust	5	No	No
@@ -31,7 +31,7 @@ No	No	Advanced Arrows	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaf
 No	No	Book	Woodworker	white-orange	1x Book Casing, 1x Bound Chapters, 1x Book Clasp, 20x Ethereal Dust	1	Yes	No
 No	No	Bow: Compound	Woodworker	white-orange	1x Bow Limbs: Compound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
 No	No	Bow: Recurve	Woodworker	white-orange	1x Bow Limbs: Recurve, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
-No	No	Bow: Spellbound	Woodworker	white-orange	1x Bow LimbsL Spellbound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
+No	No	Bow: Spellbound	Woodworker	white-orange	1x Bow Limbs: Spellbound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
 No	No	Mystical Staff	Woodworker	white-orange	1x Limbs: Staff, 1x Staff Head, 1x Staff Heel, 20x Ethereal Dust	1	Yes	No
 No	No	Quiver	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaft Bundle, 1x Arrow Shaft Bundle, 5x Heartwood, 20x Ethereal Dust	1	Yes	No
 								

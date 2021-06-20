@@ -71,7 +71,7 @@ def generate_item_code(item):
 
 
 def extract_item_data(item):
-    item_name = item[Columns.ITEM_NAME].lower().replace(":", "")
+    item_name = make_item_name(item[Columns.ITEM_NAME])
     file_name = make_file_name_without_extension(item_name) + ".js"
     class_name = make_class_name(item_name)
     professions = item[Columns.REQUIRED_PROFESSIONS].split(" - ")
@@ -89,7 +89,7 @@ def extract_item_data(item):
         try:
             [quantity, crafting_material_name] = parts
             quantity = int(quantity)
-            crafting_materials.append((quantity, crafting_material_name))
+            crafting_materials.append((quantity, make_item_name(crafting_material_name)))
         except:
             print(bcolors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", bcolors.ENDC)
 
@@ -186,12 +186,16 @@ export class {class_name} extends CustomizableComponent {
         .replace("{quantity_per_craft}", quantity_per_craft)
 
 
+def make_item_name(item_name):
+    return item_name.lower().replace(":", "").replace("-", " ")
+
+
 def make_file_name_without_extension(item_name):
-    return item_name.replace(" ", "-")
+    return item_name.replace(" ", "-").replace('\'', "")
 
 
 def make_class_name(item_name):
-    return "".join(map(capitalize, item_name.split(" ")))
+    return "".join(map(capitalize, item_name.replace('\'', "").split(" ")))
 
 
 def capitalize(string):

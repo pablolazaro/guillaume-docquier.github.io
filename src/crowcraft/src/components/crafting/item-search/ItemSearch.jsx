@@ -5,6 +5,8 @@ import { TextInput, Item } from "components";
 import { useState } from "react";
 import { Sorting } from "utils";
 
+const MAX_ITEMS_COUNT = 30;
+
 export const ItemSearch = ({ onItemSelected }) => {
     const [allItems] = useState(
         items
@@ -34,18 +36,23 @@ export const ItemSearch = ({ onItemSelected }) => {
         onItemSelected(item.createNew());
     };
 
+    const matchedItems = allItems.filter(hasKeywordMatch);
+
     return (
         <>
             <div className="mb2 f3 fw5">Find an item</div>
             <div className="mb3">
                 <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={filterItems} />
             </div>
-            <div className="flex">
-                {allItems.filter(hasKeywordMatch).map(item => (
-                    <div key={item.id} className="mr2">
+            <div className="flex flex-wrap">
+                {matchedItems.slice(0, MAX_ITEMS_COUNT).map(item => (
+                    <div key={item.id} className="mr2 mb2">
                         <SelectableItem item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
                     </div>
                 ))}
+                {matchedItems.length > MAX_ITEMS_COUNT ?
+                    <div>And {matchedItems.length - MAX_ITEMS_COUNT} more...</div> : null
+                }
             </div>
         </>
     );
