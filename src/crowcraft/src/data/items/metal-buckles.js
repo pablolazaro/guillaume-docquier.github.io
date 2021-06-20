@@ -1,5 +1,5 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Ore } from "./ores";
+import { Ore } from "./ore";
 import { Coal } from "./coal";
 
 export class MetalBuckles extends Item {

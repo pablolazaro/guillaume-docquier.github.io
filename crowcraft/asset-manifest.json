@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.d343567f.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.d343567f.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.a8649aad.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.a8649aad.js.map",
-    "static/js/2.b6925d65.chunk.js": "/crowcraft/static/js/2.b6925d65.chunk.js",
-    "static/js/2.b6925d65.chunk.js.map": "/crowcraft/static/js/2.b6925d65.chunk.js.map",
-    "static/js/3.9eab7873.chunk.js": "/crowcraft/static/js/3.9eab7873.chunk.js",
-    "static/js/3.9eab7873.chunk.js.map": "/crowcraft/static/js/3.9eab7873.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.635be903.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.635be903.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.9e9c5b74.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.9e9c5b74.js.map",
+    "static/js/2.ae74fc9f.chunk.js": "/crowcraft/static/js/2.ae74fc9f.chunk.js",
+    "static/js/2.ae74fc9f.chunk.js.map": "/crowcraft/static/js/2.ae74fc9f.chunk.js.map",
+    "static/js/3.901cf4bc.chunk.js": "/crowcraft/static/js/3.901cf4bc.chunk.js",
+    "static/js/3.901cf4bc.chunk.js.map": "/crowcraft/static/js/3.901cf4bc.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.78f0c62e.chunk.css.map": "/crowcraft/static/css/main.78f0c62e.chunk.css.map",
-    "static/js/2.b6925d65.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.b6925d65.chunk.js.LICENSE.txt",
+    "static/js/2.ae74fc9f.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.ae74fc9f.chunk.js.LICENSE.txt",
     "static/media/aurelium.svg": "/crowcraft/static/media/aurelium.c6ecf8c4.svg",
     "static/media/coal.svg": "/crowcraft/static/media/coal.31f85fdb.svg",
     "static/media/copper.svg": "/crowcraft/static/media/copper.619de046.svg",
@@ -82,9 +82,9 @@
     "static/media/wood.svg": "/crowcraft/static/media/wood.c60d0b62.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8649aad.js",
-    "static/js/2.b6925d65.chunk.js",
+    "static/js/runtime-main.9e9c5b74.js",
+    "static/js/2.ae74fc9f.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.d343567f.chunk.js"
+    "static/js/main.635be903.chunk.js"
   ]
 }

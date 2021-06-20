@@ -1,5 +1,5 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Ore } from "./ores";
+import { Ore } from "./ore";
 
 /*
     TODO This item has +[2, 4, 6, 8, ?10?] Attack Power, which is not the same scale as other attack power stats
