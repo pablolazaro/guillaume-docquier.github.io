@@ -5,10 +5,10 @@ import { useState } from "react";
 
 export const ItemCustomizer = ({ item, onItemCustomized }) => {
     const customizableComponents = item.getCustomizableComponents();
-    const [numberOfCustomizedComponents, setNumberOfCustomizedComponents] = useState(customizableComponents.filter(cc => cc.customization).length);
+    const [customizations, setCustomizations] = useState(customizableComponents.map(cc => cc.customization ? cc.customization.name : null));
 
     const onComponentCustomized = i => {
-        setNumberOfCustomizedComponents(customizableComponents.filter(cc => cc.customization).length);
+        setCustomizations(customizableComponents.map(cc => cc.customization ? cc.customization.name : null));
         if (customizableComponents.every(cc => cc.customization)) {
             onItemCustomized();
         }
@@ -16,7 +16,7 @@ export const ItemCustomizer = ({ item, onItemCustomized }) => {
 
     return (
         <>
-            <div className="mb2 f3 fw5">Choose your stats ({numberOfCustomizedComponents}/{customizableComponents.length})</div>
+            <div className="mb2 f3 fw5">Choose your stats ({customizations.filter(c => c).length}/{customizableComponents.length})</div>
             <div className="flex flex-wrap">
                 {customizableComponents.map((customizableComponent, i) => (
                     <div key={`${customizableComponent.id}.${i}`} className="mr3 mb3">
