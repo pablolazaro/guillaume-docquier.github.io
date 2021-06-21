@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { LeatherSquare } from "./leather-square";
-// import { Rivets } from "./rivets";
+import { MetalRivets } from "./metal-rivets";
 import { EtherealDust } from "./ethereal-dust";
 
 export class LeatherBoots extends Item {
@@ -12,7 +12,7 @@ export class LeatherBoots extends Item {
             [
                 new CraftingMaterial(1, new LeatherSquare()),
 				new CraftingMaterial(1, new LeatherSquare()),
-				// new CraftingMaterial(1, new Rivets()), // TODO Missing, is this MetalRivets?
+				new CraftingMaterial(1, new MetalRivets()),
 				new CraftingMaterial(6, new EtherealDust()),
             ],
             1

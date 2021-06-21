@@ -1,8 +1,8 @@
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
 import { Ore } from "./ore";
 import { Coal } from "./coal";
 
-export class MetalRivets extends Item {
+export class MetalRivets extends CustomizableComponent {
     constructor() {
         super(
             "metal rivets",
@@ -13,7 +13,10 @@ export class MetalRivets extends Item {
 				new CraftingMaterial(3, new Ore()),
 				new CraftingMaterial(2, new Coal()),
             ],
-            1
+            1,
+            [
+                // TODO Customizations
+            ]
         );
     }
 }
