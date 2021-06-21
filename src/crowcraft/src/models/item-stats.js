@@ -220,6 +220,21 @@ class DamageType extends ItemStat {
     }
 }
 
+class Stamina extends ItemStat {
+    constructor() {
+        super(
+            "bleed damage bonus",
+            {
+                [Rarities.Common.name]: 0.69,
+                [Rarities.Uncommon.name]: 0.79,
+                [Rarities.Rare.name]: 0.85,
+                [Rarities.Epic.name]: 0.91,
+                [Rarities.Legendary.name]: 0.98
+            }
+        );
+    }
+}
+
 export const ItemsStats = {
     BleedResistance: new Resistance(Resistance.types.bleed),
     FireResistance: new Resistance(Resistance.types.fire),
@@ -259,4 +274,5 @@ export const ItemsStats = {
     SlashingDamageType: new DamageType(DamageType.types.slashing),
     CrushingDamageType: new DamageType(DamageType.types.crushing),
     PiercingDamageType: new DamageType(DamageType.types.piercing),
+    Stamnina: new Stamina(),
 };
