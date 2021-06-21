@@ -56,7 +56,7 @@ export const Crafting = () => {
     return (
         <div className="mv3">
             <div className="mb4 f4 fw5 bittersweet">
-                We're in the process of generating items automatically. Items that are missing an icon haven't been validated yet, their crafting materials may be incomplete.
+                We are in the process of generating items automatically. Items that are missing an icon haven't been validated yet, their crafting materials may be incomplete.
             </div>
             <div className="mb4">
                 <ItemSearch onItemSelected={selectItemToCraft} />

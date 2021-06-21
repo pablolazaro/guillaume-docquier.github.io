@@ -71,7 +71,6 @@ export class Item {
         let craftingMaterials = [...this.craftingMaterials];
         let rank = this.craftingRank;
         while (rank > 1) {
-            debugger;
             rank -= 1;
             craftingMaterials.sort(Sorting.descending(rawMaterial => rawMaterial.item.craftingRank));
 

@@ -197,6 +197,29 @@ class BleedDamageBonus extends ItemStat {
     }
 }
 
+class DamageType extends ItemStat {
+    static types = {
+        fire: "fire",
+        ice: "ice",
+        slashing: "slashing",
+        crushing: "crushing",
+        piercing: "piercing",
+    }
+
+    constructor(damageType) {
+        super(
+            `${damageType} damage type`,
+            {
+                [Rarities.Common.name]: null,
+                [Rarities.Uncommon.name]: null,
+                [Rarities.Rare.name]: null,
+                [Rarities.Epic.name]: null,
+                [Rarities.Legendary.name]: null
+            }
+        );
+    }
+}
+
 export const ItemsStats = {
     BleedResistance: new Resistance(Resistance.types.bleed),
     FireResistance: new Resistance(Resistance.types.fire),
@@ -231,4 +254,9 @@ export const ItemsStats = {
     SlashingDamageBonus: new DamageBonus(DamageBonus.types.slashing),
     CrushingDamageBonus: new DamageBonus(DamageBonus.types.crushing),
     PiercingDamageBonus: new DamageBonus(DamageBonus.types.piercing),
+    FireDamageType: new DamageType(DamageType.types.fire),
+    IceDamageType: new DamageType(DamageType.types.ice),
+    SlashingDamageType: new DamageType(DamageType.types.slashing),
+    CrushingDamageType: new DamageType(DamageType.types.crushing),
+    PiercingDamageType: new DamageType(DamageType.types.piercing),
 };

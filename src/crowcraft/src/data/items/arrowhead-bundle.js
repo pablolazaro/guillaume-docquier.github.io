@@ -1,5 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
 import { Ore } from "./ore";
+import { Aurelium } from "./aurelium";
+import { Copper } from "./copper";
+import { Iron } from "./iron";
+import { Silver } from "./silver";
+import { Tin } from "./tin";
 import { Coal } from "./coal";
 
 export class ArrowheadBundle extends CustomizableComponent {
@@ -14,9 +19,107 @@ export class ArrowheadBundle extends CustomizableComponent {
             ],
             1,
             [
-                // TODO Customizations
+                new PiercingArrowheadBundleCustomization(),
+                new SlashingArrowheadBundleCustomization(),
+                new CrushingArrowheadBundleCustomization(),
+                new FireArrowheadBundleCustomization(),
+                new IceArrowheadBundleCustomization(),
             ]
         );
     }
 }
-    
+
+class PiercingArrowheadBundleCustomization extends Customization {
+    constructor() {
+        super(
+            "piercing",
+            [
+                new CraftingMaterial(9, new Iron()),
+				new CraftingMaterial(1, new Coal()),
+            ],
+            {
+                [Rarities.Common.name]: [ItemsStats.PiercingDamageType],
+                [Rarities.Uncommon.name]: [ItemsStats.PiercingDamageType],
+                [Rarities.Rare.name]: [ItemsStats.PiercingDamageType],
+                [Rarities.Epic.name]: [ItemsStats.PiercingDamageType],
+                [Rarities.Legendary.name]: [ItemsStats.PiercingDamageType]
+            }
+        )
+    }
+}
+
+class SlashingArrowheadBundleCustomization extends Customization {
+    constructor() {
+        super(
+            "slashing",
+            [
+                new CraftingMaterial(9, new Tin()),
+				new CraftingMaterial(1, new Coal()),
+            ],
+            {
+                [Rarities.Common.name]: [ItemsStats.SlashingDamageType],
+                [Rarities.Uncommon.name]: [ItemsStats.SlashingDamageType],
+                [Rarities.Rare.name]: [ItemsStats.SlashingDamageType],
+                [Rarities.Epic.name]: [ItemsStats.SlashingDamageType],
+                [Rarities.Legendary.name]: [ItemsStats.SlashingeDamageType]
+            }
+        )
+    }
+}
+
+class CrushingArrowheadBundleCustomization extends Customization {
+    constructor() {
+        super(
+            "crushing",
+            [
+                new CraftingMaterial(9, new Copper()),
+				new CraftingMaterial(1, new Coal()),
+            ],
+            {
+                [Rarities.Common.name]: [ItemsStats.CrushingDamageType],
+                [Rarities.Uncommon.name]: [ItemsStats.CrushingDamageType],
+                [Rarities.Rare.name]: [ItemsStats.CrushingDamageType],
+                [Rarities.Epic.name]: [ItemsStats.CrushingDamageType],
+                [Rarities.Legendary.name]: [ItemsStats.CrushingDamageType]
+            }
+        )
+    }
+}
+
+class FireArrowheadBundleCustomization extends Customization {
+    constructor() {
+        super(
+            "fire",
+            [
+                new CraftingMaterial(9, new Aurelium()),
+				new CraftingMaterial(1, new Coal()),
+            ],
+            {
+                [Rarities.Common.name]: [ItemsStats.FireDamageType],
+                [Rarities.Uncommon.name]: [ItemsStats.FireDamageType],
+                [Rarities.Rare.name]: [ItemsStats.FireDamageType],
+                [Rarities.Epic.name]: [ItemsStats.FireDamageType],
+                [Rarities.Legendary.name]: [ItemsStats.FireDamageType]
+            }
+        )
+    }
+}
+
+class IceArrowheadBundleCustomization extends Customization {
+    constructor() {
+        super(
+            "ice",
+            [
+                new CraftingMaterial(9, new Silver()),
+				new CraftingMaterial(1, new Coal()),
+            ],
+            {
+                [Rarities.Common.name]: [ItemsStats.IceDamageType],
+                [Rarities.Uncommon.name]: [ItemsStats.IceDamageType],
+                [Rarities.Rare.name]: [ItemsStats.IceDamageType],
+                [Rarities.Epic.name]: [ItemsStats.IceDamageType],
+                [Rarities.Legendary.name]: [ItemsStats.IceDamageType]
+            }
+        )
+    }
+}
