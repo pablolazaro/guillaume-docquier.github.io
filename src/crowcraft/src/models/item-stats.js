@@ -223,13 +223,43 @@ class DamageType extends ItemStat {
 class Stamina extends ItemStat {
     constructor() {
         super(
-            "bleed damage bonus",
+            "stamina",
             {
                 [Rarities.Common.name]: 0.69,
                 [Rarities.Uncommon.name]: 0.79,
                 [Rarities.Rare.name]: 0.85,
                 [Rarities.Epic.name]: 0.91,
                 [Rarities.Legendary.name]: 0.98
+            }
+        );
+    }
+}
+
+class Stealth extends ItemStat {
+    constructor() {
+        super(
+            "stealth",
+            {
+                [Rarities.Common.name]: 0.3,
+                [Rarities.Uncommon.name]: 0.34,
+                [Rarities.Rare.name]: 0.37,
+                [Rarities.Epic.name]: 0.4,
+                [Rarities.Legendary.name]: 0.43
+            }
+        );
+    }
+}
+
+class OutOfCombatHealthRegen extends ItemStat {
+    constructor() {
+        super(
+            "out of combat health regeneration",
+            {
+                [Rarities.Common.name]: 0.59,
+                [Rarities.Uncommon.name]: 0.67,
+                [Rarities.Rare.name]: 0.71,
+                [Rarities.Epic.name]: 0.76,
+                [Rarities.Legendary.name]: 0.8
             }
         );
     }
@@ -274,5 +304,7 @@ export const ItemsStats = {
     SlashingDamageType: new DamageType(DamageType.types.slashing),
     CrushingDamageType: new DamageType(DamageType.types.crushing),
     PiercingDamageType: new DamageType(DamageType.types.piercing),
-    Stamnina: new Stamina(),
+    Stamina: new Stamina(),
+    Stealth: new Stealth(),
+    OutOfCombatHealthRegen: new OutOfCombatHealthRegen(),
 };

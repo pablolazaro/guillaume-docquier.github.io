@@ -73,11 +73,11 @@ class PliableCompositeWoodPlankCustomization extends Customization {
 				new CraftingMaterial(5, new Sandpaper()),
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.Stamnina],
-                [Rarities.Uncommon.name]: [ItemsStats.Stamnina],
-                [Rarities.Rare.name]: [ItemsStats.Stamnina],
-                [Rarities.Epic.name]: [ItemsStats.Stamnina, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.Stamnina, ItemsStats.AttackPower]
+                [Rarities.Common.name]: [ItemsStats.Stamina],
+                [Rarities.Uncommon.name]: [ItemsStats.Stamina],
+                [Rarities.Rare.name]: [ItemsStats.Stamina],
+                [Rarities.Epic.name]: [ItemsStats.Stamina, ItemsStats.AttackPower],
+                [Rarities.Legendary.name]: [ItemsStats.Stamina, ItemsStats.AttackPower]
             }
         )
     }
@@ -94,11 +94,11 @@ class SapidCompositeWoodPlankCustomization extends Customization {
 				new CraftingMaterial(5, new Sandpaper()),
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.Stamnina],
-                [Rarities.Uncommon.name]: [ItemsStats.Stamnina],
-                [Rarities.Rare.name]: [ItemsStats.Stamnina],
-                [Rarities.Epic.name]: [ItemsStats.Stamnina, ItemsStats.SupportPower],
-                [Rarities.Legendary.name]: [ItemsStats.Stamnina, ItemsStats.SupportPower]
+                [Rarities.Common.name]: [ItemsStats.Stamina],
+                [Rarities.Uncommon.name]: [ItemsStats.Stamina],
+                [Rarities.Rare.name]: [ItemsStats.Stamina],
+                [Rarities.Epic.name]: [ItemsStats.Stamina, ItemsStats.SupportPower],
+                [Rarities.Legendary.name]: [ItemsStats.Stamina, ItemsStats.SupportPower]
             }
         )
     }
