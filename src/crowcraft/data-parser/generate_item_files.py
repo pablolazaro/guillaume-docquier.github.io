@@ -107,7 +107,7 @@ def write_js_code(item_data):
 
 
 def generate_item(item_data):
-    js_code = """import { Item, CraftingMaterial, Rarities, Professions } from "models";
+    js_code = """import { Item, CraftingMaterial, Rarities{professions_imports} } from "models";
 {imports}
 
 export class {class_name} extends Item {
@@ -127,6 +127,7 @@ export class {class_name} extends Item {
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
+    professions_imports = [f", {get_profession_prefix(profession)}" for profession in professions]
     crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
     try:
         imports = [f"import {{ {make_class_name(crafting_material_name)} }} from \"./{make_file_name_without_extension(crafting_material_name)}\";" for crafting_material_name in crafting_materials_set]
@@ -140,17 +141,18 @@ export class {class_name} extends Item {
         js_crafting_materials = []
         print(bcolors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", bcolors.ENDC)
 
-    return js_code.replace("{imports}", "\n".join(imports))\
+    return js_code.replace("{professions_imports}", "".join(professions_imports))\
+        .replace("{imports}", "\n".join(imports))\
         .replace("{class_name}", class_name)\
         .replace("{item_name}", item_name)\
-        .replace("{professions}", ", ".join([f"Professions.{profession}" for profession in professions]))\
+        .replace("{professions}", ", ".join([make_profession(profession) for profession in professions]))\
         .replace("{rarities}", ", ".join([f"Rarities.{rarity}" for rarity in item_rarities])) \
         .replace("{crafting_materials}", "\n\t\t\t\t".join(js_crafting_materials))\
         .replace("{quantity_per_craft}", quantity_per_craft)
 
 
 def generate_customizable_item(item_data):
-    js_code = """import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+    js_code = """import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats{professions_imports} } from "models";
 {imports}
 
 export class {class_name} extends CustomizableComponent {
@@ -173,11 +175,13 @@ export class {class_name} extends CustomizableComponent {
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
+    professions_imports = [f", {get_profession_prefix(profession)}" for profession in professions]
     crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
     imports = [f"import {{ {make_class_name(crafting_material_name)} }} from \"./{make_file_name_without_extension(crafting_material_name)}\";" for crafting_material_name in crafting_materials_set]
     js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
 
-    return js_code.replace("{imports}", "\n".join(imports))\
+    return js_code.replace("{professions_imports}", "".join(professions_imports))\
+        .replace("{imports}", "\n".join(imports))\
         .replace("{class_name}", class_name)\
         .replace("{item_name}", item_name)\
         .replace("{professions}", ", ".join([f"Professions.{profession}" for profession in professions]))\
@@ -200,6 +204,14 @@ def make_class_name(item_name):
 
 def capitalize(string):
     return string[0].upper() + string[1:]
+
+
+def get_profession_prefix(profession):
+    return "Vendors" if "vendor" in profession.lower() else "Professions"
+
+
+def make_profession(profession):
+    return f"{get_profession_prefix(profession)}.{''.join(map(capitalize, profession.lower().replace('vendor', '').strip().split(' ')))}"
 
 
 if __name__ == '__main__':

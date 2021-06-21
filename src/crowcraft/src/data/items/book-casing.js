@@ -1,8 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-// import { RunestoneEsoteric } from "./runestone-esoteric";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { StitchedLeather } from "./stitched-leather";
-// import { Adhesive } from "./adhesive";
+import { Adhesive } from "./adhesive";
 import { EtherealDust } from "./ethereal-dust";
 
 export class BookCasing extends Item {
@@ -16,9 +15,8 @@ export class BookCasing extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new StitchedLeather()),
 				new CraftingMaterial(1, new StitchedLeather()),
-				// new CraftingMaterial(1, new Adhesive()), // TODO Missing
+				new CraftingMaterial(1, new Adhesive()),
 				new CraftingMaterial(8, new EtherealDust()),
-				// new CraftingMaterial(1, new RunestoneEsoteric()), // TODO Not sure about that
             ],
             1
         );
