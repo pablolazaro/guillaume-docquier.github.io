@@ -50,10 +50,10 @@ export const ItemSearch = ({ onItemSelected }) => {
                         <SelectableItem item={item} onItemSelected={selectItem} isSelected={item.id === selectedItemId} />
                     </div>
                 ))}
-                {matchedItems.length > MAX_ITEMS_COUNT ?
-                    <div>And {matchedItems.length - MAX_ITEMS_COUNT} more...</div> : null
-                }
             </div>
+            {matchedItems.length > MAX_ITEMS_COUNT ?
+                <div>And {matchedItems.length - MAX_ITEMS_COUNT} more...</div> : null
+            }
         </>
     );
 };
