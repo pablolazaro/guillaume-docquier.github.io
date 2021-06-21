@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.37ec465a.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.37ec465a.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.dce4e30c.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.dce4e30c.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.7cdc6484.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.7cdc6484.js.map",
     "static/js/2.a169e536.chunk.js": "/crowcraft/static/js/2.a169e536.chunk.js",
@@ -52,7 +52,7 @@
     "static/media/leatherSquareLimberGrain.svg": "/crowcraft/static/media/leatherSquareLimberGrain.65ea3851.svg",
     "static/media/leatherSquareSoftCorium.svg": "/crowcraft/static/media/leatherSquareSoftCorium.65ea3851.svg",
     "static/media/leatherSquareStoutCorium.svg": "/crowcraft/static/media/leatherSquareStoutCorium.65ea3851.svg",
-    "static/media/leatherSquareStrudyBicast.svg": "/crowcraft/static/media/leatherSquareStrudyBicast.65ea3851.svg",
+    "static/media/leatherSquareSturdyBicast.svg": "/crowcraft/static/media/leatherSquareSturdyBicast.65ea3851.svg",
     "static/media/leatherSquareSturdyCorium.svg": "/crowcraft/static/media/leatherSquareSturdyCorium.65ea3851.svg",
     "static/media/leatherSquareSuede.svg": "/crowcraft/static/media/leatherSquareSuede.65ea3851.svg",
     "static/media/leatherTunic.svg": "/crowcraft/static/media/leatherTunic.a86708c3.svg",
@@ -151,6 +151,6 @@
     "static/js/runtime-main.7cdc6484.js",
     "static/js/2.a169e536.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.37ec465a.chunk.js"
+    "static/js/main.dce4e30c.chunk.js"
   ]
 }
