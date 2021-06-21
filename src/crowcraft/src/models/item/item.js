@@ -67,7 +67,7 @@ export class Item {
     }
 
     getCraftingRundown() {
-        const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(1, this))];
+        const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(this.craftingQuantity, this))];
         let craftingMaterials = [...this.craftingMaterials];
         let rank = this.craftingRank;
         while (rank > 1) {
