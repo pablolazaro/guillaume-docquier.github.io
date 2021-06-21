@@ -265,6 +265,30 @@ class OutOfCombatHealthRegen extends ItemStat {
     }
 }
 
+class Perception extends ItemStat {
+    constructor() {
+        super(
+            "perception",
+            {
+                [Rarities.Epic.name]: 0.34,
+                [Rarities.Legendary.name]: 0.37
+            }
+        );
+    }
+}
+
+class Lifesteal extends ItemStat {
+    constructor() {
+        super(
+            "lifesteal",
+            {
+                [Rarities.Epic.name]: 0.46,
+                [Rarities.Legendary.name]: 0.49
+            }
+        );
+    }
+}
+
 export const ItemsStats = {
     BleedResistance: new Resistance(Resistance.types.bleed),
     FireResistance: new Resistance(Resistance.types.fire),
@@ -307,4 +331,6 @@ export const ItemsStats = {
     Stamina: new Stamina(),
     Stealth: new Stealth(),
     OutOfCombatHealthRegen: new OutOfCombatHealthRegen(),
+    Perception: new Perception(),
+    Lifesteal: new Lifesteal(),
 };

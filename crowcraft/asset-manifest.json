@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.aced3665.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.aced3665.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.709f745f.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.709f745f.js.map",
-    "static/js/2.c864722c.chunk.js": "/crowcraft/static/js/2.c864722c.chunk.js",
-    "static/js/2.c864722c.chunk.js.map": "/crowcraft/static/js/2.c864722c.chunk.js.map",
-    "static/js/3.2fa307ee.chunk.js": "/crowcraft/static/js/3.2fa307ee.chunk.js",
-    "static/js/3.2fa307ee.chunk.js.map": "/crowcraft/static/js/3.2fa307ee.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.c1b69d90.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.c1b69d90.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.04607d3a.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.04607d3a.js.map",
+    "static/js/2.4ef6be33.chunk.js": "/crowcraft/static/js/2.4ef6be33.chunk.js",
+    "static/js/2.4ef6be33.chunk.js.map": "/crowcraft/static/js/2.4ef6be33.chunk.js.map",
+    "static/js/3.fb442732.chunk.js": "/crowcraft/static/js/3.fb442732.chunk.js",
+    "static/js/3.fb442732.chunk.js.map": "/crowcraft/static/js/3.fb442732.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.78f0c62e.chunk.css.map": "/crowcraft/static/css/main.78f0c62e.chunk.css.map",
-    "static/js/2.c864722c.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.c864722c.chunk.js.LICENSE.txt",
+    "static/js/2.4ef6be33.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.4ef6be33.chunk.js.LICENSE.txt",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/arcaneActuator.svg": "/crowcraft/static/media/arcaneActuator.9067d6d6.svg",
     "static/media/arrowShaftBundle.svg": "/crowcraft/static/media/arrowShaftBundle.f21a3ee1.svg",
@@ -171,6 +171,18 @@
     "static/media/slate.svg": "/crowcraft/static/media/slate.1f47b6e2.svg",
     "static/media/softHide.svg": "/crowcraft/static/media/softHide.16021908.svg",
     "static/media/spruce.svg": "/crowcraft/static/media/spruce.bb50b14e.svg",
+    "static/media/stitchedLeather.svg": "/crowcraft/static/media/stitchedLeather.534e997f.svg",
+    "static/media/stitchedLeatherBicast.svg": "/crowcraft/static/media/stitchedLeatherBicast.534e997f.svg",
+    "static/media/stitchedLeatherBonded.svg": "/crowcraft/static/media/stitchedLeatherBonded.534e997f.svg",
+    "static/media/stitchedLeatherFullGrain.svg": "/crowcraft/static/media/stitchedLeatherFullGrain.534e997f.svg",
+    "static/media/stitchedLeatherGenuineDurable.svg": "/crowcraft/static/media/stitchedLeatherGenuineDurable.534e997f.svg",
+    "static/media/stitchedLeatherGenuineFlexible.svg": "/crowcraft/static/media/stitchedLeatherGenuineFlexible.534e997f.svg",
+    "static/media/stitchedLeatherGenuineSoft.svg": "/crowcraft/static/media/stitchedLeatherGenuineSoft.534e997f.svg",
+    "static/media/stitchedLeatherGenuineStrong.svg": "/crowcraft/static/media/stitchedLeatherGenuineStrong.534e997f.svg",
+    "static/media/stitchedLeatherGenuineTough.svg": "/crowcraft/static/media/stitchedLeatherGenuineTough.534e997f.svg",
+    "static/media/stitchedLeatherSplitGrain.svg": "/crowcraft/static/media/stitchedLeatherSplitGrain.534e997f.svg",
+    "static/media/stitchedLeatherSuede.svg": "/crowcraft/static/media/stitchedLeatherSuede.534e997f.svg",
+    "static/media/stitchedLeatherTopGrain.svg": "/crowcraft/static/media/stitchedLeatherTopGrain.534e997f.svg",
     "static/media/stone.svg": "/crowcraft/static/media/stone.0dca13b6.svg",
     "static/media/strongHide.svg": "/crowcraft/static/media/strongHide.ebd2f733.svg",
     "static/media/tin.svg": "/crowcraft/static/media/tin.2ef0e58d.svg",
@@ -180,9 +192,9 @@
     "static/media/yew.svg": "/crowcraft/static/media/yew.0ba55069.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.709f745f.js",
-    "static/js/2.c864722c.chunk.js",
+    "static/js/runtime-main.04607d3a.js",
+    "static/js/2.4ef6be33.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.aced3665.chunk.js"
+    "static/js/main.c1b69d90.chunk.js"
   ]
 }
