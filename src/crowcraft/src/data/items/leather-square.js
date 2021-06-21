@@ -197,7 +197,7 @@ class LimberGrainLeatherSquareCustomization extends Customization {
 class BicastLeatherSquareCustomization extends Customization {
     constructor() {
         super(
-            "limber grain",
+            "bicast",
             [
                 new CraftingMaterial(4, new SoftHide()),
 				new CraftingMaterial(3, new DurableHide()),
