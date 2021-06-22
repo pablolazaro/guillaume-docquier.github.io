@@ -10,7 +10,7 @@ export class AppearanceCompendiumNethari extends Item {
             [
                 new CraftingMaterial(500, new Gold()),
             ],
-            
+            1
         );
     }
 }

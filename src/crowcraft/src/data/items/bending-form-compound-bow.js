@@ -10,7 +10,7 @@ export class BendingFormCompoundBow extends Item {
             [
                 new CraftingMaterial(100, new Gold()),
             ],
-            
+            1
         );
     }
 }

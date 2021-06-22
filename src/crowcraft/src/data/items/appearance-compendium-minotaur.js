@@ -10,7 +10,7 @@ export class AppearanceCompendiumMinotaur extends Item {
             [
                 new CraftingMaterial(500, new Gold()),
             ],
-            
+            1
         );
     }
 }

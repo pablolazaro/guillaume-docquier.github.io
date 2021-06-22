@@ -10,7 +10,7 @@ export class Adhesive extends Item {
             [
                 new CraftingMaterial(250, new Gold()),
             ],
-            
+            1
         );
     }
 }

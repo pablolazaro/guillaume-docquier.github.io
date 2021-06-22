@@ -10,7 +10,7 @@ export class BottledSteam extends Item {
             [
                 new CraftingMaterial(2000, new Gold()),
             ],
-            
+            1
         );
     }
 }
