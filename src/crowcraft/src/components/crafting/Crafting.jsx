@@ -16,9 +16,9 @@ export const Crafting = () => {
     useEffect(
         () => {
             if (triggerItemCraft) {
-                const { rawMaterials, crafts } = itemToCraft.getCraftingRundown();
-                setRawMaterials(rawMaterials);
-                setCrafts(crafts);
+                const craftingRundown = itemToCraft.getCraftingRundown();
+                setRawMaterials(craftingRundown.rawMaterials);
+                setCrafts(craftingRundown.crafts);
                 setTriggerItemCraft(false);
             }
         },
