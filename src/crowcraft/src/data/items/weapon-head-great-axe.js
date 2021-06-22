@@ -1,13 +1,12 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-// import { RunestoneEsoteric } from "./runestone-esoteric";
-// import { HeadMoldGreat } from "./head-mold-great";
+import { HeadMoldGreatAxe } from "./head-mold-great-axe";
 import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";
 
-export class WeaponHeadGreat extends Item {
+export class WeaponHeadGreatAxe extends Item {
     constructor() {
         super(
-            "weapon head great",
+            "weapon head: great axe",
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
@@ -15,9 +14,8 @@ export class WeaponHeadGreat extends Item {
 				new CraftingMaterial(1, new MetalBar()),
 				new CraftingMaterial(1, new MetalBar()),
 				new CraftingMaterial(1, new MetalBar()),
-				// new CraftingMaterial(1, new HeadMoldGreat()), // TODO Missing
+				new CraftingMaterial(1, new HeadMoldGreatAxe()),
 				new CraftingMaterial(8, new EtherealDust()),
-				// new CraftingMaterial(1, new RunestoneEsoteric()), // TODO Not sure about that
             ],
             1
         );

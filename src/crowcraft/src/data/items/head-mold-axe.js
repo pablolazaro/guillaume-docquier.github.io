@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class HeadMoldAxe extends Item {
     constructor() {
         super(
-            "head mold axe",
+            "head mold: axe",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [

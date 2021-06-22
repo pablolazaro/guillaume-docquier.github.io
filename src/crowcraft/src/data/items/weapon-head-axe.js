@@ -1,16 +1,19 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { HeadMoldAxe } from "./head-mold-axe";
+import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";
 
-export class WeaponShaftMedium extends Item {
+export class WeaponHeadAxe extends Item {
     constructor() {
         super(
-            "weapon shaft: medium",
+            "weapon head: axe",
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                // new CraftingMaterial(1, new MetalBarOrPlank()), // TODO Implement 'or' rule?
+                new CraftingMaterial(1, new MetalBar()),
 				new CraftingMaterial(1, new MetalBar()),
-				new CraftingMaterial(1, new MetalBar()),
+				new CraftingMaterial(1, new HeadMoldAxe()),
+				new CraftingMaterial(4, new EtherealDust()),
             ],
             1
         );

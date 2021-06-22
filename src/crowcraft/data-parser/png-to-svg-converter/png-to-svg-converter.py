@@ -48,6 +48,7 @@ def get_output_file_name(input_file_name):
         .replace("Component_", "")\
         .replace("Fuel_", "")\
         .replace("Reagent_", "")\
+        .replace("Wep_", "")\
         .replace("_", "")
 
     return modified_file_name[0].lower() + modified_file_name[1:]

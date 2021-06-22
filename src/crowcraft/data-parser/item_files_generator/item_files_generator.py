@@ -123,7 +123,7 @@ export class {class_name} extends Item {
         );
     }
 }
-    """
+"""
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
@@ -171,7 +171,7 @@ export class {class_name} extends CustomizableComponent {
         );
     }
 }
-    """
+"""
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
@@ -191,7 +191,7 @@ export class {class_name} extends CustomizableComponent {
 
 
 def make_item_name(item_name):
-    return item_name.lower().replace(":", "").replace("-", " ")
+    return item_name.lower().replace("-", " ")
 
 
 def make_file_name_without_extension(item_name):
@@ -199,7 +199,7 @@ def make_file_name_without_extension(item_name):
 
 
 def make_class_name(item_name):
-    return "".join(map(capitalize, item_name.replace('\'', "").split(" ")))
+    return "".join(map(capitalize, item_name.replace(":", "").replace('\'', "").split(" ")))
 
 
 def capitalize(string):
