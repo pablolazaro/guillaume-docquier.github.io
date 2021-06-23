@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { HardenedLeatherSquare } from "./hardened-leather-square";
-import { MetalBuckle } from "./metal-buckle";
+import { MetalBuckles } from "./metal-buckles";
 import { EtherealDust } from "./ethereal-dust";
 
 export class LeatherTunic extends Item {
@@ -13,7 +13,7 @@ export class LeatherTunic extends Item {
                 new CraftingMaterial(1, new HardenedLeatherSquare()),
 				new CraftingMaterial(1, new HardenedLeatherSquare()),
 				new CraftingMaterial(1, new HardenedLeatherSquare()),
-				new CraftingMaterial(1, new MetalBuckle()),
+				new CraftingMaterial(1, new MetalBuckles()),
 				new CraftingMaterial(18, new EtherealDust()),
             ],
             1

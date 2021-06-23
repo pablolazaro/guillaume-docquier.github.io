@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.240aec4c.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.240aec4c.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.38c58db4.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.38c58db4.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.5a49920b.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.5a49920b.js.map",
     "static/js/2.7e453305.chunk.js": "/crowcraft/static/js/2.7e453305.chunk.js",
@@ -157,10 +157,10 @@
     "static/media/metalBarSterling.svg": "/crowcraft/static/media/metalBarSterling.af1b8266.svg",
     "static/media/metalBarTin.svg": "/crowcraft/static/media/metalBarTin.dd1de683.svg",
     "static/media/metalBlock.svg": "/crowcraft/static/media/metalBlock.8b0609b0.svg",
-    "static/media/metalBuckle.svg": "/crowcraft/static/media/metalBuckle.97f50afa.svg",
-    "static/media/metalBuckleAureliumStealth.svg": "/crowcraft/static/media/metalBuckleAureliumStealth.97f50afa.svg",
-    "static/media/metalBuckleOutOfCombatHealthRegeneration.svg": "/crowcraft/static/media/metalBuckleOutOfCombatHealthRegeneration.97f50afa.svg",
-    "static/media/metalBuckleSilverStealth.svg": "/crowcraft/static/media/metalBuckleSilverStealth.97f50afa.svg",
+    "static/media/metalBuckles.svg": "/crowcraft/static/media/metalBuckles.97f50afa.svg",
+    "static/media/metalBucklesAureliumStealth.svg": "/crowcraft/static/media/metalBucklesAureliumStealth.97f50afa.svg",
+    "static/media/metalBucklesOutOfCombatHealthRegeneration.svg": "/crowcraft/static/media/metalBucklesOutOfCombatHealthRegeneration.97f50afa.svg",
+    "static/media/metalBucklesSilverStealth.svg": "/crowcraft/static/media/metalBucklesSilverStealth.97f50afa.svg",
     "static/media/metalPlates.svg": "/crowcraft/static/media/metalPlates.8cba9a0b.svg",
     "static/media/metalPlatesAureliumSteel.svg": "/crowcraft/static/media/metalPlatesAureliumSteel.8cba9a0b.svg",
     "static/media/metalPlatesBlueSteel.svg": "/crowcraft/static/media/metalPlatesBlueSteel.8cba9a0b.svg",
@@ -264,6 +264,6 @@
     "static/js/runtime-main.5a49920b.js",
     "static/js/2.7e453305.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.240aec4c.chunk.js"
+    "static/js/main.38c58db4.chunk.js"
   ]
 }

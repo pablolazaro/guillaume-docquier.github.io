@@ -4,10 +4,10 @@ import { Aurelium } from "./aurelium";
 import { Silver } from "./silver";
 import { Coal } from "./coal";
 
-export class MetalBuckle extends CustomizableComponent {
+export class MetalBuckles extends CustomizableComponent {
     constructor() {
         super(
-            "metal buckle",
+            "metal buckles",
             [Professions.Armorsmith, Professions.Weaponsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
@@ -17,15 +17,15 @@ export class MetalBuckle extends CustomizableComponent {
             ],
             1,
             [
-                new AureliumStealthMetalBuckleCustomization(),
-                new SilverStealthMetalBuckleCustomization(),
-                new OutOfCombatHealthRegenMetalBuckleCustomization(),
+                new AureliumStealthMetalBucklesCustomization(),
+                new SilverStealthMetalBucklesCustomization(),
+                new OutOfCombatHealthRegenMetalBucklesCustomization(),
             ]
         );
     }
 }
 
-class AureliumStealthMetalBuckleCustomization extends Customization {
+class AureliumStealthMetalBucklesCustomization extends Customization {
     constructor() {
         super(
             "aurelium stealth",
@@ -45,7 +45,7 @@ class AureliumStealthMetalBuckleCustomization extends Customization {
     }
 }
 
-class SilverStealthMetalBuckleCustomization extends Customization {
+class SilverStealthMetalBucklesCustomization extends Customization {
     constructor() {
         super(
             "silver stealth",
@@ -65,7 +65,7 @@ class SilverStealthMetalBuckleCustomization extends Customization {
     }
 }
 
-class OutOfCombatHealthRegenMetalBuckleCustomization extends Customization {
+class OutOfCombatHealthRegenMetalBucklesCustomization extends Customization {
     constructor() {
         super(
             "out of combat health regeneration",

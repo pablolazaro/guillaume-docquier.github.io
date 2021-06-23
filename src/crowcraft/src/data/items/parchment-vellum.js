@@ -8,7 +8,7 @@ export class ParchmentVellum extends Item {
         super(
             "parchment vellum",
             [Professions.Woodworker],
-            [Rarities.Common],
+            [Rarities.Poor],
             [
                 new CraftingMaterial(1, new Wood()),
 				new CraftingMaterial(1, new PenAndInk()),
