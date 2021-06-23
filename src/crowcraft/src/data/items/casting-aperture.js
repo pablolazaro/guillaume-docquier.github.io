@@ -1,5 +1,5 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-// import { BarrelMoldArcane } from "./barrel-mold-arcane";
+import { BarrelMoldArcane } from "./barrel-mold-arcane";
 import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";
 
@@ -12,7 +12,7 @@ export class CastingAperture extends Item {
             [
                 new CraftingMaterial(1, new MetalBar()),
 				new CraftingMaterial(1, new MetalBar()),
-				// new CraftingMaterial(1, new BarrelMoldArcane()), // TODO Missing
+				new CraftingMaterial(1, new BarrelMoldArcane()),
 				new CraftingMaterial(4, new EtherealDust()),
             ],
             1

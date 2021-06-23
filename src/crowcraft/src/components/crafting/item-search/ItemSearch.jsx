@@ -5,7 +5,7 @@ import { TextInput, Item } from "components";
 import { useState } from "react";
 import { Sorting } from "utils";
 
-const MAX_ITEMS_COUNT = 30;
+const MAX_ITEMS_COUNT = 300; // TODO Temporary
 
 export const ItemSearch = ({ onItemSelected }) => {
     const [allItems] = useState(
