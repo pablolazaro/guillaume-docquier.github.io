@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Hide } from "./hide";
 import { LacingSinew } from "./lacing-sinew";
+import { Hide } from "./hide";
 
 export class LeatherPadding extends Item {
     constructor() {
@@ -10,9 +10,9 @@ export class LeatherPadding extends Item {
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
                 new CraftingMaterial(2, new Hide()),
-                new CraftingMaterial(2, new Hide()),
-                new CraftingMaterial(2, new Hide()),
-                new CraftingMaterial(1, new LacingSinew())
+				new CraftingMaterial(2, new Hide()),
+				new CraftingMaterial(2, new Hide()),
+				new CraftingMaterial(1, new LacingSinew()),
             ],
             1
         );

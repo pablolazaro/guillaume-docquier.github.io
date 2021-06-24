@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponCrossguard } from "./weapon-crossguard";
-import { WeaponPommel } from "./weapon-pommel";
 import { WeaponGrip } from "./weapon-grip";
+import { WeaponPommel } from "./weapon-pommel";
+import { WeaponCrossguard } from "./weapon-crossguard";
 
 export class WeaponHilt extends Item {
     constructor() {
@@ -10,7 +10,7 @@ export class WeaponHilt extends Item {
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-				new CraftingMaterial(1, new WeaponGrip()),
+                new CraftingMaterial(1, new WeaponGrip()),
 				new CraftingMaterial(1, new WeaponPommel()),
 				new CraftingMaterial(1, new WeaponCrossguard()),
             ],
@@ -18,4 +18,3 @@ export class WeaponHilt extends Item {
         );
     }
 }
-    

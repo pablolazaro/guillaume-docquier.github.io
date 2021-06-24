@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BendingFormStaffHeel extends Item {
     constructor() {
         super(
-            "bending form staff heel",
+            "bending form: staff heel",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BendingFormStaffHeel extends Item {
         );
     }
 }
-    

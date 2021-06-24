@@ -1,36 +1,36 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Ore } from "./ore";
 import { Aurelium } from "./aurelium";
-import { Copper } from "./copper";
+import { Tin } from "./tin";
 import { Iron } from "./iron";
 import { Silver } from "./silver";
-import { Tin } from "./tin";
+import { Copper } from "./copper";
 import { Coal } from "./coal";
 
 export class MetalScales extends CustomizableComponent {
     constructor() {
         super(
             "metal scales",
-            [Professions.Armorsmith, Professions.Weaponsmith],
+            [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Ore()),
-                new CraftingMaterial(10, new Ore()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Ore()),
+				new CraftingMaterial(10, new Ore()),
+				new CraftingMaterial(12, new Coal()),
             ],
             1,
             [
                 new SteelMetalScalesCustomization(),
-                new DarkBronzeMetalScalesCustomization(),
-                new BrightSteelMetalScalesCustomization(),
-                new AureliumSteelMetalScalesCustomization(),
-                new InvarMetalScalesCustomization(),
-                new SilveredIronMetalScalesCustomization(),
-                new TigerIronMetalScalesCustomization(),
-                new BlueSteelMetalScalesCustomization(),
-                new ForestAureliumMetalScalesCustomization(),
-                new DarkElectrumMetalScalesCustomization(),
+				new DarkBronzeMetalScalesCustomization(),
+				new BrightSteelMetalScalesCustomization(),
+				new AureliumSteelMetalScalesCustomization(),
+				new InvarMetalScalesCustomization(),
+				new SilveredIronMetalScalesCustomization(),
+				new TigerIronMetalScalesCustomization(),
+				new BlueSteelMetalScalesCustomization(),
+				new ForestAureliumMetalScalesCustomization(),
+				new DarkElectrumMetalScalesCustomization(),
             ]
         );
     }
@@ -42,16 +42,16 @@ class SteelMetalScalesCustomization extends Customization {
             "steel",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Copper()),
-                new CraftingMaterial(10, new Iron()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Copper()),
+				new CraftingMaterial(10, new Iron()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.BleedResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.BleedResistance],
                 [Rarities.Rare.name]: [ItemsStats.BleedResistance],
                 [Rarities.Epic.name]: [ItemsStats.BleedResistance],
-                [Rarities.Legendary.name]: [ItemsStats.BleedResistance]
+                [Rarities.Legendary.name]: [ItemsStats.BleedResistance],
             }
         )
     }
@@ -63,16 +63,16 @@ class DarkBronzeMetalScalesCustomization extends Customization {
             "dark bronze",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Copper()),
-                new CraftingMaterial(10, new Tin()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Copper()),
+				new CraftingMaterial(10, new Tin()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.FireResistance],
                 [Rarities.Rare.name]: [ItemsStats.FireResistance],
                 [Rarities.Epic.name]: [ItemsStats.FireResistance],
-                [Rarities.Legendary.name]: [ItemsStats.FireResistance]
+                [Rarities.Legendary.name]: [ItemsStats.FireResistance],
             }
         )
     }
@@ -84,16 +84,16 @@ class BrightSteelMetalScalesCustomization extends Customization {
             "bright steel",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Copper()),
-                new CraftingMaterial(10, new Silver()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Copper()),
+				new CraftingMaterial(10, new Silver()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.IceResistance],
                 [Rarities.Rare.name]: [ItemsStats.IceResistance],
                 [Rarities.Epic.name]: [ItemsStats.IceResistance],
-                [Rarities.Legendary.name]: [ItemsStats.IceResistance]
+                [Rarities.Legendary.name]: [ItemsStats.IceResistance],
             }
         )
     }
@@ -105,16 +105,16 @@ class AureliumSteelMetalScalesCustomization extends Customization {
             "aurelium steel",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Copper()),
-                new CraftingMaterial(10, new Aurelium()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Copper()),
+				new CraftingMaterial(10, new Aurelium()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.ElectricityResistance],
                 [Rarities.Rare.name]: [ItemsStats.ElectricityResistance],
                 [Rarities.Epic.name]: [ItemsStats.ElectricityResistance],
-                [Rarities.Legendary.name]: [ItemsStats.ElectricityResistance]
+                [Rarities.Legendary.name]: [ItemsStats.ElectricityResistance],
             }
         )
     }
@@ -126,16 +126,16 @@ class InvarMetalScalesCustomization extends Customization {
             "invar",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Iron()),
-                new CraftingMaterial(10, new Tin()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Iron()),
+				new CraftingMaterial(10, new Tin()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.NatureResistance],
                 [Rarities.Rare.name]: [ItemsStats.NatureResistance],
                 [Rarities.Epic.name]: [ItemsStats.NatureResistance],
-                [Rarities.Legendary.name]: [ItemsStats.NatureResistance]
+                [Rarities.Legendary.name]: [ItemsStats.NatureResistance],
             }
         )
     }
@@ -147,16 +147,16 @@ class SilveredIronMetalScalesCustomization extends Customization {
             "silvered iron",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Iron()),
-                new CraftingMaterial(10, new Silver()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Iron()),
+				new CraftingMaterial(10, new Silver()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PoisonResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.PoisonResistance],
                 [Rarities.Rare.name]: [ItemsStats.PoisonResistance],
                 [Rarities.Epic.name]: [ItemsStats.PoisonResistance],
-                [Rarities.Legendary.name]: [ItemsStats.PoisonResistance]
+                [Rarities.Legendary.name]: [ItemsStats.PoisonResistance],
             }
         )
     }
@@ -168,16 +168,16 @@ class TigerIronMetalScalesCustomization extends Customization {
             "tiger iron",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Iron()),
-                new CraftingMaterial(10, new Aurelium()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Iron()),
+				new CraftingMaterial(10, new Aurelium()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.DiseaseResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.DiseaseResistance],
                 [Rarities.Rare.name]: [ItemsStats.DiseaseResistance],
                 [Rarities.Epic.name]: [ItemsStats.DiseaseResistance],
-                [Rarities.Legendary.name]: [ItemsStats.DiseaseResistance]
+                [Rarities.Legendary.name]: [ItemsStats.DiseaseResistance],
             }
         )
     }
@@ -189,16 +189,16 @@ class BlueSteelMetalScalesCustomization extends Customization {
             "blue steel",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Tin()),
-                new CraftingMaterial(10, new Silver()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Tin()),
+				new CraftingMaterial(10, new Silver()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.SlashingResistance],
                 [Rarities.Rare.name]: [ItemsStats.SlashingResistance],
                 [Rarities.Epic.name]: [ItemsStats.SlashingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.SlashingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.SlashingResistance],
             }
         )
     }
@@ -210,16 +210,16 @@ class ForestAureliumMetalScalesCustomization extends Customization {
             "forest aurelium",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Tin()),
-                new CraftingMaterial(10, new Aurelium()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Tin()),
+				new CraftingMaterial(10, new Aurelium()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.CrushingResistance],
                 [Rarities.Rare.name]: [ItemsStats.CrushingResistance],
                 [Rarities.Epic.name]: [ItemsStats.CrushingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.CrushingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.CrushingResistance],
             }
         )
     }
@@ -231,16 +231,16 @@ class DarkElectrumMetalScalesCustomization extends Customization {
             "dark electrum",
             [
                 new CraftingMaterial(16, new Iron()),
-                new CraftingMaterial(10, new Silver()),
-                new CraftingMaterial(10, new Aurelium()),
-                new CraftingMaterial(12, new Coal())
+				new CraftingMaterial(10, new Silver()),
+				new CraftingMaterial(10, new Aurelium()),
+				new CraftingMaterial(12, new Coal()),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingResistance],
                 [Rarities.Uncommon.name]: [ItemsStats.PiercingResistance],
                 [Rarities.Rare.name]: [ItemsStats.PiercingResistance],
                 [Rarities.Epic.name]: [ItemsStats.PiercingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.PiercingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.PiercingResistance],
             }
         )
     }

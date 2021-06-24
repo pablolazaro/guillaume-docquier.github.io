@@ -14,4 +14,3 @@ export class WeaponPommel extends Item {
         );
     }
 }
-    

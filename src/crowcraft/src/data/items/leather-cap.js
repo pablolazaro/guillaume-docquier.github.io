@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { LeatherSquare } from "./leather-square";
 import { MetalRivets } from "./metal-rivets";
 import { EtherealDust } from "./ethereal-dust";
+import { LeatherSquare } from "./leather-square";
 
 export class LeatherCap extends Item {
     constructor() {
@@ -20,4 +20,3 @@ export class LeatherCap extends Item {
         );
     }
 }
-    

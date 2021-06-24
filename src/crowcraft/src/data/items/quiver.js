@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { ArrowheadBundle } from "./arrowhead-bundle";
 import { EtherealDust } from "./ethereal-dust";
-import { ArrowShaftBundle } from "./arrow-shaft-bundle";
 import { Heartwood } from "./heartwood";
+import { ArrowShaftBundle } from "./arrow-shaft-bundle";
+import { ArrowheadBundle } from "./arrowhead-bundle";
 
 export class Quiver extends Item {
     constructor() {

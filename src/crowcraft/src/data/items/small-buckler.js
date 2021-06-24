@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Enarmes } from "./enarmes";
 import { ShieldCovering } from "./shield-covering";
-import { ShieldBaseSmall } from "./shield-base-small";
 import { EtherealDust } from "./ethereal-dust";
+import { Enarmes } from "./enarmes";
+import { ShieldBaseSmall } from "./shield-base-small";
 
 export class SmallBuckler extends Item {
     constructor() {

@@ -15,4 +15,3 @@ export class BowString extends Item {
         );
     }
 }
-    

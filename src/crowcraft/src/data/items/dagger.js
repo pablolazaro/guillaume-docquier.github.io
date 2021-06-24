@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { EtherealDust } from "./ethereal-dust";
-import { BladeRivets } from "./blade-rivets";
-import { WeaponBladeShort } from "./weapon-blade-short";
 import { WeaponHilt } from "./weapon-hilt";
+import { WeaponBladeShort } from "./weapon-blade-short";
+import { BladeRivets } from "./blade-rivets";
 
 export class Dagger extends Item {
     constructor() {

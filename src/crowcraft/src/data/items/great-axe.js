@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { WeaponHeadGreatAxe } from "./weapon-head-great-axe";
-import { WeaponShaftMedium } from "./weapon-shaft-medium";
-import { WeaponHiltGreat } from "./weapon-hilt-great";
 import { EtherealDust } from "./ethereal-dust";
+import { WeaponHiltGreat } from "./weapon-hilt-great";
+import { WeaponShaftMedium } from "./weapon-shaft-medium";
 
 export class GreatAxe extends Item {
     constructor() {
@@ -20,4 +20,3 @@ export class GreatAxe extends Item {
         );
     }
 }
-    

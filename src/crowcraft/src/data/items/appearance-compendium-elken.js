@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class AppearanceCompendiumElken extends Item {
     constructor() {
         super(
-            "appearance compendium elken",
+            "appearance compendium: elken",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class AppearanceCompendiumElken extends Item {
         );
     }
 }
-    

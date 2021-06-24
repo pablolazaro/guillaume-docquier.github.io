@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BendingFormRecurveBow extends Item {
     constructor() {
         super(
-            "bending form recurve bow",
+            "bending form: recurve bow",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BendingFormRecurveBow extends Item {
         );
     }
 }
-    

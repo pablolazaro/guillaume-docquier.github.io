@@ -14,4 +14,3 @@ export class WeaponCrossguard extends Item {
         );
     }
 }
-    

@@ -1,10 +1,10 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Hide } from "./hide";
 import { DurableHide } from "./durable-hide";
 import { FlexibleHide } from "./flexible-hide";
+import { StrongHide } from "./strong-hide";
 import { SoftHide } from "./soft-hide";
 import { ToughHide } from "./tough-hide";
-import { StrongHide } from "./strong-hide";
 import { LacingSinew } from "./lacing-sinew";
 
 export class StitchedLeather extends CustomizableComponent {
@@ -22,16 +22,16 @@ export class StitchedLeather extends CustomizableComponent {
             1,
             [
                 new FullGrainStitchedLeatherCustomization(),
-                new TopGrainStitchedLeatherCustomization(),
-                new SplitGrainStitchedLeatherCustomization(),
-                new BicastStitchedLeatherCustomization(),
-                new SuedeStitchedLeatherCustomization(),
-                new BondedStitchedLeatherCustomization(),
-                new GenuineDurableStitchedLeatherCustomization(),
-                new GenuineToughStitchedLeatherCustomization(),
-                new GenuineSoftStitchedLeatherCustomization(),
-                new GenuineStrongStitchedLeatherCustomization(),
-                new GenuineFlexibleStitchedLeatherCustomization(),
+				new TopGrainStitchedLeatherCustomization(),
+				new SplitGrainStitchedLeatherCustomization(),
+				new BicastStitchedLeatherCustomization(),
+				new SuedeStitchedLeatherCustomization(),
+				new BondedStitchedLeatherCustomization(),
+				new GenuineDurableStitchedLeatherCustomization(),
+				new GenuineToughStitchedLeatherCustomization(),
+				new GenuineSoftStitchedLeatherCustomization(),
+				new GenuineStrongStitchedLeatherCustomization(),
+				new GenuineFlexibleStitchedLeatherCustomization(),
             ]
         );
     }
@@ -52,7 +52,7 @@ class FullGrainStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.AttackPower],
                 [Rarities.Rare.name]: [ItemsStats.AttackPower],
                 [Rarities.Epic.name]: [ItemsStats.AttackPower, ItemsStats.Stamina],
-                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Stamina]
+                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Stamina],
             }
         )
     }
@@ -73,7 +73,7 @@ class TopGrainStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.SupportPower],
                 [Rarities.Rare.name]: [ItemsStats.SupportPower],
                 [Rarities.Epic.name]: [ItemsStats.SupportPower, ItemsStats.Stamina],
-                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.Stamina]
+                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.Stamina],
             }
         )
     }
@@ -94,7 +94,7 @@ class SplitGrainStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.AttackPower],
                 [Rarities.Rare.name]: [ItemsStats.AttackPower],
                 [Rarities.Epic.name]: [ItemsStats.AttackPower, ItemsStats.Stealth],
-                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Stealth]
+                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Stealth],
             }
         )
     }
@@ -115,7 +115,7 @@ class BicastStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.SupportPower],
                 [Rarities.Rare.name]: [ItemsStats.SupportPower],
                 [Rarities.Epic.name]: [ItemsStats.SupportPower, ItemsStats.Perception],
-                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.Perception]
+                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.Perception],
             }
         )
     }
@@ -136,7 +136,7 @@ class SuedeStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.AttackPower],
                 [Rarities.Rare.name]: [ItemsStats.AttackPower],
                 [Rarities.Epic.name]: [ItemsStats.AttackPower, ItemsStats.Lifesteal],
-                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Lifesteal]
+                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Lifesteal],
             }
         )
     }
@@ -157,7 +157,7 @@ class BondedStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.SupportPower],
                 [Rarities.Rare.name]: [ItemsStats.SupportPower],
                 [Rarities.Epic.name]: [ItemsStats.SupportPower, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.AttackPower]
+                [Rarities.Legendary.name]: [ItemsStats.SupportPower, ItemsStats.AttackPower],
             }
         )
     }
@@ -178,7 +178,7 @@ class GenuineDurableStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeChance],
                 [Rarities.Rare.name]: [ItemsStats.CriticalStrikeChance],
                 [Rarities.Epic.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.AttackPower]
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.AttackPower],
             }
         )
     }
@@ -199,7 +199,7 @@ class GenuineToughStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeDamage],
                 [Rarities.Rare.name]: [ItemsStats.CriticalStrikeDamage],
                 [Rarities.Epic.name]: [ItemsStats.CriticalStrikeDamage, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeDamage, ItemsStats.AttackPower]
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeDamage, ItemsStats.AttackPower],
             }
         )
     }
@@ -220,7 +220,7 @@ class GenuineSoftStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CriticalHealingChance],
                 [Rarities.Rare.name]: [ItemsStats.CriticalHealingChance],
                 [Rarities.Epic.name]: [ItemsStats.CriticalHealingChance, ItemsStats.SupportPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalHealingChance, ItemsStats.SupportPower]
+                [Rarities.Legendary.name]: [ItemsStats.CriticalHealingChance, ItemsStats.SupportPower],
             }
         )
     }
@@ -241,7 +241,7 @@ class GenuineStrongStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CriticalHealingAmount],
                 [Rarities.Rare.name]: [ItemsStats.CriticalHealingAmount],
                 [Rarities.Epic.name]: [ItemsStats.CriticalHealingAmount, ItemsStats.SupportPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalHealingAmount, ItemsStats.SupportPower]
+                [Rarities.Legendary.name]: [ItemsStats.CriticalHealingAmount, ItemsStats.SupportPower],
             }
         )
     }
@@ -262,9 +262,8 @@ class GenuineFlexibleStitchedLeatherCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeChance],
                 [Rarities.Rare.name]: [ItemsStats.CriticalStrikeChance],
                 [Rarities.Epic.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.CriticalStrikeDamage],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.CriticalStrikeDamage]
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.CriticalStrikeDamage],
             }
         )
     }
 }
-    

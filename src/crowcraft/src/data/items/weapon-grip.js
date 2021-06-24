@@ -14,4 +14,3 @@ export class WeaponGrip extends Item {
         );
     }
 }
-    

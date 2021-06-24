@@ -27,7 +27,7 @@ def generate_item_files():
                 items = csv.reader(tsv_file, delimiter='\t')
                 next(items)  # Skip header
                 for item in items:
-                    if item[Columns.IS_IMPLEMENTED] != "" and item[Columns.IS_UP_TO_DATE] == "No":
+                    if item[Columns.IS_IMPLEMENTED] != "" and item[Columns.IS_UP_TO_DATE] != "":
                         generate_item_code(item)
 
 

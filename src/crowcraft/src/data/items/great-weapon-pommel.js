@@ -15,4 +15,3 @@ export class GreatWeaponPommel extends Item {
         );
     }
 }
-    

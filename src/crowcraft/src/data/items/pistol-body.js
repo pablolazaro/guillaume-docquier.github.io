@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { WeaponGrip } from "./weapon-grip";
 import { PistolTrigger } from "./pistol-trigger";
 import { PistolHammerAndFrizzen } from "./pistol-hammer-and-frizzen";
-import { WeaponGrip } from "./weapon-grip";
 
 export class PistolBody extends Item {
     constructor() {

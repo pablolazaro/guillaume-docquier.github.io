@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { PistolBarrel } from "./pistol-barrel";
 import { EtherealDust } from "./ethereal-dust";
 import { PistolBody } from "./pistol-body";
+import { PistolBarrel } from "./pistol-barrel";
 import { PistolPins } from "./pistol-pins";
 
 export class Pistol extends Item {

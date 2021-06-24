@@ -25,7 +25,7 @@ def generate_customizations():
                 customization_entries = csv.reader(tsv_file, delimiter='\t')
                 next(customization_entries)  # Skip header
                 for customization_entry in customization_entries:
-                    if customization_entry[Columns.IS_IMPLEMENTED] != "" and customization_entry[Columns.IS_UP_TO_DATE] == "No":
+                    if customization_entry[Columns.IS_IMPLEMENTED] != "" and customization_entry[Columns.IS_UP_TO_DATE] != "":
                         item_name = customization_entry[Columns.ITEM_NAME]
                         if item_name not in customizations_by_item:
                             customizations_by_item[item_name] = []

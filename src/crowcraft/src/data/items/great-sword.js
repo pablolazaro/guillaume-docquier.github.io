@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
 import { WeaponBladeGreat } from "./weapon-blade-great";
+import { EtherealDust } from "./ethereal-dust";
 import { WeaponHiltGreat } from "./weapon-hilt-great";
 import { BladeRivetsGreat } from "./blade-rivets-great";
 

@@ -14,4 +14,3 @@ export class ParchmentPaper extends Item {
         );
     }
 }
-    

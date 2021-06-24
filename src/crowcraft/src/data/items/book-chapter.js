@@ -1,12 +1,12 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
+import { Marble } from "./marble";
+import { Limestone } from "./limestone";
+import { Slate } from "./slate";
 import { StitchedLeather } from "./stitched-leather";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { Stone } from "./stone";
-import { Travertine } from "./travertine";
-import { Marble } from "./marble";
-import { Limestone } from "./limestone";
 import { Granite } from "./granite";
-import { Slate } from "./slate";
+import { Travertine } from "./travertine";
 
 export class BookChapter extends CustomizableComponent {
     constructor() {
@@ -22,10 +22,10 @@ export class BookChapter extends CustomizableComponent {
             1,
             [
                 new RedemptionBookChapterCustomization(),
-                new SinBookChapterCustomization(),
-                new IndulgenceBookChapterCustomization(),
-                new FervorBookChapterCustomization(),
-                new AbsolutionBookChapterCustomization(),
+				new SinBookChapterCustomization(),
+				new IndulgenceBookChapterCustomization(),
+				new FervorBookChapterCustomization(),
+				new AbsolutionBookChapterCustomization(),
             ]
         );
     }
@@ -45,7 +45,7 @@ class RedemptionBookChapterCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.SlashingResistance],
                 [Rarities.Rare.name]: [ItemsStats.SlashingResistance],
                 [Rarities.Epic.name]: [ItemsStats.SlashingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.SlashingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.SlashingResistance],
             }
         )
     }
@@ -65,7 +65,7 @@ class SinBookChapterCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.FireResistance],
                 [Rarities.Rare.name]: [ItemsStats.FireResistance],
                 [Rarities.Epic.name]: [ItemsStats.FireResistance],
-                [Rarities.Legendary.name]: [ItemsStats.FireResistance]
+                [Rarities.Legendary.name]: [ItemsStats.FireResistance],
             }
         )
     }
@@ -85,7 +85,7 @@ class IndulgenceBookChapterCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CrushingResistance],
                 [Rarities.Rare.name]: [ItemsStats.CrushingResistance],
                 [Rarities.Epic.name]: [ItemsStats.CrushingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.CrushingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.CrushingResistance],
             }
         )
     }
@@ -105,7 +105,7 @@ class FervorBookChapterCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.ElectricityResistance],
                 [Rarities.Rare.name]: [ItemsStats.ElectricityResistance],
                 [Rarities.Epic.name]: [ItemsStats.ElectricityResistance],
-                [Rarities.Legendary.name]: [ItemsStats.ElectricityResistance]
+                [Rarities.Legendary.name]: [ItemsStats.ElectricityResistance],
             }
         )
     }
@@ -125,9 +125,8 @@ class AbsolutionBookChapterCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.PiercingResistance],
                 [Rarities.Rare.name]: [ItemsStats.PiercingResistance],
                 [Rarities.Epic.name]: [ItemsStats.PiercingResistance],
-                [Rarities.Legendary.name]: [ItemsStats.PiercingResistance]
+                [Rarities.Legendary.name]: [ItemsStats.PiercingResistance],
             }
         )
     }
 }
-    

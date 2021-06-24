@@ -14,4 +14,3 @@ export class ArcaneActuator extends Item {
         );
     }
 }
-    

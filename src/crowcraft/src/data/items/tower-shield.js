@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Enarmes } from "./enarmes";
 import { ShieldCovering } from "./shield-covering";
-import { ShieldBaseLarge } from "./shield-base-large";
 import { EtherealDust } from "./ethereal-dust";
+import { Enarmes } from "./enarmes";
+import { ShieldBaseLarge } from "./shield-base-large";
 
 export class TowerShield extends Item {
     constructor() {

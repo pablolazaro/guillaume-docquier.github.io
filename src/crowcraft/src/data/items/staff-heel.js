@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { EtherealDust } from "./ethereal-dust";
 import { BendingFormStaffHeel } from "./bending-form-staff-heel";
 import { CompositeWoodPlank } from "./composite-wood-plank";
-import { EtherealDust } from "./ethereal-dust";
 
 export class StaffHeel extends Item {
     constructor() {

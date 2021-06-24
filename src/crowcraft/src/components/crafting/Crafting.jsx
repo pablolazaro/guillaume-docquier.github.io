@@ -55,8 +55,9 @@ export const Crafting = () => {
 
     return (
         <div className="mv3">
-            <div className="mb4 f4 fw5 bittersweet">
-                We are in the process of generating items automatically. Items that are missing an icon haven't been validated yet, their crafting materials may be incomplete.
+            <div className="mb4 f4 fw5 verdigris">
+                <div>Armorsmith, Weaponsmith, Leatherworker and Woodworker items have all been imported.</div>
+                <div>Some assets are missing, but crafting materials are correct.</div>
             </div>
             <div className="mb4">
                 <ItemSearch onItemSelected={selectItemToCraft} />

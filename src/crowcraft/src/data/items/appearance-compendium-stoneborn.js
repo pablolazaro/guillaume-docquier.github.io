@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class AppearanceCompendiumStoneborn extends Item {
     constructor() {
         super(
-            "appearance compendium stoneborn",
+            "appearance compendium: stoneborn",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class AppearanceCompendiumStoneborn extends Item {
         );
     }
 }
-    

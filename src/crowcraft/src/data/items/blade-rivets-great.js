@@ -4,7 +4,7 @@ import { MetalBar } from "./metal-bar";
 export class BladeRivetsGreat extends Item {
     constructor() {
         super(
-            "blade rivets great",
+            "blade rivets: great",
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
@@ -15,4 +15,3 @@ export class BladeRivetsGreat extends Item {
         );
     }
 }
-    

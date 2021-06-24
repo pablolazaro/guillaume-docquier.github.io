@@ -31,7 +31,7 @@ No	No	Arrowhead Bundle	Crushing	9x Copper, 1x Coal	Crushing Damage Type
 No	No	Arrowhead Bundle	Fire	9x Aurelium, 1x Coal	Fire Damage Type	
 No	No	Arrowhead Bundle	Ice	9x Silver, 1x Coal	Ice Damage Type	
 						
-No	No	Metal Rivets	Stealth	5x Ore, 3x Ore, 2x Coal	Stealth	Out Of Combat Health Regeneration
+No	No	Metal Rivets	Stealth	5x Aurelium, 3x Iron, 2x Coal	Stealth	Out Of Combat Health Regeneration
 No	No	Metal Rivets	Out Of Combat Health Regeneration	5x Ore, 3x Ore, 2x Coal	Out Of Combat Health Regeneration	
 						
 No	No	Metal Buckles	Aurelium Stealth	10x Aurelium, 10x Aurelium, 2x Coal	Stealth	Out Of Combat Health Regeneration
@@ -97,8 +97,8 @@ No	No	Composite Wood Plank	Prime	6x Oak, 6x Oak, 6x Birch, 5x Sandpaper	Slashing
 No	No	Composite Wood Plank	Sheated	6x Spruce, 6x Birch, 6x Yew, 5x Sandpaper	Crushing Armor Penetration	Attack Power
 No	No	Composite Wood Plank	Waned	6x Yew, 6x Yew, 6x Oak, 5x Sandpaper	Piercing Armor Penetration	Attack Power
 No	No	Composite Wood Plank	Select Oak	6x Oak, 6x Oak, 6x Oak, 5x Sandpaper	Critical Strike Chance	Attack Power
-No	No	Composite Wood Plank	Select Birch	6x Birch, 6x Birch, 6x Birch, 5x Sandpaper	Critical Damage	Attack Power
-No	No	Composite Wood Plank	Select Spruce	6x Spruce, 6x Spruce, 6x Spruce, 5x Sandpaper	Critical Heal Chance	Support Power
+No	No	Composite Wood Plank	Select Birch	6x Birch, 6x Birch, 6x Birch, 5x Sandpaper	Critical Strike Damage	Attack Power
+No	No	Composite Wood Plank	Select Spruce	6x Spruce, 6x Spruce, 6x Spruce, 5x Sandpaper	Critical Healing Chance	Support Power
 No	No	Composite Wood Plank	Select Ash	6x Ash, 6x Ash, 6x Ash, 5x Sandpaper	Critical Healing Amount	Support Power
 No	No	Composite Wood Plank	Select Yew	6x Yew, 6x Yew, 6x Yew, 5x Sandpaper	Critical Strike Chance	Critical Strike Damage
 						
@@ -114,8 +114,8 @@ No	No	Stitched Leather	Split Grain	1x Strong Hide, 1x Durable Hide, 1x Durable H
 No	No	Stitched Leather	Bicast	1x Strong Hide, 1x Flexible Hide, 1x Flexible Hide, 2x Lacing Sinew	Support Power	Perception
 No	No	Stitched Leather	Suede	1x Strong Hide, 1x Soft Hide, 1x Soft Hide, 2x Lacing Sinew	Attack Power	Lifesteal
 No	No	Stitched Leather	Bonded	1x Strong Hide, 1x Tough Hide, 1x Flexible Hide, 2x Lacing Sinew	Support Power	Attack Power
-No	No	Stitched Leather	Genuine Durable	1x Durable Hide, 1x Durable Hide, 1x Durable Hide, 2x Lacing Sinew	Critical Strike	Attack Power
-No	No	Stitched Leather	Genuine Tough	1x Tough Hide, 1x Tough Hide, 1x Tough Hide, 2x Lacing Sinew	Critical Damage	Attack Power
+No	No	Stitched Leather	Genuine Durable	1x Durable Hide, 1x Durable Hide, 1x Durable Hide, 2x Lacing Sinew	Critical Strike Chance	Attack Power
+No	No	Stitched Leather	Genuine Tough	1x Tough Hide, 1x Tough Hide, 1x Tough Hide, 2x Lacing Sinew	Critical Strike Damage	Attack Power
 No	No	Stitched Leather	Genuine Soft	1x Soft Hide, 1x Soft Hide, 1x Soft Hide, 2x Lacing Sinew	Critical Healing Chance	Support Power
 No	No	Stitched Leather	Genuine Strong	1x Strong Hide, 1x Strong Hide, 1x Strong Hide, 2x Lacing Sinew	Critical Healing Amount	Support Power
 No	No	Stitched Leather	Genuine Flexible	1x Flexible Hide, 1x Flexible Hide, 1x Flexible Hide, 2x Lacing Sinew	Critical Strike Chance	Critical Strike Damage

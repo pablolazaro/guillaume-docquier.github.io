@@ -18,4 +18,3 @@ export class BoundChapters extends Item {
         );
     }
 }
-    

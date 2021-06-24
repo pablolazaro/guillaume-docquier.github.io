@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BladeMoldThin extends Item {
     constructor() {
         super(
-            "blade mold thin",
+            "blade mold: thin",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BladeMoldThin extends Item {
         );
     }
 }
-    

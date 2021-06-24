@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { MetalBar } from "./metal-bar";
-import { BladeMoldCurved } from "./blade-mold-curved";
 import { EtherealDust } from "./ethereal-dust";
+import { BladeMoldCurved } from "./blade-mold-curved";
 
 export class WeaponBladeCurved extends Item {
     constructor() {

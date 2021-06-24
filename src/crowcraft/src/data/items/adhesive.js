@@ -14,4 +14,3 @@ export class Adhesive extends Item {
         );
     }
 }
-    

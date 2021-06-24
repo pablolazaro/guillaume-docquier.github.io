@@ -1,16 +1,16 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Wood } from "./wood";
 import { EtherealDust } from "./ethereal-dust";
+import { Wood } from "./wood";
 
 export class Coal extends Item {
     constructor() {
         super(
             "coal",
-            [Professions.Armorsmith, Professions.Weaponsmith],
+            [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common],
             [
                 new CraftingMaterial(3, new Wood()),
-                new CraftingMaterial(3, new EtherealDust())
+				new CraftingMaterial(3, new EtherealDust()),
             ],
             5
         );

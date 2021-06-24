@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BendingFormSmallShield extends Item {
     constructor() {
         super(
-            "bending form small shield",
+            "bending form: small shield",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BendingFormSmallShield extends Item {
         );
     }
 }
-    

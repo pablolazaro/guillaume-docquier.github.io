@@ -16,4 +16,3 @@ export class ArrowShaftBundle extends Item {
         );
     }
 }
-    

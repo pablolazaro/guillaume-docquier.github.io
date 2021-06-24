@@ -1,8 +1,8 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Ore } from "./ore";
-import { Aurelium } from "./aurelium";
 import { Iron } from "./iron";
 import { Coal } from "./coal";
+import { Aurelium } from "./aurelium";
 
 export class MetalRivets extends CustomizableComponent {
     constructor() {
@@ -18,7 +18,7 @@ export class MetalRivets extends CustomizableComponent {
             1,
             [
                 new StealthMetalRivetsCustomization(),
-                new OutOfCombatHealthRegenMetalRivetsCustomization(),
+				new OutOfCombatHealthRegenerationMetalRivetsCustomization(),
             ]
         );
     }
@@ -38,13 +38,13 @@ class StealthMetalRivetsCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.Stealth],
                 [Rarities.Rare.name]: [ItemsStats.Stealth],
                 [Rarities.Epic.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegeneration],
-                [Rarities.Legendary.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegeneration]
+                [Rarities.Legendary.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegeneration],
             }
         )
     }
 }
 
-class OutOfCombatHealthRegenMetalRivetsCustomization extends Customization {
+class OutOfCombatHealthRegenerationMetalRivetsCustomization extends Customization {
     constructor() {
         super(
             "out of combat health regeneration",
@@ -58,9 +58,8 @@ class OutOfCombatHealthRegenMetalRivetsCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.OutOfCombatHealthRegeneration],
                 [Rarities.Rare.name]: [ItemsStats.OutOfCombatHealthRegeneration],
                 [Rarities.Epic.name]: [ItemsStats.OutOfCombatHealthRegeneration],
-                [Rarities.Legendary.name]: [ItemsStats.OutOfCombatHealthRegeneration]
+                [Rarities.Legendary.name]: [ItemsStats.OutOfCombatHealthRegeneration],
             }
         )
     }
 }
-    

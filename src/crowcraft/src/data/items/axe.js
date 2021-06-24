@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponShaftShort } from "./weapon-shaft-short";
 import { WeaponHeadAxe } from "./weapon-head-axe";
 import { WeaponHilt } from "./weapon-hilt";
+import { WeaponShaftShort } from "./weapon-shaft-short";
 import { EtherealDust } from "./ethereal-dust";
 
 export class Axe extends Item {
@@ -20,4 +20,3 @@ export class Axe extends Item {
         );
     }
 }
-    

@@ -1,5 +1,4 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-// import { RunestoneEsoteric } from "./runestone-esoteric";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 
 export class BowRest extends Item {
@@ -11,10 +10,8 @@ export class BowRest extends Item {
             [
                 new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
-				// new CraftingMaterial(1, new RunestoneEsoteric()), // TODO Not sure about that
             ],
             1
         );
     }
 }
-    

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.4a615d9f.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.4a615d9f.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.8c2d8601.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.8c2d8601.js.map",
-    "static/js/2.a831a300.chunk.js": "/crowcraft/static/js/2.a831a300.chunk.js",
-    "static/js/2.a831a300.chunk.js.map": "/crowcraft/static/js/2.a831a300.chunk.js.map",
-    "static/js/3.166f7d95.chunk.js": "/crowcraft/static/js/3.166f7d95.chunk.js",
-    "static/js/3.166f7d95.chunk.js.map": "/crowcraft/static/js/3.166f7d95.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.2de50e5b.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.2de50e5b.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.44ae2925.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.44ae2925.js.map",
+    "static/js/2.969ff239.chunk.js": "/crowcraft/static/js/2.969ff239.chunk.js",
+    "static/js/2.969ff239.chunk.js.map": "/crowcraft/static/js/2.969ff239.chunk.js.map",
+    "static/js/3.947c7f6b.chunk.js": "/crowcraft/static/js/3.947c7f6b.chunk.js",
+    "static/js/3.947c7f6b.chunk.js.map": "/crowcraft/static/js/3.947c7f6b.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.78f0c62e.chunk.css.map": "/crowcraft/static/css/main.78f0c62e.chunk.css.map",
-    "static/js/2.a831a300.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.a831a300.chunk.js.LICENSE.txt",
+    "static/js/2.969ff239.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.969ff239.chunk.js.LICENSE.txt",
     "static/media/adhesive.svg": "/crowcraft/static/media/adhesive.9fe660ef.svg",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/appearanceCompendiumCentaur.svg": "/crowcraft/static/media/appearanceCompendiumCentaur.aa5b0fb9.svg",
@@ -267,9 +267,9 @@
     "static/media/yew.svg": "/crowcraft/static/media/yew.0ba55069.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8c2d8601.js",
-    "static/js/2.a831a300.chunk.js",
+    "static/js/runtime-main.44ae2925.js",
+    "static/js/2.969ff239.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.4a615d9f.chunk.js"
+    "static/js/main.2de50e5b.chunk.js"
   ]
 }

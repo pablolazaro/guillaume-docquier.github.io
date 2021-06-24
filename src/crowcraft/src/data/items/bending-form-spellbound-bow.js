@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BendingFormSpellboundBow extends Item {
     constructor() {
         super(
-            "bending form spellbound bow",
+            "bending form: spellbound bow",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BendingFormSpellboundBow extends Item {
         );
     }
 }
-    

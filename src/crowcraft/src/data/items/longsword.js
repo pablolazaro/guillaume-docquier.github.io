@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { BladeRivets } from "./blade-rivets";
 import { EtherealDust } from "./ethereal-dust";
 import { WeaponHilt } from "./weapon-hilt";
 import { WeaponBladeLong } from "./weapon-blade-long";
+import { BladeRivets } from "./blade-rivets";
 
 export class Longsword extends Item {
     constructor() {

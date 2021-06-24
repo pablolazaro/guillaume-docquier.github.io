@@ -73,8 +73,10 @@ export class Customization {
             return this.customizationEffects[rarity.name].map(itemStat => itemStat.getEffect(rarity));
         }
         catch (e) {
-            debugger;
+            console.error(`Error in customization stats for item: ${this.name}`);
         }
+
+        return [];
     }
 };
 

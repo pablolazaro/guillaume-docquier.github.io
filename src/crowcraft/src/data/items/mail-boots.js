@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { EtherealDust } from "./ethereal-dust";
 import { MetalScales } from "./metal-scales";
 import { LeatherPadding } from "./leather-padding";
-import { EtherealDust } from "./ethereal-dust";
 
 export class MailBoots extends Item {
     constructor() {
@@ -19,4 +19,3 @@ export class MailBoots extends Item {
         );
     }
 }
-    

@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { MetalBar } from "./metal-bar";
-import { HeadMoldGreatMace } from "./head-mold-great-mace";
 import { EtherealDust } from "./ethereal-dust";
+import { HeadMoldGreatMace } from "./head-mold-great-mace";
 
 export class WeaponHeadGreatMace extends Item {
     constructor() {

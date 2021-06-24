@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BladeMoldMedium extends Item {
     constructor() {
         super(
-            "blade mold medium",
+            "blade mold: medium",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BladeMoldMedium extends Item {
         );
     }
 }
-    

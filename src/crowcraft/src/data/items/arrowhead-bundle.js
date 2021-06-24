@@ -1,10 +1,10 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Ore } from "./ore";
 import { Aurelium } from "./aurelium";
-import { Copper } from "./copper";
+import { Tin } from "./tin";
 import { Iron } from "./iron";
 import { Silver } from "./silver";
-import { Tin } from "./tin";
+import { Copper } from "./copper";
 import { Coal } from "./coal";
 
 export class ArrowheadBundle extends CustomizableComponent {
@@ -20,10 +20,10 @@ export class ArrowheadBundle extends CustomizableComponent {
             1,
             [
                 new PiercingArrowheadBundleCustomization(),
-                new SlashingArrowheadBundleCustomization(),
-                new CrushingArrowheadBundleCustomization(),
-                new FireArrowheadBundleCustomization(),
-                new IceArrowheadBundleCustomization(),
+				new SlashingArrowheadBundleCustomization(),
+				new CrushingArrowheadBundleCustomization(),
+				new FireArrowheadBundleCustomization(),
+				new IceArrowheadBundleCustomization(),
             ]
         );
     }
@@ -42,7 +42,7 @@ class PiercingArrowheadBundleCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.PiercingDamageType],
                 [Rarities.Rare.name]: [ItemsStats.PiercingDamageType],
                 [Rarities.Epic.name]: [ItemsStats.PiercingDamageType],
-                [Rarities.Legendary.name]: [ItemsStats.PiercingDamageType]
+                [Rarities.Legendary.name]: [ItemsStats.PiercingDamageType],
             }
         )
     }
@@ -61,7 +61,7 @@ class SlashingArrowheadBundleCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.SlashingDamageType],
                 [Rarities.Rare.name]: [ItemsStats.SlashingDamageType],
                 [Rarities.Epic.name]: [ItemsStats.SlashingDamageType],
-                [Rarities.Legendary.name]: [ItemsStats.SlashingeDamageType]
+                [Rarities.Legendary.name]: [ItemsStats.SlashingDamageType],
             }
         )
     }
@@ -80,7 +80,7 @@ class CrushingArrowheadBundleCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.CrushingDamageType],
                 [Rarities.Rare.name]: [ItemsStats.CrushingDamageType],
                 [Rarities.Epic.name]: [ItemsStats.CrushingDamageType],
-                [Rarities.Legendary.name]: [ItemsStats.CrushingDamageType]
+                [Rarities.Legendary.name]: [ItemsStats.CrushingDamageType],
             }
         )
     }
@@ -99,7 +99,7 @@ class FireArrowheadBundleCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.FireDamageType],
                 [Rarities.Rare.name]: [ItemsStats.FireDamageType],
                 [Rarities.Epic.name]: [ItemsStats.FireDamageType],
-                [Rarities.Legendary.name]: [ItemsStats.FireDamageType]
+                [Rarities.Legendary.name]: [ItemsStats.FireDamageType],
             }
         )
     }
@@ -118,7 +118,7 @@ class IceArrowheadBundleCustomization extends Customization {
                 [Rarities.Uncommon.name]: [ItemsStats.IceDamageType],
                 [Rarities.Rare.name]: [ItemsStats.IceDamageType],
                 [Rarities.Epic.name]: [ItemsStats.IceDamageType],
-                [Rarities.Legendary.name]: [ItemsStats.IceDamageType]
+                [Rarities.Legendary.name]: [ItemsStats.IceDamageType],
             }
         )
     }

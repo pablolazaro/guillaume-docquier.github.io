@@ -4,7 +4,7 @@ import { Gold } from "./gold";
 export class BarrelMoldArcane extends Item {
     constructor() {
         super(
-            "barrel mold arcane",
+            "barrel mold: arcane",
             [Vendors.WeaponCrafting],
             [Rarities.Common],
             [
@@ -14,4 +14,3 @@ export class BarrelMoldArcane extends Item {
         );
     }
 }
-    
