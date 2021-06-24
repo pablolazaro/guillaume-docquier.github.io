@@ -260,11 +260,11 @@ class SterlingMetalRingsCustomization extends Customization {
                 new CraftingMaterial(12, new Coal())
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Uncommon.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Rare.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Epic.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalDamage]
+                [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Rare.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Epic.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeDamage]
             }
         )
     }

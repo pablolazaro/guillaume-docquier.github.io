@@ -50,11 +50,11 @@ class IronMetalBarCustomization extends Customization {
                 new CraftingMaterial(6, new Coal())
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Uncommon.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Rare.name]: [ItemsStats.CriticalDamage],
-                [Rarities.Epic.name]: [ItemsStats.CriticalDamage, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalDamage, ItemsStats.AttackPower]
+                [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Rare.name]: [ItemsStats.CriticalStrikeDamage],
+                [Rarities.Epic.name]: [ItemsStats.CriticalStrikeDamage, ItemsStats.AttackPower],
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeDamage, ItemsStats.AttackPower]
             }
         )
     }
@@ -71,11 +71,11 @@ class CopperMetalBarCustomization extends Customization {
                 new CraftingMaterial(6, new Coal())
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Rare.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Epic.name]: [ItemsStats.CriticalStrike, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalStrike, ItemsStats.AttackPower]
+                [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Rare.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Epic.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.AttackPower],
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.AttackPower]
             }
         )
     }
@@ -92,11 +92,11 @@ class AureliumMetalBarCustomization extends Customization {
                 new CraftingMaterial(6, new Coal())
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Rare.name]: [ItemsStats.CriticalStrike],
-                [Rarities.Epic.name]: [ItemsStats.CriticalStrike, ItemsStats.CriticalDamage],
-                [Rarities.Legendary.name]: [ItemsStats.CriticalStrike, ItemsStats.CriticalDamage]
+                [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Uncommon.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Rare.name]: [ItemsStats.CriticalStrikeChance],
+                [Rarities.Epic.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.CriticalStrikeDamage],
+                [Rarities.Legendary.name]: [ItemsStats.CriticalStrikeChance, ItemsStats.CriticalStrikeDamage]
             }
         )
     }

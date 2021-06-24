@@ -69,7 +69,12 @@ export class Customization {
     }
 
     getCustomizationEffects(rarity) {
-        return this.customizationEffects[rarity.name].map(itemStat => itemStat.getEffect(rarity));
+        try {
+            return this.customizationEffects[rarity.name].map(itemStat => itemStat.getEffect(rarity));
+        }
+        catch (e) {
+            debugger;
+        }
     }
 };
 

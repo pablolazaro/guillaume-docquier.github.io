@@ -37,8 +37,8 @@ class StealthMetalRivetsCustomization extends Customization {
                 [Rarities.Common.name]: [ItemsStats.Stealth],
                 [Rarities.Uncommon.name]: [ItemsStats.Stealth],
                 [Rarities.Rare.name]: [ItemsStats.Stealth],
-                [Rarities.Epic.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegen],
-                [Rarities.Legendary.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegen]
+                [Rarities.Epic.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegeneration],
+                [Rarities.Legendary.name]: [ItemsStats.Stealth, ItemsStats.OutOfCombatHealthRegeneration]
             }
         )
     }
@@ -54,11 +54,11 @@ class OutOfCombatHealthRegenMetalRivetsCustomization extends Customization {
 				new CraftingMaterial(2, new Coal()),
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.OutOfCombatHealthRegen],
-                [Rarities.Uncommon.name]: [ItemsStats.OutOfCombatHealthRegen],
-                [Rarities.Rare.name]: [ItemsStats.OutOfCombatHealthRegen],
-                [Rarities.Epic.name]: [ItemsStats.OutOfCombatHealthRegen],
-                [Rarities.Legendary.name]: [ItemsStats.OutOfCombatHealthRegen]
+                [Rarities.Common.name]: [ItemsStats.OutOfCombatHealthRegeneration],
+                [Rarities.Uncommon.name]: [ItemsStats.OutOfCombatHealthRegeneration],
+                [Rarities.Rare.name]: [ItemsStats.OutOfCombatHealthRegeneration],
+                [Rarities.Epic.name]: [ItemsStats.OutOfCombatHealthRegeneration],
+                [Rarities.Legendary.name]: [ItemsStats.OutOfCombatHealthRegeneration]
             }
         )
     }
