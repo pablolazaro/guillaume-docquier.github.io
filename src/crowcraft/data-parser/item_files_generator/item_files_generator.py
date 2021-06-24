@@ -2,6 +2,7 @@ import csv
 from pathlib import Path
 from os import walk
 from common import make_profession, make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, bcolors, get_profession_prefix, output_folder
+from item_customizations_generator import generate_customizations
 
 
 class Columns:
@@ -162,3 +163,4 @@ export class {class_name} extends CustomizableComponent {
 
 if __name__ == '__main__':
     generate_item_files()
+    generate_customizations()

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.78f0c62e.chunk.css",
-    "main.js": "/crowcraft/static/js/main.38c58db4.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.38c58db4.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.5a49920b.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.5a49920b.js.map",
-    "static/js/2.7e453305.chunk.js": "/crowcraft/static/js/2.7e453305.chunk.js",
-    "static/js/2.7e453305.chunk.js.map": "/crowcraft/static/js/2.7e453305.chunk.js.map",
-    "static/js/3.17009eba.chunk.js": "/crowcraft/static/js/3.17009eba.chunk.js",
-    "static/js/3.17009eba.chunk.js.map": "/crowcraft/static/js/3.17009eba.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.f4e554bb.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.f4e554bb.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.8c2d8601.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.8c2d8601.js.map",
+    "static/js/2.a831a300.chunk.js": "/crowcraft/static/js/2.a831a300.chunk.js",
+    "static/js/2.a831a300.chunk.js.map": "/crowcraft/static/js/2.a831a300.chunk.js.map",
+    "static/js/3.166f7d95.chunk.js": "/crowcraft/static/js/3.166f7d95.chunk.js",
+    "static/js/3.166f7d95.chunk.js.map": "/crowcraft/static/js/3.166f7d95.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.78f0c62e.chunk.css.map": "/crowcraft/static/css/main.78f0c62e.chunk.css.map",
-    "static/js/2.7e453305.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.7e453305.chunk.js.LICENSE.txt",
+    "static/js/2.a831a300.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.a831a300.chunk.js.LICENSE.txt",
     "static/media/adhesive.svg": "/crowcraft/static/media/adhesive.9fe660ef.svg",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/appearanceCompendiumCentaur.svg": "/crowcraft/static/media/appearanceCompendiumCentaur.aa5b0fb9.svg",
@@ -114,6 +114,12 @@
     "static/media/headMoldGreatMace.svg": "/crowcraft/static/media/headMoldGreatMace.348b6ce1.svg",
     "static/media/headMoldHammer.svg": "/crowcraft/static/media/headMoldHammer.1d30760e.svg",
     "static/media/headMoldMace.svg": "/crowcraft/static/media/headMoldMace.250b006c.svg",
+    "static/media/heartwood.svg": "/crowcraft/static/media/heartwood.fd82d42b.svg",
+    "static/media/heartwoodAsh.svg": "/crowcraft/static/media/heartwoodAsh.3dff11b7.svg",
+    "static/media/heartwoodBirch.svg": "/crowcraft/static/media/heartwoodBirch.19d1c0b2.svg",
+    "static/media/heartwoodOak.svg": "/crowcraft/static/media/heartwoodOak.fd82d42b.svg",
+    "static/media/heartwoodSpruce.svg": "/crowcraft/static/media/heartwoodSpruce.74af6492.svg",
+    "static/media/heartwoodYew.svg": "/crowcraft/static/media/heartwoodYew.3bf61aef.svg",
     "static/media/hide.svg": "/crowcraft/static/media/hide.241bfbf9.svg",
     "static/media/iron.svg": "/crowcraft/static/media/iron.c3eb7c1b.svg",
     "static/media/knotwood.svg": "/crowcraft/static/media/knotwood.07121773.svg",
@@ -261,9 +267,9 @@
     "static/media/yew.svg": "/crowcraft/static/media/yew.0ba55069.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5a49920b.js",
-    "static/js/2.7e453305.chunk.js",
+    "static/js/runtime-main.8c2d8601.js",
+    "static/js/2.a831a300.chunk.js",
     "static/css/main.78f0c62e.chunk.css",
-    "static/js/main.38c58db4.chunk.js"
+    "static/js/main.f4e554bb.chunk.js"
   ]
 }
