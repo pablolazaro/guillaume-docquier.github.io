@@ -1,0 +1,27 @@
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE
+		Hide Processing						
+Yes	Yes	Hardened Leather Square	Leatherworker	white-orange	5x Hide, 5x Hide, 5x Hide, 3x Lacing Sinew	1	Yes	Yes
+Yes	Yes	Leather Padding	Leatherworker	white-orange	2x Hide, 2x Hide, 2x Hide, 1x Lacing Sinew	1	Yes	No
+No	No	Leather Sheet	Leatherworker	white-orange	2x Hide, 2x Hide, 2x Hide	1	Yes	No
+Yes	Yes	Leather Square	Leatherworker	white-orange	4x Hide, 3x Hide, 3x Hide	1	Yes	Yes
+Yes	Yes	Stitched Leather	Leatherworker	white-orange	1x Hide, 1x Hide, 1x Hide, 2x Lacing Sinew	1	Yes	Yes
+								
+		Fuel						
+Yes	Yes	Lacing Sinew	Leatherworker	white	3x Animal Meat, 3x Ethereal Dust	5	No	No
+								
+		Fuel						
+Yes	Yes	Bow String	Leatherworker	white-orange	1x Stitched Leather, 1x Stitched Leather	1	Yes	No
+Yes	Yes	Enarmes	Leatherworker	white-orange	1x Stitched Leather, 1x Stitched Leather	1	Yes	No
+Yes	Yes	Weapon Grip	Leatherworker	white-orange	1x Stitched Leather	1	Yes	No
+								
+		Advanced Armor						
+Yes	Yes	Leather Boots	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Metal Rivets, 6x Ethereal Dust	1	Yes	No
+Yes	Yes	Leather Cap	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Leather Square, 1x Metal Rivets, 6x Ethereal Dust	1	Yes	No
+Yes	Yes	Leather Gloves	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Metal Rivets, 6x Ethereal Dust	1	Yes	No
+Yes	Yes	Leather Tunic	Leatherworker	white-orange	1x Hardened Leather square, 1x Hardened Leather Square, 1x Hardened Leather Square, 1x Metal Buckles, 18x Ethereal Dust	1	Yes	No
+								
+		Intermediate Armor						
+	No	Intermediate Boots	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Rivets, 6x Ethereal Dust	1	Yes	No
+	No	Intermediate Cap	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Leather Square, 1x Metal Rivets, 6x Ethereal Dust	1	Yes	No
+	No	Intermediate Gloves	Leatherworker	white-orange	1x Leather Square, 1x Leather Square, 1x Metal Rivets, 6x Ethereal Dust	1	Yes	No
+	No	Intermediate Tunic	Leatherworker	white-orange	1x Hardened Leather square, 1x Hardened Leather Square, 1x Hardened Leather Square, 1x Metal Buckles, 18x Ethereal Dust	1	Yes	No
