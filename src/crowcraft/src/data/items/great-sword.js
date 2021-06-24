@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponBladeGreat } from "./weapon-blade-great";
-import { EtherealDust } from "./ethereal-dust";
-import { WeaponHiltGreat } from "./weapon-hilt-great";
 import { BladeRivetsGreat } from "./blade-rivets-great";
+import { EtherealDust } from "./ethereal-dust";
+import { WeaponBladeGreat } from "./weapon-blade-great";
+import { WeaponHiltGreat } from "./weapon-hilt-great";
 
 export class GreatSword extends Item {
     constructor() {

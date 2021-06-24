@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { CompositeWoodPlank } from "./composite-wood-plank";
-import { BendingFormSmallShield } from "./bending-form-small-shield";
+import { BendingFormMediumShield } from "./bending-form-medium-shield";
 
 export class ShieldBaseMedium extends Item {
     constructor() {
@@ -12,7 +12,7 @@ export class ShieldBaseMedium extends Item {
                 new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new BendingFormSmallShield()),
+				new CraftingMaterial(1, new BendingFormMediumShield()),
             ],
             1
         );

@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { LeatherPadding } from "./leather-padding";
 import { EtherealDust } from "./ethereal-dust";
 import { MetalScales } from "./metal-scales";
-import { LeatherPadding } from "./leather-padding";
 
 export class MailGloves extends Item {
     constructor() {

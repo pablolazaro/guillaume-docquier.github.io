@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { LimbsBowSpellbound } from "./limbs-bow-spellbound";
-import { EtherealDust } from "./ethereal-dust";
-import { BowRiser } from "./bow-riser";
 import { BowString } from "./bow-string";
+import { BowRiser } from "./bow-riser";
+import { EtherealDust } from "./ethereal-dust";
+import { LimbsBowSpellbound } from "./limbs-bow-spellbound";
 
 export class BowSpellbound extends Item {
     constructor() {

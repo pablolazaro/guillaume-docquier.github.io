@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
 import { BendingFormRecurveBow } from "./bending-form-recurve-bow";
 import { CompositeWoodPlank } from "./composite-wood-plank";
+import { EtherealDust } from "./ethereal-dust";
 
 export class LimbsBowCompound extends Item {
     constructor() {

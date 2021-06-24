@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { EtherealDust } from "./ethereal-dust";
-import { MetalSheet } from "./metal-sheet";
 import { LeatherPadding } from "./leather-padding";
+import { MetalSheet } from "./metal-sheet";
 
 export class PlateBreastplate extends Item {
     constructor() {

@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { BendingFormSpellboundBow } from "./bending-form-spellbound-bow";
-import { EtherealDust } from "./ethereal-dust";
 import { CompositeWoodPlank } from "./composite-wood-plank";
+import { EtherealDust } from "./ethereal-dust";
 
 export class LimbsBowSpellbound extends Item {
     constructor() {

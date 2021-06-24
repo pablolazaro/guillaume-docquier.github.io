@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
 import { ArrowShaftBundle } from "./arrow-shaft-bundle";
 import { ArrowheadBundle } from "./arrowhead-bundle";
+import { EtherealDust } from "./ethereal-dust";
 
 export class AdvancedArrows extends Item {
     constructor() {

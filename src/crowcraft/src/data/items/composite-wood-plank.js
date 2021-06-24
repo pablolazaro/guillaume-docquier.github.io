@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Birch } from "./birch";
+import { Spruce } from "./spruce";
+import { Ash } from "./ash";
+import { Sandpaper } from "./sandpaper";
 import { Oak } from "./oak";
 import { Wood } from "./wood";
 import { Yew } from "./yew";
-import { Sandpaper } from "./sandpaper";
-import { Spruce } from "./spruce";
-import { Ash } from "./ash";
 
 export class CompositeWoodPlank extends CustomizableComponent {
     constructor() {

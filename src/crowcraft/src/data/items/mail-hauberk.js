@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { MetalRings } from "./metal-rings";
-import { EtherealDust } from "./ethereal-dust";
 import { LeatherPadding } from "./leather-padding";
+import { EtherealDust } from "./ethereal-dust";
+import { MetalRings } from "./metal-rings";
 
 export class MailHauberk extends Item {
     constructor() {

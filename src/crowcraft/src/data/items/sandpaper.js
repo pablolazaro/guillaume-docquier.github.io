@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Stone } from "./stone";
-import { EtherealDust } from "./ethereal-dust";
 import { Wood } from "./wood";
+import { EtherealDust } from "./ethereal-dust";
+import { Stone } from "./stone";
 
 export class Sandpaper extends Item {
     constructor() {

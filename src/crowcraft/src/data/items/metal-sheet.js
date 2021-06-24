@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Ore } from "./ore";
-import { Aurelium } from "./aurelium";
-import { Tin } from "./tin";
-import { Iron } from "./iron";
 import { Silver } from "./silver";
 import { Copper } from "./copper";
+import { Tin } from "./tin";
+import { Aurelium } from "./aurelium";
+import { Iron } from "./iron";
 import { Coal } from "./coal";
+import { Ore } from "./ore";
 
 export class MetalSheet extends CustomizableComponent {
     constructor() {
