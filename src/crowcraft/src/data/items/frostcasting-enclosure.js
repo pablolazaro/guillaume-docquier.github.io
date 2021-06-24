@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { ManaImpeller } from "./mana-impeller";
 import { ArcaneActuator } from "./arcane-actuator";
+import { ManaImpeller } from "./mana-impeller";
 import { WeaponGrip } from "./weapon-grip";
 
 export class FrostcastingEnclosure extends Item {
@@ -18,4 +18,3 @@ export class FrostcastingEnclosure extends Item {
         );
     }
 }
-    

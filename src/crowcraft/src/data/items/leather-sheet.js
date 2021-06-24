@@ -1,7 +1,7 @@
-import { CustomizableComponent, Customization, CraftingMaterial, Rarities, Professions, ItemsStats } from "models";
+import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { Hide } from "./hide";
 
-export class LeatherSheet extends CustomizableComponent {
+export class LeatherSheet extends Item {
     constructor() {
         super(
             "leather sheet",
@@ -12,11 +12,7 @@ export class LeatherSheet extends CustomizableComponent {
 				new CraftingMaterial(2, new Hide()),
 				new CraftingMaterial(2, new Hide()),
             ],
-            1,
-            [
-                // TODO Customizations
-            ]
+            1
         );
     }
 }
-    

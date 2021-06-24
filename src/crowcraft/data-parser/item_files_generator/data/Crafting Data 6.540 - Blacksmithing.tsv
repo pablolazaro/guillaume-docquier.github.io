@@ -39,12 +39,12 @@ No	No	Pistol Trigger	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No
 								
 		One Hand Weapon Components						
 No	No	Blade Rivets	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No
-No	No	Shield Covering	Weaponsmith - Armorsmith	white-orange	1x Metal Section, 1x Metal Section			
-No	No	Weapon Blade: Long	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Long			
-No	No	Weapon Blade: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Medium			
-No	No	Weapon Blade: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Short			
-No	No	Weapon Blade: Thin	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Thin			
-No	No	Weapon Blade: Curved	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Curved			
+No	No	Shield Covering	Weaponsmith - Armorsmith	white-orange	1x Metal Section, 1x Metal Section	1	Yes	No
+No	No	Weapon Blade: Long	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Long	1	Yes	No
+No	No	Weapon Blade: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Medium	1	Yes	No
+No	No	Weapon Blade: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Short	1	Yes	No
+No	No	Weapon Blade: Thin	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Thin	1	Yes	No
+No	No	Weapon Blade: Curved	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Curved	1	Yes	No
 Yes	Yes	Weapon Head: Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No
 No	No	Weapon Head: Hammer	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Hammer, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No
 No	No	Weapon Head: Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No
@@ -57,7 +57,7 @@ Yes	Yes	Weapon Shaft: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar o
 Yes	Yes	Blade Rivets: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No
 Yes	Yes	Great Weapon Crossguard	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No
 Yes	Yes	Great Weapon Pommel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No
-No	No	Weapon Blade: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Blade Mold: Great, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No
+No	No	Weapon Blade: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Blade Mold: Great Sword, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No
 Yes	Yes	Weapon Head: Great Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional 1x Runestone: Esoteric	1	Yes	No
 No	No	Weapon Head: Great Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional 1x Runestone: Esoteric	1	Yes	No
 Yes	Yes	Weapon Hilt: Great	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Weapon Grip, 1x Great Weapon Pommel, 1x Great Weapon Crossguard	1	Yes	No

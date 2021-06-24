@@ -96,7 +96,7 @@ export class {class_name} extends Item {
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
-    professions_imports = [f", {get_profession_prefix(profession)}" for profession in set(professions)]
+    professions_imports = [f", {profession_import}" for profession_import in set([get_profession_prefix(profession) for profession in set(professions)])]
     crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
     try:
         imports = [f"import {{ {make_class_name(crafting_material_name)} }} from \"./{make_file_name_without_extension(crafting_material_name)}\";" for crafting_material_name in crafting_materials_set]
@@ -142,12 +142,11 @@ export class {class_name} extends CustomizableComponent {
     }
 }
 
-{customization_classes}
-"""
+{customization_classes}"""
 
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _) = item_data
 
-    professions_imports = [f", {get_profession_prefix(profession)}" for profession in set(professions)]
+    professions_imports = [f", {profession_import}" for profession_import in set([get_profession_prefix(profession) for profession in set(professions)])]
     crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
     js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
 

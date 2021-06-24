@@ -14,4 +14,3 @@ export class PistolHammerAndFrizzen extends Item {
         );
     }
 }
-    

@@ -5,7 +5,7 @@ import { WeaponGrip } from "./weapon-grip";
 export class LimbsStaff extends Item {
     constructor() {
         super(
-            "limbs staff",
+            "limbs: staff",
             [Professions.Woodworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
@@ -18,4 +18,3 @@ export class LimbsStaff extends Item {
         );
     }
 }
-    

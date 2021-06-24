@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
-// import { BarrelMold } from "./barrel-mold";
 import { MetalBar } from "./metal-bar";
+import { EtherealDust } from "./ethereal-dust";
+import { BarrelMoldPistol } from "./barrel-mold-pistol";
 
 export class PistolBarrel extends Item {
     constructor() {
@@ -12,11 +12,10 @@ export class PistolBarrel extends Item {
             [
                 new CraftingMaterial(1, new MetalBar()),
 				new CraftingMaterial(1, new MetalBar()),
-				// new CraftingMaterial(1, new BarrelMold()), // TODO Missing
+				new CraftingMaterial(1, new BarrelMoldPistol()),
 				new CraftingMaterial(4, new EtherealDust()),
             ],
             1
         );
     }
 }
-    

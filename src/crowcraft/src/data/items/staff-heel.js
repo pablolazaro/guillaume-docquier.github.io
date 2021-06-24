@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { BendingFormStaffHeel } from "./bending-form-staff-heel";
 import { CompositeWoodPlank } from "./composite-wood-plank";
-// import { HeelMold } from "./heel-mold";
 import { EtherealDust } from "./ethereal-dust";
 
 export class StaffHeel extends Item {
@@ -15,10 +15,9 @@ export class StaffHeel extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(8, new EtherealDust()),
-				// new CraftingMaterial(1, new HeelMold()), // TODO Missing
+				new CraftingMaterial(1, new BendingFormStaffHeel()),
             ],
             1
         );
     }
 }
-    

@@ -17,4 +17,3 @@ export class StaffHead extends Item {
         );
     }
 }
-    

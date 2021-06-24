@@ -14,4 +14,3 @@ export class MetaMagicalConducter extends Item {
         );
     }
 }
-    

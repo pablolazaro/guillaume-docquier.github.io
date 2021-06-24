@@ -14,4 +14,3 @@ export class PistolTrigger extends Item {
         );
     }
 }
-    

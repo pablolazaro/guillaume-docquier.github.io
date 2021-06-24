@@ -128,10 +128,10 @@ def generate_customization_classes(customization_data, item_name):
             js_crafting_materials = []
             print(bcolors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", bcolors.ENDC)
 
-        wb_effect = f"ItemStats.{make_class_name(effect_1)}"
+        wb_effect = f"ItemsStats.{make_class_name(effect_1)}"
 
         po_effects = [make_class_name(effect_1), make_class_name(effect_2)] if effect_2 is not None else [make_class_name(effect_1)]
-        po_effects = [f"ItemStats.{effect}" for effect in po_effects]
+        po_effects = [f"ItemsStats.{effect}" for effect in po_effects]
 
         customization_classes.append(
             js_template.replace("{customization_class_name}", customization_class_name)

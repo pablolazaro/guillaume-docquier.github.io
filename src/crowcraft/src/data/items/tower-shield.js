@@ -1,23 +1,22 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-// import { ShieldBase } from "./shield-base";
-import { EtherealDust } from "./ethereal-dust";
 import { Enarmes } from "./enarmes";
-// import { ShieldCovering } from "./shield-covering";
+import { ShieldCovering } from "./shield-covering";
+import { ShieldBaseLarge } from "./shield-base-large";
+import { EtherealDust } from "./ethereal-dust";
 
-export class Shield extends Item {
+export class TowerShield extends Item {
     constructor() {
         super(
-            "shield",
+            "tower shield",
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                // new CraftingMaterial(1, new ShieldCovering()), // TODO Missing
+                new CraftingMaterial(1, new ShieldCovering()),
 				new CraftingMaterial(1, new Enarmes()),
-				// new CraftingMaterial(1, new ShieldBase()), // TODO Missing
+				new CraftingMaterial(1, new ShieldBaseLarge()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
             1
         );
     }
 }
-    

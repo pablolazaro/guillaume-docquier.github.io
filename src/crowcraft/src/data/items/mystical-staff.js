@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { LimbsStaff } from "./limbs-staff";
-import { EtherealDust } from "./ethereal-dust";
 import { StaffHeel } from "./staff-heel";
+import { EtherealDust } from "./ethereal-dust";
 import { StaffHead } from "./staff-head";
 
 export class MysticalStaff extends Item {
@@ -20,4 +20,3 @@ export class MysticalStaff extends Item {
         );
     }
 }
-    

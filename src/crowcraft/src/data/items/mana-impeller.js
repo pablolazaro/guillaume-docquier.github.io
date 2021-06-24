@@ -14,4 +14,3 @@ export class ManaImpeller extends Item {
         );
     }
 }
-    

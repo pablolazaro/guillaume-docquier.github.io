@@ -15,4 +15,3 @@ export class BowSight extends Item {
         );
     }
 }
-    

@@ -16,4 +16,3 @@ export class WoodenBoard extends Item {
         );
     }
 }
-    

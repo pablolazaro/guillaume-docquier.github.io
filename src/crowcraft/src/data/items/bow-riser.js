@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { BowRest } from "./bow-rest";
 import { BowSight } from "./bow-sight";
+import { BowRest } from "./bow-rest";
 import { WeaponGrip } from "./weapon-grip";
 
 export class BowRiser extends Item {
@@ -19,4 +19,3 @@ export class BowRiser extends Item {
         );
     }
 }
-    
