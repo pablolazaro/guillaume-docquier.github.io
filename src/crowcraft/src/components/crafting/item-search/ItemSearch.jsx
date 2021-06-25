@@ -5,7 +5,7 @@ import { TextInput, Item } from "components";
 import { useState } from "react";
 import { Sorting } from "utils";
 
-const MAX_ITEMS_COUNT = 300; // TODO Temporary
+const MAX_ITEMS_COUNT = 30; // TODO Temporary
 
 export const ItemSearch = ({ onItemSelected }) => {
     const [allItems] = useState(
@@ -36,7 +36,7 @@ export const ItemSearch = ({ onItemSelected }) => {
         onItemSelected(item.createNew());
     };
 
-    const matchedItems = allItems.filter(hasKeywordMatch);
+    const matchedItems = allItems.filter(hasKeywordMatch).sort(Sorting.descending(item => item.craftingRank));
 
     return (
         <>
