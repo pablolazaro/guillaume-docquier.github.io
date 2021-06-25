@@ -12,15 +12,15 @@ export const ItemSearch = memo(({ onItemSelected }) => {
         items
             .map(item => new item())
             .filter(item => item.isCraftable)
-            .sort(Sorting.ascending(item => item.name)
-    ));
+            .sort(Sorting.ascending(item => item.name))
+            .sort(Sorting.descending(item => item.craftingRank))
+    );
 
-    const [keywords, setKeywords] = useState([]);
+    const [keywords, setKeywords] = useState("");
     const [selectedItemId, setSelectedItemId] = useState(null);
 
-    const filterItems = e => {
-        const search = e.target.value;
-        setKeywords(search.split(" ").filter(keyword => keyword.length > 0));
+    const setFilter = e => {
+        setKeywords(e.target.value);
     };
 
     const hasKeywordMatch = item => {
@@ -28,7 +28,7 @@ export const ItemSearch = memo(({ onItemSelected }) => {
             return true;
         }
 
-        return keywords.some(keyword => item.name.includes(keyword));
+        return item.name.includes(keywords);
     };
 
     const selectItem = item => {
@@ -36,13 +36,13 @@ export const ItemSearch = memo(({ onItemSelected }) => {
         onItemSelected(item.createNew());
     };
 
-    const matchedItems = allItems.filter(hasKeywordMatch).sort(Sorting.descending(item => item.craftingRank));
+    const matchedItems = allItems.filter(hasKeywordMatch);
 
     return (
         <>
             <div className="mb2 f3 fw5">Find an item</div>
             <div className="mb3">
-                <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={filterItems} />
+                <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={setFilter} />
             </div>
             <div className="flex flex-wrap">
                 {matchedItems.slice(0, MAX_ITEMS_COUNT).map(item => (
