@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.443f12ee.chunk.css",
-    "main.js": "/crowcraft/static/js/main.f2dadbc0.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.f2dadbc0.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.bdf8920e.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.bdf8920e.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.a0f73a5d.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.a0f73a5d.js.map",
     "static/js/2.6b190c4c.chunk.js": "/crowcraft/static/js/2.6b190c4c.chunk.js",
@@ -341,6 +341,6 @@
     "static/js/runtime-main.a0f73a5d.js",
     "static/js/2.6b190c4c.chunk.js",
     "static/css/main.443f12ee.chunk.css",
-    "static/js/main.f2dadbc0.chunk.js"
+    "static/js/main.bdf8920e.chunk.js"
   ]
 }

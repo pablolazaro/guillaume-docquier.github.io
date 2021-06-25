@@ -7,7 +7,7 @@ import { memo } from "react";
 export const CraftingSteps = memo(({ crafts }) => {
     return (
         <div className="flex flex-column">
-            <div className="mb2 f3 fw5">Crafting steps</div>
+            <div className="mb2 f3 fw5">Crafting steps ({crafts.length})</div>
             <div>
                 {crafts.map(craft => (
                     <div key={craft.craftingResult.item.id} className="mb2">
@@ -21,7 +21,7 @@ export const CraftingSteps = memo(({ crafts }) => {
 
 const CraftingStep = ({ craft }) => {
     const profession = craft.craftingResult.item.professions[0]; // We'll ignore duals for this, since the only known combination are at the same station (armorsmith/weaponsmith)
-    const action = Object.values(Vendors).includes(profession) ? "buy" : "craft";
+    const action = Object.values(Vendors).includes(profession) ? ", buy" : " station, craft";
     const resultCraftingQuantity = craft.craftingResult.item.craftingQuantity;
     const resultQuantity = craft.craftingResult.quantity;
     const resultName = craft.craftingResult.item.name;
@@ -29,7 +29,7 @@ const CraftingStep = ({ craft }) => {
 
     return (
         <div className="bg-marine pa2 w-50 br2">
-            <div className="mb1">At the {profession}, {action} {resultQuantity / resultCraftingQuantity} {resultName} {note}</div>
+            <div className="mb1">At the {profession}{action} {resultQuantity / resultCraftingQuantity} {resultName} {note}</div>
             <div className="flex items-center">
                 <div className="w3 h3 flex items-center justify-center">
                     <img src={getAsset(profession)} alt={String.capitalize(profession)} title={String.capitalize(profession)} />
