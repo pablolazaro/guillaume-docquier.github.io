@@ -1,0 +1,48 @@
+.checkmark,
+.cross {
+    position: absolute;
+    bottom: 0;
+    right: 0.45em;
+    transform: rotate(45deg);
+    font-size: 16px;
+}
+
+.checkmark:before{
+    content:"";
+    position: absolute;
+    width: 0.5em;
+    height: 1.5em;
+    background-color:green;
+    bottom: -0.5em;
+    right: 0.5em;
+}
+
+.checkmark:after{
+    content:"";
+    position: absolute;
+    width: 1em;
+    height: 0.5em;
+    background-color:green;
+    bottom: -0.5em;
+    right: 0.5em;
+}
+
+.cross:before{
+    content:"";
+    position: absolute;
+    width: 0.5em;
+    height: 1.5em;
+    background-color:red;
+    bottom: -0.5em;
+    right: 0.5em;
+}
+
+.cross:after{
+    content:"";
+    position: absolute;
+    width: 1.5em;
+    height: 0.5em;
+    background-color:red;
+    bottom: 0;
+    right: 0;
+}

@@ -3,6 +3,7 @@ import { RawMaterials } from "./raw-materials";
 import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./item-customizer";
+import { ProfessionsStatus } from "./professions-status";
 import { useState, useEffect } from "react";
 
 export const Crafting = () => {
@@ -55,9 +56,8 @@ export const Crafting = () => {
 
     return (
         <div className="mv3">
-            <div className="mb4 f4 fw5 verdigris">
-                <div>Armorsmith, Weaponsmith, Leatherworker and Woodworker items have all been imported.</div>
-                <div>Some assets are missing, but crafting materials are correct.</div>
+            <div className="mb4">
+                <ProfessionsStatus />
             </div>
             <div className="mb4">
                 <ItemSearch onItemSelected={selectItemToCraft} />
