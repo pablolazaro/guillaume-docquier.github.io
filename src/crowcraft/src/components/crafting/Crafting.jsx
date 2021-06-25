@@ -4,7 +4,7 @@ import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./item-customizer";
 import { ProfessionsStatus } from "./professions-status";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export const Crafting = () => {
     const [itemToCraft, setItemToCraft] = useState(null);
@@ -26,12 +26,7 @@ export const Crafting = () => {
         [triggerItemCraft, itemToCraft, setRawMaterials, setCrafts]
     );
 
-    const selectItemToCraft = item => {
-        reset();
-        setItemToCraft(item);
-    };
-
-    const reset = () => {
+    const reset = useCallback(() => {
         setSelectedRarity(null);
         if (itemToCraft) {
             itemToCraft.setRarity(null);
@@ -41,7 +36,12 @@ export const Crafting = () => {
         setCrafts(null);
         setTriggerItemCraft(false);
         setItemIsCustomized(false);
-    };
+    }, [setSelectedRarity, itemToCraft, setRawMaterials, setCrafts, setTriggerItemCraft, setItemIsCustomized]);
+
+    const selectItemToCraft = useCallback(item => {
+        reset();
+        setItemToCraft(item);
+    }, [reset, setItemToCraft]);
 
     const selectRarity = rarity => {
         setSelectedRarity(rarity);

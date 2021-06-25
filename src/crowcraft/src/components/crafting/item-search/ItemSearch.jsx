@@ -2,12 +2,12 @@ import "./ItemSearch.css";
 
 import { items } from "data";
 import { TextInput, Item } from "components";
-import { useState } from "react";
 import { Sorting } from "utils";
+import { memo, useState } from "react";
 
-const MAX_ITEMS_COUNT = 30; // TODO Temporary
+const MAX_ITEMS_COUNT = 30;
 
-export const ItemSearch = ({ onItemSelected }) => {
+export const ItemSearch = memo(({ onItemSelected }) => {
     const [allItems] = useState(
         items
             .map(item => new item())
@@ -56,7 +56,7 @@ export const ItemSearch = ({ onItemSelected }) => {
             }
         </>
     );
-};
+});
 
 const SelectableItem = ({ item, onItemSelected, isSelected }) => {
     const selectItem = () => {
