@@ -22,7 +22,7 @@ export const ProfessionsStatus = () => {
             <div className="flex items-center">
                 {Object.entries(professionsStatus).map(([profession, isReady]) => (
                     <div className="mr2 relative" key={profession}>
-                        <div className="w6 h6 flex items-center justify-center">
+                        <div className="w5 h5 flex items-center justify-center">
                             <img src={getAsset(profession)} alt={String.capitalize(profession)} title={String.capitalize(profession)} />
                         </div>
                         <div className={isReady ? "checkmark" : "cross"}></div>

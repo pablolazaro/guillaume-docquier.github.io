@@ -4,7 +4,7 @@
     bottom: 0;
     right: 0.45em;
     transform: rotate(45deg);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .checkmark:before{
