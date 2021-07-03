@@ -14,6 +14,7 @@ class Columns:
 
 
 def generate_customizations():
+    print(ConsoleColors.OKCYAN, "\nGenerating customizations...", ConsoleColors.ENDC)
     customizations_by_item = {}
     for (_, _, filenames) in walk(data_folder):
         for filename in get_filenames_of_type(filenames, FileTypes.CUSTOMIZATIONS):

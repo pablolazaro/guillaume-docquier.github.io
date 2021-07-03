@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { FlexibleHide } from "./flexible-hide";
+import { ToughHide } from "./tough-hide";
+import { DurableHide } from "./durable-hide";
+import { StrongHide } from "./strong-hide";
 import { SoftHide } from "./soft-hide";
 import { Hide } from "./hide";
-import { StrongHide } from "./strong-hide";
-import { DurableHide } from "./durable-hide";
-import { ToughHide } from "./tough-hide";
+import { FlexibleHide } from "./flexible-hide";
 
 export class LeatherSquare extends CustomizableComponent {
     constructor() {

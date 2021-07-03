@@ -19,6 +19,7 @@ class ItemTypes:
 
 
 def generate_raw_material_files():
+    print(ConsoleColors.OKCYAN, "\nGenerating raw materials...", ConsoleColors.ENDC)
     for (_, _, filenames) in walk(data_folder):
         for filename in get_filenames_of_type(filenames, FileTypes.RAW_MATERIALS):
             with open(f"{data_folder}/{filename}", "r") as tsv_file:
@@ -104,7 +105,7 @@ export class {class_name} extends {item_type_class_name} {
     (file_name, class_name, item_name, item_rarities, item_type) = item_data
 
     item_type_class_name = make_class_name(item_type)
-    imports = f"import {{ {item_type_class_name} }} from \"./{make_file_name_without_extension(item_type)}\";"
+    imports = f"import {{ {item_type_class_name} }} from \"./{make_file_name_without_extension(make_item_name(item_type))}\";"
 
     return js_code.replace("{imports}", imports)\
         .replace("{class_name}", class_name)\

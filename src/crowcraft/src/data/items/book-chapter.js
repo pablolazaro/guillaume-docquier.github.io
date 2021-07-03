@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { CompositeWoodPlank } from "./composite-wood-plank";
-import { Stone } from "./stone";
-import { StitchedLeather } from "./stitched-leather";
-import { Marble } from "./marble";
 import { Granite } from "./granite";
+import { Stone } from "./stone";
 import { Slate } from "./slate";
 import { Travertine } from "./travertine";
+import { StitchedLeather } from "./stitched-leather";
+import { Marble } from "./marble";
 import { Limestone } from "./limestone";
 
 export class BookChapter extends CustomizableComponent {

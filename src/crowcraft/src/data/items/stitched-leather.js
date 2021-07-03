@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { FlexibleHide } from "./flexible-hide";
-import { SoftHide } from "./soft-hide";
-import { Hide } from "./hide";
 import { LacingSinew } from "./lacing-sinew";
+import { ToughHide } from "./tough-hide";
 import { StrongHide } from "./strong-hide";
 import { DurableHide } from "./durable-hide";
-import { ToughHide } from "./tough-hide";
+import { SoftHide } from "./soft-hide";
+import { Hide } from "./hide";
+import { FlexibleHide } from "./flexible-hide";
 
 export class StitchedLeather extends CustomizableComponent {
     constructor() {

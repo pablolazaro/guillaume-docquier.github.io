@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
 import { Meat } from "./meat";
+import { EtherealDust } from "./ethereal-dust";
 
 export class Carbon extends Item {
     constructor() {

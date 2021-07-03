@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";
+import { EtherealDust } from "./ethereal-dust";
 import { BladeMoldGreatSword } from "./blade-mold-great-sword";
 
 export class WeaponBladeGreat extends Item {

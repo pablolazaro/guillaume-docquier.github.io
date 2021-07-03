@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { WeaponPommel } from "./weapon-pommel";
-import { WeaponCrossguard } from "./weapon-crossguard";
 import { WeaponGrip } from "./weapon-grip";
+import { WeaponCrossguard } from "./weapon-crossguard";
 
 export class WeaponHilt extends Item {
     constructor() {

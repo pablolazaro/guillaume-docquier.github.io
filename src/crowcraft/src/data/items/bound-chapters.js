@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { LacingSinew } from "./lacing-sinew";
 import { BookChapter } from "./book-chapter";
+import { LacingSinew } from "./lacing-sinew";
 
 export class BoundChapters extends Item {
     constructor() {

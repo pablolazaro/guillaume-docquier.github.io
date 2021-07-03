@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponHilt } from "./weapon-hilt";
-import { WeaponHeadAxe } from "./weapon-head-axe";
 import { EtherealDust } from "./ethereal-dust";
+import { WeaponHilt } from "./weapon-hilt";
 import { WeaponShaftShort } from "./weapon-shaft-short";
+import { WeaponHeadAxe } from "./weapon-head-axe";
 
 export class Axe extends Item {
     constructor() {

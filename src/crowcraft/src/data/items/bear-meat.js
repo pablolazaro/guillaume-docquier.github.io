@@ -1,12 +1,12 @@
 import { Rarities } from "models";
-import { Stone } from "./stone";
+import { Meat } from "./meat";
 
-export class Cobblestone extends Stone {
+export class BearMeat extends Meat {
     constructor() {
         super(
-            "cobblestone",
+            "bear meat",
             [],
-            [Rarities.Poor],
+            [Rarities.Common],
             [],
             1
         );

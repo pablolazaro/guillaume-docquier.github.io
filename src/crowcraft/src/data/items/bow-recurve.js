@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { BowString } from "./bow-string";
 import { LimbsBowRecurve } from "./limbs-bow-recurve";
-import { BowRiser } from "./bow-riser";
 import { EtherealDust } from "./ethereal-dust";
+import { BowRiser } from "./bow-riser";
+import { BowString } from "./bow-string";
 
 export class BowRecurve extends Item {
     constructor() {

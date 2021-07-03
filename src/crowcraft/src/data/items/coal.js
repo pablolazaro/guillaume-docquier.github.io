@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { Wood } from "./wood";
 import { EtherealDust } from "./ethereal-dust";
+import { Wood } from "./wood";
 
 export class Coal extends Item {
     constructor() {

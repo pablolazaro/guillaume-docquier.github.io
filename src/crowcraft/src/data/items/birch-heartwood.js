@@ -1,10 +1,10 @@
 import { Rarities } from "models";
-import { Stone } from "./stone";
+import { Heartwood } from "./heartwood";
 
-export class Granite extends Stone {
+export class BirchHeartwood extends Heartwood {
     constructor() {
         super(
-            "granite",
+            "birch heartwood",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

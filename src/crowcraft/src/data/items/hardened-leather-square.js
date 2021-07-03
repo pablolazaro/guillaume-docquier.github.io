@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { FlexibleHide } from "./flexible-hide";
+import { LacingSinew } from "./lacing-sinew";
+import { ToughHide } from "./tough-hide";
+import { DurableHide } from "./durable-hide";
+import { StrongHide } from "./strong-hide";
 import { SoftHide } from "./soft-hide";
 import { Hide } from "./hide";
-import { LacingSinew } from "./lacing-sinew";
-import { StrongHide } from "./strong-hide";
-import { DurableHide } from "./durable-hide";
-import { ToughHide } from "./tough-hide";
+import { FlexibleHide } from "./flexible-hide";
 
 export class HardenedLeatherSquare extends CustomizableComponent {
     constructor() {

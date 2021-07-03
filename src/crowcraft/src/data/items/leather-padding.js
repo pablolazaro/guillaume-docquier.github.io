@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { LacingSinew } from "./lacing-sinew";
 import { Hide } from "./hide";
+import { LacingSinew } from "./lacing-sinew";
 
 export class LeatherPadding extends Item {
     constructor() {

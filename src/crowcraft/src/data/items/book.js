@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { BookCasing } from "./book-casing";
-import { BoundChapters } from "./bound-chapters";
-import { BookClasp } from "./book-clasp";
 import { EtherealDust } from "./ethereal-dust";
+import { BookClasp } from "./book-clasp";
+import { BoundChapters } from "./bound-chapters";
+import { BookCasing } from "./book-casing";
 
 export class Book extends Item {
     constructor() {

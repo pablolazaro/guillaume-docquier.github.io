@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CompositeWoodPlank } from "./composite-wood-plank";
 import { Adhesive } from "./adhesive";
 import { StitchedLeather } from "./stitched-leather";
-import { CompositeWoodPlank } from "./composite-wood-plank";
 import { EtherealDust } from "./ethereal-dust";
 
 export class BookCasing extends Item {

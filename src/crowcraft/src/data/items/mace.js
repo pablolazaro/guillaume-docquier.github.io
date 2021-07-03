@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponHeadMace } from "./weapon-head-mace";
-import { WeaponHilt } from "./weapon-hilt";
 import { EtherealDust } from "./ethereal-dust";
+import { WeaponHilt } from "./weapon-hilt";
 import { WeaponShaftShort } from "./weapon-shaft-short";
+import { WeaponHeadMace } from "./weapon-head-mace";
 
 export class Mace extends Item {
     constructor() {

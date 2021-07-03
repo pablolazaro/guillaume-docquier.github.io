@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponHilt } from "./weapon-hilt";
-import { BladeRivets } from "./blade-rivets";
-import { WeaponBladeThin } from "./weapon-blade-thin";
 import { EtherealDust } from "./ethereal-dust";
+import { WeaponHilt } from "./weapon-hilt";
+import { WeaponBladeThin } from "./weapon-blade-thin";
+import { BladeRivets } from "./blade-rivets";
 
 export class Rapier extends Item {
     constructor() {

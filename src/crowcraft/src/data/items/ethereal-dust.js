@@ -1,13 +1,13 @@
 import { RawMaterial, Rarities } from "models";
 
 export class EtherealDust extends RawMaterial {
-    constructor() {
-        super(
-            "ethereal dust",
-            [],
-            [Rarities.Common],
-            [],
-            1
-        );
+    constructor(
+        name = "ethereal dust",
+        professions = [],
+        rarities = [Rarities.Common],
+        craftingMaterials = [],
+        craftingQuantity = 1
+    ) {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity);
     }
 }

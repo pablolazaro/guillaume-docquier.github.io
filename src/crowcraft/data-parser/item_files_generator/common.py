@@ -14,7 +14,7 @@ class FileTypes:
     ITEMS = "item"
     RAW_MATERIALS = "raw-material"
     CUSTOMIZATIONS = "customization"
-    ITEM_STATS = "customization"
+    ITEM_STATS = "item-stats"
 
 
 rarity_ranks = {

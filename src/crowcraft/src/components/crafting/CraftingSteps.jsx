@@ -25,7 +25,7 @@ const CraftingStep = ({ craft }) => {
     const resultCraftingQuantity = craft.craftingResult.item.craftingQuantity;
     const resultQuantity = craft.craftingResult.quantity;
     const resultName = craft.craftingResult.item.name;
-    const note = resultCraftingQuantity > 1 ? `(each craft produces ${resultCraftingQuantity} ${resultName})` : ""
+    const note = resultCraftingQuantity > 1 ? `(each craft yields ${resultCraftingQuantity} ${resultName})` : ""
 
     return (
         <div className="bg-marine pa2 w-50 br2">

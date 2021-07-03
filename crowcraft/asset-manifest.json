@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.dd5a6653.chunk.css",
-    "main.js": "/crowcraft/static/js/main.101d839b.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.101d839b.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.a0f73a5d.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.a0f73a5d.js.map",
-    "static/js/2.6b190c4c.chunk.js": "/crowcraft/static/js/2.6b190c4c.chunk.js",
-    "static/js/2.6b190c4c.chunk.js.map": "/crowcraft/static/js/2.6b190c4c.chunk.js.map",
-    "static/js/3.95c65b9c.chunk.js": "/crowcraft/static/js/3.95c65b9c.chunk.js",
-    "static/js/3.95c65b9c.chunk.js.map": "/crowcraft/static/js/3.95c65b9c.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.f60b8bea.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.f60b8bea.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.2c096ddf.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.2c096ddf.js.map",
+    "static/js/2.6ed8f3d4.chunk.js": "/crowcraft/static/js/2.6ed8f3d4.chunk.js",
+    "static/js/2.6ed8f3d4.chunk.js.map": "/crowcraft/static/js/2.6ed8f3d4.chunk.js.map",
+    "static/js/3.dd754332.chunk.js": "/crowcraft/static/js/3.dd754332.chunk.js",
+    "static/js/3.dd754332.chunk.js.map": "/crowcraft/static/js/3.dd754332.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.dd5a6653.chunk.css.map": "/crowcraft/static/css/main.dd5a6653.chunk.css.map",
-    "static/js/2.6b190c4c.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.6b190c4c.chunk.js.LICENSE.txt",
+    "static/js/2.6ed8f3d4.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.6ed8f3d4.chunk.js.LICENSE.txt",
     "static/media/adhesive.svg": "/crowcraft/static/media/adhesive.9fe660ef.svg",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/alchemist.svg": "/crowcraft/static/media/alchemist.bdd3966b.svg",
@@ -338,9 +338,9 @@
     "static/media/yew.svg": "/crowcraft/static/media/yew.0ba55069.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a0f73a5d.js",
-    "static/js/2.6b190c4c.chunk.js",
+    "static/js/runtime-main.2c096ddf.js",
+    "static/js/2.6ed8f3d4.chunk.js",
     "static/css/main.dd5a6653.chunk.css",
-    "static/js/main.101d839b.chunk.js"
+    "static/js/main.f60b8bea.chunk.js"
   ]
 }

@@ -1,9 +1,10 @@
-import { RawMaterial, Rarities } from "models";
+import { Rarities } from "models";
+import { Meat } from "./meat";
 
-export class EtherealDust extends RawMaterial {
+export class ElkMeat extends Meat {
     constructor() {
         super(
-            "ethereal dust",
+            "elk meat",
             [],
             [Rarities.Common],
             [],

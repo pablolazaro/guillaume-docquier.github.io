@@ -1,8 +1,8 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
-import { Coal } from "./coal";
-import { Ore } from "./ore";
 import { Aurelium } from "./aurelium";
+import { Ore } from "./ore";
+import { Coal } from "./coal";
+import { Silver } from "./silver";
 
 export class MetalBuckles extends CustomizableComponent {
     constructor() {

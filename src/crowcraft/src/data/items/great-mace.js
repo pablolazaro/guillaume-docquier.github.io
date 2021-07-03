@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponHeadGreatMace } from "./weapon-head-great-mace";
-import { WeaponShaftMedium } from "./weapon-shaft-medium";
 import { EtherealDust } from "./ethereal-dust";
+import { WeaponShaftMedium } from "./weapon-shaft-medium";
+import { WeaponHeadGreatMace } from "./weapon-head-great-mace";
 import { WeaponHiltGreat } from "./weapon-hilt-great";
 
 export class GreatMace extends Item {

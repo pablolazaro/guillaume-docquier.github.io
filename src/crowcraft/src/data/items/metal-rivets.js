@@ -1,8 +1,8 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
+import { Aurelium } from "./aurelium";
+import { Ore } from "./ore";
 import { Iron } from "./iron";
 import { Coal } from "./coal";
-import { Ore } from "./ore";
-import { Aurelium } from "./aurelium";
 
 export class MetalRivets extends CustomizableComponent {
     constructor() {

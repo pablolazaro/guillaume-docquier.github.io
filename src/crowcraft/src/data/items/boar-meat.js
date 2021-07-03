@@ -1,9 +1,10 @@
-import { RawMaterial, Rarities } from "models";
+import { Rarities } from "models";
+import { Meat } from "./meat";
 
-export class Meat extends RawMaterial {
+export class BoarMeat extends Meat {
     constructor() {
         super(
-            "meat",
+            "boar meat",
             [],
             [Rarities.Common],
             [],

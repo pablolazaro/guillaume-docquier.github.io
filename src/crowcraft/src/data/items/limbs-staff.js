@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponGrip } from "./weapon-grip";
 import { CompositeWoodPlank } from "./composite-wood-plank";
+import { WeaponGrip } from "./weapon-grip";
 
 export class LimbsStaff extends Item {
     constructor() {

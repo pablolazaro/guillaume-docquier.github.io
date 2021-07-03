@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { BladeMoldLong } from "./blade-mold-long";
 import { MetalBar } from "./metal-bar";
 import { EtherealDust } from "./ethereal-dust";
+import { BladeMoldLong } from "./blade-mold-long";
 
 export class WeaponBladeLong extends Item {
     constructor() {

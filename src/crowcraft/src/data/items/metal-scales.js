@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Silver } from "./silver";
-import { Copper } from "./copper";
-import { Tin } from "./tin";
-import { Aurelium } from "./aurelium";
-import { Iron } from "./iron";
-import { Coal } from "./coal";
 import { Ore } from "./ore";
+import { Coal } from "./coal";
+import { Aurelium } from "./aurelium";
+import { Copper } from "./copper";
+import { Iron } from "./iron";
+import { Tin } from "./tin";
 
 export class MetalScales extends CustomizableComponent {
     constructor() {

@@ -21,6 +21,7 @@ class Columns:
 
 
 def generate_item_files():
+    print(ConsoleColors.OKCYAN, "\nGenerating items...", ConsoleColors.ENDC)
     for (_, _, filenames) in walk(data_folder):
         for filename in get_filenames_of_type(filenames, FileTypes.ITEMS):
             with open(f"{data_folder}/{filename}", "r") as tsv_file:

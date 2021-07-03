@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { WeaponHilt } from "./weapon-hilt";
-import { EtherealDust } from "./ethereal-dust";
-import { WeaponShaftShort } from "./weapon-shaft-short";
 import { WeaponHeadHammer } from "./weapon-head-hammer";
+import { WeaponHilt } from "./weapon-hilt";
+import { WeaponShaftShort } from "./weapon-shaft-short";
+import { EtherealDust } from "./ethereal-dust";
 
 export class MysticalThrowingHammer extends Item {
     constructor() {

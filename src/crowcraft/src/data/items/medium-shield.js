@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { Enarmes } from "./enarmes";
 import { ShieldCovering } from "./shield-covering";
 import { EtherealDust } from "./ethereal-dust";
-import { Enarmes } from "./enarmes";
 import { ShieldBaseMedium } from "./shield-base-medium";
 
 export class MediumShield extends Item {

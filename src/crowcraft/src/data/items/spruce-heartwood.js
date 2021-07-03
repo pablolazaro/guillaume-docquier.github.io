@@ -1,10 +1,10 @@
 import { Rarities } from "models";
-import { Wood } from "./wood";
+import { Heartwood } from "./heartwood";
 
-export class Oak extends Wood {
+export class SpruceHeartwood extends Heartwood {
     constructor() {
         super(
-            "oak",
+            "spruce heartwood",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],
