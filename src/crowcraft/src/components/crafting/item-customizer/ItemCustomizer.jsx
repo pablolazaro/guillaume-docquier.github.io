@@ -60,4 +60,4 @@ const ComponentCustomizer = ({ customizableComponent, componentIndex, onComponen
     );
 };
 
-const formatCustomizationEffects = customizationEffects => customizationEffects.map(ce => ce.effect).join(" and ");
+const formatCustomizationEffects = customizationEffects => customizationEffects.map(ce => ce.effect).join(" + ");
