@@ -1,7 +1,6 @@
 import csv
-from pathlib import Path
 from os import walk
-from common import make_profession, make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, bcolors, get_profession_prefix, output_folder
+from common import make_item_name, make_class_name, make_file_name_without_extension, ConsoleColors, output_folder, data_folder, get_filenames_of_type, FileTypes
 
 
 class Columns:
@@ -15,11 +14,9 @@ class Columns:
 
 
 def generate_customizations():
-    data_folder = "./customizations"
-
     customizations_by_item = {}
     for (_, _, filenames) in walk(data_folder):
-        for filename in filenames:
+        for filename in get_filenames_of_type(filenames, FileTypes.CUSTOMIZATIONS):
             with open(f"{data_folder}/{filename}", "r") as tsv_file:
                 print(filename)
                 customization_entries = csv.reader(tsv_file, delimiter='\t')
@@ -58,7 +55,7 @@ def extract_customization_data(item_name, customization):
             quantity = int(quantity)
             crafting_materials.append((quantity, make_item_name(crafting_material_name)))
         except:
-            print(bcolors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", bcolors.ENDC)
+            print(ConsoleColors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", ConsoleColors.ENDC)
 
     effect_1 = customization[Columns.EFFECT_1] if customization[Columns.EFFECT_1] != "" else None
     effect_2 = customization[Columns.EFFECT_2] if customization[Columns.EFFECT_2] != "" else None
@@ -87,7 +84,7 @@ def generate_imports(customization_data, crafting_materials_set, item_name):
                    crafting_materials_set]
     except:
         imports = []
-        print(bcolors.FAIL, f"Cannot create imports properly from item set {{{crafting_materials_set}}} for customization: {{{customization_name}}} of item {{{item_name}}}", bcolors.ENDC)
+        print(ConsoleColors.FAIL, f"Cannot create imports properly from item set {{{crafting_materials_set}}} for customization: {{{customization_name}}} of item {{{item_name}}}", ConsoleColors.ENDC)
 
     return imports
 
@@ -126,7 +123,7 @@ def generate_customization_classes(customization_data, item_name):
             js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
         except:
             js_crafting_materials = []
-            print(bcolors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", bcolors.ENDC)
+            print(ConsoleColors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
         wb_effect = f"ItemsStats.{make_class_name(effect_1)}"
 

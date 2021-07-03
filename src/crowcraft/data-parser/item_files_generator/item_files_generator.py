@@ -1,8 +1,11 @@
 import csv
 from pathlib import Path
 from os import walk
-from common import make_profession, make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, bcolors, get_profession_prefix, output_folder
+from common import \
+    make_profession, make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, ConsoleColors, get_profession_prefix, \
+    data_folder, output_folder, get_filenames_of_type, FileTypes
 from item_customizations_generator import generate_customizations
+from raw_material_files_generator import generate_raw_material_files
 
 
 class Columns:
@@ -18,10 +21,8 @@ class Columns:
 
 
 def generate_item_files():
-    data_folder = "./data"
-
     for (_, _, filenames) in walk(data_folder):
-        for filename in filenames:
+        for filename in get_filenames_of_type(filenames, FileTypes.ITEMS):
             with open(f"{data_folder}/{filename}", "r") as tsv_file:
                 print(filename)
                 items = csv.reader(tsv_file, delimiter='\t')
@@ -33,7 +34,7 @@ def generate_item_files():
 
 def generate_item_code(item):
     item_data = extract_item_data(item)
-    (file_name, js_code) = write_js_code(item_data)
+    (file_name, js_code) = generate_js_code(item_data)
 
     Path(output_folder).mkdir(parents=True, exist_ok=True)
     with open(f"{output_folder}/{file_name}", "w") as js_file:
@@ -50,7 +51,7 @@ def extract_item_data(item):
     try:
         item_rarities = rarity_names[rarity_ranks[item_rarities[0]]:rarity_ranks[item_rarities[min(1, len(item_rarities) - 1)]] + 1]
     except:
-        print(bcolors.FAIL, f"Invalid item rarities {{{item_rarities}}} for item: {{{item_name}}}", bcolors.ENDC)
+        print(ConsoleColors.FAIL, f"Invalid item rarities {{{item_rarities}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
     raw_crafting_materials = item[Columns.MATERIALS].lower().replace("non-basic ", "").split(", ")
     crafting_materials = []
@@ -61,7 +62,7 @@ def extract_item_data(item):
             quantity = int(quantity)
             crafting_materials.append((quantity, make_item_name(crafting_material_name)))
         except:
-            print(bcolors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", bcolors.ENDC)
+            print(ConsoleColors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", ConsoleColors.ENDC)
 
     quantity_per_craft = item[Columns.QUANTITY_PER_CRAFT]
     is_customizable = item[Columns.CUSTOMIZABLE]
@@ -69,7 +70,7 @@ def extract_item_data(item):
     return file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, is_customizable
 
 
-def write_js_code(item_data):
+def generate_js_code(item_data):
     (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, is_customizable) = item_data
     js_code = generate_customizable_item(item_data) if is_customizable.lower() == "yes" else generate_item(item_data)
 
@@ -103,13 +104,13 @@ export class {class_name} extends Item {
         imports = [f"import {{ {make_class_name(crafting_material_name)} }} from \"./{make_file_name_without_extension(crafting_material_name)}\";" for crafting_material_name in crafting_materials_set]
     except:
         imports = []
-        print(bcolors.FAIL, f"Cannot create imports properly from item set {{{crafting_materials_set}}} for item: {{{item_name}}}", bcolors.ENDC)
+        print(ConsoleColors.FAIL, f"Cannot create imports properly from item set {{{crafting_materials_set}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
     try:
         js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
     except:
         js_crafting_materials = []
-        print(bcolors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", bcolors.ENDC)
+        print(ConsoleColors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
     return js_code.replace("{professions_imports}", "".join(professions_imports))\
         .replace("{imports}", "\n".join(imports))\
@@ -164,3 +165,4 @@ export class {class_name} extends CustomizableComponent {
 if __name__ == '__main__':
     generate_item_files()
     generate_customizations()
+    generate_raw_material_files()

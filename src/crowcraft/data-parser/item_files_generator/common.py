@@ -1,4 +1,4 @@
-class bcolors:
+class ConsoleColors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
     OKCYAN = '\033[96m'
@@ -8,6 +8,13 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+
+class FileTypes:
+    ITEMS = "item"
+    RAW_MATERIALS = "raw-material"
+    CUSTOMIZATIONS = "customization"
+    ITEM_STATS = "customization"
 
 
 rarity_ranks = {
@@ -28,6 +35,7 @@ rarity_names = [
     "Legendary"
 ]
 
+data_folder = "./data"
 output_folder = "./generated"
 
 
@@ -53,3 +61,20 @@ def get_profession_prefix(profession):
 
 def make_profession(profession):
     return f"{get_profession_prefix(profession)}.{''.join(map(capitalize, profession.lower().replace('vendor', '').strip().split(' ')))}"
+
+
+def get_filenames_of_type(filenames, file_type):
+    return [filename for filename in filenames if get_file_type(filename) == file_type]
+
+
+def get_file_type(filename):
+    if "raw materials" in filename.lower():
+        return FileTypes.RAW_MATERIALS
+
+    if "customizations" in filename.lower():
+        return FileTypes.CUSTOMIZATIONS
+
+    if "item stats" in filename.lower():
+        return FileTypes.ITEM_STATS
+
+    return FileTypes.ITEMS

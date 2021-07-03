@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 from os import walk
-from common import make_profession, make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, bcolors, get_profession_prefix, output_folder
+from common import make_item_name, make_class_name, output_folder, data_folder, get_filenames_of_type, FileTypes
 
 
 class Columns:
@@ -16,10 +16,8 @@ class Columns:
 
 
 def generate_items_stats():
-    data_folder = "./items-stats"
-
     for (_, _, filenames) in walk(data_folder):
-        for filename in filenames:
+        for filename in get_filenames_of_type(filenames, FileTypes.ITEM_STATS):
             with open(f"{data_folder}/{filename}", "r") as tsv_file:
                 print(filename)
                 items_stats = csv.reader(tsv_file, delimiter='\t')
