@@ -129,6 +129,7 @@
 a:link,
 a:visited {
     color: #F07167; /* Bittersweet */
+    text-decoration: none;
 }
 
 /* Heights */
@@ -179,6 +180,22 @@ a:visited {
 
 .w6 {
     width: 5rem;
+}
+
+.w7 {
+    width: 7rem;
+}
+
+.w8 {
+    width: 10rem;
+}
+
+.w9 {
+    width: 15rem;
+}
+
+.w10 {
+    width: 25rem;
 }
 
 /* Flex */
