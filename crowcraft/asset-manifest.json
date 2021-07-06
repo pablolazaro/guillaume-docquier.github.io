@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.c7f234f6.chunk.css",
-    "main.js": "/crowcraft/static/js/main.9201c373.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.9201c373.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.813e47a5.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.813e47a5.chunk.js.map",
     "runtime-main.js": "/crowcraft/static/js/runtime-main.2c096ddf.js",
     "runtime-main.js.map": "/crowcraft/static/js/runtime-main.2c096ddf.js.map",
-    "static/js/2.6ed8f3d4.chunk.js": "/crowcraft/static/js/2.6ed8f3d4.chunk.js",
-    "static/js/2.6ed8f3d4.chunk.js.map": "/crowcraft/static/js/2.6ed8f3d4.chunk.js.map",
+    "static/js/2.33429538.chunk.js": "/crowcraft/static/js/2.33429538.chunk.js",
+    "static/js/2.33429538.chunk.js.map": "/crowcraft/static/js/2.33429538.chunk.js.map",
     "static/js/3.dd754332.chunk.js": "/crowcraft/static/js/3.dd754332.chunk.js",
     "static/js/3.dd754332.chunk.js.map": "/crowcraft/static/js/3.dd754332.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.c7f234f6.chunk.css.map": "/crowcraft/static/css/main.c7f234f6.chunk.css.map",
-    "static/js/2.6ed8f3d4.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.6ed8f3d4.chunk.js.LICENSE.txt",
+    "static/js/2.33429538.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.33429538.chunk.js.LICENSE.txt",
     "static/media/adhesive.svg": "/crowcraft/static/media/adhesive.9fe660ef.svg",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/alchemist.svg": "/crowcraft/static/media/alchemist.bdd3966b.svg",
@@ -340,8 +340,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2c096ddf.js",
-    "static/js/2.6ed8f3d4.chunk.js",
+    "static/js/2.33429538.chunk.js",
     "static/css/main.c7f234f6.chunk.css",
-    "static/js/main.9201c373.chunk.js"
+    "static/js/main.813e47a5.chunk.js"
   ]
 }
