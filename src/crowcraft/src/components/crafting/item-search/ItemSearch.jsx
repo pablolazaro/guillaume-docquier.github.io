@@ -3,7 +3,7 @@ import "./ItemSearch.css";
 import { items } from "data";
 import { TextInput, Item } from "components";
 import { Sorting } from "utils";
-import { memo, useState } from "react";
+import { memo, useState, useEffect, useCallback } from "react";
 
 const MAX_ITEMS_COUNT = 30;
 
@@ -16,33 +16,38 @@ export const ItemSearch = memo(({ onItemSelected }) => {
             .sort(Sorting.descending(item => item.craftingRank))
     );
 
-    const [keywords, setKeywords] = useState("");
+    const [filter, setFilter] = useState("");
+    const [matchedItems, setMatchedItems] = useState(allItems);
     const [selectedItemId, setSelectedItemId] = useState(null);
 
-    const setFilter = e => {
-        setKeywords(e.target.value);
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setMatchedItems(allItems.filter(item => {
+                if (filter.length === 0) {
+                    return true;
+                }
+
+                return item.name.includes(filter);
+            }))
+        }, 300);
+
+        return () => clearTimeout(timeout);
+    }, [filter, allItems]);
+
+    const onFilterChanged = e => {
+        setFilter(e.target.value.toLowerCase());
     };
 
-    const hasKeywordMatch = item => {
-        if (keywords.length === 0) {
-            return true;
-        }
-
-        return item.name.includes(keywords);
-    };
-
-    const selectItem = item => {
+    const selectItem = useCallback(item => {
         setSelectedItemId(item.id);
         onItemSelected(item.createNew());
-    };
-
-    const matchedItems = allItems.filter(hasKeywordMatch);
+    }, [setSelectedItemId, onItemSelected]);
 
     return (
         <>
             <div className="mb2 f3 fw5">Find an item</div>
             <div className="mb3">
-                <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={setFilter} />
+                <TextInput id="item-meta" name="item-meta" placeholder="Filter items" onInputChanged={onFilterChanged} />
             </div>
             <div className="flex flex-wrap">
                 {matchedItems.slice(0, MAX_ITEMS_COUNT).map(item => (
@@ -58,7 +63,7 @@ export const ItemSearch = memo(({ onItemSelected }) => {
     );
 });
 
-const SelectableItem = ({ item, onItemSelected, isSelected }) => {
+const SelectableItem = memo(({ item, onItemSelected, isSelected }) => {
     const selectItem = () => {
         onItemSelected(item);
     };
@@ -70,4 +75,4 @@ const SelectableItem = ({ item, onItemSelected, isSelected }) => {
             <Item item={item} />
         </div>
     );
-};
+});
