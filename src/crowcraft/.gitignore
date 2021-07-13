@@ -1,4 +1,6 @@
 all_sprites/
+.metals/
+.vscode/
 
 # dependencies
 /node_modules
