@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Crowcraft
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project structure
+### Web development
+Crowcraft is a ``React.js`` app built with ``Create React App``.  
+You will find the usual React code in the ``public/`` and ``src/`` folders.  
 
-## Available Scripts
+The app is deployed as a [github page](https://pages.github.com/) by building the code and copying the content in the root folder. Github handles the deployment automatically.  
 
-In the project directory, you can run:
+### Python Tools
+The ``data-parser/`` folder is a collection of python tools for generating the javascript code for all the items based on the data spreadsheet.  
 
-### `npm start`
+It also contains utilities for converting pngs to svgs quickly.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Dev setup
+### Web development
+You will need [Node.js](https://nodejs.org/en/) v15.7.0 or higher (lower may work, but I can't guarantee it).  
+You will also need an editor. I recommend [VSCode](https://code.visualstudio.com/), but you can pick your favorite editor.  
+Once this is installed, simply run ``npm install`` to install 3rd party libraries, then ``npm run start`` will start a local dev server.  
+``npm run deploy`` will build the app and copy the files in the right place. Do this if you want your changes to be deployed after you commit and push.  
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Python Tools
+You will need this if you plan to work on item data.  
+The project is very vanilla, all you need is Python 3 and an editor.  
+For the editor, I strongly recommend [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows) (the community edition is free).  
 
-### `npm test`
+## Development
+Because items are numerous and to make it easier to keep them up to date, we generate all the code that defines items with the python tools.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All the generated item files are under ``src/data/items/``. These files should NOT be modified by hand. If you feel like you need to modify them, then you have to modify the templates in python and regenerate all the items with the latest data.  
+To get the latest data, all you have to do is to download the sheets from the google sheet as .tsv files.  
 
-### `npm run build`
+You will also find ``src/data/assets/``. In there, there are a lot of `` .svg`` files, and a lot more ``.png`` files.  
+We use ``.svg`` files because they scale better, and we generate them from the ``.png`` files.  
+The name of the ``.svg`` must match the name of the item it represents, in camelCase.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Another particularity of the project is the use of [Tachyons](https://tachyons.io/), an [atomic css framework](https://www.smashingmagazine.com/2013/10/challenging-css-best-practices-atomic-approach/). It takes a bit of time to get used to it, but it allows you to quickly and easily write simple markdown, especially when you use flexbox.  
+You should use atomic css whenever you can. However, sometimes it won't be possible and it's okay.  
