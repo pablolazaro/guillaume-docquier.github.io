@@ -8,7 +8,7 @@ You will find the usual React code in the ``public/`` and ``src/`` folders.
 The app is deployed as a [github page](https://pages.github.com/) by building the code and copying the content in the root folder. Github handles the deployment automatically.  
 
 ### Python Tools
-The ``data-parser/`` folder is a collection of python tools for generating the javascript code for all the items based on the data spreadsheet.  
+The ``data-parser/`` folder is a collection of python tools for generating the javascript code for all the items based on the [data spreadsheet](https://docs.google.com/spreadsheets/d/1_VVrggn0nQrVEnUZ43qCUy4MMPXE2T0wzI0N-5nBskQ/edit?usp=sharing).  
 
 It also contains utilities for converting pngs to svgs quickly.  
 
@@ -28,7 +28,7 @@ For the editor, I strongly recommend [PyCharm](https://www.jetbrains.com/pycharm
 Because items are numerous and to make it easier to keep them up to date, we generate all the code that defines items with the python tools.  
 
 All the generated item files are under ``src/data/items/``. These files should NOT be modified by hand. If you feel like you need to modify them, then you have to modify the templates in python and regenerate all the items with the latest data.  
-To get the latest data, all you have to do is to download the sheets from the google sheet as .tsv files.  
+To get the latest data, all you have to do is to download the sheets from the [google sheet](https://docs.google.com/spreadsheets/d/1_VVrggn0nQrVEnUZ43qCUy4MMPXE2T0wzI0N-5nBskQ/edit?usp=sharing) as .tsv files.  
 
 You will also find ``src/data/assets/``. In there, there are a lot of `` .svg`` files, and a lot more ``.png`` files.  
 We use ``.svg`` files because they scale better, and we generate them from the ``.png`` files.  
