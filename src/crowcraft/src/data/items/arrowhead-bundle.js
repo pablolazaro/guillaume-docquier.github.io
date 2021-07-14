@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
-import { Ore } from "./ore";
-import { Coal } from "./coal";
 import { Aurelium } from "./aurelium";
+import { Coal } from "./coal";
 import { Copper } from "./copper";
 import { Iron } from "./iron";
+import { Ore } from "./ore";
+import { Silver } from "./silver";
 import { Tin } from "./tin";
 
 export class ArrowheadBundle extends CustomizableComponent {
@@ -34,8 +34,7 @@ class PiercingArrowheadBundleCustomization extends Customization {
         super(
             "piercing",
             [
-                new CraftingMaterial(9, new Iron()),
-				new CraftingMaterial(1, new Coal()),
+                new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingDamageType],
@@ -53,8 +52,7 @@ class SlashingArrowheadBundleCustomization extends Customization {
         super(
             "slashing",
             [
-                new CraftingMaterial(9, new Tin()),
-				new CraftingMaterial(1, new Coal()),
+                new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingDamageType],
@@ -72,8 +70,7 @@ class CrushingArrowheadBundleCustomization extends Customization {
         super(
             "crushing",
             [
-                new CraftingMaterial(9, new Copper()),
-				new CraftingMaterial(1, new Coal()),
+                new Copper(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingDamageType],
@@ -91,8 +88,7 @@ class FireArrowheadBundleCustomization extends Customization {
         super(
             "fire",
             [
-                new CraftingMaterial(9, new Aurelium()),
-				new CraftingMaterial(1, new Coal()),
+                new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireDamageType],
@@ -110,8 +106,7 @@ class IceArrowheadBundleCustomization extends Customization {
         super(
             "ice",
             [
-                new CraftingMaterial(9, new Silver()),
-				new CraftingMaterial(1, new Coal()),
+                new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceDamageType],

@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { MetalScales } from "./metal-scales";
 import { EtherealDust } from "./ethereal-dust";
 import { LeatherPadding } from "./leather-padding";
+import { MetalScales } from "./metal-scales";
 
 export class MailCoif extends Item {
     constructor() {

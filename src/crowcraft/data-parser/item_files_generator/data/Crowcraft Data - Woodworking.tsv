@@ -1,17 +1,17 @@
 IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE
 		Wood Processing						
-Yes	Yes	Arrow Shaft Bundle	Woodworker	white - orange	3x Non-Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
-Yes	Yes	Composite Wood Plank	Woodworker	white - orange	6x Non-Basic Wood, 6x Non-Basic Wood, 6x Non-Basic Wood, 5x Sandpaper	1	Yes	Yes
+Yes	Yes	Arrow Shaft Bundle	Woodworker	white - orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No
+Yes	Yes	Composite Wood Plank	Woodworker	white - orange	9x Wood, 9x Wood, 9x Wood, 6x Sandpaper	1	Yes	Yes
 Yes	Yes	Parchment Paper	Woodworker	white	1x Wood	1	No	No
-Yes	Yes	Wooden Board	Woodworker	white-orange	3x Non-Basic Wood, 3x Non-Basic Wood, 3x Non-Basic Wood	1	Yes	No
+Yes	Yes	Wooden Board	Woodworker	white-orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No
 								
 		Fuel						
 Yes	Yes	Sandpaper	Woodworker	white	2x Wood, 1x Stone, 3x Ethereal Dust	5	No	No
 								
 		One Hand Weapon Components						
-Yes	Yes	Shield Base: Large	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: large shield, Optional: Runestone Esoteric	1	Yes	No
-Yes	Yes	Shield Base: Medium	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: medium shield, Optional: Runestone Esoteric	1	Yes	No
-Yes	Yes	Shield Base: Small	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: small shield, Optional: Runestone Esoteric	1	Yes	No
+Yes	Yes	Shield Base: Large	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: large shield, Optional: 1x Runestone Esoteric	1	Yes	No
+Yes	Yes	Shield Base: Medium	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: medium shield, Optional: 1x Runestone Esoteric	1	Yes	No
+Yes	Yes	Shield Base: Small	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: small shield, Optional: 1x Runestone Esoteric	1	Yes	No
 								
 		Ranged Weapon Components						
 Yes	Yes	Book Casing	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Stitched Leather, 1x Stitched Leather, 1x Adhesive, 8x Ethereal Dust, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No

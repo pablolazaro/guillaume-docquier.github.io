@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { MetalBar } from "./metal-bar";
-import { EtherealDust } from "./ethereal-dust";
 import { BarrelMoldArcane } from "./barrel-mold-arcane";
+import { EtherealDust } from "./ethereal-dust";
+import { MetalBar } from "./metal-bar";
 
 export class CastingAperture extends Item {
     constructor() {

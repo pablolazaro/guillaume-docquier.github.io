@@ -1,10 +1,10 @@
 IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE
 		Hide Processing						
-Yes	Yes	Hardened Leather Square	Leatherworker	white-orange	5x Hide, 5x Hide, 5x Hide, 3x Lacing Sinew	1	Yes	Yes
+Yes	Yes	Hardened Leather Square	Leatherworker	white-orange	10x Hide, 10x Hide, 10x Hide, 6x Lacing Sinew	1	Yes	Yes
 Yes	Yes	Leather Padding	Leatherworker	white-orange	2x Hide, 2x Hide, 2x Hide, 1x Lacing Sinew	1	Yes	No
-No	No	Leather Sheet	Leatherworker	white-orange	2x Hide, 2x Hide, 2x Hide	1	Yes	No
-Yes	Yes	Leather Square	Leatherworker	white-orange	4x Hide, 3x Hide, 3x Hide	1	Yes	Yes
-Yes	Yes	Stitched Leather	Leatherworker	white-orange	1x Hide, 1x Hide, 1x Hide, 2x Lacing Sinew	1	Yes	Yes
+Yes	Yes	Leather Sheet	Leatherworker	white-orange	2x Hide, 2x Hide, 2x Hide	1	Yes	No
+Yes	Yes	Leather Square	Leatherworker	white-orange	8x Hide, 5x Hide, 5x Hide, 6x Lacing Sinew	1	Yes	Yes
+Yes	Yes	Stitched Leather	Leatherworker	white-orange	3x Hide, 3x Hide, 3x Hide, 6x Lacing Sinew	1	Yes	Yes
 								
 		Fuel						
 Yes	Yes	Lacing Sinew	Leatherworker	white	3x Meat, 3x Ethereal Dust	5	No	No

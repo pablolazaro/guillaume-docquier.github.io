@@ -113,8 +113,8 @@ export class {class_name} extends Item {
         js_crafting_materials = []
         print(ConsoleColors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
-    return js_code.replace("{professions_imports}", "".join(professions_imports))\
-        .replace("{imports}", "\n".join(imports))\
+    return js_code.replace("{professions_imports}", "".join(sorted(professions_imports)))\
+        .replace("{imports}", "\n".join(sorted(imports)))\
         .replace("{class_name}", class_name)\
         .replace("{item_name}", item_name)\
         .replace("{professions}", ", ".join([make_profession(profession) for profession in professions]))\
@@ -153,7 +153,7 @@ export class {class_name} extends CustomizableComponent {
     crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
     js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
 
-    return js_code.replace("{professions_imports}", "".join(professions_imports))\
+    return js_code.replace("{professions_imports}", "".join(sorted(professions_imports)))\
         .replace("{item_materials_set}", ",".join(crafting_materials_set))\
         .replace("{class_name}", class_name)\
         .replace("{item_name}", item_name)\

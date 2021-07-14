@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { EtherealDust } from "./ethereal-dust";
-import { WeaponHilt } from "./weapon-hilt";
-import { WeaponBladeCurved } from "./weapon-blade-curved";
 import { BladeRivets } from "./blade-rivets";
+import { EtherealDust } from "./ethereal-dust";
+import { WeaponBladeCurved } from "./weapon-blade-curved";
+import { WeaponHilt } from "./weapon-hilt";
 
 export class Sickle extends Item {
     constructor() {

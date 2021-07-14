@@ -1,0 +1,145 @@
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	CUSTOMIZATION NAME	MATERIALS	EFFECT 1	EFFECT 2
+Yes	Yes	Metal Section	Rose Aurelium	Iron, Aurelium, Aurelium	Physical Resistance	Attack Power
+Yes	Yes	Metal Section	Sterling	Iron, Silver, Silver	Elemental Resistance	Attack Power
+Yes	Yes	Metal Section	Cunife	Copper, Copper, Iron	Organic Resistance	Attack Power
+Yes	Yes	Metal Section	Steel	Copper, Iron, Iron	Physical Resistance	Support Power
+Yes	Yes	Metal Section	Green Aurelium	Tin, Tin, Aurelium	Elemental Resistance	Support Power
+Yes	Yes	Metal Section	Electrum	Tin, Aurelium, Silver	Organic Resistance	Support Power
+Yes	Yes	Metal Section	Copper	Copper, Copper, Copper	Attack Power	Stamina
+Yes	Yes	Metal Section	Iron	Iron, Iron, Iron	Support Power	Stamina
+Yes	Yes	Metal Section	Tin	Tin, Tin, Tin	Physical Resistance	Stamina
+Yes	Yes	Metal Section	Silver	Silver, Silver, Silver	Elemental Resistance	Stamina
+Yes	Yes	Metal Section	Aurelium	Aurelium, Aurelium, Aurelium	Organic Resistance	Stamina
+						
+Yes	Yes	Metal Bar	Rose Aurelium	Iron, Aurelium, Aurelium	Support Power	Attack Power
+Yes	Yes	Metal Bar	Sterling	Iron, Silver, Silver	Fire Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Cunife	Copper, Copper, Iron	Ice Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Steel	Copper, Iron, Iron	Electricity Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Green Aurelium	Tin, Tin, Aurelium	Nature Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Electrum	Tin, Aurelium, Silver	Slashing Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Blue Steel	Iron, Tin, Silver	Crushing Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Bronze	Copper, Copper, Tin	Piercing Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Copper	Copper, Copper, Copper	Critical Strike Chance	Attack Power
+Yes	Yes	Metal Bar	Iron	Iron, Iron, Iron	Critical Strike Damage	Attack Power
+Yes	Yes	Metal Bar	Tin	Tin, Tin, Tin	Critical Healing Chance	Support Power
+Yes	Yes	Metal Bar	Silver	Silver, Silver, Silver	Critical Healing Amount	Support Power
+Yes	Yes	Metal Bar	Aurelium	Aurelium, Aurelium, Aurelium	Critical Strike Chance	Critical Strike Damage
+						
+Yes	Yes	Arrowhead Bundle	Piercing	Iron	Piercing Damage Type	
+Yes	Yes	Arrowhead Bundle	Slashing	Tin	Slashing Damage Type	
+Yes	Yes	Arrowhead Bundle	Crushing	Copper	Crushing Damage Type	
+Yes	Yes	Arrowhead Bundle	Fire	Aurelium	Fire Damage Type	
+Yes	Yes	Arrowhead Bundle	Ice	Silver	Ice Damage Type	
+						
+Yes	Yes	Metal Rivets	Stealth	Aurelium, Iron	Stealth	Out Of Combat Health Regeneration
+Yes	Yes	Metal Rivets	Out Of Combat Health Regeneration	Ore, Ore	Out Of Combat Health Regeneration	
+						
+Yes	Yes	Metal Buckles	Aurelium Stealth	Aurelium, Aurelium	Stealth	Out Of Combat Health Regeneration
+Yes	Yes	Metal Buckles	Silver Stealth	Silver, Silver	Stealth	Out Of Combat Health Regeneration
+Yes	Yes	Metal Buckles	Out Of Combat Health Regeneration	Ore, Ore	Out Of Combat Health Regeneration	
+						
+Yes	Yes	Metal Scales	Steel	Iron, Copper, Iron	Bleed Resistance	
+Yes	Yes	Metal Scales	Dark Bronze	Iron, Copper, Tin	Fire Resistance	
+Yes	Yes	Metal Scales	Bright Steel	Iron, Copper, Silver	Ice Resistance	
+Yes	Yes	Metal Scales	Aurelium Steel	Iron, Copper, Aurelium	Electricity Resistance	
+Yes	Yes	Metal Scales	Invar	Iron, Iron, Tin	Nature Resistance	
+Yes	Yes	Metal Scales	Silvered Iron	Iron, Iron, Silver	Poison Resistance	
+Yes	Yes	Metal Scales	Tiger Iron	Iron, Iron, Aurelium	Disease Resistance	
+Yes	Yes	Metal Scales	Blue Steel	Iron, Tin, Silver	Slashing Resistance	
+Yes	Yes	Metal Scales	Forest Aurelium	Iron, Tin, Aurelium	Crushing Resistance	
+Yes	Yes	Metal Scales	Dark Electrum	Iron, Silver, Aurelium	Piercing Resistance	
+						
+Yes	Yes	Metal Plates	Steel	Iron, Copper, Iron	Bleed Resistance	
+Yes	Yes	Metal Plates	Dark Bronze	Iron, Copper, Tin	Fire Resistance	
+Yes	Yes	Metal Plates	Bright Steel	Iron, Copper, Silver	Ice Resistance	
+Yes	Yes	Metal Plates	Aurelium Steel	Iron, Copper, Aurelium	Electricity Resistance	
+Yes	Yes	Metal Plates	Invar	Iron, Iron, Tin	Nature Resistance	
+Yes	Yes	Metal Plates	Silvered Iron	Iron, Iron, Silver	Poison Resistance	
+Yes	Yes	Metal Plates	Tiger Iron	Iron, Iron, Aurelium	Disease Resistance	
+Yes	Yes	Metal Plates	Blue Steel	Iron, Tin, Silver	Slashing Resistance	
+Yes	Yes	Metal Plates	Forest Aurelium	Iron, Tin, Aurelium	Crushing Resistance	
+Yes	Yes	Metal Plates	Dark Electrum	Iron, Silver, Aurelium	Piercing Resistance	
+						
+Yes	Yes	Metal Rings	Steel	Iron, Copper, Iron	Bleed Damage Bonus	
+Yes	Yes	Metal Rings	Dark Bronze	Iron, Copper, Tin	Fire Damage Bonus	
+Yes	Yes	Metal Rings	Bright Steel	Iron, Copper, Silver	Ice Damage Bonus	
+Yes	Yes	Metal Rings	Aurelium Steel	Iron, Copper, Aurelium	Electricity Damage Bonus	
+Yes	Yes	Metal Rings	Invar	Iron, Iron, Tin	Nature Damage Bonus	
+Yes	Yes	Metal Rings	Silvered Iron	Iron, Iron, Silver	Poison Damage Bonus	
+Yes	Yes	Metal Rings	Tiger Iron	Iron, Iron, Aurelium	Disease Damage Bonus	
+Yes	Yes	Metal Rings	Blue Steel	Iron, Tin, Silver	Slashing Damage Bonus	
+Yes	Yes	Metal Rings	Forest Aurelium	Iron, Tin, Aurelium	Crushing Damage Bonus	
+Yes	Yes	Metal Rings	Dark Electrum	Iron, Silver, Aurelium	Piercing Damage Bonus	
+Yes	Yes	Metal Rings	Sterling	Iron, Silver, Silver	Critical Strike Damage	
+Yes	Yes	Metal Rings	Rose Aurelium	Iron, Aurelium, Aurelium	Critical Healing Amount	
+						
+Yes	Yes	Metal Sheet	Steel	Iron, Copper, Iron	Bleed Damage Bonus	
+Yes	Yes	Metal Sheet	Dark Bronze	Iron, Copper, Tin	Fire Damage Bonus	
+Yes	Yes	Metal Sheet	Bright Steel	Iron, Copper, Silver	Ice Damage Bonus	
+Yes	Yes	Metal Sheet	Aurelium Steel	Iron, Copper, Aurelium	Electricity Damage Bonus	
+Yes	Yes	Metal Sheet	Invar	Iron, Iron, Tin	Nature Damage Bonus	
+Yes	Yes	Metal Sheet	Silvered Iron	Iron, Iron, Silver	Poison Damage Bonus	
+Yes	Yes	Metal Sheet	Tiger Iron	Iron, Iron, Aurelium	Disease Damage Bonus	
+Yes	Yes	Metal Sheet	Blue Steel	Iron, Tin, Silver	Slashing Damage Bonus	
+Yes	Yes	Metal Sheet	Forest Aurelium	Iron, Tin, Aurelium	Crushing Damage Bonus	
+Yes	Yes	Metal Sheet	Dark Electrum	Iron, Silver, Aurelium	Piercing Damage Bonus	
+Yes	Yes	Metal Sheet	Sterling	Iron, Silver, Silver	Critical Strike Damage	
+Yes	Yes	Metal Sheet	Rose Aurelium	Iron, Aurelium, Aurelium	Critical Healing Amount	
+						
+Yes	Yes	Composite Wood Plank	Batten	Spruce, Yew, Yew	Support Power	Attack Power
+Yes	Yes	Composite Wood Plank	Pliable	Spruce, Ash, Ash	Stamina	Attack Power
+Yes	Yes	Composite Wood Plank	Sapid	Oak, Oak, Spruce	Stamina	Support Power
+Yes	Yes	Composite Wood Plank	Stout	Oak, Spruce, Spruce	Fire Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Rustic	Birch, Birch, Yew	Ice Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Builder's	Birch, Ash, Ash	Electricity Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Pressed	Spruce, Birch, Ash	Nature Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Prime	Oak, Oak, Birch	Slashing Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Sheated	Spruce, Birch, Yew	Crushing Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Waned	Yew, Yew, Oak	Piercing Armor Penetration	Attack Power
+Yes	Yes	Composite Wood Plank	Select Oak	Oak, Oak, Oak	Critical Strike Chance	Attack Power
+Yes	Yes	Composite Wood Plank	Select Birch	Birch, Birch, Birch	Critical Strike Damage	Attack Power
+Yes	Yes	Composite Wood Plank	Select Spruce	Spruce, Spruce, Spruce	Critical Healing Chance	Support Power
+Yes	Yes	Composite Wood Plank	Select Ash	Ash, Ash, Ash	Critical Healing Amount	Support Power
+Yes	Yes	Composite Wood Plank	Select Yew	Yew, Yew, Yew	Critical Strike Chance	Critical Strike Damage
+						
+Yes	Yes	Book Chapter	Redemption	Travertine	Slashing Resistance	
+Yes	Yes	Book Chapter	Sin	Marble	Fire Resistance	
+Yes	Yes	Book Chapter	Indulgence	Limestone	Crushing Resistance	
+Yes	Yes	Book Chapter	Fervor	Granite	Electricity Resistance	
+Yes	Yes	Book Chapter	Absolution	Slate	Piercing Resistance	
+						
+Yes	Yes	Stitched Leather	Full Grain	Soft Hide, Strong Hide, Strong Hide	Attack Power	Stamina
+Yes	Yes	Stitched Leather	Top Grain	Soft Hide, Tough Hide, Tough Hide	Support Power	Stamina
+Yes	Yes	Stitched Leather	Split Grain	Strong Hide, Durable Hide, Durable Hide	Attack Power	Stealth
+Yes	Yes	Stitched Leather	Bicast	Strong Hide, Flexible Hide, Flexible Hide	Support Power	Perception
+Yes	Yes	Stitched Leather	Suede	Strong Hide, Soft Hide, Soft Hide	Attack Power	Lifesteal
+Yes	Yes	Stitched Leather	Bonded	Strong Hide, Tough Hide, Flexible Hide	Support Power	Attack Power
+Yes	Yes	Stitched Leather	Genuine Durable	Durable Hide, Durable Hide, Durable Hide	Critical Strike Chance	Attack Power
+Yes	Yes	Stitched Leather	Genuine Tough	Tough Hide, Tough Hide, Tough Hide	Critical Strike Damage	Attack Power
+Yes	Yes	Stitched Leather	Genuine Soft	Soft Hide, Soft Hide, Soft Hide	Critical Healing Chance	Support Power
+Yes	Yes	Stitched Leather	Genuine Strong	Strong Hide, Strong Hide, Strong Hide	Critical Healing Amount	Support Power
+Yes	Yes	Stitched Leather	Genuine Flexible	Flexible Hide, Flexible Hide, Flexible Hide	Critical Strike Chance	Critical Strike Damage
+						
+Yes	Yes	Leather Square	Limber Corium	Durable Hide, Flexible Hide, Flexible Hide	Bleed Resistance	
+Yes	Yes	Leather Square	Soft Corium	Durable Hide, Soft Hide, Soft Hide	Fire Resistance	
+Yes	Yes	Leather Square	Sturdy Corium	Durable Hide, Strong Hide, Strong Hide	Ice Resistance	
+Yes	Yes	Leather Square	Stout Corium	Durable Hide, Tough Hide, Tough Hide	Electricity Resistance	
+Yes	Yes	Leather Square	Corium	Flexible Hide, Durable Hide, Durable Hide	Nature Resistance	
+Yes	Yes	Leather Square	Chamoise	Flexible Hide, Soft Hide, Soft Hide	Poison Resistance	
+Yes	Yes	Leather Square	Sturdy Bicast	Flexible Hide, Strong Hide, Strong Hide	Disease Resistance	
+Yes	Yes	Leather Square	Limber Grain	Flexible Hide, Tough Hide, Tough Hide	Slashing Resistance	
+Yes	Yes	Leather Square	Bicast	Soft Hide, Durable Hide, Durable Hide	Crushing Resistance	
+Yes	Yes	Leather Square	Suede	Soft Hide, Flexible Hide, Flexible Hide	Piercing Resistance	
+						
+Yes	Yes	Hardened Leather Square	Limber Corium	Durable Hide, Flexible Hide, Flexible Hide	Bleed Damage Bonus	
+Yes	Yes	Hardened Leather Square	Soft Corium	Durable Hide, Soft Hide, Soft Hide	Fire Damage Bonus	
+Yes	Yes	Hardened Leather Square	Sturdy Corium	Durable Hide, Strong Hide, Strong Hide	Ice Damage Bonus	
+Yes	Yes	Hardened Leather Square	Stout Corium	Durable Hide, Tough Hide, Tough Hide	Electricity Damage Bonus	
+Yes	Yes	Hardened Leather Square	Corium	Flexible Hide, Durable Hide, Durable Hide	Nature Damage Bonus	
+Yes	Yes	Hardened Leather Square	Chamoise	Flexible Hide, Soft Hide, Soft Hide	Poison Damage Bonus	
+Yes	Yes	Hardened Leather Square	Sturdy Bicast	Flexible Hide, Strong Hide, Strong Hide	Disease Damage Bonus	
+Yes	Yes	Hardened Leather Square	Limber Grain	Flexible Hide, Tough Hide, Tough Hide	Slashing Damage Bonus	
+Yes	Yes	Hardened Leather Square	Split Grain	Soft Hide, Durable Hide, Durable Hide	Crushing Damage Bonus	
+Yes	Yes	Hardened Leather Square	Nappa	Soft Hide, Flexible Hide, Flexible Hide	Piercing Damage Bonus	
+Yes	Yes	Hardened Leather Square	Bicast	Strong Hide, Flexible Hide, Flexible Hide	Critical Strike Damage	
+Yes	Yes	Hardened Leather Square	Suede	Strong Hide, Soft Hide, Soft Hide	Critical Healing Amount	

@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { LacingSinew } from "./lacing-sinew";
-import { ToughHide } from "./tough-hide";
-import { StrongHide } from "./strong-hide";
 import { DurableHide } from "./durable-hide";
-import { SoftHide } from "./soft-hide";
-import { Hide } from "./hide";
 import { FlexibleHide } from "./flexible-hide";
+import { Hide } from "./hide";
+import { LacingSinew } from "./lacing-sinew";
+import { SoftHide } from "./soft-hide";
+import { StrongHide } from "./strong-hide";
+import { ToughHide } from "./tough-hide";
 
 export class StitchedLeather extends CustomizableComponent {
     constructor() {
@@ -14,10 +14,10 @@ export class StitchedLeather extends CustomizableComponent {
             [Professions.Leatherworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(1, new Hide()),
-				new CraftingMaterial(1, new Hide()),
-				new CraftingMaterial(1, new Hide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new CraftingMaterial(3, new Hide()),
+				new CraftingMaterial(3, new Hide()),
+				new CraftingMaterial(3, new Hide()),
+				new CraftingMaterial(6, new LacingSinew()),
             ],
             1,
             [
@@ -42,10 +42,9 @@ class FullGrainStitchedLeatherCustomization extends Customization {
         super(
             "full grain",
             [
-                new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new SoftHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.AttackPower],
@@ -63,10 +62,9 @@ class TopGrainStitchedLeatherCustomization extends Customization {
         super(
             "top grain",
             [
-                new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new SoftHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -84,10 +82,9 @@ class SplitGrainStitchedLeatherCustomization extends Customization {
         super(
             "split grain",
             [
-                new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new DurableHide()),
-				new CraftingMaterial(1, new DurableHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new StrongHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.AttackPower],
@@ -105,10 +102,9 @@ class BicastStitchedLeatherCustomization extends Customization {
         super(
             "bicast",
             [
-                new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new StrongHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -126,10 +122,9 @@ class SuedeStitchedLeatherCustomization extends Customization {
         super(
             "suede",
             [
-                new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new StrongHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.AttackPower],
@@ -147,10 +142,9 @@ class BondedStitchedLeatherCustomization extends Customization {
         super(
             "bonded",
             [
-                new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new StrongHide(),
+				new ToughHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -168,10 +162,9 @@ class GenuineDurableStitchedLeatherCustomization extends Customization {
         super(
             "genuine durable",
             [
-                new CraftingMaterial(1, new DurableHide()),
-				new CraftingMaterial(1, new DurableHide()),
-				new CraftingMaterial(1, new DurableHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new DurableHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],
@@ -189,10 +182,9 @@ class GenuineToughStitchedLeatherCustomization extends Customization {
         super(
             "genuine tough",
             [
-                new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(1, new ToughHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new ToughHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
@@ -210,10 +202,9 @@ class GenuineSoftStitchedLeatherCustomization extends Customization {
         super(
             "genuine soft",
             [
-                new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(1, new SoftHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new SoftHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingChance],
@@ -231,10 +222,9 @@ class GenuineStrongStitchedLeatherCustomization extends Customization {
         super(
             "genuine strong",
             [
-                new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(1, new StrongHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new StrongHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingAmount],
@@ -252,10 +242,9 @@ class GenuineFlexibleStitchedLeatherCustomization extends Customization {
         super(
             "genuine flexible",
             [
-                new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(1, new FlexibleHide()),
-				new CraftingMaterial(2, new LacingSinew()),
+                new FlexibleHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],

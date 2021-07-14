@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { LeatherPadding } from "./leather-padding";
 import { EtherealDust } from "./ethereal-dust";
+import { LeatherPadding } from "./leather-padding";
 import { MetalPlates } from "./metal-plates";
 
 export class PlateGloves extends Item {

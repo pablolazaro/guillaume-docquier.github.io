@@ -16,6 +16,7 @@ class Columns:
 
 class ItemTypes:
     RAW_MATERIAL = "raw material"
+    GENERIC_MATERIAL = "generic material"
 
 
 def generate_raw_material_files():
@@ -57,15 +58,15 @@ def extract_item_data(item):
 
 def generate_js_code(item_data):
     (file_name, class_name, item_name, item_rarities, item_type) = item_data
-    js_code = generate_raw_material_item(item_data) if item_type.lower() == ItemTypes.RAW_MATERIAL else generate_item(item_data)
+    js_code = generate_generic_material_item(item_data) if item_type.lower() in [ItemTypes.RAW_MATERIAL, ItemTypes.GENERIC_MATERIAL] else generate_item(item_data)
 
     return file_name, js_code
 
 
-def generate_raw_material_item(item_data):
-    js_code = """import { RawMaterial, Rarities } from "models";
+def generate_generic_material_item(item_data):
+    js_code = """import { {item_superclass}, Rarities } from "models";
 
-export class {class_name} extends RawMaterial {
+export class {class_name} extends {item_superclass} {
     constructor(
         name = "{item_name}",
         professions = [],
@@ -78,9 +79,10 @@ export class {class_name} extends RawMaterial {
 }
 """
 
-    (file_name, class_name, item_name, item_rarities, _) = item_data
+    (file_name, class_name, item_name, item_rarities, item_type) = item_data
 
     return js_code.replace("{class_name}", class_name)\
+        .replace("{item_superclass}", make_class_name(item_type))\
         .replace("{item_name}", item_name)\
         .replace("{rarities}", ", ".join([f"Rarities.{rarity}" for rarity in item_rarities]))
 

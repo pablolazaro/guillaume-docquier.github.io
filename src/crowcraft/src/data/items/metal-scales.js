@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
-import { Ore } from "./ore";
-import { Coal } from "./coal";
 import { Aurelium } from "./aurelium";
+import { Coal } from "./coal";
 import { Copper } from "./copper";
 import { Iron } from "./iron";
+import { Ore } from "./ore";
+import { Silver } from "./silver";
 import { Tin } from "./tin";
 
 export class MetalScales extends CustomizableComponent {
@@ -41,10 +41,9 @@ class SteelMetalScalesCustomization extends Customization {
         super(
             "steel",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Copper()),
-				new CraftingMaterial(10, new Iron()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.BleedResistance],
@@ -62,10 +61,9 @@ class DarkBronzeMetalScalesCustomization extends Customization {
         super(
             "dark bronze",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Copper()),
-				new CraftingMaterial(10, new Tin()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireResistance],
@@ -83,10 +81,9 @@ class BrightSteelMetalScalesCustomization extends Customization {
         super(
             "bright steel",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Copper()),
-				new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceResistance],
@@ -104,10 +101,9 @@ class AureliumSteelMetalScalesCustomization extends Customization {
         super(
             "aurelium steel",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Copper()),
-				new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityResistance],
@@ -125,10 +121,9 @@ class InvarMetalScalesCustomization extends Customization {
         super(
             "invar",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Iron()),
-				new CraftingMaterial(10, new Tin()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureResistance],
@@ -146,10 +141,9 @@ class SilveredIronMetalScalesCustomization extends Customization {
         super(
             "silvered iron",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Iron()),
-				new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PoisonResistance],
@@ -167,10 +161,9 @@ class TigerIronMetalScalesCustomization extends Customization {
         super(
             "tiger iron",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Iron()),
-				new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.DiseaseResistance],
@@ -188,10 +181,9 @@ class BlueSteelMetalScalesCustomization extends Customization {
         super(
             "blue steel",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Tin()),
-				new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Tin(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingResistance],
@@ -209,10 +201,9 @@ class ForestAureliumMetalScalesCustomization extends Customization {
         super(
             "forest aurelium",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Tin()),
-				new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Tin(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingResistance],
@@ -230,10 +221,9 @@ class DarkElectrumMetalScalesCustomization extends Customization {
         super(
             "dark electrum",
             [
-                new CraftingMaterial(16, new Iron()),
-				new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Silver(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingResistance],

@@ -1,6 +1,6 @@
-import { RawMaterial, Rarities } from "models";
+import { GenericMaterial, Rarities } from "models";
 
-export class Meat extends RawMaterial {
+export class Meat extends GenericMaterial {
     constructor(
         name = "meat",
         professions = [],

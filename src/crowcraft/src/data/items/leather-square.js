@@ -1,10 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { ToughHide } from "./tough-hide";
 import { DurableHide } from "./durable-hide";
-import { StrongHide } from "./strong-hide";
-import { SoftHide } from "./soft-hide";
-import { Hide } from "./hide";
 import { FlexibleHide } from "./flexible-hide";
+import { Hide } from "./hide";
+import { LacingSinew } from "./lacing-sinew";
+import { SoftHide } from "./soft-hide";
+import { StrongHide } from "./strong-hide";
+import { ToughHide } from "./tough-hide";
 
 export class LeatherSquare extends CustomizableComponent {
     constructor() {
@@ -13,9 +14,10 @@ export class LeatherSquare extends CustomizableComponent {
             [Professions.Leatherworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(4, new Hide()),
-				new CraftingMaterial(3, new Hide()),
-				new CraftingMaterial(3, new Hide()),
+                new CraftingMaterial(8, new Hide()),
+				new CraftingMaterial(5, new Hide()),
+				new CraftingMaterial(5, new Hide()),
+				new CraftingMaterial(6, new LacingSinew()),
             ],
             1,
             [
@@ -39,9 +41,9 @@ class LimberCoriumLeatherSquareCustomization extends Customization {
         super(
             "limber corium",
             [
-                new CraftingMaterial(4, new DurableHide()),
-				new CraftingMaterial(3, new FlexibleHide()),
-				new CraftingMaterial(3, new FlexibleHide()),
+                new DurableHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.BleedResistance],
@@ -59,9 +61,9 @@ class SoftCoriumLeatherSquareCustomization extends Customization {
         super(
             "soft corium",
             [
-                new CraftingMaterial(4, new DurableHide()),
-				new CraftingMaterial(3, new SoftHide()),
-				new CraftingMaterial(3, new SoftHide()),
+                new DurableHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireResistance],
@@ -79,9 +81,9 @@ class SturdyCoriumLeatherSquareCustomization extends Customization {
         super(
             "sturdy corium",
             [
-                new CraftingMaterial(4, new DurableHide()),
-				new CraftingMaterial(3, new StrongHide()),
-				new CraftingMaterial(3, new StrongHide()),
+                new DurableHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceResistance],
@@ -99,9 +101,9 @@ class StoutCoriumLeatherSquareCustomization extends Customization {
         super(
             "stout corium",
             [
-                new CraftingMaterial(4, new DurableHide()),
-				new CraftingMaterial(3, new ToughHide()),
-				new CraftingMaterial(3, new ToughHide()),
+                new DurableHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityResistance],
@@ -119,9 +121,9 @@ class CoriumLeatherSquareCustomization extends Customization {
         super(
             "corium",
             [
-                new CraftingMaterial(4, new FlexibleHide()),
-				new CraftingMaterial(3, new DurableHide()),
-				new CraftingMaterial(3, new DurableHide()),
+                new FlexibleHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureResistance],
@@ -139,9 +141,9 @@ class ChamoiseLeatherSquareCustomization extends Customization {
         super(
             "chamoise",
             [
-                new CraftingMaterial(4, new FlexibleHide()),
-				new CraftingMaterial(3, new SoftHide()),
-				new CraftingMaterial(3, new SoftHide()),
+                new FlexibleHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PoisonResistance],
@@ -159,9 +161,9 @@ class SturdyBicastLeatherSquareCustomization extends Customization {
         super(
             "sturdy bicast",
             [
-                new CraftingMaterial(4, new FlexibleHide()),
-				new CraftingMaterial(3, new StrongHide()),
-				new CraftingMaterial(3, new StrongHide()),
+                new FlexibleHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.DiseaseResistance],
@@ -179,9 +181,9 @@ class LimberGrainLeatherSquareCustomization extends Customization {
         super(
             "limber grain",
             [
-                new CraftingMaterial(4, new FlexibleHide()),
-				new CraftingMaterial(3, new ToughHide()),
-				new CraftingMaterial(3, new ToughHide()),
+                new FlexibleHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingResistance],
@@ -199,9 +201,9 @@ class BicastLeatherSquareCustomization extends Customization {
         super(
             "bicast",
             [
-                new CraftingMaterial(4, new SoftHide()),
-				new CraftingMaterial(3, new DurableHide()),
-				new CraftingMaterial(3, new DurableHide()),
+                new SoftHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingResistance],
@@ -219,9 +221,9 @@ class SuedeLeatherSquareCustomization extends Customization {
         super(
             "suede",
             [
-                new CraftingMaterial(4, new SoftHide()),
-				new CraftingMaterial(3, new FlexibleHide()),
-				new CraftingMaterial(3, new FlexibleHide()),
+                new SoftHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingResistance],

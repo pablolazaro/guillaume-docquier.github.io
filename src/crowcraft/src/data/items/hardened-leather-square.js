@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { LacingSinew } from "./lacing-sinew";
-import { ToughHide } from "./tough-hide";
 import { DurableHide } from "./durable-hide";
-import { StrongHide } from "./strong-hide";
-import { SoftHide } from "./soft-hide";
-import { Hide } from "./hide";
 import { FlexibleHide } from "./flexible-hide";
+import { Hide } from "./hide";
+import { LacingSinew } from "./lacing-sinew";
+import { SoftHide } from "./soft-hide";
+import { StrongHide } from "./strong-hide";
+import { ToughHide } from "./tough-hide";
 
 export class HardenedLeatherSquare extends CustomizableComponent {
     constructor() {
@@ -14,10 +14,10 @@ export class HardenedLeatherSquare extends CustomizableComponent {
             [Professions.Leatherworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(5, new Hide()),
-				new CraftingMaterial(5, new Hide()),
-				new CraftingMaterial(5, new Hide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new CraftingMaterial(10, new Hide()),
+				new CraftingMaterial(10, new Hide()),
+				new CraftingMaterial(10, new Hide()),
+				new CraftingMaterial(6, new LacingSinew()),
             ],
             1,
             [
@@ -43,10 +43,9 @@ class LimberCoriumHardenedLeatherSquareCustomization extends Customization {
         super(
             "limber corium",
             [
-                new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new DurableHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.BleedDamageBonus],
@@ -64,10 +63,9 @@ class SoftCoriumHardenedLeatherSquareCustomization extends Customization {
         super(
             "soft corium",
             [
-                new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new DurableHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireDamageBonus],
@@ -85,10 +83,9 @@ class SturdyCoriumHardenedLeatherSquareCustomization extends Customization {
         super(
             "sturdy corium",
             [
-                new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new DurableHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceDamageBonus],
@@ -106,10 +103,9 @@ class StoutCoriumHardenedLeatherSquareCustomization extends Customization {
         super(
             "stout corium",
             [
-                new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new ToughHide()),
-				new CraftingMaterial(5, new ToughHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new DurableHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityDamageBonus],
@@ -127,10 +123,9 @@ class CoriumHardenedLeatherSquareCustomization extends Customization {
         super(
             "corium",
             [
-                new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new FlexibleHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureDamageBonus],
@@ -148,10 +143,9 @@ class ChamoiseHardenedLeatherSquareCustomization extends Customization {
         super(
             "chamoise",
             [
-                new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new FlexibleHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PoisonDamageBonus],
@@ -169,10 +163,9 @@ class SturdyBicastHardenedLeatherSquareCustomization extends Customization {
         super(
             "sturdy bicast",
             [
-                new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new FlexibleHide(),
+				new StrongHide(),
+				new StrongHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.DiseaseDamageBonus],
@@ -190,10 +183,9 @@ class LimberGrainHardenedLeatherSquareCustomization extends Customization {
         super(
             "limber grain",
             [
-                new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new ToughHide()),
-				new CraftingMaterial(5, new ToughHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new FlexibleHide(),
+				new ToughHide(),
+				new ToughHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingDamageBonus],
@@ -211,10 +203,9 @@ class SplitGrainHardenedLeatherSquareCustomization extends Customization {
         super(
             "split grain",
             [
-                new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(5, new DurableHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new SoftHide(),
+				new DurableHide(),
+				new DurableHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingDamageBonus],
@@ -232,10 +223,9 @@ class NappaHardenedLeatherSquareCustomization extends Customization {
         super(
             "nappa",
             [
-                new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new SoftHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingDamageBonus],
@@ -253,10 +243,9 @@ class BicastHardenedLeatherSquareCustomization extends Customization {
         super(
             "bicast",
             [
-                new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(5, new FlexibleHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new StrongHide(),
+				new FlexibleHide(),
+				new FlexibleHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
@@ -274,10 +263,9 @@ class SuedeHardenedLeatherSquareCustomization extends Customization {
         super(
             "suede",
             [
-                new CraftingMaterial(5, new StrongHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(5, new SoftHide()),
-				new CraftingMaterial(3, new LacingSinew()),
+                new StrongHide(),
+				new SoftHide(),
+				new SoftHide(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingAmount],

@@ -1,12 +1,12 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { Granite } from "./granite";
-import { Stone } from "./stone";
-import { Slate } from "./slate";
-import { Travertine } from "./travertine";
-import { StitchedLeather } from "./stitched-leather";
-import { Marble } from "./marble";
 import { Limestone } from "./limestone";
+import { Marble } from "./marble";
+import { Slate } from "./slate";
+import { StitchedLeather } from "./stitched-leather";
+import { Stone } from "./stone";
+import { Travertine } from "./travertine";
 
 export class BookChapter extends CustomizableComponent {
     constructor() {
@@ -36,9 +36,7 @@ class RedemptionBookChapterCustomization extends Customization {
         super(
             "redemption",
             [
-                new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new StitchedLeather()),
-				new CraftingMaterial(3, new Travertine()),
+                new Travertine(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingResistance],
@@ -56,9 +54,7 @@ class SinBookChapterCustomization extends Customization {
         super(
             "sin",
             [
-                new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new StitchedLeather()),
-				new CraftingMaterial(3, new Marble()),
+                new Marble(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireResistance],
@@ -76,9 +72,7 @@ class IndulgenceBookChapterCustomization extends Customization {
         super(
             "indulgence",
             [
-                new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new StitchedLeather()),
-				new CraftingMaterial(3, new Limestone()),
+                new Limestone(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingResistance],
@@ -96,9 +90,7 @@ class FervorBookChapterCustomization extends Customization {
         super(
             "fervor",
             [
-                new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new StitchedLeather()),
-				new CraftingMaterial(3, new Granite()),
+                new Granite(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityResistance],
@@ -116,9 +108,7 @@ class AbsolutionBookChapterCustomization extends Customization {
         super(
             "absolution",
             [
-                new CraftingMaterial(1, new CompositeWoodPlank()),
-				new CraftingMaterial(1, new StitchedLeather()),
-				new CraftingMaterial(3, new Slate()),
+                new Slate(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingResistance],

@@ -1,6 +1,6 @@
-import { RawMaterial, Rarities } from "models";
+import { GenericMaterial, Rarities } from "models";
 
-export class Heartwood extends RawMaterial {
+export class Heartwood extends GenericMaterial {
     constructor(
         name = "heartwood",
         professions = [],

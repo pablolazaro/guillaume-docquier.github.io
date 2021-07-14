@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
 import { Aurelium } from "./aurelium";
-import { Ore } from "./ore";
 import { Coal } from "./coal";
 import { Copper } from "./copper";
 import { Iron } from "./iron";
+import { Ore } from "./ore";
+import { Silver } from "./silver";
 import { Tin } from "./tin";
 
 export class MetalSection extends CustomizableComponent {
@@ -42,10 +42,9 @@ class RoseAureliumMetalSectionCustomization extends Customization {
         super(
             "rose aurelium",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PhysicalResistance],
@@ -63,10 +62,9 @@ class SterlingMetalSectionCustomization extends Customization {
         super(
             "sterling",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElementalResistance],
@@ -84,10 +82,9 @@ class CunifeMetalSectionCustomization extends Customization {
         super(
             "cunife",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Copper(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.OrganicResistance],
@@ -105,10 +102,9 @@ class SteelMetalSectionCustomization extends Customization {
         super(
             "steel",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Iron(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PhysicalResistance],
@@ -126,10 +122,9 @@ class GreenAureliumMetalSectionCustomization extends Customization {
         super(
             "green aurelium",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Tin(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElementalResistance],
@@ -147,10 +142,9 @@ class ElectrumMetalSectionCustomization extends Customization {
         super(
             "electrum",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Aurelium(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.OrganicResistance],
@@ -168,10 +162,9 @@ class CopperMetalSectionCustomization extends Customization {
         super(
             "copper",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Copper(),
+				new Copper(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.AttackPower],
@@ -189,10 +182,9 @@ class IronMetalSectionCustomization extends Customization {
         super(
             "iron",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -210,10 +202,9 @@ class TinMetalSectionCustomization extends Customization {
         super(
             "tin",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Tin(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PhysicalResistance],
@@ -231,10 +222,9 @@ class SilverMetalSectionCustomization extends Customization {
         super(
             "silver",
             [
-                new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Silver(),
+				new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElementalResistance],
@@ -252,10 +242,9 @@ class AureliumMetalSectionCustomization extends Customization {
         super(
             "aurelium",
             [
-                new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Aurelium(),
+				new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.OrganicResistance],

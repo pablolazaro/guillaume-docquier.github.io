@@ -1,6 +1,6 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { CompositeWoodPlank } from "./composite-wood-plank";
 import { BendingFormMediumShield } from "./bending-form-medium-shield";
+import { CompositeWoodPlank } from "./composite-wood-plank";
 
 export class ShieldBaseMedium extends Item {
     constructor() {

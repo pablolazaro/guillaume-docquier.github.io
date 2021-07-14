@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { MetalBar } from "./metal-bar";
-import { EtherealDust } from "./ethereal-dust";
 import { BarrelMoldPistol } from "./barrel-mold-pistol";
+import { EtherealDust } from "./ethereal-dust";
+import { MetalBar } from "./metal-bar";
 
 export class PistolBarrel extends Item {
     constructor() {

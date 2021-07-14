@@ -1,11 +1,11 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Ash } from "./ash";
-import { Yew } from "./yew";
 import { Birch } from "./birch";
 import { Oak } from "./oak";
 import { Sandpaper } from "./sandpaper";
-import { Wood } from "./wood";
 import { Spruce } from "./spruce";
+import { Wood } from "./wood";
+import { Yew } from "./yew";
 
 export class CompositeWoodPlank extends CustomizableComponent {
     constructor() {
@@ -14,10 +14,10 @@ export class CompositeWoodPlank extends CustomizableComponent {
             [Professions.Woodworker],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(6, new Wood()),
-				new CraftingMaterial(6, new Wood()),
-				new CraftingMaterial(6, new Wood()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new CraftingMaterial(9, new Wood()),
+				new CraftingMaterial(9, new Wood()),
+				new CraftingMaterial(9, new Wood()),
+				new CraftingMaterial(6, new Sandpaper()),
             ],
             1,
             [
@@ -46,10 +46,9 @@ class BattenCompositeWoodPlankCustomization extends Customization {
         super(
             "batten",
             [
-                new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Spruce(),
+				new Yew(),
+				new Yew(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -67,10 +66,9 @@ class PliableCompositeWoodPlankCustomization extends Customization {
         super(
             "pliable",
             [
-                new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Spruce(),
+				new Ash(),
+				new Ash(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.Stamina],
@@ -88,10 +86,9 @@ class SapidCompositeWoodPlankCustomization extends Customization {
         super(
             "sapid",
             [
-                new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Oak(),
+				new Oak(),
+				new Spruce(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.Stamina],
@@ -109,10 +106,9 @@ class StoutCompositeWoodPlankCustomization extends Customization {
         super(
             "stout",
             [
-                new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Oak(),
+				new Spruce(),
+				new Spruce(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireArmorPenetration],
@@ -130,10 +126,9 @@ class RusticCompositeWoodPlankCustomization extends Customization {
         super(
             "rustic",
             [
-                new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Birch(),
+				new Birch(),
+				new Yew(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceArmorPenetration],
@@ -151,10 +146,9 @@ class BuildersCompositeWoodPlankCustomization extends Customization {
         super(
             "builder's",
             [
-                new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Birch(),
+				new Ash(),
+				new Ash(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityArmorPenetration],
@@ -172,10 +166,9 @@ class PressedCompositeWoodPlankCustomization extends Customization {
         super(
             "pressed",
             [
-                new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Spruce(),
+				new Birch(),
+				new Ash(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureArmorPenetration],
@@ -193,10 +186,9 @@ class PrimeCompositeWoodPlankCustomization extends Customization {
         super(
             "prime",
             [
-                new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Oak(),
+				new Oak(),
+				new Birch(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingArmorPenetration],
@@ -214,10 +206,9 @@ class SheatedCompositeWoodPlankCustomization extends Customization {
         super(
             "sheated",
             [
-                new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Spruce(),
+				new Birch(),
+				new Yew(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingArmorPenetration],
@@ -235,10 +226,9 @@ class WanedCompositeWoodPlankCustomization extends Customization {
         super(
             "waned",
             [
-                new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Yew(),
+				new Yew(),
+				new Oak(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingArmorPenetration],
@@ -256,10 +246,9 @@ class SelectOakCompositeWoodPlankCustomization extends Customization {
         super(
             "select oak",
             [
-                new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(6, new Oak()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Oak(),
+				new Oak(),
+				new Oak(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],
@@ -277,10 +266,9 @@ class SelectBirchCompositeWoodPlankCustomization extends Customization {
         super(
             "select birch",
             [
-                new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(6, new Birch()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Birch(),
+				new Birch(),
+				new Birch(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
@@ -298,10 +286,9 @@ class SelectSpruceCompositeWoodPlankCustomization extends Customization {
         super(
             "select spruce",
             [
-                new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(6, new Spruce()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Spruce(),
+				new Spruce(),
+				new Spruce(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingChance],
@@ -319,10 +306,9 @@ class SelectAshCompositeWoodPlankCustomization extends Customization {
         super(
             "select ash",
             [
-                new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(6, new Ash()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Ash(),
+				new Ash(),
+				new Ash(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingAmount],
@@ -340,10 +326,9 @@ class SelectYewCompositeWoodPlankCustomization extends Customization {
         super(
             "select yew",
             [
-                new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(6, new Yew()),
-				new CraftingMaterial(5, new Sandpaper()),
+                new Yew(),
+				new Yew(),
+				new Yew(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],

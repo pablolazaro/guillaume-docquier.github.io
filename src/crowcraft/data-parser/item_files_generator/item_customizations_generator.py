@@ -47,21 +47,12 @@ def extract_customization_data(item_name, customization):
     customization_name = make_item_name(customization[Columns.CUSTOMIZATION_NAME])
     customization_class_name = f"{make_class_name(customization_name)}{make_class_name(item_name)}Customization"
 
-    raw_crafting_materials = customization[Columns.MATERIALS].lower().split(", ")
-    crafting_materials = []
-    for crafting_material in raw_crafting_materials:
-        parts = crafting_material.replace(":", "").split("x ")
-        try:
-            [quantity, crafting_material_name] = parts
-            quantity = int(quantity)
-            crafting_materials.append((quantity, make_item_name(crafting_material_name)))
-        except:
-            print(ConsoleColors.FAIL, f"Invalid crafting material {{{crafting_material}}} for item: {{{item_name}}} parsed as: {{{parts}}}", ConsoleColors.ENDC)
+    replacement_materials = customization[Columns.MATERIALS].lower().split(", ")
 
     effect_1 = customization[Columns.EFFECT_1] if customization[Columns.EFFECT_1] != "" else None
     effect_2 = customization[Columns.EFFECT_2] if customization[Columns.EFFECT_2] != "" else None
 
-    return customization_name, customization_class_name, crafting_materials, effect_1, effect_2
+    return customization_name, customization_class_name, replacement_materials, effect_1, effect_2
 
 
 def write_js_code(customization_data, js_file, item_name):
@@ -78,8 +69,8 @@ def write_js_code(customization_data, js_file, item_name):
 
 def generate_imports(customization_data, crafting_materials_set, item_name):
     customization_name, _, _, _, _ = customization_data[0]
-    for _, _, crafting_materials, _, _ in customization_data:
-        crafting_materials_set.update([crafting_material_name for (_, crafting_material_name) in crafting_materials])
+    for _, _, replacement_materials, _, _ in customization_data:
+        crafting_materials_set.update([replacement_material for replacement_material in replacement_materials])
     try:
         imports = [f"import {{ {make_class_name(crafting_material_name)} }} from \"./{make_file_name_without_extension(crafting_material_name)}\";" for crafting_material_name in
                    crafting_materials_set]
@@ -87,7 +78,7 @@ def generate_imports(customization_data, crafting_materials_set, item_name):
         imports = []
         print(ConsoleColors.FAIL, f"Cannot create imports properly from item set {{{crafting_materials_set}}} for customization: {{{customization_name}}} of item {{{item_name}}}", ConsoleColors.ENDC)
 
-    return imports
+    return sorted(imports)
 
 
 def generate_customization_instanciations(customization_data):
@@ -104,7 +95,7 @@ def generate_customization_classes(customization_data, item_name):
         super(
             "{customization_name}",
             [
-                {crafting_materials}
+                {replacement_materials}
             ],
             {
                 [Rarities.Common.name]: [{wb_effect}],
@@ -119,12 +110,12 @@ def generate_customization_classes(customization_data, item_name):
 """
 
     customization_classes = []
-    for customization_name, customization_class_name, crafting_materials, effect_1, effect_2 in customization_data:
+    for customization_name, customization_class_name, replacement_materials, effect_1, effect_2 in customization_data:
         try:
-            js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
+            js_replacement_materials = [f"new {make_class_name(replacement_material)}()," for replacement_material in replacement_materials]
         except:
-            js_crafting_materials = []
-            print(ConsoleColors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
+            js_replacement_materials = []
+            print(ConsoleColors.FAIL, f"Cannot create replacement materials properly from replacement_materials {{{replacement_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
         wb_effect = f"ItemsStats.{make_class_name(effect_1)}"
 
@@ -134,7 +125,7 @@ def generate_customization_classes(customization_data, item_name):
         customization_classes.append(
             js_template.replace("{customization_class_name}", customization_class_name)
                 .replace("{customization_name}", customization_name)
-                .replace("{crafting_materials}", "\n\t\t\t\t".join(js_crafting_materials))
+                .replace("{replacement_materials}", "\n\t\t\t\t".join(js_replacement_materials))
                 .replace("{wb_effect}", wb_effect)
                 .replace("{po_effects}", ", ".join(po_effects))
         )

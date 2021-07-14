@@ -1,8 +1,8 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Aurelium } from "./aurelium";
-import { Ore } from "./ore";
-import { Iron } from "./iron";
 import { Coal } from "./coal";
+import { Iron } from "./iron";
+import { Ore } from "./ore";
 
 export class MetalRivets extends CustomizableComponent {
     constructor() {
@@ -29,9 +29,8 @@ class StealthMetalRivetsCustomization extends Customization {
         super(
             "stealth",
             [
-                new CraftingMaterial(5, new Aurelium()),
-				new CraftingMaterial(3, new Iron()),
-				new CraftingMaterial(2, new Coal()),
+                new Aurelium(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.Stealth],
@@ -49,9 +48,8 @@ class OutOfCombatHealthRegenerationMetalRivetsCustomization extends Customizatio
         super(
             "out of combat health regeneration",
             [
-                new CraftingMaterial(5, new Ore()),
-				new CraftingMaterial(3, new Ore()),
-				new CraftingMaterial(2, new Coal()),
+                new Ore(),
+				new Ore(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.OutOfCombatHealthRegeneration],

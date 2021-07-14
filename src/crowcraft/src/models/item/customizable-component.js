@@ -1,3 +1,4 @@
+import { CraftingMaterial } from "../crafting-material";
 import { Item } from "./item";
 import { String } from "utils";
 
@@ -34,7 +35,19 @@ export class CustomizableComponent extends Item {
             return this._craftingMaterials;
         }
 
-        return this.customization.craftingMaterials;
+        const craftingMaterials = []
+        let replacementIndex = 0;
+        for (const craftingMaterial of this._craftingMaterials) {
+            if (craftingMaterial.item.isGeneric) {
+                const replacementMaterial = this.customization.replacementMaterials[replacementIndex];
+                craftingMaterials.push(new CraftingMaterial(craftingMaterial.quantity, replacementMaterial));
+                replacementIndex++;
+            } else {
+                craftingMaterials.push(craftingMaterial);
+            }
+        }
+
+        return craftingMaterials;
     }
 
     getCustomizableComponents() {
@@ -56,7 +69,7 @@ export class CustomizableComponent extends Item {
 };
 
 export class Customization {
-    constructor(name, craftingMaterials, customizationEffects) {
+    constructor(name, replacementMaterials, customizationEffects) {
         this.id = String.decapitalize(
             name
                 .split(" ")
@@ -64,7 +77,7 @@ export class Customization {
                 .join("")
         );
         this.name = name; 
-        this.craftingMaterials = craftingMaterials;
+        this.replacementMaterials = replacementMaterials;
         this.customizationEffects = customizationEffects;
     }
 

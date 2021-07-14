@@ -1,8 +1,8 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { FrostcastingEnclosure } from "./frostcasting-enclosure";
-import { EtherealDust } from "./ethereal-dust";
-import { MetaMagicalConducter } from "./meta-magical-conducter";
 import { CastingAperture } from "./casting-aperture";
+import { EtherealDust } from "./ethereal-dust";
+import { FrostcastingEnclosure } from "./frostcasting-enclosure";
+import { MetaMagicalConducter } from "./meta-magical-conducter";
 
 export class Frostcaster extends Item {
     constructor() {

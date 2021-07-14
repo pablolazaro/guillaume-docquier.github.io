@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { EtherealDust } from "./ethereal-dust";
-import { MetalRivets } from "./metal-rivets";
 import { LeatherSquare } from "./leather-square";
+import { MetalRivets } from "./metal-rivets";
 
 export class LeatherBoots extends Item {
     constructor() {

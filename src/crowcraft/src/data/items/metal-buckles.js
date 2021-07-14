@@ -1,7 +1,7 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { Aurelium } from "./aurelium";
-import { Ore } from "./ore";
 import { Coal } from "./coal";
+import { Ore } from "./ore";
 import { Silver } from "./silver";
 
 export class MetalBuckles extends CustomizableComponent {
@@ -30,9 +30,8 @@ class AureliumStealthMetalBucklesCustomization extends Customization {
         super(
             "aurelium stealth",
             [
-                new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(10, new Aurelium()),
-				new CraftingMaterial(2, new Coal()),
+                new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.Stealth],
@@ -50,9 +49,8 @@ class SilverStealthMetalBucklesCustomization extends Customization {
         super(
             "silver stealth",
             [
-                new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(10, new Silver()),
-				new CraftingMaterial(2, new Coal()),
+                new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.Stealth],
@@ -70,9 +68,8 @@ class OutOfCombatHealthRegenerationMetalBucklesCustomization extends Customizati
         super(
             "out of combat health regeneration",
             [
-                new CraftingMaterial(10, new Ore()),
-				new CraftingMaterial(10, new Ore()),
-				new CraftingMaterial(2, new Coal()),
+                new Ore(),
+				new Ore(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.OutOfCombatHealthRegeneration],

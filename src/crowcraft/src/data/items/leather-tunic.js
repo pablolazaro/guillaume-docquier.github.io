@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { MetalBuckles } from "./metal-buckles";
 import { EtherealDust } from "./ethereal-dust";
 import { HardenedLeatherSquare } from "./hardened-leather-square";
+import { MetalBuckles } from "./metal-buckles";
 
 export class LeatherTunic extends Item {
     constructor() {

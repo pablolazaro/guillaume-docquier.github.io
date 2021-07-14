@@ -1,7 +1,7 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { ParchmentPaper } from "./parchment-paper";
-import { Wood } from "./wood";
 import { PenAndInk } from "./pen-and-ink";
+import { Wood } from "./wood";
 
 export class ParchmentVellum extends Item {
     constructor() {

@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
 import { Aurelium } from "./aurelium";
-import { Ore } from "./ore";
 import { Coal } from "./coal";
 import { Copper } from "./copper";
 import { Iron } from "./iron";
+import { Ore } from "./ore";
+import { Silver } from "./silver";
 import { Tin } from "./tin";
 
 export class MetalBar extends CustomizableComponent {
@@ -14,9 +14,9 @@ export class MetalBar extends CustomizableComponent {
             [Professions.Weaponsmith, Professions.Armorsmith],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(6, new Ore()),
-				new CraftingMaterial(6, new Ore()),
-				new CraftingMaterial(6, new Ore()),
+                new CraftingMaterial(9, new Ore()),
+				new CraftingMaterial(9, new Ore()),
+				new CraftingMaterial(9, new Ore()),
 				new CraftingMaterial(6, new Coal()),
             ],
             1,
@@ -44,10 +44,9 @@ class RoseAureliumMetalBarCustomization extends Customization {
         super(
             "rose aurelium",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SupportPower],
@@ -65,10 +64,9 @@ class SterlingMetalBarCustomization extends Customization {
         super(
             "sterling",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireArmorPenetration],
@@ -86,10 +84,9 @@ class CunifeMetalBarCustomization extends Customization {
         super(
             "cunife",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Copper(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceArmorPenetration],
@@ -107,10 +104,9 @@ class SteelMetalBarCustomization extends Customization {
         super(
             "steel",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Iron(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityArmorPenetration],
@@ -128,10 +124,9 @@ class GreenAureliumMetalBarCustomization extends Customization {
         super(
             "green aurelium",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Tin(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureArmorPenetration],
@@ -149,10 +144,9 @@ class ElectrumMetalBarCustomization extends Customization {
         super(
             "electrum",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Aurelium(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingArmorPenetration],
@@ -170,10 +164,9 @@ class BlueSteelMetalBarCustomization extends Customization {
         super(
             "blue steel",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Tin(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingArmorPenetration],
@@ -191,10 +184,9 @@ class BronzeMetalBarCustomization extends Customization {
         super(
             "bronze",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Copper(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingArmorPenetration],
@@ -212,10 +204,9 @@ class CopperMetalBarCustomization extends Customization {
         super(
             "copper",
             [
-                new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Copper()),
-				new CraftingMaterial(6, new Coal()),
+                new Copper(),
+				new Copper(),
+				new Copper(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],
@@ -233,10 +224,9 @@ class IronMetalBarCustomization extends Customization {
         super(
             "iron",
             [
-                new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Iron()),
-				new CraftingMaterial(6, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
@@ -254,10 +244,9 @@ class TinMetalBarCustomization extends Customization {
         super(
             "tin",
             [
-                new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Tin()),
-				new CraftingMaterial(6, new Coal()),
+                new Tin(),
+				new Tin(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingChance],
@@ -275,10 +264,9 @@ class SilverMetalBarCustomization extends Customization {
         super(
             "silver",
             [
-                new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Silver()),
-				new CraftingMaterial(6, new Coal()),
+                new Silver(),
+				new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingAmount],
@@ -296,10 +284,9 @@ class AureliumMetalBarCustomization extends Customization {
         super(
             "aurelium",
             [
-                new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Aurelium()),
-				new CraftingMaterial(6, new Coal()),
+                new Aurelium(),
+				new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeChance],

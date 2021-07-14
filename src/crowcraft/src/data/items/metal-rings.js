@@ -1,10 +1,10 @@
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
-import { Silver } from "./silver";
-import { Ore } from "./ore";
-import { Coal } from "./coal";
 import { Aurelium } from "./aurelium";
+import { Coal } from "./coal";
 import { Copper } from "./copper";
 import { Iron } from "./iron";
+import { Ore } from "./ore";
+import { Silver } from "./silver";
 import { Tin } from "./tin";
 
 export class MetalRings extends CustomizableComponent {
@@ -43,10 +43,9 @@ class SteelMetalRingsCustomization extends Customization {
         super(
             "steel",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Copper()),
-				new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Iron(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.BleedDamageBonus],
@@ -64,10 +63,9 @@ class DarkBronzeMetalRingsCustomization extends Customization {
         super(
             "dark bronze",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Copper()),
-				new CraftingMaterial(20, new Tin()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.FireDamageBonus],
@@ -85,10 +83,9 @@ class BrightSteelMetalRingsCustomization extends Customization {
         super(
             "bright steel",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Copper()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.IceDamageBonus],
@@ -106,10 +103,9 @@ class AureliumSteelMetalRingsCustomization extends Customization {
         super(
             "aurelium steel",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Copper()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Copper(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.ElectricityDamageBonus],
@@ -127,10 +123,9 @@ class InvarMetalRingsCustomization extends Customization {
         super(
             "invar",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Tin()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Tin(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.NatureDamageBonus],
@@ -148,10 +143,9 @@ class SilveredIronMetalRingsCustomization extends Customization {
         super(
             "silvered iron",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PoisonDamageBonus],
@@ -169,10 +163,9 @@ class TigerIronMetalRingsCustomization extends Customization {
         super(
             "tiger iron",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Iron(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.DiseaseDamageBonus],
@@ -190,10 +183,9 @@ class BlueSteelMetalRingsCustomization extends Customization {
         super(
             "blue steel",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Tin()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Tin(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.SlashingDamageBonus],
@@ -211,10 +203,9 @@ class ForestAureliumMetalRingsCustomization extends Customization {
         super(
             "forest aurelium",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Tin()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Tin(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CrushingDamageBonus],
@@ -232,10 +223,9 @@ class DarkElectrumMetalRingsCustomization extends Customization {
         super(
             "dark electrum",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Silver(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.PiercingDamageBonus],
@@ -253,10 +243,9 @@ class SterlingMetalRingsCustomization extends Customization {
         super(
             "sterling",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(20, new Silver()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Silver(),
+				new Silver(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalStrikeDamage],
@@ -274,10 +263,9 @@ class RoseAureliumMetalRingsCustomization extends Customization {
         super(
             "rose aurelium",
             [
-                new CraftingMaterial(20, new Iron()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(20, new Aurelium()),
-				new CraftingMaterial(12, new Coal()),
+                new Iron(),
+				new Aurelium(),
+				new Aurelium(),
             ],
             {
                 [Rarities.Common.name]: [ItemsStats.CriticalHealingAmount],
