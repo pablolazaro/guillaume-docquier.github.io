@@ -14,30 +14,30 @@ import { Sandpaper } from "data/items/sandpaper";
 import { Wood } from "data/items/wood";
 
 export const getMaterialsAfterDiscsAndBeltsEffects = (craftingMaterial, crafterConfiguration = {}) => {
-    let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
-    let bestMatsCount = 999_999;
-    for (const profession of craftingMaterial.item.professions) {
-        const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
-        const newMatsCount = getMatsCount(newCraftingMaterials);
-        if (newCraftingMaterials && newMatsCount < bestMatsCount) {
-            bestNewCraftingMaterials = newCraftingMaterials;
-            bestMatsCount = newMatsCount
-        }
-    }
+	let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
+	let bestMatsCount = 999_999;
+	for (const profession of craftingMaterial.item.professions) {
+		const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
+		const newMatsCount = getMatsCount(newCraftingMaterials);
+		if (newCraftingMaterials && newMatsCount < bestMatsCount) {
+			bestNewCraftingMaterials = newCraftingMaterials;
+			bestMatsCount = newMatsCount
+		}
+	}
 
-    return bestNewCraftingMaterials;
+	return bestNewCraftingMaterials;
 };
 
 const getNewCraftingMaterials = (item, profession, professionSetting = {}) => {
-    const key = `${item.baseName}.${profession}-disc-${professionSetting.discipline}.${profession}-belt-${professionSetting.belt}`
+	const key = `${item.baseName}.${profession}-disc-${professionSetting.discipline}.${profession}-belt-${professionSetting.belt}`
 
-    return DisciplinesAndBelts[key];
+	return DisciplinesAndBelts[key];
 }
 
 const getMatsCount = (craftingMaterials = []) => craftingMaterials.reduce((count, mat) => count + mat.quantity, 0);
 
 export const DisciplinesAndBelts = {
-    "metal bar.armorsmith-disc-none.armorsmith-belt-none": [
+	"metal bar.armorsmith-disc-none.armorsmith-belt-none": [
 		new CraftingMaterial(9, new Ore()),
 		new CraftingMaterial(9, new Ore()),
 		new CraftingMaterial(9, new Ore()),
@@ -1129,7 +1129,7 @@ export const DisciplinesAndBelts = {
 		new CraftingMaterial(3, new Ore()),
 		new CraftingMaterial(4, new Coal()),
 	],
-	"stitched leather.leatherworker-disc-common.leatherworker-belt-none": [
+	"stitched leather.leatherworker-disc-none.leatherworker-belt-none": [
 		new CraftingMaterial(3, new Hide()),
 		new CraftingMaterial(3, new Hide()),
 		new CraftingMaterial(3, new Hide()),

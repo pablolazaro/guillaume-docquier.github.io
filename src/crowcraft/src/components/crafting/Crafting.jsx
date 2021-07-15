@@ -60,7 +60,7 @@ export const Crafting = () => {
     }
 
     const handleConfigurationChanged = newCrafterConfiguration => {
-        setTriggerItemCraft(true);
+        setTriggerItemCraft(itemToCraft && (itemIsCustomized || !itemToCraft.isCustomizable()));
         setCrafterConfiguration(newCrafterConfiguration);
     }
 

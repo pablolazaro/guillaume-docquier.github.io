@@ -1,28 +1,41 @@
+import "./CrafterConfiguration.css";
+
 import { Professions, Rarities } from "models";
 import { getAsset } from "data";
 import { String } from "utils";
 import { useState } from "react";
 
 const NONE = "none";
+const MAX = Rarities.Legendary.name;
 const Type = {
     DISCIPLINE: "discipline",
     BELT: "belt",
 }
 
-export const CrafterConfiguration = ({ onConfigurationChanged }) => {
-    const [configuration, setConfiguration] = useState(Object.values(Professions).reduce((config, profession) => {
+const initProfessionSettings = value => {
+    return Object.values(Professions).reduce((config, profession) => {
         config[profession] = {
-            [Type.DISCIPLINE]: NONE,
-            [Type.BELT]: NONE
+            [Type.DISCIPLINE]: value,
+            [Type.BELT]: value
         }
 
         return config;
-    }, {}));
+    }, {});
+}
+
+export const CrafterConfiguration = ({ onConfigurationChanged }) => {
+    const [configuration, setConfiguration] = useState(initProfessionSettings(NONE));
 
     const handleProfessionSettingChanged = (profession, newProfessionSetting) => {
-        const newConfiguration = {...configuration};
+        const newConfiguration = { ...configuration };
         newConfiguration[profession] = newProfessionSetting;
 
+        setConfiguration(newConfiguration);
+        onConfigurationChanged(newConfiguration);
+    }
+
+    const setAll = value => () => {
+        const newConfiguration = initProfessionSettings(value);
         setConfiguration(newConfiguration);
         onConfigurationChanged(newConfiguration);
     }
@@ -38,13 +51,17 @@ export const CrafterConfiguration = ({ onConfigurationChanged }) => {
                         onProfessionSettingChanged={handleProfessionSettingChanged} />
                 </div>
             ))}
+            <div className="flex justify-evenly mt2">
+                <div className="config-action-button | pa3 mr3 bg-marine pointer" onClick={setAll(NONE)}>Clear All</div>
+                <div className="config-action-button | pa3 bg-marine pointer" onClick={setAll(MAX)}>Max All</div>
+            </div>
         </div>
     );
 };
 
 const ProfessionSetting = ({ profession, professionSetting, onProfessionSettingChanged }) => {
     const handleChanged = type => e => {
-        onProfessionSettingChanged(profession, {...professionSetting, [type]: e.target.value})
+        onProfessionSettingChanged(profession, { ...professionSetting, [type]: e.target.value })
     }
 
     return (
@@ -54,7 +71,7 @@ const ProfessionSetting = ({ profession, professionSetting, onProfessionSettingC
             </div>
             <div className="mr2">
                 <div>Discipline</div>
-                <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.DISCIPLINE)} defaultValue={professionSetting[Type.DISCIPLINE]}>
+                <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.DISCIPLINE)} value={professionSetting[Type.DISCIPLINE]}>
                     <option value={NONE}>None</option>
                     {Object.values(Rarities).map(rarity => (
                         <option key={rarity.name} value={rarity.name}>
@@ -65,7 +82,7 @@ const ProfessionSetting = ({ profession, professionSetting, onProfessionSettingC
             </div>
             <div>
                 <div>Belt</div>
-                <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.BELT)} defaultValue={professionSetting[Type.BELT]}>
+                <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.BELT)} value={professionSetting[Type.BELT]}>
                     <option value={NONE}>None</option>
                     {Object.values(Rarities).map(rarity => (
                         <option key={rarity.name} value={rarity.name}>
