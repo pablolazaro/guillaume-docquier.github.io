@@ -15,13 +15,13 @@ import { Wood } from "data/items/wood";
 
 export const getMaterialsAfterDiscsAndBeltsEffects = (craftingMaterial, crafterConfiguration = {}) => {
     let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
-	let bestMatsCount = 999_999;
+    let bestMatsCount = 999_999;
     for (const profession of craftingMaterial.item.professions) {
         const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
-		const newMatsCount = getMatsCount(newCraftingMaterials);
+        const newMatsCount = getMatsCount(newCraftingMaterials);
         if (newCraftingMaterials && newMatsCount < bestMatsCount) {
             bestNewCraftingMaterials = newCraftingMaterials;
-			bestMatsCount = newMatsCount
+            bestMatsCount = newMatsCount
         }
     }
 

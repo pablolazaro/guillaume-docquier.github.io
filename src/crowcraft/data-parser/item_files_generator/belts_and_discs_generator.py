@@ -58,10 +58,13 @@ def write_js_code(belts_and_discs_data):
 
 export const getMaterialsAfterDiscsAndBeltsEffects = (craftingMaterial, crafterConfiguration = {}) => {
     let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
+    let bestMatsCount = 999_999;
     for (const profession of craftingMaterial.item.professions) {
         const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
-        if (newCraftingMaterials && getMatsCount(newCraftingMaterials) < getMatsCount(bestNewCraftingMaterials)) {
+        const newMatsCount = getMatsCount(newCraftingMaterials);
+        if (newCraftingMaterials && newMatsCount < bestMatsCount) {
             bestNewCraftingMaterials = newCraftingMaterials;
+            bestMatsCount = newMatsCount
         }
     }
 
@@ -74,7 +77,7 @@ const getNewCraftingMaterials = (item, profession, professionSetting = {}) => {
     return DisciplinesAndBelts[key];
 }
 
-const getMatsCount = craftingMaterials => craftingMaterials.reduce((count, mat) => count + mat.quantity, 0);
+const getMatsCount = (craftingMaterials = []) => craftingMaterials.reduce((count, mat) => count + mat.quantity, 0);
 
 const DisciplinesAndBelts = {
     {entries}
