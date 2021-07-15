@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { BladeMoldShort } from "./blade-mold-short";
 import { EtherealDust } from "./ethereal-dust";

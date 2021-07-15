@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { CustomizableComponent, Customization, CraftingMaterial, Rarities, ItemsStats, Professions } from "models";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { Granite } from "./granite";

@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { RawMaterial, Rarities } from "models";
 
 export class Gold extends RawMaterial {

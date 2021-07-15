@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { BendingFormMediumShield } from "./bending-form-medium-shield";
 import { CompositeWoodPlank } from "./composite-wood-plank";

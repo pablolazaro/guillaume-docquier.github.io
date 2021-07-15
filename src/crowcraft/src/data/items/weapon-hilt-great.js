@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { GreatWeaponCrossguard } from "./great-weapon-crossguard";
 import { GreatWeaponPommel } from "./great-weapon-pommel";

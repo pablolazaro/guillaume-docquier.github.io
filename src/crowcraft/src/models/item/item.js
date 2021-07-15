@@ -20,6 +20,10 @@ export class Item {
         return this._id;
     }
 
+    get baseName() {
+        return this._name;
+    }
+
     get name() {
         return this._name;
     }
@@ -66,9 +70,14 @@ export class Item {
         return Math.max(...this.craftingMaterials.map(mat => mat.item.craftingRank)) + 1;
     }
 
-    getCraftingRundown() {
+    // This is wierd, but we must pass in 'getMaterialsAfterDiscsAndBeltsEffects' because we can't import it here or else we get a circular dependency
+    getCraftingRundown(getMaterialsAfterDiscsAndBeltsEffects) {
         const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(this.craftingQuantity, this))];
         let craftingMaterials = [...this.craftingMaterials];
+        for (const craftingMaterial of craftingMaterials) {
+            craftingMaterial.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(craftingMaterial);
+        }
+
         let rank = this.craftingRank;
         while (rank > 1) {
             rank -= 1;
@@ -91,6 +100,10 @@ export class Item {
             for (const materialToCraft of Object.values(craftingSet)) {
                 const numberOfCrafts = Math.ceil(materialToCraft.quantity / materialToCraft.item.craftingQuantity);
                 const materialsForThisCraft = materialToCraft.item.craftingMaterials.map(mat => new CraftingMaterial(mat.quantity * numberOfCrafts, mat.item));
+                for (const materialForThisCraft of materialsForThisCraft) {
+                    materialForThisCraft.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(materialForThisCraft);
+                }
+
                 crafts.push(new Craft(materialsForThisCraft, new CraftingMaterial(numberOfCrafts * materialToCraft.item.craftingQuantity, materialToCraft.item)));
                 craftingMaterials = craftingMaterials.concat(materialsForThisCraft);
             }
@@ -114,4 +127,3 @@ export class Item {
         }
     }
 };
-

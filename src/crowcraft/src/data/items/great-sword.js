@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { BladeRivetsGreat } from "./blade-rivets-great";
 import { EtherealDust } from "./ethereal-dust";

@@ -1,7 +1,7 @@
 import csv
 from pathlib import Path
 from os import walk
-from common import make_item_name, make_class_name, output_folder, data_folder, get_filenames_of_type, FileTypes
+from common import make_item_name, make_class_name, output_folder, data_folder, get_filenames_of_type, FileTypes, auto_generation_header
 
 
 class Columns:
@@ -51,7 +51,7 @@ def extract_items_stats_data(items_stats):
 
 
 def write_js_code(items_stats):
-    js_code = """import { Rarities } from "./rarities";
+    js_code = auto_generation_header + """import { Rarities } from "./rarities";
 import { CustomizationEffect } from "./item";
 
 class ItemStat {

@@ -26,10 +26,6 @@ export class CustomizableComponent extends Item {
         return `${this._name} (${this.customization.name})`;
     }
 
-    get baseName() {
-        return this._name;
-    }
-
     get craftingMaterials() {
         if (!this.customization) {
             return this._craftingMaterials;

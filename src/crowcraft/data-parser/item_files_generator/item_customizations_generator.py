@@ -1,6 +1,8 @@
 import csv
 from os import walk
-from common import make_item_name, make_class_name, make_file_name_without_extension, ConsoleColors, output_folder, data_folder, get_filenames_of_type, FileTypes
+from common import \
+    make_item_name, make_class_name, make_file_name_without_extension, ConsoleColors, output_folder, data_folder, get_filenames_of_type, FileTypes, \
+    auto_generation_header
 
 
 class Columns:
@@ -57,7 +59,7 @@ def extract_customization_data(item_name, customization):
 
 def write_js_code(customization_data, js_file, item_name):
     crafting_materials_set = set(js_file.readline().replace("\n", "").split(","))
-    js_code = js_file.read() \
+    js_code = auto_generation_header + js_file.read() \
         .replace("{imports}", "\n".join(generate_imports(customization_data, crafting_materials_set, item_name))) \
         .replace("{customizations}", "\n\t\t\t\t".join(generate_customization_instanciations(customization_data))) \
         .replace("{customization_classes}", "\n".join(generate_customization_classes(customization_data, item_name)))

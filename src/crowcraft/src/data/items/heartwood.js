@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { GenericMaterial, Rarities } from "models";
 
 export class Heartwood extends GenericMaterial {

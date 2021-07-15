@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { PistolHammerAndFrizzen } from "./pistol-hammer-and-frizzen";
 import { PistolTrigger } from "./pistol-trigger";

@@ -3,7 +3,7 @@ from pathlib import Path
 from os import walk
 from common import \
     make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, ConsoleColors, \
-    output_folder, data_folder, get_filenames_of_type, FileTypes
+    output_folder, data_folder, get_filenames_of_type, FileTypes, auto_generation_header
 
 
 class Columns:
@@ -64,7 +64,7 @@ def generate_js_code(item_data):
 
 
 def generate_generic_material_item(item_data):
-    js_code = """import { {item_superclass}, Rarities } from "models";
+    js_code = auto_generation_header + """import { {item_superclass}, Rarities } from "models";
 
 export class {class_name} extends {item_superclass} {
     constructor(
@@ -88,7 +88,7 @@ export class {class_name} extends {item_superclass} {
 
 
 def generate_item(item_data):
-    js_code = """import { Rarities } from "models";
+    js_code = auto_generation_header + """import { Rarities } from "models";
 {imports}
 
 export class {class_name} extends {item_type_class_name} {

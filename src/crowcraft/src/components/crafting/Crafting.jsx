@@ -4,7 +4,9 @@ import { RarityPicker } from "./rarity-picker";
 import { CraftingSteps } from "./CraftingSteps";
 import { ItemCustomizer } from "./item-customizer";
 import { ProfessionsStatus } from "./professions-status";
+import { CrafterConfiguration } from "./crafter-configuration";
 import { useState, useEffect, useCallback } from "react";
+import { getMaterialsAfterDiscsAndBeltsEffects } from "models";
 
 export const Crafting = () => {
     const [itemToCraft, setItemToCraft] = useState(null);
@@ -13,17 +15,18 @@ export const Crafting = () => {
     const [crafts, setCrafts] = useState(null);
     const [triggerItemCraft, setTriggerItemCraft] = useState(false);
     const [itemIsCustomized, setItemIsCustomized] = useState(false);
+    const [crafterConfiguration, setCrafterConfiguration] = useState(undefined);
 
     useEffect(
         () => {
             if (triggerItemCraft) {
-                const craftingRundown = itemToCraft.getCraftingRundown();
+                const craftingRundown = itemToCraft.getCraftingRundown(craftingMaterial => getMaterialsAfterDiscsAndBeltsEffects(craftingMaterial, crafterConfiguration));
                 setRawMaterials(craftingRundown.rawMaterials);
                 setCrafts(craftingRundown.crafts);
                 setTriggerItemCraft(false);
             }
         },
-        [triggerItemCraft, itemToCraft, setRawMaterials, setCrafts]
+        [triggerItemCraft, itemToCraft, crafterConfiguration, setRawMaterials, setCrafts]
     );
 
     const reset = useCallback(() => {
@@ -54,8 +57,16 @@ export const Crafting = () => {
         setItemIsCustomized(true);
     }
 
+    const handleConfigurationChanged = newCrafterConfiguration => {
+        setTriggerItemCraft(true);
+        setCrafterConfiguration(newCrafterConfiguration);
+    }
+
     return (
         <div className="mv3">
+            <div className="mb4">
+                <CrafterConfiguration onConfigurationChanged={handleConfigurationChanged} />
+            </div>
             <div className="mb4">
                 <ProfessionsStatus />
             </div>

@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////
+//                                               //
+//   This file was auto-generated, do not edit   //
+//                                               //
+///////////////////////////////////////////////////
+
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { BendingFormCompoundBow } from "./bending-form-compound-bow";
 import { CompositeWoodPlank } from "./composite-wood-plank";
