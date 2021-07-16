@@ -72,7 +72,10 @@ export class Item {
 
     // This is wierd, but we must pass in 'getMaterialsAfterDiscsAndBeltsEffects' because we can't import it here or else we get a circular dependency
     getCraftingRundown(getMaterialsAfterDiscsAndBeltsEffects) {
-        const crafts = [new Craft(this.craftingMaterials, new CraftingMaterial(this.craftingQuantity, this))];
+        const initialCraftingMaterial = new CraftingMaterial(this.craftingQuantity, this);
+        initialCraftingMaterial.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(initialCraftingMaterial);
+
+        const crafts = [new Craft(initialCraftingMaterial.item.craftingMaterials, initialCraftingMaterial)];
         let craftingMaterials = [...this.craftingMaterials];
         for (const craftingMaterial of craftingMaterials) {
             craftingMaterial.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(craftingMaterial);
