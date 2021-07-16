@@ -47,7 +47,10 @@ export class CustomizableComponent extends Item {
     }
 
     getCustomizableComponents() {
-        return [this];
+        const customizableComponents = super.getCustomizableComponents();
+        customizableComponents.push(this);
+
+        return customizableComponents;
     }
 
     getCustomizationEffects() {
