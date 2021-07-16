@@ -198,6 +198,18 @@ a:visited {
     width: 25rem;
 }
 
+.w11 {
+    width: 40rem;
+}
+
+.w12 {
+    width: 60rem;
+}
+
+.w13 {
+    width: 100rem;
+}
+
 /* Flex */
 .justify-evenly {
     justify-content: space-evenly

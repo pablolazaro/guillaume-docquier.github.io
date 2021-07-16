@@ -28,7 +28,7 @@ const CraftingStep = ({ craft }) => {
     const note = resultCraftingQuantity > 1 ? `(each craft yields ${resultCraftingQuantity} ${resultName})` : ""
 
     return (
-        <div className="bg-marine pa2 w-50 br2">
+        <div className="bg-marine pa2 w11 br2">
             <div className="mb1">At the {profession}{action} {resultQuantity / resultCraftingQuantity} {resultName} {note}</div>
             <div className="flex items-center">
                 <div className="w3 h3 flex items-center justify-center">
