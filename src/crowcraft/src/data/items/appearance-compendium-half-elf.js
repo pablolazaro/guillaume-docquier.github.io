@@ -16,7 +16,8 @@ export class AppearanceCompendiumHalfElf extends Item {
             [
                 new CraftingMaterial(500, new Gold()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

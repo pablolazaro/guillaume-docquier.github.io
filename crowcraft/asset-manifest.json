@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/crowcraft/static/css/main.002f82a5.chunk.css",
-    "main.js": "/crowcraft/static/js/main.f3922c13.chunk.js",
-    "main.js.map": "/crowcraft/static/js/main.f3922c13.chunk.js.map",
-    "runtime-main.js": "/crowcraft/static/js/runtime-main.5bcace21.js",
-    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.5bcace21.js.map",
-    "static/js/2.b8bc4fc4.chunk.js": "/crowcraft/static/js/2.b8bc4fc4.chunk.js",
-    "static/js/2.b8bc4fc4.chunk.js.map": "/crowcraft/static/js/2.b8bc4fc4.chunk.js.map",
-    "static/js/3.a979d9b3.chunk.js": "/crowcraft/static/js/3.a979d9b3.chunk.js",
-    "static/js/3.a979d9b3.chunk.js.map": "/crowcraft/static/js/3.a979d9b3.chunk.js.map",
+    "main.js": "/crowcraft/static/js/main.cbdea1ff.chunk.js",
+    "main.js.map": "/crowcraft/static/js/main.cbdea1ff.chunk.js.map",
+    "runtime-main.js": "/crowcraft/static/js/runtime-main.9a4c9415.js",
+    "runtime-main.js.map": "/crowcraft/static/js/runtime-main.9a4c9415.js.map",
+    "static/js/2.21754d44.chunk.js": "/crowcraft/static/js/2.21754d44.chunk.js",
+    "static/js/2.21754d44.chunk.js.map": "/crowcraft/static/js/2.21754d44.chunk.js.map",
+    "static/js/3.b29d4404.chunk.js": "/crowcraft/static/js/3.b29d4404.chunk.js",
+    "static/js/3.b29d4404.chunk.js.map": "/crowcraft/static/js/3.b29d4404.chunk.js.map",
     "index.html": "/crowcraft/index.html",
     "static/css/main.002f82a5.chunk.css.map": "/crowcraft/static/css/main.002f82a5.chunk.css.map",
-    "static/js/2.b8bc4fc4.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.b8bc4fc4.chunk.js.LICENSE.txt",
+    "static/js/2.21754d44.chunk.js.LICENSE.txt": "/crowcraft/static/js/2.21754d44.chunk.js.LICENSE.txt",
     "static/media/adhesive.svg": "/crowcraft/static/media/adhesive.9fe660ef.svg",
     "static/media/advancedArrows.svg": "/crowcraft/static/media/advancedArrows.4d8885f3.svg",
     "static/media/alchemist.svg": "/crowcraft/static/media/alchemist.bdd3966b.svg",
@@ -346,9 +346,9 @@
     "static/media/yewHeartwood.svg": "/crowcraft/static/media/yewHeartwood.3bf61aef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bcace21.js",
-    "static/js/2.b8bc4fc4.chunk.js",
+    "static/js/runtime-main.9a4c9415.js",
+    "static/js/2.21754d44.chunk.js",
     "static/css/main.002f82a5.chunk.css",
-    "static/js/main.f3922c13.chunk.js"
+    "static/js/main.cbdea1ff.chunk.js"
   ]
 }

@@ -16,7 +16,8 @@ export class BladeRivets extends Item {
             [
                 new CraftingMaterial(1, new MetalBar()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

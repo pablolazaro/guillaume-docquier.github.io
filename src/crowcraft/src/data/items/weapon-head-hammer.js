@@ -21,7 +21,8 @@ export class WeaponHeadHammer extends Item {
 				new CraftingMaterial(1, new HeadMoldHammer()),
 				new CraftingMaterial(8, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

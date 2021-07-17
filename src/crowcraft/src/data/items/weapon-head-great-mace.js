@@ -23,7 +23,8 @@ export class WeaponHeadGreatMace extends Item {
 				new CraftingMaterial(1, new HeadMoldGreatMace()),
 				new CraftingMaterial(8, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

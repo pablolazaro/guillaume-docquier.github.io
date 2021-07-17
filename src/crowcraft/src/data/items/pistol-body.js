@@ -20,7 +20,8 @@ export class PistolBody extends Item {
 				new CraftingMaterial(1, new PistolHammerAndFrizzen()),
 				new CraftingMaterial(1, new PistolTrigger()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

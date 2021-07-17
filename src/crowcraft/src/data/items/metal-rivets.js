@@ -25,7 +25,8 @@ export class MetalRivets extends CustomizableComponent {
             [
                 new StealthMetalRivetsCustomization(),
 				new OutOfCombatHealthRegenerationMetalRivetsCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

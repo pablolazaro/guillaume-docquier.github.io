@@ -22,7 +22,8 @@ export class GreatSword extends Item {
 				new CraftingMaterial(1, new BladeRivetsGreat()),
 				new CraftingMaterial(20, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

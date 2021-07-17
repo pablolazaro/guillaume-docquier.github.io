@@ -37,7 +37,8 @@ export class LeatherSquare extends CustomizableComponent {
 				new LimberGrainLeatherSquareCustomization(),
 				new BicastLeatherSquareCustomization(),
 				new SuedeLeatherSquareCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

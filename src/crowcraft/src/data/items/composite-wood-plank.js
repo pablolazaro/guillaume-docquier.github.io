@@ -42,7 +42,8 @@ export class CompositeWoodPlank extends CustomizableComponent {
 				new SelectSpruceCompositeWoodPlankCustomization(),
 				new SelectAshCompositeWoodPlankCustomization(),
 				new SelectYewCompositeWoodPlankCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

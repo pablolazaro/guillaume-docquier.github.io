@@ -40,7 +40,8 @@ export class MetalBar extends CustomizableComponent {
 				new TinMetalBarCustomization(),
 				new SilverMetalBarCustomization(),
 				new AureliumMetalBarCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

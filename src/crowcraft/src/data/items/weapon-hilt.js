@@ -20,7 +20,8 @@ export class WeaponHilt extends Item {
 				new CraftingMaterial(1, new WeaponPommel()),
 				new CraftingMaterial(1, new WeaponCrossguard()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -30,7 +30,8 @@ export class ArrowheadBundle extends CustomizableComponent {
 				new CrushingArrowheadBundleCustomization(),
 				new FireArrowheadBundleCustomization(),
 				new IceArrowheadBundleCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

@@ -21,7 +21,8 @@ export class BowRiser extends Item {
 				new CraftingMaterial(1, new BowRest()),
 				new CraftingMaterial(1, new BowSight()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

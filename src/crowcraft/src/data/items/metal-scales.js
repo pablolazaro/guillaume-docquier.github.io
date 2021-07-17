@@ -37,7 +37,8 @@ export class MetalScales extends CustomizableComponent {
 				new BlueSteelMetalScalesCustomization(),
 				new ForestAureliumMetalScalesCustomization(),
 				new DarkElectrumMetalScalesCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

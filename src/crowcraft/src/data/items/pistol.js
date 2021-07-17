@@ -22,7 +22,8 @@ export class Pistol extends Item {
 				new CraftingMaterial(1, new PistolPins()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -21,7 +21,8 @@ export class WeaponBladeCurved extends Item {
 				new CraftingMaterial(4, new EtherealDust()),
 				new CraftingMaterial(1, new BladeMoldCurved()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

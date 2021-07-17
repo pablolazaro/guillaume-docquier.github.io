@@ -22,7 +22,8 @@ export class Mace extends Item {
 				new CraftingMaterial(1, new WeaponShaftShort()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

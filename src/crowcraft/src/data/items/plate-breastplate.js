@@ -22,7 +22,8 @@ export class PlateBreastplate extends Item {
 				new CraftingMaterial(1, new LeatherPadding()),
 				new CraftingMaterial(18, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

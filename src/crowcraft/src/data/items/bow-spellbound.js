@@ -22,7 +22,8 @@ export class BowSpellbound extends Item {
 				new CraftingMaterial(1, new BowString()),
 				new CraftingMaterial(20, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

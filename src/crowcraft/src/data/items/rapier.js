@@ -22,7 +22,8 @@ export class Rapier extends Item {
 				new CraftingMaterial(1, new BladeRivets()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

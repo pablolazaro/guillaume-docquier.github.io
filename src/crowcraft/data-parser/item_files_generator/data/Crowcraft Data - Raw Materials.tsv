@@ -37,6 +37,13 @@ Yes	Yes	Durable hide	Hide	white-orange
 Yes	Yes	Soft hide	Hide	white-orange
 Yes	Yes	Strong hide	Hide	white-orange
 				
+No	No	Mineral	Generic Material	grey-orange
+No	No	Cinnabar	Mineral	white-orange
+No	No	Dolomite	Mineral	white-orange
+No	No	Halite	Mineral	white-orange
+No	No	Nitrate	Mineral	white-orange
+No	No	Sulfur	Mineral	white-orange
+				
 Yes	Yes	Meat	Generic Material	white
 Yes	Yes	Auroch Meat	Meat	white
 Yes	Yes	Cat Meat	Meat	white
@@ -48,3 +55,35 @@ Yes	Yes	Boar Meat	Meat	white
 				
 Yes	Yes	Gold	Raw Material	white
 Yes	Yes	Ethereal Dust	Raw Material	white
+No	No	Animal Blood	Raw Material	white
+No	No	Chaos Ember	Raw Material	white
+No	No	Soul Gem	Raw Material	white
+No	No	Animal Bone	Raw Material	white-orange
+No	No	Apple	Raw Material	white
+No	No	Beeswax	Raw Material	white
+No	No	Cutting Grit	Raw Material	white
+				
+No	No	Cut Gem	Generic Material	white-orange
+No	No	Cut Exacting Gem	Generic Material	white-orange
+No	No	Blood or Water	Generic Material	white
+No	No	Ground Mineral	Generic Material	white-orange
+No	No	Powdered Stone	Generic Material	white-orange
+				
+No	No	Mineral	Generic Material	white-orange
+No	No	Halite	Mineral	white-orange
+No	No	Dolomite	Mineral	white-orange
+No	No	Sulphur	Mineral	white-orange
+No	No	Nitre	Mineral	white-orange
+No	No	Cinnabar	Mineral	white-orange
+				
+No	No	Gemstone	Generic Material	white-orange
+No	No	Topaz	Gemstone	white-orange
+No	No	Emerald	Gemstone	white-orange
+No	No	Ruby	Gemstone	white-orange
+No	No	Sapphire	Gemstone	white-orange
+No	No	Diamond	Gemstone	white-orange
+				
+No	No	Scavenged Ingredient	Generic Material	white
+No	No	Mandrake	Scavenged Ingredient	white
+No	No	Nightshade	Scavenged Ingredient	white
+No	No	Bloodworm	Scavenged Ingredient	white

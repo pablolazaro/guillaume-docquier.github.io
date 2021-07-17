@@ -21,7 +21,8 @@ export class WeaponBladeShort extends Item {
 				new CraftingMaterial(4, new EtherealDust()),
 				new CraftingMaterial(1, new BladeMoldShort()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -23,7 +23,8 @@ export class Quiver extends Item {
 				new CraftingMaterial(5, new Heartwood()),
 				new CraftingMaterial(20, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

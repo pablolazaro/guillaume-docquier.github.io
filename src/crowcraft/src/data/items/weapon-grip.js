@@ -16,7 +16,8 @@ export class WeaponGrip extends Item {
             [
                 new CraftingMaterial(1, new StitchedLeather()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

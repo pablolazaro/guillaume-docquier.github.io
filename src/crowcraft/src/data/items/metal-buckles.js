@@ -26,7 +26,8 @@ export class MetalBuckles extends CustomizableComponent {
                 new AureliumStealthMetalBucklesCustomization(),
 				new SilverStealthMetalBucklesCustomization(),
 				new OutOfCombatHealthRegenerationMetalBucklesCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

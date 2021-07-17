@@ -18,7 +18,8 @@ export class LeatherSheet extends Item {
 				new CraftingMaterial(2, new Hide()),
 				new CraftingMaterial(2, new Hide()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

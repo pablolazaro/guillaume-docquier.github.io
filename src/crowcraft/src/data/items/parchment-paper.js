@@ -16,7 +16,8 @@ export class ParchmentPaper extends Item {
             [
                 new CraftingMaterial(1, new Wood()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

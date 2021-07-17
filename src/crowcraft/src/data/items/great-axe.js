@@ -22,7 +22,8 @@ export class GreatAxe extends Item {
 				new CraftingMaterial(1, new WeaponShaftMedium()),
 				new CraftingMaterial(20, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

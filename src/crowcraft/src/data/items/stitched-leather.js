@@ -38,7 +38,8 @@ export class StitchedLeather extends CustomizableComponent {
 				new GenuineSoftStitchedLeatherCustomization(),
 				new GenuineStrongStitchedLeatherCustomization(),
 				new GenuineFlexibleStitchedLeatherCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

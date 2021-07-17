@@ -18,7 +18,8 @@ export class WoodenBoard extends Item {
 				new CraftingMaterial(3, new Wood()),
 				new CraftingMaterial(3, new Wood()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

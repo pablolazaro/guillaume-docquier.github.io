@@ -21,7 +21,8 @@ export class LeatherBoots extends Item {
 				new CraftingMaterial(1, new MetalRivets()),
 				new CraftingMaterial(6, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

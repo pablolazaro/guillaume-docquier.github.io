@@ -20,7 +20,8 @@ export class Sandpaper extends Item {
 				new CraftingMaterial(1, new Stone()),
 				new CraftingMaterial(3, new EtherealDust()),
             ],
-            5
+            5,
+            ""
         );
     }
 }

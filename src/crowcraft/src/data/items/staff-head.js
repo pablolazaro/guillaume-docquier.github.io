@@ -19,7 +19,8 @@ export class StaffHead extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

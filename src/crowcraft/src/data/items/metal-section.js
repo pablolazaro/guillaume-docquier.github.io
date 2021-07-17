@@ -38,7 +38,8 @@ export class MetalSection extends CustomizableComponent {
 				new TinMetalSectionCustomization(),
 				new SilverMetalSectionCustomization(),
 				new AureliumMetalSectionCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

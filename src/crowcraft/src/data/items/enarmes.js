@@ -17,7 +17,8 @@ export class Enarmes extends Item {
                 new CraftingMaterial(1, new StitchedLeather()),
 				new CraftingMaterial(1, new StitchedLeather()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -20,7 +20,8 @@ export class ParchmentVellum extends Item {
 				new CraftingMaterial(1, new PenAndInk()),
 				new CraftingMaterial(1, new ParchmentPaper()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

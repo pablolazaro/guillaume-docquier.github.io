@@ -20,7 +20,8 @@ export class LeatherPadding extends Item {
 				new CraftingMaterial(2, new Hide()),
 				new CraftingMaterial(1, new LacingSinew()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

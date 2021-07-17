@@ -1,46 +1,46 @@
-IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE
-		Wood Processing						
-Yes	Yes	Arrow Shaft Bundle	Woodworker	white - orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No
-Yes	Yes	Composite Wood Plank	Woodworker	white - orange	9x Wood, 9x Wood, 9x Wood, 6x Sandpaper	1	Yes	Yes
-Yes	Yes	Parchment Paper	Woodworker	white	1x Wood	1	No	No
-Yes	Yes	Wooden Board	Woodworker	white-orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No
-								
-		Fuel						
-Yes	Yes	Sandpaper	Woodworker	white	2x Wood, 1x Stone, 3x Ethereal Dust	5	No	No
-								
-		One Hand Weapon Components						
-Yes	Yes	Shield Base: Large	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: large shield, Optional: 1x Runestone Esoteric	1	Yes	No
-Yes	Yes	Shield Base: Medium	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: medium shield, Optional: 1x Runestone Esoteric	1	Yes	No
-Yes	Yes	Shield Base: Small	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: small shield, Optional: 1x Runestone Esoteric	1	Yes	No
-								
-		Ranged Weapon Components						
-Yes	Yes	Book Casing	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Stitched Leather, 1x Stitched Leather, 1x Adhesive, 8x Ethereal Dust, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No
-Yes	Yes	Book Chapter	Woodworker	white-orange	1x Composite Wood Plank, 1x Stitched Leather, 3x Stone	1	Yes	Yes
-Yes	Yes	Book Clasp	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank	1	Yes	No
-Yes	Yes	Bound Chapters	Woodworker	white-orange	1x Book Chapter, 1x Book Chapter, 1x Book Chapter, 1x Lacing Sinew	1	Yes	No
-Yes	Yes	Bow Rest	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No
-Yes	Yes	Bow Riser	Woodworker	white-orange	1x Weapon Grip, 1x Weapon Grip, 1x Bow Rest, 1x Bow Sight	1	Yes	No
-Yes	Yes	Bow Sight	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank	1	Yes	No
-Yes	Yes	Limbs: Bow Recurve	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: compound bow	1	Yes	No
-Yes	Yes	Limbs: Bow Compound	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: recurve bow	1	Yes	No
-Yes	Yes	Limbs: Bow Spellbound	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: spellbound bow	1	Yes	No
-Yes	Yes	Limbs: Staff	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Weapon Grip, 1x Weapon Grip	1	Yes	No
-Yes	Yes	Staff Head	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No
-Yes	Yes	Staff Heel	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: staff heel	1	Yes	No
-								
-		Ranged Weapon Components						
-Yes	Yes	Advanced Arrows	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaft Bundle, 1x Ethereal Dust	500	Yes	No
-Yes	Yes	Book	Woodworker	white-orange	1x Book Casing, 1x Bound Chapters, 1x Book Clasp, 20x Ethereal Dust	1	Yes	No
-Yes	Yes	Bow: Compound	Woodworker	white-orange	1x Limbs: Bow Compound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
-Yes	Yes	Bow: Recurve	Woodworker	white-orange	1x Limbs: Bow Recurve, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
-Yes	Yes	Bow: Spellbound	Woodworker	white-orange	1x Limbs: Bow Spellbound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No
-Yes	Yes	Mystical Staff	Woodworker	white-orange	1x Limbs: Staff, 1x Staff Head, 1x Staff Heel, 20x Ethereal Dust	1	Yes	No
-Yes	Yes	Quiver	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaft Bundle, 1x Arrow Shaft Bundle, 5x Heartwood, 20x Ethereal Dust	1	Yes	No
-								
-		Intermediate Weapons						
-	No	Book	Woodworker	white-orange	1x Wooden Board, 1x Basic Book, 10x Ethereal Dust	1	Yes	No
-	No	Bow: Recurve	Woodworker	white-orange	1x Wooden Board, 1x Basic Recurve Bow, 10x Ethereal Dust	1	Yes	No
-								
-		Miscellaneous						
-	No	Modify Weapon Form	Woodworker	white	1x Weapon Form, 1x Appearance Compendium	1	No	No
-Yes	Yes	Parchment Vellum	Woodworker	grey	1x Wood, 1x Pen and Ink, 1x Parchment Paper	1	No	No
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME
+		Wood Processing							
+Yes	Yes	Arrow Shaft Bundle	Woodworker	white - orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No	
+Yes	Yes	Composite Wood Plank	Woodworker	white - orange	9x Wood, 9x Wood, 9x Wood, 6x Sandpaper	1	Yes	Yes	
+Yes	Yes	Parchment Paper	Woodworker	white	1x Wood	1	No	No	
+Yes	Yes	Wooden Board	Woodworker	white-orange	3x Wood, 3x Wood, 3x Wood	1	Yes	No	
+									
+		Fuel							
+Yes	Yes	Sandpaper	Woodworker	white	2x Wood, 1x Stone, 3x Ethereal Dust	5	No	No	
+									
+		One Hand Weapon Components							
+Yes	Yes	Shield Base: Large	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: large shield, Optional: 1x Runestone Esoteric	1	Yes	No	
+Yes	Yes	Shield Base: Medium	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: medium shield, Optional: 1x Runestone Esoteric	1	Yes	No	
+Yes	Yes	Shield Base: Small	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Bending form: small shield, Optional: 1x Runestone Esoteric	1	Yes	No	
+									
+		Ranged Weapon Components							
+Yes	Yes	Book Casing	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Stitched Leather, 1x Stitched Leather, 1x Adhesive, 8x Ethereal Dust, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No	
+Yes	Yes	Book Chapter	Woodworker	white-orange	1x Composite Wood Plank, 1x Stitched Leather, 3x Stone	1	Yes	Yes	
+Yes	Yes	Book Clasp	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank	1	Yes	No	
+Yes	Yes	Bound Chapters	Woodworker	white-orange	1x Book Chapter, 1x Book Chapter, 1x Book Chapter, 1x Lacing Sinew	1	Yes	No	
+Yes	Yes	Bow Rest	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No	
+Yes	Yes	Bow Riser	Woodworker	white-orange	1x Weapon Grip, 1x Weapon Grip, 1x Bow Rest, 1x Bow Sight	1	Yes	No	
+Yes	Yes	Bow Sight	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank	1	Yes	No	
+Yes	Yes	Limbs: Bow Recurve	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: compound bow	1	Yes	No	
+Yes	Yes	Limbs: Bow Compound	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: recurve bow	1	Yes	No	
+Yes	Yes	Limbs: Bow Spellbound	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: spellbound bow	1	Yes	No	
+Yes	Yes	Limbs: Staff	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Weapon Grip, 1x Weapon Grip	1	Yes	No	
+Yes	Yes	Staff Head	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, Optional: 1x Runestone Esoteric, Optional: 1x Runestone Esoteric	1	Yes	No	
+Yes	Yes	Staff Heel	Woodworker	white-orange	1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 1x Composite Wood Plank, 8x Ethereal Dust, 1x Bending form: staff heel	1	Yes	No	
+									
+		Ranged Weapon Components							
+Yes	Yes	Advanced Arrows	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaft Bundle, 1x Ethereal Dust	500	Yes	No	
+Yes	Yes	Book	Woodworker	white-orange	1x Book Casing, 1x Bound Chapters, 1x Book Clasp, 20x Ethereal Dust	1	Yes	No	
+Yes	Yes	Bow: Compound	Woodworker	white-orange	1x Limbs: Bow Compound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No	
+Yes	Yes	Bow: Recurve	Woodworker	white-orange	1x Limbs: Bow Recurve, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No	
+Yes	Yes	Bow: Spellbound	Woodworker	white-orange	1x Limbs: Bow Spellbound, 1x Bow Riser, 1x Bow String, 20x Ethereal Dust	1	Yes	No	
+Yes	Yes	Mystical Staff	Woodworker	white-orange	1x Limbs: Staff, 1x Staff Head, 1x Staff Heel, 20x Ethereal Dust	1	Yes	No	
+Yes	Yes	Quiver	Woodworker	white-orange	1x Arrowhead Bundle, 1x Arrow Shaft Bundle, 1x Arrow Shaft Bundle, 5x Heartwood, 20x Ethereal Dust	1	Yes	No	
+									
+		Intermediate Weapons							
+	No	Book	Woodworker	white-orange	1x Wooden Board, 1x Basic Book, 10x Ethereal Dust	1	Yes	No	
+	No	Bow: Recurve	Woodworker	white-orange	1x Wooden Board, 1x Basic Recurve Bow, 10x Ethereal Dust	1	Yes	No	
+									
+		Miscellaneous							
+	No	Modify Weapon Form	Woodworker	white	1x Weapon Form, 1x Appearance Compendium	1	No	No	
+Yes	Yes	Parchment Vellum	Woodworker	grey	1x Wood, 1x Pen and Ink, 1x Parchment Paper	1	No	No	

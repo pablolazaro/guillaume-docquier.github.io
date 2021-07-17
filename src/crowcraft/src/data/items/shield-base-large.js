@@ -21,7 +21,8 @@ export class ShieldBaseLarge extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new BendingFormLargeShield()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

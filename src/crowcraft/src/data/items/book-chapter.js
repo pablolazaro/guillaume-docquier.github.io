@@ -32,7 +32,8 @@ export class BookChapter extends CustomizableComponent {
 				new IndulgenceBookChapterCustomization(),
 				new FervorBookChapterCustomization(),
 				new AbsolutionBookChapterCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

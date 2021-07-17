@@ -18,7 +18,8 @@ export class Carbon extends Item {
                 new CraftingMaterial(3, new Meat()),
 				new CraftingMaterial(3, new EtherealDust()),
             ],
-            5
+            5,
+            ""
         );
     }
 }

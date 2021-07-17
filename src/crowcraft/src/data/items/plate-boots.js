@@ -21,7 +21,8 @@ export class PlateBoots extends Item {
 				new CraftingMaterial(1, new LeatherPadding()),
 				new CraftingMaterial(6, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

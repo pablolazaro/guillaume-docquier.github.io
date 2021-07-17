@@ -22,7 +22,8 @@ export class SmallBuckler extends Item {
 				new CraftingMaterial(1, new ShieldBaseSmall()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

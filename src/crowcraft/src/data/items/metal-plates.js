@@ -37,7 +37,8 @@ export class MetalPlates extends CustomizableComponent {
 				new BlueSteelMetalPlatesCustomization(),
 				new ForestAureliumMetalPlatesCustomization(),
 				new DarkElectrumMetalPlatesCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

@@ -23,7 +23,8 @@ export class StaffHeel extends Item {
 				new CraftingMaterial(8, new EtherealDust()),
 				new CraftingMaterial(1, new BendingFormStaffHeel()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

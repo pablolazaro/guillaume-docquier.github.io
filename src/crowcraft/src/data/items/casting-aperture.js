@@ -21,7 +21,8 @@ export class CastingAperture extends Item {
 				new CraftingMaterial(1, new BarrelMoldArcane()),
 				new CraftingMaterial(4, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

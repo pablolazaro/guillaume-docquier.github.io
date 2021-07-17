@@ -20,7 +20,8 @@ export class FrostcastingEnclosure extends Item {
 				new CraftingMaterial(1, new ManaImpeller()),
 				new CraftingMaterial(1, new ArcaneActuator()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -18,7 +18,8 @@ export class MetalBlock extends Item {
 				new CraftingMaterial(3, new Ore()),
 				new CraftingMaterial(3, new Ore()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -23,7 +23,8 @@ export class LimbsBowSpellbound extends Item {
 				new CraftingMaterial(8, new EtherealDust()),
 				new CraftingMaterial(1, new BendingFormSpellboundBow()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

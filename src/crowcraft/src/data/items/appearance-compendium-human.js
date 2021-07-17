@@ -16,7 +16,8 @@ export class AppearanceCompendiumHuman extends Item {
             [
                 new CraftingMaterial(500, new Gold()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

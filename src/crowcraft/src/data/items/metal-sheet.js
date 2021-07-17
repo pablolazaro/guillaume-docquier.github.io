@@ -39,7 +39,8 @@ export class MetalSheet extends CustomizableComponent {
 				new DarkElectrumMetalSheetCustomization(),
 				new SterlingMetalSheetCustomization(),
 				new RoseAureliumMetalSheetCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

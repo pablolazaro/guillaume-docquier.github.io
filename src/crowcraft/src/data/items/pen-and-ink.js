@@ -16,7 +16,8 @@ export class PenAndInk extends Item {
             [
                 new CraftingMaterial(10, new Gold()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

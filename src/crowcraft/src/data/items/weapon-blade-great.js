@@ -23,7 +23,8 @@ export class WeaponBladeGreat extends Item {
 				new CraftingMaterial(1, new BladeMoldGreatSword()),
 				new CraftingMaterial(8, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

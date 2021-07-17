@@ -20,7 +20,8 @@ export class BoundChapters extends Item {
 				new CraftingMaterial(1, new BookChapter()),
 				new CraftingMaterial(1, new LacingSinew()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

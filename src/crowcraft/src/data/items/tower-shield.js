@@ -22,7 +22,8 @@ export class TowerShield extends Item {
 				new CraftingMaterial(1, new ShieldBaseLarge()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

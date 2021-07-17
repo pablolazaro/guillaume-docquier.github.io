@@ -39,7 +39,8 @@ export class HardenedLeatherSquare extends CustomizableComponent {
 				new NappaHardenedLeatherSquareCustomization(),
 				new BicastHardenedLeatherSquareCustomization(),
 				new SuedeHardenedLeatherSquareCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

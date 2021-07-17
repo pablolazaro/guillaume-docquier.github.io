@@ -22,7 +22,8 @@ export class LeatherTunic extends Item {
 				new CraftingMaterial(1, new MetalBuckles()),
 				new CraftingMaterial(18, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

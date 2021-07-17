@@ -39,7 +39,8 @@ export class MetalRings extends CustomizableComponent {
 				new DarkElectrumMetalRingsCustomization(),
 				new SterlingMetalRingsCustomization(),
 				new RoseAureliumMetalRingsCustomization(),
-            ]
+            ],
+            ""
         );
     }
 }

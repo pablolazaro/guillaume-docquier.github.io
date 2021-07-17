@@ -20,7 +20,8 @@ export class ShieldBaseMedium extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new BendingFormMediumShield()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

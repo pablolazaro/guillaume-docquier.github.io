@@ -23,7 +23,8 @@ export class LimbsBowCompound extends Item {
 				new CraftingMaterial(8, new EtherealDust()),
 				new CraftingMaterial(1, new BendingFormRecurveBow()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

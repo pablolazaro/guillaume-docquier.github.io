@@ -17,7 +17,8 @@ export class ShieldCovering extends Item {
                 new CraftingMaterial(1, new MetalSection()),
 				new CraftingMaterial(1, new MetalSection()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

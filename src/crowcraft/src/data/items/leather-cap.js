@@ -22,7 +22,8 @@ export class LeatherCap extends Item {
 				new CraftingMaterial(1, new MetalRivets()),
 				new CraftingMaterial(6, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -24,7 +24,8 @@ export class BookCasing extends Item {
 				new CraftingMaterial(1, new Adhesive()),
 				new CraftingMaterial(8, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

@@ -22,7 +22,8 @@ export class Frostcaster extends Item {
 				new CraftingMaterial(1, new MetaMagicalConducter()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

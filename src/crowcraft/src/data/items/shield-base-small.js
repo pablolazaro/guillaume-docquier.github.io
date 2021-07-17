@@ -19,7 +19,8 @@ export class ShieldBaseSmall extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new BendingFormSmallShield()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

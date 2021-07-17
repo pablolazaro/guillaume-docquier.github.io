@@ -22,7 +22,8 @@ export class MediumShield extends Item {
 				new CraftingMaterial(1, new ShieldBaseMedium()),
 				new CraftingMaterial(10, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

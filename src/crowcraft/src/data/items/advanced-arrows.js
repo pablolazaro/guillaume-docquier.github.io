@@ -20,7 +20,8 @@ export class AdvancedArrows extends Item {
 				new CraftingMaterial(1, new ArrowShaftBundle()),
 				new CraftingMaterial(1, new EtherealDust()),
             ],
-            500
+            500,
+            ""
         );
     }
 }

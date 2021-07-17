@@ -20,7 +20,8 @@ export class LimbsStaff extends Item {
 				new CraftingMaterial(1, new WeaponGrip()),
 				new CraftingMaterial(1, new WeaponGrip()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

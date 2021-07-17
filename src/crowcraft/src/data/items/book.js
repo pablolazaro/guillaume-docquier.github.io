@@ -22,7 +22,8 @@ export class Book extends Item {
 				new CraftingMaterial(1, new BookClasp()),
 				new CraftingMaterial(20, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }

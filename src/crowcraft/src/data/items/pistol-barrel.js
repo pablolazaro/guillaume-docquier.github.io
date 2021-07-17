@@ -21,7 +21,8 @@ export class PistolBarrel extends Item {
 				new CraftingMaterial(1, new BarrelMoldPistol()),
 				new CraftingMaterial(4, new EtherealDust()),
             ],
-            1
+            1,
+            ""
         );
     }
 }
