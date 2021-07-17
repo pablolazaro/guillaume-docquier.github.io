@@ -73,7 +73,7 @@ const ProfessionSetting = ({ profession, professionSetting, onProfessionSettingC
                 <div>Discipline</div>
                 <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.DISCIPLINE)} value={professionSetting[Type.DISCIPLINE]}>
                     <option value={NONE}>None</option>
-                    {Object.values(Rarities).map(rarity => (
+                    {Object.values(Rarities).filter(rarity => rarity.rank > 0).map(rarity => (
                         <option key={rarity.name} value={rarity.name}>
                             {String.capitalize(rarity.name)}
                         </option>
@@ -84,7 +84,7 @@ const ProfessionSetting = ({ profession, professionSetting, onProfessionSettingC
                 <div>Belt</div>
                 <select className="peach-puff bg-marine pointer" onChange={handleChanged(Type.BELT)} value={professionSetting[Type.BELT]}>
                     <option value={NONE}>None</option>
-                    {Object.values(Rarities).map(rarity => (
+                    {Object.values(Rarities).filter(rarity => rarity.rank > 1).map(rarity => (
                         <option key={rarity.name} value={rarity.name}>
                             {String.capitalize(rarity.name)}
                         </option>
