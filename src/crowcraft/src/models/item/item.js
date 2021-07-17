@@ -3,12 +3,13 @@ import { Craft } from "../craft";
 import { CraftingMaterial } from "../crafting-material";
 
 export class Item {
-    constructor(name, professions, rarities, craftingMaterials, craftingQuantity) {
+    constructor(name, professions, rarities, craftingMaterials, craftingQuantity, craftingRecipeName) {
         this._name = name;
         this.professions = professions;
         this.rarities = rarities.sort(Sorting.ascending(rar => rar.rank));
         this._craftingMaterials = craftingMaterials;
         this.craftingQuantity = craftingQuantity;
+        this.craftingRecipeName = craftingRecipeName ? craftingRecipeName : name
 
         this._id = String.decapitalize(this.constructor.name);
         this.craftingRank = this.getCraftingRank();

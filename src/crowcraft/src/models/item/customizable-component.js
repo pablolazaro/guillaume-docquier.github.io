@@ -3,8 +3,8 @@ import { Item } from "./item";
 import { String } from "utils";
 
 export class CustomizableComponent extends Item {
-    constructor(name, professions, rarities, craftingMaterials, craftingQuantity, possibleCustomizations) {
-        super(name, professions, rarities, craftingMaterials, craftingQuantity);
+    constructor(name, professions, rarities, craftingMaterials, craftingQuantity, possibleCustomizations, craftingRecipeName) {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity, craftingRecipeName);
 
         this.possibleCustomizations = possibleCustomizations;
         this.customization = null;

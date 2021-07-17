@@ -24,7 +24,7 @@ const CraftingStep = ({ craft }) => {
     const action = Object.values(Vendors).includes(profession) ? ", buy" : " station, craft";
     const resultCraftingQuantity = craft.craftingResult.item.craftingQuantity;
     const resultQuantity = craft.craftingResult.quantity;
-    const resultName = craft.craftingResult.item.name;
+    const resultName = craft.craftingResult.item.craftingRecipeName;
     const note = resultCraftingQuantity > 1 ? `(each craft yields ${resultCraftingQuantity} ${resultName})` : ""
 
     return (
