@@ -88,7 +88,6 @@ export class Item {
 
     // This is wierd, but we must pass in 'getMaterialsAfterDiscsAndBeltsEffects' because we can't import it here or else we get a circular dependency
     getCraftingRundown(getMaterialsAfterDiscsAndBeltsEffects) {
-        debugger;
         this.adjustCraftingRanks();
         const initialCraftingMaterial = new CraftingMaterial(this.craftingQuantity, this);
         initialCraftingMaterial.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(initialCraftingMaterial);
