@@ -10,7 +10,7 @@ export class Stone extends GenericMaterial {
     constructor(
         name = "stone",
         professions = [],
-        rarities = [Rarities.Poor, Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
+        rarities = [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
         craftingMaterials = [],
         craftingQuantity = 1
     ) {

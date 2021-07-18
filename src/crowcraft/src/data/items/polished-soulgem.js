@@ -15,7 +15,7 @@ export class PolishedSoulgem extends Item {
         super(
             "polished soulgem",
             [Professions.Jewelcrafter],
-            [Rarities.Uncommon],
+            [Rarities.Common],
             [
                 new CraftingMaterial(1, new RoughSoulgem()),
 				new CraftingMaterial(1, new PolishingPaste()),

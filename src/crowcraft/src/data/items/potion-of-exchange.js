@@ -16,7 +16,7 @@ export class PotionOfExchange extends Item {
         super(
             "potion of exchange",
             [Professions.Alchemist],
-            [Rarities.Uncommon],
+            [Rarities.Common],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
 				new CraftingMaterial(1, new AnimalBlood()),

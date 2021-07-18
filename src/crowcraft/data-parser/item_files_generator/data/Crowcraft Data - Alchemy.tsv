@@ -33,18 +33,18 @@ No	No	Ambrosia	Alchemist	white	1x Empty Flask, 3x Ground Cinnabar, 3x Water Flas
 No	No	Philosopher's Stone	Alchemist	white	1x Philosopher's Solution, 1x Transmutation Solution	1	No	No		
 										
 		Crafting Potions								
-No	No	Potion of Exchange	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Chaos Ember, 6x Powdered Animal Bone	1	No	No		
-No	No	Potion of Sapho	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No		
+No	No	Potion of Exchange	Alchemist	white	1x Empty Flask, 1x Animal Blood, 5x Chaos Ember, 6x Powdered Animal Bone	1	No	No		
+No	No	Potion of Sapho	Alchemist	white	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No		
 										
 		Harvesting Potions								
-No	No	Potion of Harvest: Beeswax	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Beeswax	1	No	No		
-No	No	Potion of Harvest: Cutting Grit	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Cutting Grit	1	No	No		
-No	No	Potion of Harvest: Gem and Mineral	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Powdered Animal Bone	1	No	No		
-No	No	Potion of Plenty: Digging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No		
-No	No	Potion of Plenty: Logging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No		
-No	No	Potion of Plenty: Mining	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No		
-No	No	Potion of Plenty: Quarrying	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No		
-No	No	Potion of Plenty: Skinning	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No		
+No	No	Potion of Harvest: Beeswax	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Beeswax	1	No	No		
+No	No	Potion of Harvest: Cutting Grit	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Cutting Grit	1	No	No		
+No	No	Potion of Harvest: Gem and Mineral	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Powdered Animal Bone	1	No	No		
+No	No	Potion of Plenty: Digging	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No		
+No	No	Potion of Plenty: Logging	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No		
+No	No	Potion of Plenty: Mining	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No		
+No	No	Potion of Plenty: Quarrying	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No		
+No	No	Potion of Plenty: Skinning	Alchemist	white	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No		
 										
 		Toxins								
 No	No	Advanced Toxin	Alchemist	white	1x Empty Flask, 4x Scavenged Ingredient, 10x Ethereal Dust, 1x Animal Blood	1	No	Yes		

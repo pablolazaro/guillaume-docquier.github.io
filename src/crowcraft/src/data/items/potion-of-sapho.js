@@ -16,7 +16,7 @@ export class PotionOfSapho extends Item {
         super(
             "potion of sapho",
             [Professions.Alchemist],
-            [Rarities.Uncommon],
+            [Rarities.Common],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
 				new CraftingMaterial(1, new AnimalBlood()),

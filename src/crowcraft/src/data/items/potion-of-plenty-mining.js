@@ -16,7 +16,7 @@ export class PotionOfPlentyMining extends Item {
         super(
             "potion of plenty: mining",
             [Professions.Alchemist],
-            [Rarities.Uncommon],
+            [Rarities.Common],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
 				new CraftingMaterial(1, new WaterFlask()),
