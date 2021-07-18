@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { RoughGem } from "./rough-gem";
 import { GroundHalite } from "./ground-halite";
 import { RoughTopaz } from "./rough-topaz";
 import { TransmutationSolution } from "./transmutation-solution";
 
-export class RoughBlueTopaz extends Item {
+export class RoughBlueTopaz extends RoughGem {
     constructor() {
         super(
             "rough blue topaz",

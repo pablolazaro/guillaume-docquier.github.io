@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Vendors } from "models";
+import { CraftingMaterial, Rarities, Vendors } from "models";
+import { Item } from "models";
 import { Gold } from "./gold";
 
 export class CoffeeBeans extends Item {

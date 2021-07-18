@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BowRiser } from "./bow-riser";
 import { BowString } from "./bow-string";
 import { EtherealDust } from "./ethereal-dust";

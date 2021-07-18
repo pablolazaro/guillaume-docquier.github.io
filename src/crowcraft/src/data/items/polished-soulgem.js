@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { PolishingPaste } from "./polishing-paste";
 import { RoughSoulgem } from "./rough-soulgem";
 import { WaterFlask } from "./water-flask";

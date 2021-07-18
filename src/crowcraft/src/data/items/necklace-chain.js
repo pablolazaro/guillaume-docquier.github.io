@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { NecklaceBail } from "./necklace-bail";
 import { Ore } from "./ore";
 

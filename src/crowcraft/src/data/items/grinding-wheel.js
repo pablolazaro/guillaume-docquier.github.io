@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { Stone } from "./stone";
 
 export class GrindingWheel extends Item {

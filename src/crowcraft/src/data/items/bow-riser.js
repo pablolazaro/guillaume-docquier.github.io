@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BowRest } from "./bow-rest";
 import { BowSight } from "./bow-sight";
 import { WeaponGrip } from "./weapon-grip";

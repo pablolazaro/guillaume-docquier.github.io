@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { CutGem } from "./cut-gem";
 import { DiamondCuttingBlade } from "./diamond-cutting-blade";
 import { RoughRuby } from "./rough-ruby";
 import { WaterFlask } from "./water-flask";
 
-export class RoundCutRuby extends Item {
+export class RoundCutRuby extends CutGem {
     constructor() {
         super(
             "round cut ruby",

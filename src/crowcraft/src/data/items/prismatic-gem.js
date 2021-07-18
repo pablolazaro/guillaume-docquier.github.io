@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { GroundNitre } from "./ground-nitre";
 import { RoughGem } from "./rough-gem";
 import { TransmutationSolution } from "./transmutation-solution";

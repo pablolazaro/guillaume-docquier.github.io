@@ -1,102 +1,102 @@
-IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME
-		Ore Processing							
-Yes	Yes	Metal Bar	Weaponsmith - Armorsmith	white-orange	9x Ore, 9x Ore, 9x Ore, 6x Coal	1	Yes	Yes	
-Yes	Yes	Metal Block	Weaponsmith - Armorsmith	white-orange	3x Ore, 3x Ore, 3x Ore	1	Yes	No	
-Yes	Yes	Metal Buckles	Weaponsmith - Armorsmith	white-orange	10x Ore, 10x Ore, 2x Coal	1	Yes	Yes	
-Yes	Yes	Metal Plates	Weaponsmith - Armorsmith	white-orange	16x Iron, 10x Ore, 10x Ore, 12x Coal	1	Yes	Yes	
-Yes	Yes	Metal Rings	Weaponsmith - Armorsmith	white-orange	20x Iron, 20x Ore, 20x Ore, 12x Coal	1	Yes	Yes	
-Yes	Yes	Metal Rivets	Weaponsmith - Armorsmith	white-orange	5x Ore, 3x Ore, 2x Coal	1	Yes	Yes	
-Yes	Yes	Metal Scales	Weaponsmith - Armorsmith	white-orange	16x Iron, 10x Ore, 10x Ore, 12x Coal	1	Yes	Yes	
-Yes	Yes	Metal Section	Weaponsmith - Armorsmith	white-orange	6x Ore, 6x Ore, 6x Ore, 6x Coal	1	Yes	Yes	
-Yes	Yes	Metal Sheet	Weaponsmith - Armorsmith	white-orange	20x Iron, 20x Ore, 20x Ore, 12x Coal	1	Yes	Yes	
-									
-		Fuel							
-Yes	Yes	Carbon	Weaponsmith - Armorsmith	white	3x Meat, 3x Ethereal Dust	5	No	No	
-Yes	Yes	Coal	Weaponsmith - Armorsmith	white	3x Wood, 3x Ethereal Dust	5	No	No	
-									
-		Advanced Armor							
-Yes	Yes	Mail Boots	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-Yes	Yes	Mail Coif	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-Yes	Yes	Mail Gloves	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-Yes	Yes	Mail Hauberk	Weaponsmith - Armorsmith	white-orange	1x Metal Rings, 1x Metal Rings, 1x Metal Rings, 1x Leather Padding, 18x Ethereal Dust	1	Yes	No	
-Yes	Yes	Plate Boots	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-Yes	Yes	Plate Breastplate	Weaponsmith - Armorsmith	white-orange	1x Metal Sheet, 1x Metal Sheet, 1x Metal Sheet, 1x Leather Padding, 18x Ethereal Dust	1	Yes	No	
-Yes	Yes	Plate Gloves	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-Yes	Yes	Plate Helmet	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No	
-									
-		Ranged Weapon Components							
-Yes	Yes	Arcane Actuator	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Arrowhead Bundle	Weaponsmith - Armorsmith	white-orange	9x Ore, 1x Coal	1	Yes	Yes	
-Yes	Yes	Casting Aperture	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Barrel Mold: Arcane, 4x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Frostcasting Enclosure	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Mana Impeller, 1x Arcane Actuator	1	Yes	No	
-Yes	Yes	Mana Impeller	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Meta-Magical Conducter	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Pistol Barrel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Barrel Mold: Pistol, 4x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Pistol Body	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Pistol Hammer and Frizzen, 1x Pistol Trigger	1	Yes	No	
-Yes	Yes	Pistol Hammer and Frizzen	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Pistol Pins	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Pistol Trigger	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-									
-		One Hand Weapon Components							
-Yes	Yes	Blade Rivets	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Shield Covering	Weaponsmith - Armorsmith	white-orange	1x Metal Section, 1x Metal Section	1	Yes	No	
-Yes	Yes	Weapon Blade: Long	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Long	1	Yes	No	
-Yes	Yes	Weapon Blade: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Medium	1	Yes	No	
-Yes	Yes	Weapon Blade: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Short	1	Yes	No	
-Yes	Yes	Weapon Blade: Thin	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Thin	1	Yes	No	
-Yes	Yes	Weapon Blade: Curved	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Curved	1	Yes	No	
-Yes	Yes	Weapon Head: Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Head: Hammer	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Hammer, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Head: Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Crossguard	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Weapon Pommel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-Yes	Yes	Weapon Hilt	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Weapon Pommel, 1x Weapon Crossguard	1	Yes	No	
-Yes	Yes	Weapon Shaft: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No	
-									
-		Two Hand Weapon Components							
-Yes	Yes	Blade Rivets: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No	
-Yes	Yes	Great Weapon Crossguard	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No	
-Yes	Yes	Great Weapon Pommel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No	
-Yes	Yes	Weapon Blade: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Blade Mold: Great Sword, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Head: Great Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Head: Great Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No	
-Yes	Yes	Weapon Hilt: Great	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Weapon Grip, 1x Great Weapon Pommel, 1x Great Weapon Crossguard	1	Yes	No	
-Yes	Yes	Weapon Shaft: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No	
-									
-		Advanced Weapons							
-Yes	Yes	Axe	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Axe, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Dagger	Weaponsmith - Armorsmith	white-orange	1x Weapon hilt, 1x Weapon Blade: Short, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Frostcaster	Weaponsmith - Armorsmith	white-orange	1x Frostcasting Enclosure, 1x Casting Aperture, 1x Meta-Magical Conducter, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Great Axe	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Head: Great Axe, 1x Weapon Shaft: Medium, 20x Ethereal Dust	1	Yes	No	
-Yes	Yes	Great Mace	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Head: Great Mace, 1x Weapon Shaft: Medium, 20x Ethereal Dust	1	Yes	No	
-Yes	Yes	Great Sword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Blade: Great, 1x Blade Rivets: Great, 20x Ethereal Dust	1	Yes	No	
-Yes	Yes	Longsword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Long, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Mace	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Mace, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Mystical Throwing Hammer	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Hammer, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Pistol	Weaponsmith - Armorsmith	white-orange	1x Pistol Body, 1x Pistol Barrel, 1x Pistol Pins, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Rapier	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Thin, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Small Buckler	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Small, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Medium Shield	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Medium, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Tower Shield	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Large, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Short Sword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Medium, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No	
-Yes	Yes	Sickle	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Curved, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No	
-									
-		Intermediate Weapons							
-		Intermediate Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic One Handed Axe, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Dagger	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Dagger, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Frostcaster	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Frost Caster, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Great Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Great Axe, 10x Ethereal Dust	1	Yes	No	
-		Intermediate Great Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Long Sword, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Great Sword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mace, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Longsword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mystical Throwing Hammer, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mace, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Mystical Throwing Hamer	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mystical Throwing hammer, 5x Ethereal Dust	1	Yes	No	
-		Intermediate One Handed Pistol	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Pistol, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Rapier	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Rapier, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Buckler	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Buckler, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Medium Shield	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Medium Shield, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Short Sword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Short Sword, 5x Ethereal Dust	1	Yes	No	
-		Intermediate Sickle	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Sickle, 5x Ethereal Dust	1	Yes	No	
-									
-		Miscellaneous							
-	No	Modify Weapon Mold	Weaponsmith - Armorsmith	white	1x Weapon Mold, 1x Appearance Compendium	1	No	No	
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME	ITEM TYPE
+		Ore Processing								
+Yes	Yes	Metal Bar	Weaponsmith - Armorsmith	white-orange	9x Ore, 9x Ore, 9x Ore, 6x Coal	1	Yes	Yes		
+Yes	Yes	Metal Block	Weaponsmith - Armorsmith	white-orange	3x Ore, 3x Ore, 3x Ore	1	Yes	No		
+Yes	Yes	Metal Buckles	Weaponsmith - Armorsmith	white-orange	10x Ore, 10x Ore, 2x Coal	1	Yes	Yes		
+Yes	Yes	Metal Plates	Weaponsmith - Armorsmith	white-orange	16x Iron, 10x Ore, 10x Ore, 12x Coal	1	Yes	Yes		
+Yes	Yes	Metal Rings	Weaponsmith - Armorsmith	white-orange	20x Iron, 20x Ore, 20x Ore, 12x Coal	1	Yes	Yes		
+Yes	Yes	Metal Rivets	Weaponsmith - Armorsmith	white-orange	5x Ore, 3x Ore, 2x Coal	1	Yes	Yes		
+Yes	Yes	Metal Scales	Weaponsmith - Armorsmith	white-orange	16x Iron, 10x Ore, 10x Ore, 12x Coal	1	Yes	Yes		
+Yes	Yes	Metal Section	Weaponsmith - Armorsmith	white-orange	6x Ore, 6x Ore, 6x Ore, 6x Coal	1	Yes	Yes		
+Yes	Yes	Metal Sheet	Weaponsmith - Armorsmith	white-orange	20x Iron, 20x Ore, 20x Ore, 12x Coal	1	Yes	Yes		
+										
+		Fuel								
+Yes	Yes	Carbon	Weaponsmith - Armorsmith	white	3x Meat, 3x Ethereal Dust	5	No	No		
+Yes	Yes	Coal	Weaponsmith - Armorsmith	white	3x Wood, 3x Ethereal Dust	5	No	No		
+										
+		Advanced Armor								
+Yes	Yes	Mail Boots	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+Yes	Yes	Mail Coif	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+Yes	Yes	Mail Gloves	Weaponsmith - Armorsmith	white-orange	1x Metal Scales, 1x Metal Scales, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+Yes	Yes	Mail Hauberk	Weaponsmith - Armorsmith	white-orange	1x Metal Rings, 1x Metal Rings, 1x Metal Rings, 1x Leather Padding, 18x Ethereal Dust	1	Yes	No		
+Yes	Yes	Plate Boots	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+Yes	Yes	Plate Breastplate	Weaponsmith - Armorsmith	white-orange	1x Metal Sheet, 1x Metal Sheet, 1x Metal Sheet, 1x Leather Padding, 18x Ethereal Dust	1	Yes	No		
+Yes	Yes	Plate Gloves	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+Yes	Yes	Plate Helmet	Weaponsmith - Armorsmith	white-orange	1x Metal Plates, 1x Metal Plates, 1x Metal Plates, 1x Leather Padding, 6x Ethereal Dust	1	Yes	No		
+										
+		Ranged Weapon Components								
+Yes	Yes	Arcane Actuator	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Arrowhead Bundle	Weaponsmith - Armorsmith	white-orange	9x Ore, 1x Coal	1	Yes	Yes		
+Yes	Yes	Casting Aperture	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Barrel Mold: Arcane, 4x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Frostcasting Enclosure	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Mana Impeller, 1x Arcane Actuator	1	Yes	No		
+Yes	Yes	Mana Impeller	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Meta-Magical Conducter	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Pistol Barrel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Barrel Mold: Pistol, 4x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Pistol Body	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Pistol Hammer and Frizzen, 1x Pistol Trigger	1	Yes	No		
+Yes	Yes	Pistol Hammer and Frizzen	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Pistol Pins	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Pistol Trigger	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+										
+		One Hand Weapon Components								
+Yes	Yes	Blade Rivets	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Shield Covering	Weaponsmith - Armorsmith	white-orange	1x Metal Section, 1x Metal Section	1	Yes	No		
+Yes	Yes	Weapon Blade: Long	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Long	1	Yes	No		
+Yes	Yes	Weapon Blade: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Medium	1	Yes	No		
+Yes	Yes	Weapon Blade: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Short	1	Yes	No		
+Yes	Yes	Weapon Blade: Thin	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Thin	1	Yes	No		
+Yes	Yes	Weapon Blade: Curved	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 4x Ethereal Dust, 1x Blade Mold: Curved	1	Yes	No		
+Yes	Yes	Weapon Head: Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Head: Hammer	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Hammer, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Head: Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Head Mold: Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Crossguard	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Weapon Pommel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+Yes	Yes	Weapon Hilt	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Weapon Pommel, 1x Weapon Crossguard	1	Yes	No		
+Yes	Yes	Weapon Shaft: Short	Weaponsmith - Armorsmith	white-orange	1x Metal Bar	1	Yes	No		
+										
+		Two Hand Weapon Components								
+Yes	Yes	Blade Rivets: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No		
+Yes	Yes	Great Weapon Crossguard	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No		
+Yes	Yes	Great Weapon Pommel	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No		
+Yes	Yes	Weapon Blade: Great	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Blade Mold: Great Sword, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Head: Great Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Axe, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Head: Great Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Metal Bar, 1x Head Mold: Great Mace, 8x Ethereal Dust, Optional: 1x Runestone: Esoteric, Optional: 1x Runestone: Esoteric	1	Yes	No		
+Yes	Yes	Weapon Hilt: Great	Weaponsmith - Armorsmith	white-orange	1x Weapon Grip, 1x Weapon Grip, 1x Great Weapon Pommel, 1x Great Weapon Crossguard	1	Yes	No		
+Yes	Yes	Weapon Shaft: Medium	Weaponsmith - Armorsmith	white-orange	1x Metal Bar, 1x Metal Bar	1	Yes	No		
+										
+		Advanced Weapons								
+Yes	Yes	Axe	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Axe, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Dagger	Weaponsmith - Armorsmith	white-orange	1x Weapon hilt, 1x Weapon Blade: Short, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Frostcaster	Weaponsmith - Armorsmith	white-orange	1x Frostcasting Enclosure, 1x Casting Aperture, 1x Meta-Magical Conducter, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Great Axe	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Head: Great Axe, 1x Weapon Shaft: Medium, 20x Ethereal Dust	1	Yes	No		
+Yes	Yes	Great Mace	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Head: Great Mace, 1x Weapon Shaft: Medium, 20x Ethereal Dust	1	Yes	No		
+Yes	Yes	Great Sword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt: Great, 1x Weapon Blade: Great, 1x Blade Rivets: Great, 20x Ethereal Dust	1	Yes	No		
+Yes	Yes	Longsword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Long, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Mace	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Mace, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Mystical Throwing Hammer	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Head: Hammer, 1x Weapon Shaft: Short, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Pistol	Weaponsmith - Armorsmith	white-orange	1x Pistol Body, 1x Pistol Barrel, 1x Pistol Pins, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Rapier	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Thin, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Small Buckler	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Small, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Medium Shield	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Medium, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Tower Shield	Weaponsmith - Armorsmith	white-orange	1x Shield Covering, 1x Enarmes, 1x Shield Base: Large, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Short Sword	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Medium, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No		
+Yes	Yes	Sickle	Weaponsmith - Armorsmith	white-orange	1x Weapon Hilt, 1x Weapon Blade: Curved, 1x Blade Rivets, 10x Ethereal Dust	1	Yes	No		
+										
+		Intermediate Weapons								
+		Intermediate Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic One Handed Axe, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Dagger	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Dagger, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Frostcaster	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Frost Caster, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Great Axe	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Great Axe, 10x Ethereal Dust	1	Yes	No		
+		Intermediate Great Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Long Sword, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Great Sword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mace, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Longsword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mystical Throwing Hammer, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Mace	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mace, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Mystical Throwing Hamer	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Mystical Throwing hammer, 5x Ethereal Dust	1	Yes	No		
+		Intermediate One Handed Pistol	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Pistol, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Rapier	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Rapier, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Buckler	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Buckler, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Medium Shield	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Medium Shield, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Short Sword	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Short Sword, 5x Ethereal Dust	1	Yes	No		
+		Intermediate Sickle	Weaponsmith - Armorsmith	white-orange	1x Metal Block, 1x Basic Sickle, 5x Ethereal Dust	1	Yes	No		
+										
+		Miscellaneous								
+	No	Modify Weapon Mold	Weaponsmith - Armorsmith	white	1x Weapon Mold, 1x Appearance Compendium	1	No	No		

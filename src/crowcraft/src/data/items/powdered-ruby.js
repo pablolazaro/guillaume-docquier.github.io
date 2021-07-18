@@ -4,10 +4,11 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { PowderedGem } from "./powdered-gem";
 import { RoughRuby } from "./rough-ruby";
 
-export class PowderedRuby extends Item {
+export class PowderedRuby extends PowderedGem {
     constructor() {
         super(
             "powdered ruby",

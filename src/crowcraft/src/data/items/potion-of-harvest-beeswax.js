@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { Beeswax } from "./beeswax";
 import { EmptyFlask } from "./empty-flask";
 import { EtherealDust } from "./ethereal-dust";

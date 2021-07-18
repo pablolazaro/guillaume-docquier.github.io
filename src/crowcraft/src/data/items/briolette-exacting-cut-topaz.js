@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { CutExactingGem } from "./cut-exacting-gem";
 import { ChaosEmberCuttingBlade } from "./chaos-ember-cutting-blade";
 import { RoughTopaz } from "./rough-topaz";
 import { WaterFlask } from "./water-flask";
 
-export class BrioletteExactingCutTopaz extends Item {
+export class BrioletteExactingCutTopaz extends CutExactingGem {
     constructor() {
         super(
             "briolette exacting cut topaz",

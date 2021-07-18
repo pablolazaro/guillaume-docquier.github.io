@@ -4,10 +4,11 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { GroundMineral } from "./ground-mineral";
 import { Cinnabar } from "./cinnabar";
 
-export class GroundCinnabar extends Item {
+export class GroundCinnabar extends GroundMineral {
     constructor() {
         super(
             "ground cinnabar",

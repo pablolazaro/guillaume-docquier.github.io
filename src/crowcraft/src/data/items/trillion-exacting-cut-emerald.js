@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { CutExactingGem } from "./cut-exacting-gem";
 import { ChaosEmberCuttingBlade } from "./chaos-ember-cutting-blade";
 import { RoughEmerald } from "./rough-emerald";
 import { WaterFlask } from "./water-flask";
 
-export class TrillionExactingCutEmerald extends Item {
+export class TrillionExactingCutEmerald extends CutExactingGem {
     constructor() {
         super(
             "trillion exacting cut emerald",

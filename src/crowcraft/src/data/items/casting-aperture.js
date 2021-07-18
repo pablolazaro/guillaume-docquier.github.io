@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BarrelMoldArcane } from "./barrel-mold-arcane";
 import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";

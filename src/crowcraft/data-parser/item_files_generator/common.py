@@ -39,6 +39,13 @@ rarity_names = [
 data_folder = "./data"
 output_folder = "./generated"
 
+default_item_type = "Item"
+model_item_types = [
+    default_item_type,
+    "RawMaterial",
+    "GenericMaterial"
+]
+
 auto_generation_header = """///////////////////////////////////////////////////
 //                                               //
 //   This file was auto-generated, do not edit   //

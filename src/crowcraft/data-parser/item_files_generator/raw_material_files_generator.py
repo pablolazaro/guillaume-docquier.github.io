@@ -3,7 +3,7 @@ from pathlib import Path
 from os import walk
 from common import \
     make_item_name, make_class_name, make_file_name_without_extension, rarity_names, rarity_ranks, ConsoleColors, \
-    output_folder, data_folder, get_filenames_of_type, FileTypes, auto_generation_header
+    output_folder, data_folder, get_filenames_of_type, FileTypes, auto_generation_header, model_item_types
 
 
 class Columns:
@@ -12,11 +12,6 @@ class Columns:
     ITEM_NAME = 2
     ITEM_TYPE = 3
     RARITIES = 4
-
-
-class ItemTypes:
-    RAW_MATERIAL = "raw material"
-    GENERIC_MATERIAL = "generic material"
 
 
 def generate_raw_material_files():
@@ -58,7 +53,7 @@ def extract_item_data(item):
 
 def generate_js_code(item_data):
     (file_name, class_name, item_name, item_rarities, item_type) = item_data
-    js_code = generate_generic_material_item(item_data) if item_type.lower() in [ItemTypes.RAW_MATERIAL, ItemTypes.GENERIC_MATERIAL] else generate_item(item_data)
+    js_code = generate_generic_material_item(item_data) if make_class_name(item_type) in model_item_types else generate_item(item_data)
 
     return file_name, js_code
 

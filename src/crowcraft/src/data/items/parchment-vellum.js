@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { ParchmentPaper } from "./parchment-paper";
 import { PenAndInk } from "./pen-and-ink";
 import { Wood } from "./wood";

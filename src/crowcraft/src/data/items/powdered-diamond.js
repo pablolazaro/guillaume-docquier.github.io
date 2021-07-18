@@ -4,10 +4,11 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { PowderedGem } from "./powdered-gem";
 import { RoughDiamond } from "./rough-diamond";
 
-export class PowderedDiamond extends Item {
+export class PowderedDiamond extends PowderedGem {
     constructor() {
         super(
             "powdered diamond",

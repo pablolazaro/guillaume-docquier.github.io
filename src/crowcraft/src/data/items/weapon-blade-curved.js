@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BladeMoldCurved } from "./blade-mold-curved";
 import { EtherealDust } from "./ethereal-dust";
 import { MetalBar } from "./metal-bar";

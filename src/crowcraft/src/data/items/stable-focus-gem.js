@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { DiamondCuttingBlade } from "./diamond-cutting-blade";
 import { RoughDiamond } from "./rough-diamond";
 import { WaterFlask } from "./water-flask";

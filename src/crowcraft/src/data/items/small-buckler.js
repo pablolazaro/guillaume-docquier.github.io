@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { Enarmes } from "./enarmes";
 import { EtherealDust } from "./ethereal-dust";
 import { ShieldBaseSmall } from "./shield-base-small";

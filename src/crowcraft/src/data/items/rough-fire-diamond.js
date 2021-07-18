@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { RoughGem } from "./rough-gem";
 import { GroundSulphur } from "./ground-sulphur";
 import { RoughRuby } from "./rough-ruby";
 import { TransmutationSolution } from "./transmutation-solution";
 
-export class RoughFireDiamond extends Item {
+export class RoughFireDiamond extends RoughGem {
     constructor() {
         super(
             "rough fire diamond",

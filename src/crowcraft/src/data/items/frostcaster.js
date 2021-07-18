@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { CastingAperture } from "./casting-aperture";
 import { EtherealDust } from "./ethereal-dust";
 import { FrostcastingEnclosure } from "./frostcasting-enclosure";

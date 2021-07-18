@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { GenericMaterial } from "models";
 import { DiamondCuttingBlade } from "./diamond-cutting-blade";
 import { RoughGem } from "./rough-gem";
 import { WaterFlask } from "./water-flask";
 
-export class CutGem extends Item {
+export class CutGem extends GenericMaterial {
     constructor() {
         super(
             "cut gem",

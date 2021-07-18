@@ -4,12 +4,13 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { RoughGem } from "./rough-gem";
 import { GroundDolomite } from "./ground-dolomite";
 import { RoughSapphire } from "./rough-sapphire";
 import { TransmutationSolution } from "./transmutation-solution";
 
-export class RoughBlackSapphire extends Item {
+export class RoughBlackSapphire extends RoughGem {
     constructor() {
         super(
             "rough black sapphire",

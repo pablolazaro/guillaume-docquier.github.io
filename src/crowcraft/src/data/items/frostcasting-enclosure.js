@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { ArcaneActuator } from "./arcane-actuator";
 import { ManaImpeller } from "./mana-impeller";
 import { WeaponGrip } from "./weapon-grip";

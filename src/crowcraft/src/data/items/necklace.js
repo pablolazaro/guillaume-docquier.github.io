@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { NecklaceChain } from "./necklace-chain";
 import { PolishedExactingGemstone } from "./polished-exacting-gemstone";
 

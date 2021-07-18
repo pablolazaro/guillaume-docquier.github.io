@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BookCasing } from "./book-casing";
 import { BookClasp } from "./book-clasp";
 import { BoundChapters } from "./bound-chapters";

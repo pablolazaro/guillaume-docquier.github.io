@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BendingFormCompoundBow } from "./bending-form-compound-bow";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { EtherealDust } from "./ethereal-dust";

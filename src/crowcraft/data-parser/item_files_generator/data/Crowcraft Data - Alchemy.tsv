@@ -1,57 +1,58 @@
-IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME
-		Resource Processing							
-No	No	Powdered Animal Bone	Alchemist	white-orange	1x Animal Bone	1	Yes	No	Grind Resource
-									
-No	No	Ground Mineral	Alchemist	white-orange	1x Mineral	1	Yes	No	Grind Resource
-No	No	Ground Halite	Alchemist	white-orange	1x Halite	1	Yes	No	Grind Resource
-No	No	Ground Dolomite	Alchemist	white-orange	1x Dolomite	1	Yes	No	Grind Resource
-No	No	Ground Sulphur	Alchemist	white-orange	1x Sulphur	1	Yes	No	Grind Resource
-No	No	Ground Nitre	Alchemist	white-orange	1x Nitre	1	Yes	No	Grind Resource
-No	No	Ground Cinnabar	Alchemist	white-orange	1x Cinnabar	1	Yes	No	Grind Resource
-									
-No	No	Powdered Stone	Alchemist	white-orange	1x Stone	1	Yes	No	Grind Resource
-No	No	Powdered Granite	Alchemist	white-orange	1x Granite	1	Yes	No	Grind Resource
-No	No	Powdered Limestone	Alchemist	white-orange	1x Limestone	1	Yes	No	Grind Resource
-No	No	Powdered Travertine	Alchemist	white-orange	1x Travertine	1	Yes	No	Grind Resource
-No	No	Powdered Slate	Alchemist	white-orange	1x Slate	1	Yes	No	Grind Resource
-No	No	Powdered Marble	Alchemist	white-orange	1x Marble	1	Yes	No	Grind Resource
-									
-No	No	Powdered Topaz	Alchemist	white-orange	1x Rough Topaz	1	Yes	No	Grind Resource
-No	No	Powdered Sapphire	Alchemist	white-orange	1x Rough Sapphire	1	Yes	No	Grind Resource
-No	No	Powdered Emerald	Alchemist	white-orange	1x Rough Emerald	1	Yes	No	Grind Resource
-No	No	Powdered Ruby	Alchemist	white-orange	1x Rough Ruby	1	Yes	No	Grind Resource
-No	No	Powdered Diamond	Alchemist	white-orange	1x Rough Diamond	1	Yes	No	Grind Resource
-									
-		Components							
-No	No	Empty Flask	Alchemist	white	4x Powdered Stone, 4x Powdered Stone, 4x Ethereal Dust	1	No	No	
-No	No	Philosopher's Solution	Alchemist	white-orange	1x Water Flask, 4x Powdered Stone, 5x Ethereal Dust, 4x Ground Mineral	1	Yes	Yes	
-No	No	Transmutation Solution	Alchemist	white	1x Water Flask, 2x Powdered Stone, 3x Ethereal Dust, 2x Ground Mineral	1	Yes	No	
-									
-		Arcane Mixings							
-No	No	Ambrosia	Alchemist	white	1x Empty Flask, 3x Ground Cinnabar, 3x Water Flask, 3x Ground Halite, 3x Apple, 12x Ethereal Dust	1	No	No	
-No	No	Philosopher's Stone	Alchemist	white	1x Philosopher's Solution, 1x Transmutation Solution	1	No	No	
-									
-		Crafting Potions							
-No	No	Potion of Exchange	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Chaos Ember, 6x Powdered Animal Bone	1	No	No	
-No	No	Potion of Sapho	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No	
-									
-		Harvesting Potions							
-No	No	Potion of Harvest: Beeswax	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Beeswax	1	No	No	
-No	No	Potion of Harvest: Cutting Grit	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Cutting Grit	1	No	No	
-No	No	Potion of Harvest: Gem and Mineral	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Powdered Animal Bone	1	No	No	
-No	No	Potion of Plenty: Digging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No	
-No	No	Potion of Plenty: Logging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No	
-No	No	Potion of Plenty: Mining	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No	
-No	No	Potion of Plenty: Quarrying	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No	
-No	No	Potion of Plenty: Skinning	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No	
-									
-		Toxins							
-No	No	Advanced Toxin	Alchemist	white	1x Empty Flask, 4x Scavenged Ingredient, 10x Ethereal Dust, 1x Animal Blood	1	No	Yes	
-									
-		Transmutations							
-		Adhesive Fixation	Alchemist	white	1x Adhesive, 1x Appearance Compendium	1	No	No	
-		Ethereal Dust	Alchemist	white	1x Chaos Ember	75	No	No	Transmute Chaos
-No	No	Rough Black Sapphire	Alchemist	white-orange	1x Rough Sapphire, 1x Transmutation Solution, 2x Ground Dolomite	1	No	No	Transmute Gemstone
-No	No	Rough Blue Topaz	Alchemist	white-orange	1x Rough Topaz, 1x Transmutation Solution, 2x Ground Halite	1	No	No	Transmute Gemstone
-No	No	Rough Fire Diamond	Alchemist	white-orange	1x Rough Ruby, 1x Transmutation Solution, 2x Ground Sulphur	1	No	No	Transmute Gemstone
-No	No	Prismatic Gem	Alchemist	white-orange	1x Rough Gem, 1x Transmutation Solution, 2x Ground Nitre	1	No	No	Transmute Gemstone
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME	ITEM TYPE
+		Resource Processing								
+No	No	Powdered Animal Bone	Alchemist	white-orange	1x Animal Bone	1	Yes	No	Grind Resource	
+										
+No	No	Ground Mineral	Alchemist	white-orange	1x Mineral	1	Yes	No	Grind Resource	Generic Material
+No	No	Ground Halite	Alchemist	white-orange	1x Halite	1	Yes	No	Grind Resource	Ground Mineral
+No	No	Ground Dolomite	Alchemist	white-orange	1x Dolomite	1	Yes	No	Grind Resource	Ground Mineral
+No	No	Ground Sulphur	Alchemist	white-orange	1x Sulphur	1	Yes	No	Grind Resource	Ground Mineral
+No	No	Ground Nitre	Alchemist	white-orange	1x Nitre	1	Yes	No	Grind Resource	Ground Mineral
+No	No	Ground Cinnabar	Alchemist	white-orange	1x Cinnabar	1	Yes	No	Grind Resource	Ground Mineral
+										
+No	No	Powdered Stone	Alchemist	white-orange	1x Stone	1	Yes	No	Grind Resource	Generic Material
+No	No	Powdered Granite	Alchemist	white-orange	1x Granite	1	Yes	No	Grind Resource	Powdered Stone
+No	No	Powdered Limestone	Alchemist	white-orange	1x Limestone	1	Yes	No	Grind Resource	Powdered Stone
+No	No	Powdered Travertine	Alchemist	white-orange	1x Travertine	1	Yes	No	Grind Resource	Powdered Stone
+No	No	Powdered Slate	Alchemist	white-orange	1x Slate	1	Yes	No	Grind Resource	Powdered Stone
+No	No	Powdered Marble	Alchemist	white-orange	1x Marble	1	Yes	No	Grind Resource	Powdered Stone
+										
+No	No	Powdered Gem	Alchemist	white-orange	1x Rough Gem	1	Yes	No	Grind Resource	Generic Material
+No	No	Powdered Topaz	Alchemist	white-orange	1x Rough Topaz	1	Yes	No	Grind Resource	Powdered Gem
+No	No	Powdered Sapphire	Alchemist	white-orange	1x Rough Sapphire	1	Yes	No	Grind Resource	Powdered Gem
+No	No	Powdered Emerald	Alchemist	white-orange	1x Rough Emerald	1	Yes	No	Grind Resource	Powdered Gem
+No	No	Powdered Ruby	Alchemist	white-orange	1x Rough Ruby	1	Yes	No	Grind Resource	Powdered Gem
+No	No	Powdered Diamond	Alchemist	white-orange	1x Rough Diamond	1	Yes	No	Grind Resource	Powdered Gem
+										
+		Components								
+No	No	Empty Flask	Alchemist	white	4x Powdered Stone, 4x Powdered Stone, 4x Ethereal Dust	1	No	No		
+No	No	Philosopher's Solution	Alchemist	white-orange	1x Water Flask, 4x Powdered Stone, 5x Ethereal Dust, 4x Ground Mineral	1	Yes	Yes		
+No	No	Transmutation Solution	Alchemist	white	1x Water Flask, 2x Powdered Stone, 3x Ethereal Dust, 2x Ground Mineral	1	Yes	No		
+										
+		Arcane Mixings								
+No	No	Ambrosia	Alchemist	white	1x Empty Flask, 3x Ground Cinnabar, 3x Water Flask, 3x Ground Halite, 3x Apple, 12x Ethereal Dust	1	No	No		
+No	No	Philosopher's Stone	Alchemist	white	1x Philosopher's Solution, 1x Transmutation Solution	1	No	No		
+										
+		Crafting Potions								
+No	No	Potion of Exchange	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Chaos Ember, 6x Powdered Animal Bone	1	No	No		
+No	No	Potion of Sapho	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No		
+										
+		Harvesting Potions								
+No	No	Potion of Harvest: Beeswax	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Beeswax	1	No	No		
+No	No	Potion of Harvest: Cutting Grit	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Cutting Grit	1	No	No		
+No	No	Potion of Harvest: Gem and Mineral	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Powdered Animal Bone	1	No	No		
+No	No	Potion of Plenty: Digging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No		
+No	No	Potion of Plenty: Logging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No		
+No	No	Potion of Plenty: Mining	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No		
+No	No	Potion of Plenty: Quarrying	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No		
+No	No	Potion of Plenty: Skinning	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No		
+										
+		Toxins								
+No	No	Advanced Toxin	Alchemist	white	1x Empty Flask, 4x Scavenged Ingredient, 10x Ethereal Dust, 1x Animal Blood	1	No	Yes		
+										
+		Transmutations								
+		Adhesive Fixation	Alchemist	white	1x Adhesive, 1x Appearance Compendium	1	No	No		
+		Ethereal Dust	Alchemist	white	1x Chaos Ember	75	No	No	Transmute Chaos	
+No	No	Rough Black Sapphire	Alchemist	white-orange	1x Rough Sapphire, 1x Transmutation Solution, 2x Ground Dolomite	1	No	No	Transmute Gemstone	Rough Gem
+No	No	Rough Blue Topaz	Alchemist	white-orange	1x Rough Topaz, 1x Transmutation Solution, 2x Ground Halite	1	No	No	Transmute Gemstone	Rough Gem
+No	No	Rough Fire Diamond	Alchemist	white-orange	1x Rough Ruby, 1x Transmutation Solution, 2x Ground Sulphur	1	No	No	Transmute Gemstone	Rough Gem
+No	No	Prismatic Gem	Alchemist	white-orange	1x Rough Gem, 1x Transmutation Solution, 2x Ground Nitre	1	No	No	Transmute Gemstone	

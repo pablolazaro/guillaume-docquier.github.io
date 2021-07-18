@@ -4,10 +4,11 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { GenericMaterial } from "models";
 import { Mineral } from "./mineral";
 
-export class GroundMineral extends Item {
+export class GroundMineral extends GenericMaterial {
     constructor() {
         super(
             "ground mineral",

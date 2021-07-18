@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { ArrowShaftBundle } from "./arrow-shaft-bundle";
 import { ArrowheadBundle } from "./arrowhead-bundle";
 import { EtherealDust } from "./ethereal-dust";

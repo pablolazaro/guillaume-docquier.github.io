@@ -1,6 +1,6 @@
-IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME
-		Stonemasonry Components							
-No	No	Diamond Cutting Blade	Stonemason	white	9x Ore, 3x Cutting Grit	1	No	No	
-No	No	Chaos Ember Cutting Blade	Stonemason	white	9x Ore, 3x Cutting Grit, 1x Chaos Ember	1	No	No	Diamond Cutting Blade
-No	No	Grinding Wheel	Stonemason	white	8x Stone, 8x Stone, 8x Stone	1	No	No	
-No	No	Polishing Paste	Stonemason	white	16x Powdered Stone, 3x Water Flask	1	No	No	
+IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY PER CRAFT	ITEM EFFECT QLTY	CUSTOMIZABLE	CRAFTING NAME	ITEM TYPE
+		Stonemasonry Components								
+No	No	Diamond Cutting Blade	Stonemason	white	9x Ore, 3x Cutting Grit	1	No	No		
+No	No	Chaos Ember Cutting Blade	Stonemason	white	9x Ore, 3x Cutting Grit, 1x Chaos Ember	1	No	No	Diamond Cutting Blade	
+No	No	Grinding Wheel	Stonemason	white	8x Stone, 8x Stone, 8x Stone	1	No	No		
+No	No	Polishing Paste	Stonemason	white	16x Powdered Stone, 3x Water Flask	1	No	No		

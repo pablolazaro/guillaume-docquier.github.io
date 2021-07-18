@@ -5,17 +5,17 @@
 ///////////////////////////////////////////////////
 
 import { CraftingMaterial, Rarities, Professions } from "models";
-import { PowderedStone } from "./powdered-stone";
-import { Slate } from "./slate";
+import { GenericMaterial } from "models";
+import { RoughGem } from "./rough-gem";
 
-export class PowderedSlate extends PowderedStone {
+export class PowderedGem extends GenericMaterial {
     constructor() {
         super(
-            "powdered slate",
+            "powdered gem",
             [Professions.Alchemist],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [
-                new CraftingMaterial(1, new Slate()),
+                new CraftingMaterial(1, new RoughGem()),
             ],
             1,
             "grind resource"

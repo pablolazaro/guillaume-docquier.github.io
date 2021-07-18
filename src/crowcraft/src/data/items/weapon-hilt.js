@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { WeaponCrossguard } from "./weapon-crossguard";
 import { WeaponGrip } from "./weapon-grip";
 import { WeaponPommel } from "./weapon-pommel";

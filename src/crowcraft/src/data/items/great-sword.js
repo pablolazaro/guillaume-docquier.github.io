@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BladeRivetsGreat } from "./blade-rivets-great";
 import { EtherealDust } from "./ethereal-dust";
 import { WeaponBladeGreat } from "./weapon-blade-great";

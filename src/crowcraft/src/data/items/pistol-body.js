@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { PistolHammerAndFrizzen } from "./pistol-hammer-and-frizzen";
 import { PistolTrigger } from "./pistol-trigger";
 import { WeaponGrip } from "./weapon-grip";

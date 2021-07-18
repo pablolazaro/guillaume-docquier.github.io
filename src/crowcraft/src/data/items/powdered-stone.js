@@ -4,10 +4,11 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { GenericMaterial } from "models";
 import { Stone } from "./stone";
 
-export class PowderedStone extends Item {
+export class PowderedStone extends GenericMaterial {
     constructor() {
         super(
             "powdered stone",

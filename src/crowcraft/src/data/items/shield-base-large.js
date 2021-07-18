@@ -4,7 +4,8 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { CraftingMaterial, Rarities, Professions } from "models";
+import { Item } from "models";
 import { BendingFormLargeShield } from "./bending-form-large-shield";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 
