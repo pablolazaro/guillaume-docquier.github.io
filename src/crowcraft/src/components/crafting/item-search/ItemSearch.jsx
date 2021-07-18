@@ -5,7 +5,7 @@ import { TextInput, Item } from "components";
 import { Sorting } from "utils";
 import { memo, useState, useEffect, useCallback } from "react";
 
-const MAX_ITEMS_COUNT = 30;
+const MAX_ITEMS_COUNT = 3000;
 
 export const ItemSearch = memo(({ onItemSelected }) => {
     const [allItems] = useState(
