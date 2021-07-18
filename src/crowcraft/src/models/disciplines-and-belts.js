@@ -34,7 +34,10 @@ export const getMaterialsAfterDiscsAndBeltsEffects = (craftingMaterial, crafterC
         const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
         const newMatsCount = getMatsCount(newCraftingMaterials);
         if (newCraftingMaterials && newMatsCount < bestMatsCount) {
-            bestNewCraftingMaterials = newCraftingMaterials;
+            for(let i = 0; i < bestNewCraftingMaterials.length; i++) {
+				bestNewCraftingMaterials[i].quantity = newCraftingMaterials[i].quantity;
+			}
+
             bestMatsCount = newMatsCount
         }
     }
