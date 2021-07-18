@@ -5,9 +5,9 @@ import { getAsset } from "data";
 import { String } from "utils";
 
 const professionsStatus = {
-    [Professions.Alchemist]: false,
+    [Professions.Alchemist]: true,
     [Professions.Armorsmith]: true,
-    [Professions.Jewelcrafter]: false,
+    [Professions.Jewelcrafter]: true,
     [Professions.Leatherworker]: true,
     [Professions.Necromancer]: false,
     [Professions.Runemaker]: false,
