@@ -4,21 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { CraftingMaterial, Rarities, Professions } from "models";
-import { GenericMaterial } from "models";
+import { GenericMaterial, CraftingMaterial, Rarities, Professions } from "models";
 import { Stone } from "./stone";
 
 export class PowderedStone extends GenericMaterial {
-    constructor() {
-        super(
-            "powdered stone",
-            [Professions.Alchemist],
-            [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            [
-                new CraftingMaterial(1, new Stone()),
-            ],
-            1,
-            "grind resource"
-        );
+    constructor(
+        name = "powdered stone",
+        professions = [Professions.Alchemist],
+        rarities = [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
+        craftingMaterials = [
+            new CraftingMaterial(1, new Stone()),
+        ],
+        craftingQuantity = 1,
+        craftingName = "grind resource"
+    ) {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity, craftingName);
     }
 }

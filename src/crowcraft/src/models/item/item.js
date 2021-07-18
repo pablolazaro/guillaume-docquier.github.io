@@ -14,7 +14,6 @@ export class Item {
         this._id = String.decapitalize(this.constructor.name);
         this.craftingRank = this.getCraftingRank();
         this.rarity = this.rarities[0];
-        this.isCraftable = true;
     }
 
     get id() {
@@ -31,6 +30,10 @@ export class Item {
 
     get craftingMaterials() {
         return this._craftingMaterials;
+    }
+
+    get isCraftable() {
+        return this.craftingMaterials.length > 0;
     }
 
     adjustCraftingRanks() {
@@ -76,11 +79,16 @@ export class Item {
     }
 
     getCraftingRank() {
+        if (this.craftingMaterials.length === 0) {
+            return 0;
+        }
+
         return Math.max(...this.craftingMaterials.map(mat => mat.item.craftingRank)) + 1;
     }
 
     // This is wierd, but we must pass in 'getMaterialsAfterDiscsAndBeltsEffects' because we can't import it here or else we get a circular dependency
     getCraftingRundown(getMaterialsAfterDiscsAndBeltsEffects) {
+        debugger;
         this.adjustCraftingRanks();
         const initialCraftingMaterial = new CraftingMaterial(this.craftingQuantity, this);
         initialCraftingMaterial.item._craftingMaterials = getMaterialsAfterDiscsAndBeltsEffects(initialCraftingMaterial);

@@ -4,21 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { CraftingMaterial, Rarities, Professions } from "models";
-import { GenericMaterial } from "models";
+import { GenericMaterial, CraftingMaterial, Rarities, Professions } from "models";
 import { RoughGem } from "./rough-gem";
 
 export class PowderedGem extends GenericMaterial {
-    constructor() {
-        super(
-            "powdered gem",
-            [Professions.Alchemist],
-            [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            [
-                new CraftingMaterial(1, new RoughGem()),
-            ],
-            1,
-            "grind resource"
-        );
+    constructor(
+        name = "powdered gem",
+        professions = [Professions.Alchemist],
+        rarities = [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
+        craftingMaterials = [
+            new CraftingMaterial(1, new RoughGem()),
+        ],
+        craftingQuantity = 1,
+        craftingName = "grind resource"
+    ) {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity, craftingName);
     }
 }

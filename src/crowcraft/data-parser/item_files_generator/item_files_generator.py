@@ -67,8 +67,15 @@ def extract_item_data(item):
 
 
 def generate_js_code(item_data):
-    (file_name, _, _, _, _, _, _, is_customizable, _, _) = item_data
-    js_code = generate_customizable_item(item_data) if is_customizable.lower() == "yes" else generate_item(item_data)
+    (file_name, _, _, _, _, _, _, is_customizable, _, item_type_name) = item_data
+    item_type = make_class_name(item_type_name)
+    js_code = ""
+    if is_customizable.lower() == "yes":
+        js_code = generate_customizable_item(item_data)
+    elif item_type in model_item_types and item_type != default_item_type:
+        js_code = generate_generic_material_item(item_data)
+    else:
+        js_code = generate_item(item_data)
 
     return file_name, js_code
 
@@ -119,6 +126,50 @@ export class {class_name} extends {item_type} {
         .replace("{crafting_name}", crafting_name)\
         .replace("{item_type}", item_type)\
         .replace("{item_type_import_source}", item_type_import_source)
+
+
+def generate_generic_material_item(item_data):
+    js_code = auto_generation_header + """import { {generic_item_type}, CraftingMaterial, Rarities{professions_imports} } from "models";
+{imports}
+
+export class {class_name} extends {generic_item_type} {
+    constructor(
+        name = "{item_name}",
+        professions = [{professions}],
+        rarities = [{rarities}],
+        craftingMaterials = [
+            {crafting_materials}
+        ],
+        craftingQuantity = {quantity_per_craft},
+        craftingName = "{crafting_name}"
+    ) {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity, craftingName);
+    }
+}
+"""
+
+    (file_name, class_name, item_name, professions, item_rarities, crafting_materials, quantity_per_craft, _, crafting_name, item_type_name) = item_data
+
+    professions_imports = [f", {profession_import}" for profession_import in set([get_profession_prefix(profession) for profession in set(professions)])]
+    crafting_materials_set = set([crafting_material_name for (_, crafting_material_name) in crafting_materials])
+    imports = make_imports(crafting_materials_set, current_item_name=item_name)
+
+    try:
+        js_crafting_materials = [f"new CraftingMaterial({quantity}, new {make_class_name(crafting_material_name)}())," for (quantity, crafting_material_name) in crafting_materials]
+    except:
+        js_crafting_materials = []
+        print(ConsoleColors.FAIL, f"Cannot create crafting materials properly from crafting_materials {{{crafting_materials}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
+
+    return js_code.replace("{professions_imports}", "".join(sorted(professions_imports)))\
+        .replace("{imports}", "\n".join(imports))\
+        .replace("{class_name}", class_name)\
+        .replace("{item_name}", item_name)\
+        .replace("{professions}", ", ".join([make_profession(profession) for profession in professions]))\
+        .replace("{rarities}", ", ".join([f"Rarities.{rarity}" for rarity in item_rarities]))\
+        .replace("{crafting_materials}", "\n\t\t\t".join(js_crafting_materials))\
+        .replace("{quantity_per_craft}", quantity_per_craft)\
+        .replace("{crafting_name}", crafting_name)\
+        .replace("{generic_item_type}", make_class_name(item_type_name))
 
 
 def generate_customizable_item(item_data):

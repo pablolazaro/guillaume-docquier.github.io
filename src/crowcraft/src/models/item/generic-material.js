@@ -1,8 +1,8 @@
-import { RawMaterial } from "./raw-material";
+import { Item } from "./item";
 
-export class GenericMaterial extends RawMaterial {
-    constructor(name, professions, rarities, craftingMaterials, craftingQuantity) {
-        super(name, professions, rarities, craftingMaterials, craftingQuantity, "");
+export class GenericMaterial extends Item {
+    constructor(name, professions, rarities, craftingMaterials, craftingQuantity, craftingName = "") {
+        super(name, professions, rarities, craftingMaterials, craftingQuantity, craftingName);
 
         this.isGeneric = true;
     }
