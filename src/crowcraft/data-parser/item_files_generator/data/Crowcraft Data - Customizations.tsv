@@ -143,3 +143,126 @@ Yes	Yes	Hardened Leather Square	Split Grain	Soft Hide, Durable Hide, Durable Hid
 Yes	Yes	Hardened Leather Square	Nappa	Soft Hide, Flexible Hide, Flexible Hide	Piercing Damage Bonus	
 Yes	Yes	Hardened Leather Square	Bicast	Strong Hide, Flexible Hide, Flexible Hide	Critical Strike Damage	
 Yes	Yes	Hardened Leather Square	Suede	Strong Hide, Soft Hide, Soft Hide	Critical Healing Amount	
+						
+Yes	Yes	Advanced Toxin	Potent Poison Toxin	Mandrake	Poison Damage Bonus	
+Yes	Yes	Advanced Toxin	Advanced Poison Toxin	Nightshade	Poison Damage Bonus	
+Yes	Yes	Advanced Toxin	PoisonToxin	Bloodworm	Poison Damage Bonus	
+						
+Yes	Yes	Necklace Bail	Copper	Copper	Strength	
+Yes	Yes	Necklace Bail	Iron	Iron	Constitution	
+Yes	Yes	Necklace Bail	Tin	Tin	Intellect	
+Yes	Yes	Necklace Bail	Silver	Silver	Dexterity	
+Yes	Yes	Necklace Bail	Aurelium	Aurelium	Spirit	
+						
+Yes	Yes	Philosopher's Solution	Dexterity	Powdered Slate, Ground Halite	Dexterity	Dexterity Cap
+Yes	Yes	Philosopher's Solution	Intellect	Powdered Marble, Ground Dolomite	Intellect	Intellect Cap
+Yes	Yes	Philosopher's Solution	Spirit	Powdered Travertine, Ground Sulphur	Spirit	Spirit Cap
+Yes	Yes	Philosopher's Solution	Strength	Powdered Granite, Ground Cinnabar	Strength	Strength Cap
+Yes	Yes	Philosopher's Solution	Constitution	Powdered Limestone, Ground Nitre	Constitution	Constitution Cap
+						
+Yes	Yes	Ring Setting	Copper	Copper	Strength	
+Yes	Yes	Ring Setting	Iron	Iron	Constitution	
+Yes	Yes	Ring Setting	Tin	Tin	Intellect	
+Yes	Yes	Ring Setting	Silver	Silver	Dexterity	
+Yes	Yes	Ring Setting	Aurelium	Aurelium	Spirit	
+						
+Yes	Yes	Ground Gem	Baguette Topaz Water	Baguette Cut Topaz, Water Flask	Runemaking Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Emerald Water	Baguette Cut Emerald, Water Flask	Jewelcrafting Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Ruby Water	Baguette Cut Ruby, Water Flask	Leatherworking Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Sapphire Water	Baguette Cut Sapphire, Water Flask	Alchemy Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Topaz Blood	Baguette Cut Topaz, Animal Blood	Runemaking Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Emerald Blood	Baguette Cut Emerald, Animal Blood	Jewelcrafting Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Ruby Blood	Baguette Cut Ruby, Animal Blood	Leatherworking Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Baguette Sapphire Blood	Baguette Cut Sapphire, Animal Blood	Alchemy Experimentation	Experimentation Difficulty Reduction
+						
+Yes	Yes	Ground Gem	Marquise Topaz Water	Marquise Cut Topaz, Water Flask	Mining	Healing Bonus
+Yes	Yes	Ground Gem	Marquise Emerald Water	Marquise Cut Emerald, Water Flask	Quarrying	Healing Bonus
+Yes	Yes	Ground Gem	Marquise Ruby Water	Marquise Cut Ruby, Water Flask	Skinning	Healing Bonus
+Yes	Yes	Ground Gem	Marquise Sapphire Water	Marquise Cut Sapphire, Water Flask	Logging	Healing Bonus
+Yes	Yes	Ground Gem	Marquise Diamond Water	Marquise Cut Diamond, Animal Blood	Digging	Healing Bonus
+Yes	Yes	Ground Gem	Marquise Topaz Blood	Marquise Cut Topaz, Animal Blood	Mining	Damage Bonus
+Yes	Yes	Ground Gem	Marquise Emerald Blood	Marquise Cut Emerald, Animal Blood	Quarrying	Damage Bonus
+Yes	Yes	Ground Gem	Marquise Ruby Blood	Marquise Cut Ruby, Animal Blood	Skinning	Damage Bonus
+Yes	Yes	Ground Gem	Marquise Sapphire Blood	Marquise Cut Sapphire, Animal Blood	Logging	Damage Bonus
+Yes	Yes	Ground Gem	Marquise Diamond Blood	Marquise Cut Diamond, Animal Blood	Digging	Damage Bonus
+						
+Yes	Yes	Ground Gem	Oval Topaz Water	Oval Cut Topaz, Water Flask	Critical Strike Chance	Healing Bonus
+Yes	Yes	Ground Gem	Oval Emerald Water	Oval Cut Emerald, Water Flask	Power Damage Bonus: Ranged	Healing Bonus
+Yes	Yes	Ground Gem	Oval Ruby Water	Oval Cut Ruby, Water Flask	Critical Healing Chance	Healing Bonus
+Yes	Yes	Ground Gem	Oval Sapphire Water	Oval Cut Sapphire, Water Flask	Power Damage Bonus: Melee	Healing Bonus
+Yes	Yes	Ground Gem	Oval Diamond Water	Oval Cut Diamond, Animal Blood	Stealth	Healing Bonus
+Yes	Yes	Ground Gem	Oval Topaz Blood	Oval Cut Topaz, Animal Blood	Critical Strike Chance	Damage Bonus
+Yes	Yes	Ground Gem	Oval Emerald Blood	Oval Cut Emerald, Animal Blood	Power Damage Bonus: Ranged	Damage Bonus
+Yes	Yes	Ground Gem	Oval Ruby Blood	Oval Cut Ruby, Animal Blood	Critical Healing Chance	Damage Bonus
+Yes	Yes	Ground Gem	Oval Sapphire Blood	Oval Cut Sapphire, Animal Blood	Power Damage Bonus: Melee	Damage Bonus
+Yes	Yes	Ground Gem	Oval Diamond Blood	Oval Cut Diamond, Animal Blood	Stealth	Damage Bonus
+						
+Yes	Yes	Ground Gem	Round Topaz Water	Round Cut Topaz, Water Flask	Exploit Weakness: Ore	Healing Bonus
+Yes	Yes	Ground Gem	Round Emerald Water	Round Cut Emerald, Water Flask	Exploit Weakness: Stone	Healing Bonus
+Yes	Yes	Ground Gem	Round Ruby Water	Round Cut Ruby, Water Flask	Exploit Weakness: Animal	Healing Bonus
+Yes	Yes	Ground Gem	Round Sapphire Water	Round Cut Sapphire, Water Flask	Exploit Weakness: Wood	Healing Bonus
+Yes	Yes	Ground Gem	Round Diamond Water	Round Cut Diamond, Animal Blood	Exploit Weakness: Grave	Healing Bonus
+Yes	Yes	Ground Gem	Round Topaz Blood	Round Cut Topaz, Animal Blood	Exploit Weakness: Ore	Damage Bonus
+Yes	Yes	Ground Gem	Round Emerald Blood	Round Cut Emerald, Animal Blood	Exploit Weakness: Stone	Damage Bonus
+Yes	Yes	Ground Gem	Round Ruby Blood	Round Cut Ruby, Animal Blood	Exploit Weakness: Animal	Damage Bonus
+Yes	Yes	Ground Gem	Round Sapphire Blood	Round Cut Sapphire, Animal Blood	Exploit Weakness: Wood	Damage Bonus
+Yes	Yes	Ground Gem	Round Diamond Blood	Round Cut Diamond, Animal Blood	Exploit Weakness: Grave	Damage Bonus
+						
+Yes	Yes	Ground Gem	Square Topaz Water	Square Cut Topaz, Water Flask	Blacksmithing Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Square Emerald Water	Square Cut Emerald, Water Flask	Stonemasonry Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Square Ruby Water	Square Cut Ruby, Water Flask	Necromancy Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Square Sapphire Water	Square Cut Sapphire, Water Flask	Woodworking Experimentation	Assembly Difficulty Reduction
+Yes	Yes	Ground Gem	Square Topaz Blood	Square Cut Topaz, Animal Blood	Blacksmithing Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Square Emerald Blood	Square Cut Emerald, Animal Blood	Stonemasonry Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Square Ruby Blood	Square Cut Ruby, Animal Blood	Necromancy Experimentation	Experimentation Difficulty Reduction
+Yes	Yes	Ground Gem	Square Sapphire Blood	Square Cut Sapphire, Animal Blood	Woodworking Experimentation	Experimentation Difficulty Reduction
+						
+Yes	Yes	Ground Gem	Triangle Topaz Water	Triangle Cut Topaz, Water Flask	Personal Healing Modifier	Healing Bonus
+Yes	Yes	Ground Gem	Triangle Emerald Water	Triangle Cut Emerald, Water Flask	Elemental Resistance	Healing Bonus
+Yes	Yes	Ground Gem	Triangle Ruby Water	Triangle Cut Ruby, Water Flask	Ranged Distance Bonus	Healing Bonus
+Yes	Yes	Ground Gem	Triangle Sapphire Water	Triangle Cut Sapphire, Water Flask	Physical Resistance	Healing Bonus
+Yes	Yes	Ground Gem	Triangle Diamond Water	Triangle Cut Diamond, Animal Blood	Perception	Healing Bonus
+Yes	Yes	Ground Gem	Triangle Topaz Blood	Triangle Cut Topaz, Animal Blood	Personal Healing Modifier	Damage Bonus
+Yes	Yes	Ground Gem	Triangle Emerald Blood	Triangle Cut Emerald, Animal Blood	Elemental Resistance	Damage Bonus
+Yes	Yes	Ground Gem	Triangle Ruby Blood	Triangle Cut Ruby, Animal Blood	Ranged Distance Bonus	Damage Bonus
+Yes	Yes	Ground Gem	Triangle Sapphire Blood	Triangle Cut Sapphire, Animal Blood	Physical Resistance	Damage Bonus
+Yes	Yes	Ground Gem	Triangle Diamond Blood	Triangle Cut Diamond, Animal Blood	Perception	Damage Bonus
+						
+Yes	Yes	Ground Exacting Gem	Briolette Topaz Water	Briolette Exacting Cut Topaz, Water Flask	In combat Stamina Regeneration	Support Power
+Yes	Yes	Ground Exacting Gem	Briolette Emerald Water	Briolette Exacting Cut Emerald, Water Flask	Out Of Combat Health Regeneration	Support Power
+Yes	Yes	Ground Exacting Gem	Briolette Ruby Water	Briolette Exacting Cut Ruby, Water Flask	Basic Attack Damage	Support Power
+Yes	Yes	Ground Exacting Gem	Briolette Sapphire Water	Briolette Exacting Cut Sapphire, Water Flask	Critical Strike Damage	Support Power
+Yes	Yes	Ground Exacting Gem	Briolette Diamond Water	Briolette Exacting Cut Diamond, Water Flask	Critical Healing Amount	Support Power
+Yes	Yes	Ground Exacting Gem	Briolette Topaz Blood	Briolette Exacting Cut Topaz, Animal Blood	In combat Stamina Regeneration	Attack Power
+Yes	Yes	Ground Exacting Gem	Briolette Emerald Blood	Briolette Exacting Cut Emerald, Animal Blood	Out Of Combat Health Regeneration	Attack Power
+Yes	Yes	Ground Exacting Gem	Briolette Ruby Blood	Briolette Exacting Cut Ruby, Animal Blood	Basic Attack Damage	Attack Power
+Yes	Yes	Ground Exacting Gem	Briolette Sapphire Blood	Briolette Exacting Cut Sapphire, Animal Blood	Critical Strike Damage	Attack Power
+Yes	Yes	Ground Exacting Gem	Briolette Diamond Blood	Briolette Exacting Cut Diamond, Animal Blood	Critical Healing Amount	Attack Power
+						
+Yes	Yes	Ground Exacting Gem	Heart Topaz Water	Heart Exacting Cut Topaz, Water Flask	Blacksmithing Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Emerald Water	Heart Exacting Cut Emerald, Water Flask	Runemaking Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Ruby Water	Heart Exacting Cut Ruby, Water Flask	Necromancy Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Sapphire Water	Heart Exacting Cut Sapphire, Water Flask	Woodworking Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Diamond Water	Heart Exacting Cut Diamond, Water Flask	Leatherworking Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Blue Topaz Water	Heart Exacting Cut Blue Topaz, Water Flask	Stonemasonry Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Black Sapphire Water	Heart Exacting Cut Black Sapphire, Water Flask	Alchemy Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Fire Diamond Water	Heart Exacting Cut Fire Diamond, Water Flask	Jewelcrafting Experimentation Points	Assembly Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Topaz Blood	Heart Exacting Cut Topaz, Animal Blood	Blacksmithing Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Emerald Blood	Heart Exacting Cut Emerald, Animal Blood	Runemaking Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Ruby Blood	Heart Exacting Cut Ruby, Animal Blood	Necromancy Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Sapphire Blood	Heart Exacting Cut Sapphire, Animal Blood	Woodworking Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Diamond Blood	Heart Exacting Cut Diamond, Animal Blood	Leatherworking Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Blue Topaz Blood	Heart Exacting Cut Blue Topaz, Animal Blood	Stonemasonry Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Black Sapphire Blood	Heart Exacting Cut Black Sapphire, Animal Blood	Alchemy Experimentation Points	Experimentation Difficulty Reduction
+Yes	Yes	Ground Exacting Gem	Heart Fire Diamond Blood	Heart Exacting Cut Fire Diamond, Animal Blood	Jewelcrafting Experimentation Points	Experimentation Difficulty Reduction
+						
+Yes	Yes	Ground Exacting Gem	Trillion Topaz Water	Trillion Exacting Cut Topaz, Water Flask	Out Of Combat Stamina Regeneration	Support Power
+Yes	Yes	Ground Exacting Gem	Trillion Emerald Water	Trillion Exacting Cut Emerald, Water Flask	Harvesting Efficiency	Support Power
+Yes	Yes	Ground Exacting Gem	Trillion Ruby Water	Trillion Exacting Cut Ruby, Water Flask	Harvesting Damage: All	Support Power
+Yes	Yes	Ground Exacting Gem	Trillion Sapphire Water	Trillion Exacting Cut Sapphire, Water Flask	Harvesting: All	Support Power
+Yes	Yes	Ground Exacting Gem	Trillion Diamond Water	Trillion Exacting Cut Diamond, Water Flask	Spot Weakness: All	Support Power
+Yes	Yes	Ground Exacting Gem	Trillion Topaz Blood	Trillion Exacting Cut Topaz, Animal Blood	Out Of Combat Stamina Regeneration	Attack Power
+Yes	Yes	Ground Exacting Gem	Trillion Emerald Blood	Trillion Exacting Cut Emerald, Animal Blood	Harvesting Efficiency	Attack Power
+Yes	Yes	Ground Exacting Gem	Trillion Ruby Blood	Trillion Exacting Cut Ruby, Animal Blood	Harvesting Damage: All	Attack Power
+Yes	Yes	Ground Exacting Gem	Trillion Sapphire Blood	Trillion Exacting Cut Sapphire, Animal Blood	Harvesting: All	Attack Power
+Yes	Yes	Ground Exacting Gem	Trillion Diamond Blood	Trillion Exacting Cut Diamond, Animal Blood	Spot Weakness: All	Attack Power

@@ -1,0 +1,103 @@
+IS IMPLEMENTED	IS CODE UP TO DATE	STAT NAME	WHITE VALUE	GREEN VALUE	BLUE VALUE	PURPLE VALUE	ORANGE VALUE
+Yes	Yes	Attack Power	0.86	0.98	1.06	1.145	1.23
+Yes	Yes	Physical Resistance	6.04	6.87	7.43	8.01	8.6
+Yes	Yes	Elemental Resistance	6.04	6.87	7.43	8.01	8.6
+Yes	Yes	Organic Resistance	6.04	6.87	7.43	8.01	8.6
+Yes	Yes	Support Power	1.72	1.96	2.12	2.29	2.46
+Yes	Yes	Critical Strike Chance	0.03	0.04	0.05	0.06	0.07
+Yes	Yes	Critical Strike Damage	0.17	0.19	0.21	0.23	0.25
+Yes	Yes	Fire Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Ice Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Electricity Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Nature Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Slashing Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Crushing Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Piercing Armor Penetration	0.08	0.09	0.1	0.11	0.12
+Yes	Yes	Critical Healing Chance	0.03	0.04	0.05	0.06	0.07
+Yes	Yes	Critical Healing Amount	0.17	0.19	0.21	0.23	0.25
+Yes	Yes	Stamina	0.69	0.79	0.85	0.91	0.98
+Yes	Yes	Out Of Combat Health Regeneration	0.59	0.67	0.71	0.76	0.8
+Yes	Yes	Stealth	0.3	0.34	0.37	0.4	0.43
+Yes	Yes	Bleed Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Fire Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Ice Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Electricity Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Nature Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Poison Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Disease Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Slashing Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Crushing Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Piercing Resistance	8.31	9.33	8.85	10.58	11.24
+Yes	Yes	Bleed Damage Bonus	0.15	0.17	0.18	0.19	0.2
+Yes	Yes	Fire Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Ice Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Electricity Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Nature Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Poison Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Disease Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Slashing Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Crushing Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Piercing Damage Bonus	0.36	0.4	0.43	0.45	0.48
+Yes	Yes	Perception	0	0	0	0.34	0.37
+Yes	Yes	Lifesteal	0	0	0	0.46	0.49
+Yes	Yes	Fire Damage Type	1	1	1	1	1
+Yes	Yes	Ice Damage Type	1	1	1	1	1
+Yes	Yes	Slashing Damage Type	1	1	1	1	1
+Yes	Yes	Crushing Damage Type	1	1	1	1	1
+Yes	Yes	Piercing Damage Type	1	1	1	1	1
+No	No	Beneficial Harvest Chance	0.0625	0.0688	0.0719	0.075	0.0781
+No	No	Harvest Critical Chance	0.075	0.0825	0.0863	0.09	0.0938
+No	No	Plethora of Dust	0.075	0.0825	0.0863	0.09	0.0938
+No	No	Bonus Harvest Chance	0.15	0.165	0.1725	0.18	0.1875
+No	No	Strength	0	0	0	0	0
+No	No	Constitution	0	0	0	0	0
+No	No	Intellect	0	0	0	0	0
+No	No	Dexterity	0	0	0	0	0
+No	No	Spirit	0	0	0	0	0
+No	No	In combat Stamina Regeneration	0	0	0	0	0
+No	No	Basic Attack Damage	0	0	0	0	0
+No	No	Assembly Difficulty Reduction	0	0	0	0	0
+No	No	Experimentation Difficulty Reduction	0	0	0	0	0
+No	No	Runemaking Experimentation	0	0	0	0	0
+No	No	Jewelcrafting Experimentation	0	0	0	0	0
+No	No	Leatherworking Experimentation	0	0	0	0	0
+No	No	Alchemy Experimentation	0	0	0	0	0
+No	No	Healing Bonus	0	0	0	0	0
+No	No	Damage Bonus	0	0	0	0	0
+No	No	Mining	0	0	0	0	0
+No	No	Quarrying	0	0	0	0	0
+No	No	Skinning	0	0	0	0	0
+No	No	Logging	0	0	0	0	0
+No	No	Digging	0	0	0	0	0
+No	No	Ice Formation Chance	0	0	0	0	0
+No	No	Dexterity Cap	0	0	0	0	0
+No	No	Intellect Cap	0	0	0	0	0
+No	No	Spirit Cap	0	0	0	0	0
+No	No	Strength Cap	0	0	0	0	0
+No	No	Constitution Cap	0	0	0	0	0
+No	No	Exploit Weakness: Ore	0	0	0	0	0
+No	No	Exploit Weakness: Stone	0	0	0	0	0
+No	No	Exploit Weakness: Animal	0	0	0	0	0
+No	No	Exploit Weakness: Wood	0	0	0	0	0
+No	No	Exploit Weakness: Grave	0	0	0	0	0
+No	No	Power Damage Bonus: Ranged	0	0	0	0	0
+No	No	Power Damage Bonus: Melee	0	0	0	0	0
+No	No	Blacksmithing Experimentation	0	0	0	0	0
+No	No	Stonemasonry Experimentation	0	0	0	0	0
+No	No	Necromancy Experimentation	0	0	0	0	0
+No	No	Woodworking Experimentation	0	0	0	0	0
+No	No	Blacksmithing Experimentation Points	0	0	0	0	0
+No	No	Runemaking Experimentation Points	0	0	0	0	0
+No	No	Necromancy Experimentation Points	0	0	0	0	0
+No	No	Woodworking Experimentation Points	0	0	0	0	0
+No	No	Leatherworking Experimentation Points	0	0	0	0	0
+No	No	Stonemasonry Experimentation Points	0	0	0	0	0
+No	No	Alchemy Experimentation Points	0	0	0	0	0
+No	No	Jewelcrafting Experimentation Points	0	0	0	0	0
+No	No	Out Of Combat Stamina Regeneration	0	0	0	0	0
+No	No	Harvesting Efficiency	0	0	0	0	0
+No	No	Harvesting Damage: All	0	0	0	0	0
+No	No	Harvesting: All	0	0	0	0	0
+No	No	Spot Weakness: All	0	0	0	0	0
+No	No	Personal Healing Modifier	0	0	0	0	0
+No	No	Ranged Distance Bonus	0	0	0	0	0

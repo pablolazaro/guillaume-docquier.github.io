@@ -6,9 +6,9 @@
 
 import { GenericMaterial, Rarities } from "models";
 
-export class Gemstone extends GenericMaterial {
+export class RoughGem extends GenericMaterial {
     constructor(
-        name = "gemstone",
+        name = "rough gem",
         professions = [],
         rarities = [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
         craftingMaterials = [],

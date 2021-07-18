@@ -4,17 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Rarities } from "models";
-import { Gemstone } from "./gemstone";
+import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { Slate } from "./slate";
 
-export class Topaz extends Gemstone {
+export class PowderedSlate extends Item {
     constructor() {
         super(
-            "topaz",
-            [],
+            "powdered slate",
+            [Professions.Alchemist],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            [],
-            1
+            [
+                new CraftingMaterial(1, new Slate()),
+            ],
+            1,
+            "grind resource"
         );
     }
 }

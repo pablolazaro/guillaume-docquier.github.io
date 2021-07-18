@@ -188,7 +188,7 @@ Yes	Yes	Metal Section	3x Ore, 3x Ore, 3x Ore, 4x Coal	Weaponsmith	Orange	Weapons
 Yes	Yes	Metal Section	3x Ore, 3x Ore, 3x Ore, 4x Coal	Weaponsmith	Orange	Weaponsmith	Purple
 Yes	Yes	Metal Section	3x Ore, 3x Ore, 3x Ore, 4x Coal	Weaponsmith	Orange	Weaponsmith	Orange
 							
-Yes	Yes	Stitched Leather	3x Hide, 3x Hide, 3x Hide, 6x Lacing Sinew	Leatherworker	White	Leatherworker	None
+Yes	Yes	Stitched Leather	3x Hide, 3x Hide, 3x Hide, 6x Lacing Sinew	Leatherworker	None	Leatherworker	None
 Yes	Yes	Stitched Leather	2x Hide, 2x Hide, 2x Hide, 4x Lacing Sinew	Leatherworker	White	Leatherworker	None
 Yes	Yes	Stitched Leather	2x Hide, 2x Hide, 2x Hide, 4x Lacing Sinew	Leatherworker	White	Leatherworker	Green
 Yes	Yes	Stitched Leather	1x Hide, 1x Hide, 1x Hide, 2x Lacing Sinew	Leatherworker	White	Leatherworker	Blue
@@ -295,3 +295,273 @@ Yes	Yes	Composite Wood Plank	6x Wood, 6x Wood, 6x Wood, 5x Sandpaper	Woodworker	
 Yes	Yes	Composite Wood Plank	3x Wood, 3x Wood, 3x Wood, 4x Sandpaper	Woodworker	Orange	Woodworker	Blue
 Yes	Yes	Composite Wood Plank	3x Wood, 3x Wood, 3x Wood, 4x Sandpaper	Woodworker	Orange	Woodworker	Purple
 Yes	Yes	Composite Wood Plank	3x Wood, 3x Wood, 3x Wood, 4x Sandpaper	Woodworker	Orange	Woodworker	Orange
+							
+Yes	Yes	Ambrosia	1x Empty Flask, 3x Ground Cinnabar, 3x Water Flask, 3x Ground Halite, 3x Apple, 12x Ethereal Dust	Alchemist	None	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	White	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	White	Alchemist	Green
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	White	Alchemist	Blue
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	White	Alchemist	Purple
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	White	Alchemist	Orange
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Green	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Green	Alchemist	Green
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Green	Alchemist	Blue
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Green	Alchemist	Purple
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Green	Alchemist	Orange
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Blue	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Blue	Alchemist	Green
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Blue	Alchemist	Blue
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Blue	Alchemist	Purple
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Blue	Alchemist	Orange
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Purple	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Purple	Alchemist	Green
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Purple	Alchemist	Blue
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Purple	Alchemist	Purple
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Purple	Alchemist	Orange
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Orange	Alchemist	None
+Yes	Yes	Ambrosia	1x Empty Flask, 2x Ground Cinnabar, 2x Water Flask, 2x Ground Halite, 2x Apple, 10x Ethereal Dust	Alchemist	Orange	Alchemist	Green
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Orange	Alchemist	Blue
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Orange	Alchemist	Purple
+Yes	Yes	Ambrosia	1x Empty Flask, 1x Ground Cinnabar, 1x Water Flask, 1x Ground Halite, 1x Apple, 8x Ethereal Dust	Alchemist	Orange	Alchemist	Orange
+							
+Yes	Yes	Empty Flask	4x Powdered Stone, 4x Powdered Stone, 4x Ethereal Dust	Alchemist	None	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	White	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	White	Alchemist	Green
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	White	Alchemist	Blue
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	White	Alchemist	Purple
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	White	Alchemist	Orange
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Green	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Green	Alchemist	Green
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Green	Alchemist	Blue
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Green	Alchemist	Purple
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Green	Alchemist	Orange
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Blue	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Blue	Alchemist	Green
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Blue	Alchemist	Blue
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Blue	Alchemist	Purple
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Blue	Alchemist	Orange
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Purple	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Purple	Alchemist	Green
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Purple	Alchemist	Blue
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Purple	Alchemist	Purple
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Purple	Alchemist	Orange
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Orange	Alchemist	None
+Yes	Yes	Empty Flask	3x Powdered Stone, 3x Powdered Stone, 3x Ethereal Dust	Alchemist	Orange	Alchemist	Green
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Orange	Alchemist	Blue
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Orange	Alchemist	Purple
+Yes	Yes	Empty Flask	2x Powdered Stone, 2x Powdered Stone, 2x Ethereal Dust	Alchemist	Orange	Alchemist	Orange
+							
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	None	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Green
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Blue
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Purple
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Orange
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Green
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Blue
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Purple
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Orange
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Green
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Blue
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Purple
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Orange
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Green
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Blue
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Purple
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Orange
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	None
+Yes	Yes	Necklace Bail	10x Ore, 10x Silver, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Green
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Blue
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Purple
+Yes	Yes	Necklace Bail	5x Ore, 5x Silver, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Orange
+							
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	None	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	White	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	White	Jewelcrafter	Green
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	White	Jewelcrafter	Blue
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	White	Jewelcrafter	Purple
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	White	Jewelcrafter	Orange
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Green	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Green	Jewelcrafter	Green
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Green	Jewelcrafter	Blue
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Green	Jewelcrafter	Purple
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Green	Jewelcrafter	Orange
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Blue	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Blue	Jewelcrafter	Green
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Blue	Jewelcrafter	Blue
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Blue	Jewelcrafter	Purple
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Blue	Jewelcrafter	Orange
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Purple	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Purple	Jewelcrafter	Green
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Purple	Jewelcrafter	Blue
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Purple	Jewelcrafter	Purple
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Purple	Jewelcrafter	Orange
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Orange	Jewelcrafter	None
+Yes	Yes	Necklace Chain	4x Ore, 8x Ore, 8x ore, 1x Necklace Bail	Jewelcrafter	Orange	Jewelcrafter	Green
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Orange	Jewelcrafter	Blue
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Orange	Jewelcrafter	Purple
+Yes	Yes	Necklace Chain	2x Ore, 4x Ore, 4x ore, 1x Necklace Bail	Jewelcrafter	Orange	Jewelcrafter	Orange
+							
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	None	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	White	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	White	Jewelcrafter	Green
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	White	Jewelcrafter	Blue
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	White	Jewelcrafter	Purple
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	White	Jewelcrafter	Orange
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Green	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Green	Jewelcrafter	Green
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Green	Jewelcrafter	Blue
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Green	Jewelcrafter	Purple
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Green	Jewelcrafter	Orange
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Blue	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Blue	Jewelcrafter	Green
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Blue	Jewelcrafter	Blue
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Blue	Jewelcrafter	Purple
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Blue	Jewelcrafter	Orange
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Purple	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Purple	Jewelcrafter	Green
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Purple	Jewelcrafter	Blue
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Purple	Jewelcrafter	Purple
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Purple	Jewelcrafter	Orange
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Orange	Jewelcrafter	None
+Yes	Yes	Ring Band	4x Ore, 8x Ore, 8x ore, 1x Ring Setting	Jewelcrafter	Orange	Jewelcrafter	Green
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Orange	Jewelcrafter	Blue
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Orange	Jewelcrafter	Purple
+Yes	Yes	Ring Band	2x Ore, 4x Ore, 4x ore, 1x Ring Setting	Jewelcrafter	Orange	Jewelcrafter	Orange
+							
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	None	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Green
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Blue
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Purple
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	White	Jewelcrafter	Orange
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Green
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Blue
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Purple
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Green	Jewelcrafter	Orange
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Green
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Blue
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Purple
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Blue	Jewelcrafter	Orange
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Green
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Blue
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Purple
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Purple	Jewelcrafter	Orange
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	None
+Yes	Yes	Ring Setting	10x Ore, 10x Aurelium, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Green
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Blue
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Purple
+Yes	Yes	Ring Setting	5x Ore, 5x Aurelium, 5x Ethereal Dust	Jewelcrafter	Orange	Jewelcrafter	Orange
+							
+Yes	Yes	Diamond Cutting Blade	9x Ore, 3x Cutting Grit	Stonemason	None	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	White	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	White	Stonemason	Green
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	White	Stonemason	Blue
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	White	Stonemason	Purple
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	White	Stonemason	Orange
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Green	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Green	Stonemason	Green
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Green	Stonemason	Blue
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Green	Stonemason	Purple
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Green	Stonemason	Orange
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Blue	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Blue	Stonemason	Green
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Blue	Stonemason	Blue
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Blue	Stonemason	Purple
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Blue	Stonemason	Orange
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Purple	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Purple	Stonemason	Green
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Purple	Stonemason	Blue
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Purple	Stonemason	Purple
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Purple	Stonemason	Orange
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Orange	Stonemason	None
+Yes	Yes	Diamond Cutting Blade	6x Ore, 2x Cutting Grit	Stonemason	Orange	Stonemason	Green
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Orange	Stonemason	Blue
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Orange	Stonemason	Purple
+Yes	Yes	Diamond Cutting Blade	3x Ore, 1x Cutting Grit	Stonemason	Orange	Stonemason	Orange
+							
+Yes	Yes	Chaos Ember Cutting Blade	9x Ore, 3x Cutting Grit, 1x Chaos Ember	Stonemason	None	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	White	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	White	Stonemason	Green
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	White	Stonemason	Blue
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	White	Stonemason	Purple
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	White	Stonemason	Orange
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Green	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Green	Stonemason	Green
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Green	Stonemason	Blue
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Green	Stonemason	Purple
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Green	Stonemason	Orange
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Blue	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Blue	Stonemason	Green
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Blue	Stonemason	Blue
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Blue	Stonemason	Purple
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Blue	Stonemason	Orange
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Purple	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Purple	Stonemason	Green
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Purple	Stonemason	Blue
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Purple	Stonemason	Purple
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Purple	Stonemason	Orange
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Orange	Stonemason	None
+Yes	Yes	Chaos Ember Cutting Blade	6x Ore, 2x Cutting Grit, 1x Chaos Ember	Stonemason	Orange	Stonemason	Green
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Orange	Stonemason	Blue
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Orange	Stonemason	Purple
+Yes	Yes	Chaos Ember Cutting Blade	3x Ore, 1x Cutting Grit, 1x Chaos Ember	Stonemason	Orange	Stonemason	Orange
+							
+Yes	Yes	Grinding Wheel	8x Stone, 8x Stone, 8x Stone	Stonemason	None	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	White	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	White	Stonemason	Green
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	White	Stonemason	Blue
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	White	Stonemason	Purple
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	White	Stonemason	Orange
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Green	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Green	Stonemason	Green
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Green	Stonemason	Blue
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Green	Stonemason	Purple
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Green	Stonemason	Orange
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Blue	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Blue	Stonemason	Green
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Blue	Stonemason	Blue
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Blue	Stonemason	Purple
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Blue	Stonemason	Orange
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Purple	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Purple	Stonemason	Green
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Purple	Stonemason	Blue
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Purple	Stonemason	Purple
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Purple	Stonemason	Orange
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Orange	Stonemason	None
+Yes	Yes	Grinding Wheel	4x Stone, 4x Stone, 4x Stone	Stonemason	Orange	Stonemason	Green
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Orange	Stonemason	Blue
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Orange	Stonemason	Purple
+Yes	Yes	Grinding Wheel	2x Stone, 2x Stone, 2x Stone	Stonemason	Orange	Stonemason	Orange
+							
+Yes	Yes	Polishing Paste	16x Powdered Stone, 3x Water Flask	Stonemason	None	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	White	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	White	Stonemason	Green
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	White	Stonemason	Blue
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	White	Stonemason	Purple
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	White	Stonemason	Orange
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Green	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Green	Stonemason	Green
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Green	Stonemason	Blue
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Green	Stonemason	Purple
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Green	Stonemason	Orange
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Blue	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Blue	Stonemason	Green
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Blue	Stonemason	Blue
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Blue	Stonemason	Purple
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Blue	Stonemason	Orange
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Purple	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Purple	Stonemason	Green
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Purple	Stonemason	Blue
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Purple	Stonemason	Purple
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Purple	Stonemason	Orange
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Orange	Stonemason	None
+Yes	Yes	Polishing Paste	8x Powdered Stone, 2x Water Flask	Stonemason	Orange	Stonemason	Green
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Orange	Stonemason	Blue
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Orange	Stonemason	Purple
+Yes	Yes	Polishing Paste	4x Powdered Stone, 1x Water Flask	Stonemason	Orange	Stonemason	Orange

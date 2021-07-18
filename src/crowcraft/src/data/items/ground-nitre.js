@@ -4,17 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Rarities } from "models";
-import { Gemstone } from "./gemstone";
+import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { Nitre } from "./nitre";
 
-export class Diamond extends Gemstone {
+export class GroundNitre extends Item {
     constructor() {
         super(
-            "diamond",
-            [],
+            "ground nitre",
+            [Professions.Alchemist],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            [],
-            1
+            [
+                new CraftingMaterial(1, new Nitre()),
+            ],
+            1,
+            "grind resource"
         );
     }
 }

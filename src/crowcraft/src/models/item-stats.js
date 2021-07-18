@@ -708,6 +708,846 @@ class PiercingDamageType extends ItemStat {
     }
 }
 
+class BeneficialHarvestChance extends ItemStat {
+    constructor() {
+        super(
+            "beneficial harvest chance",
+            {
+                [Rarities.Common.name]: 0.0625,
+                [Rarities.Uncommon.name]: 0.0688,
+                [Rarities.Rare.name]: 0.0719,
+                [Rarities.Epic.name]: 0.075,
+                [Rarities.Legendary.name]: 0.0781,
+            }
+        );
+    }
+}
+
+class HarvestCriticalChance extends ItemStat {
+    constructor() {
+        super(
+            "harvest critical chance",
+            {
+                [Rarities.Common.name]: 0.075,
+                [Rarities.Uncommon.name]: 0.0825,
+                [Rarities.Rare.name]: 0.0863,
+                [Rarities.Epic.name]: 0.09,
+                [Rarities.Legendary.name]: 0.0938,
+            }
+        );
+    }
+}
+
+class PlethoraOfDust extends ItemStat {
+    constructor() {
+        super(
+            "plethora of dust",
+            {
+                [Rarities.Common.name]: 0.075,
+                [Rarities.Uncommon.name]: 0.0825,
+                [Rarities.Rare.name]: 0.0863,
+                [Rarities.Epic.name]: 0.09,
+                [Rarities.Legendary.name]: 0.0938,
+            }
+        );
+    }
+}
+
+class BonusHarvestChance extends ItemStat {
+    constructor() {
+        super(
+            "bonus harvest chance",
+            {
+                [Rarities.Common.name]: 0.15,
+                [Rarities.Uncommon.name]: 0.165,
+                [Rarities.Rare.name]: 0.1725,
+                [Rarities.Epic.name]: 0.18,
+                [Rarities.Legendary.name]: 0.1875,
+            }
+        );
+    }
+}
+
+class Strength extends ItemStat {
+    constructor() {
+        super(
+            "strength",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Constitution extends ItemStat {
+    constructor() {
+        super(
+            "constitution",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Intellect extends ItemStat {
+    constructor() {
+        super(
+            "intellect",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Dexterity extends ItemStat {
+    constructor() {
+        super(
+            "dexterity",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Spirit extends ItemStat {
+    constructor() {
+        super(
+            "spirit",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class InCombatStaminaRegeneration extends ItemStat {
+    constructor() {
+        super(
+            "in combat stamina regeneration",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class BasicAttackDamage extends ItemStat {
+    constructor() {
+        super(
+            "basic attack damage",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class AssemblyDifficultyReduction extends ItemStat {
+    constructor() {
+        super(
+            "assembly difficulty reduction",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExperimentationDifficultyReduction extends ItemStat {
+    constructor() {
+        super(
+            "experimentation difficulty reduction",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class RunemakingExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "runemaking experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class JewelcraftingExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "jewelcrafting experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class LeatherworkingExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "leatherworking experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class AlchemyExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "alchemy experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class HealingBonus extends ItemStat {
+    constructor() {
+        super(
+            "healing bonus",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class DamageBonus extends ItemStat {
+    constructor() {
+        super(
+            "damage bonus",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Mining extends ItemStat {
+    constructor() {
+        super(
+            "mining",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Quarrying extends ItemStat {
+    constructor() {
+        super(
+            "quarrying",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Skinning extends ItemStat {
+    constructor() {
+        super(
+            "skinning",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Logging extends ItemStat {
+    constructor() {
+        super(
+            "logging",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class Digging extends ItemStat {
+    constructor() {
+        super(
+            "digging",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class IceFormationChance extends ItemStat {
+    constructor() {
+        super(
+            "ice formation chance",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class DexterityCap extends ItemStat {
+    constructor() {
+        super(
+            "dexterity cap",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class IntellectCap extends ItemStat {
+    constructor() {
+        super(
+            "intellect cap",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class SpiritCap extends ItemStat {
+    constructor() {
+        super(
+            "spirit cap",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class StrengthCap extends ItemStat {
+    constructor() {
+        super(
+            "strength cap",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ConstitutionCap extends ItemStat {
+    constructor() {
+        super(
+            "constitution cap",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExploitWeaknessOre extends ItemStat {
+    constructor() {
+        super(
+            "exploit weakness: ore",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExploitWeaknessStone extends ItemStat {
+    constructor() {
+        super(
+            "exploit weakness: stone",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExploitWeaknessAnimal extends ItemStat {
+    constructor() {
+        super(
+            "exploit weakness: animal",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExploitWeaknessWood extends ItemStat {
+    constructor() {
+        super(
+            "exploit weakness: wood",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class ExploitWeaknessGrave extends ItemStat {
+    constructor() {
+        super(
+            "exploit weakness: grave",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class PowerDamageBonusRanged extends ItemStat {
+    constructor() {
+        super(
+            "power damage bonus: ranged",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class PowerDamageBonusMelee extends ItemStat {
+    constructor() {
+        super(
+            "power damage bonus: melee",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class BlacksmithingExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "blacksmithing experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class StonemasonryExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "stonemasonry experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class NecromancyExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "necromancy experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class WoodworkingExperimentation extends ItemStat {
+    constructor() {
+        super(
+            "woodworking experimentation",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class BlacksmithingExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "blacksmithing experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class RunemakingExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "runemaking experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class NecromancyExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "necromancy experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class WoodworkingExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "woodworking experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class LeatherworkingExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "leatherworking experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class StonemasonryExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "stonemasonry experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class AlchemyExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "alchemy experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class JewelcraftingExperimentationPoints extends ItemStat {
+    constructor() {
+        super(
+            "jewelcrafting experimentation points",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class OutOfCombatStaminaRegeneration extends ItemStat {
+    constructor() {
+        super(
+            "out of combat stamina regeneration",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class HarvestingEfficiency extends ItemStat {
+    constructor() {
+        super(
+            "harvesting efficiency",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class HarvestingDamageAll extends ItemStat {
+    constructor() {
+        super(
+            "harvesting damage: all",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class HarvestingAll extends ItemStat {
+    constructor() {
+        super(
+            "harvesting: all",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class SpotWeaknessAll extends ItemStat {
+    constructor() {
+        super(
+            "spot weakness: all",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class PersonalHealingModifier extends ItemStat {
+    constructor() {
+        super(
+            "personal healing modifier",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
+class RangedDistanceBonus extends ItemStat {
+    constructor() {
+        super(
+            "ranged distance bonus",
+            {
+                [Rarities.Common.name]: 0,
+                [Rarities.Uncommon.name]: 0,
+                [Rarities.Rare.name]: 0,
+                [Rarities.Epic.name]: 0,
+                [Rarities.Legendary.name]: 0,
+            }
+        );
+    }
+}
+
 export const ItemsStats = {
     AttackPower: new AttackPower(),
 	PhysicalResistance: new PhysicalResistance(),
@@ -755,4 +1595,60 @@ export const ItemsStats = {
 	SlashingDamageType: new SlashingDamageType(),
 	CrushingDamageType: new CrushingDamageType(),
 	PiercingDamageType: new PiercingDamageType(),
+	BeneficialHarvestChance: new BeneficialHarvestChance(),
+	HarvestCriticalChance: new HarvestCriticalChance(),
+	PlethoraOfDust: new PlethoraOfDust(),
+	BonusHarvestChance: new BonusHarvestChance(),
+	Strength: new Strength(),
+	Constitution: new Constitution(),
+	Intellect: new Intellect(),
+	Dexterity: new Dexterity(),
+	Spirit: new Spirit(),
+	InCombatStaminaRegeneration: new InCombatStaminaRegeneration(),
+	BasicAttackDamage: new BasicAttackDamage(),
+	AssemblyDifficultyReduction: new AssemblyDifficultyReduction(),
+	ExperimentationDifficultyReduction: new ExperimentationDifficultyReduction(),
+	RunemakingExperimentation: new RunemakingExperimentation(),
+	JewelcraftingExperimentation: new JewelcraftingExperimentation(),
+	LeatherworkingExperimentation: new LeatherworkingExperimentation(),
+	AlchemyExperimentation: new AlchemyExperimentation(),
+	HealingBonus: new HealingBonus(),
+	DamageBonus: new DamageBonus(),
+	Mining: new Mining(),
+	Quarrying: new Quarrying(),
+	Skinning: new Skinning(),
+	Logging: new Logging(),
+	Digging: new Digging(),
+	IceFormationChance: new IceFormationChance(),
+	DexterityCap: new DexterityCap(),
+	IntellectCap: new IntellectCap(),
+	SpiritCap: new SpiritCap(),
+	StrengthCap: new StrengthCap(),
+	ConstitutionCap: new ConstitutionCap(),
+	ExploitWeaknessOre: new ExploitWeaknessOre(),
+	ExploitWeaknessStone: new ExploitWeaknessStone(),
+	ExploitWeaknessAnimal: new ExploitWeaknessAnimal(),
+	ExploitWeaknessWood: new ExploitWeaknessWood(),
+	ExploitWeaknessGrave: new ExploitWeaknessGrave(),
+	PowerDamageBonusRanged: new PowerDamageBonusRanged(),
+	PowerDamageBonusMelee: new PowerDamageBonusMelee(),
+	BlacksmithingExperimentation: new BlacksmithingExperimentation(),
+	StonemasonryExperimentation: new StonemasonryExperimentation(),
+	NecromancyExperimentation: new NecromancyExperimentation(),
+	WoodworkingExperimentation: new WoodworkingExperimentation(),
+	BlacksmithingExperimentationPoints: new BlacksmithingExperimentationPoints(),
+	RunemakingExperimentationPoints: new RunemakingExperimentationPoints(),
+	NecromancyExperimentationPoints: new NecromancyExperimentationPoints(),
+	WoodworkingExperimentationPoints: new WoodworkingExperimentationPoints(),
+	LeatherworkingExperimentationPoints: new LeatherworkingExperimentationPoints(),
+	StonemasonryExperimentationPoints: new StonemasonryExperimentationPoints(),
+	AlchemyExperimentationPoints: new AlchemyExperimentationPoints(),
+	JewelcraftingExperimentationPoints: new JewelcraftingExperimentationPoints(),
+	OutOfCombatStaminaRegeneration: new OutOfCombatStaminaRegeneration(),
+	HarvestingEfficiency: new HarvestingEfficiency(),
+	HarvestingDamageAll: new HarvestingDamageAll(),
+	HarvestingAll: new HarvestingAll(),
+	SpotWeaknessAll: new SpotWeaknessAll(),
+	PersonalHealingModifier: new PersonalHealingModifier(),
+	RangedDistanceBonus: new RangedDistanceBonus(),
 }

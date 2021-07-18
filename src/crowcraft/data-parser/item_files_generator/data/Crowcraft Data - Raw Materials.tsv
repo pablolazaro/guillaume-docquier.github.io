@@ -62,6 +62,7 @@ No	No	Animal Bone	Raw Material	white-orange
 No	No	Apple	Raw Material	white
 No	No	Beeswax	Raw Material	white
 No	No	Cutting Grit	Raw Material	white
+No	No	Rough Soulgem	Raw Material	green
 				
 No	No	Cut Gem	Generic Material	white-orange
 No	No	Cut Exacting Gem	Generic Material	white-orange
@@ -76,12 +77,12 @@ No	No	Sulphur	Mineral	white-orange
 No	No	Nitre	Mineral	white-orange
 No	No	Cinnabar	Mineral	white-orange
 				
-No	No	Gemstone	Generic Material	white-orange
-No	No	Topaz	Gemstone	white-orange
-No	No	Emerald	Gemstone	white-orange
-No	No	Ruby	Gemstone	white-orange
-No	No	Sapphire	Gemstone	white-orange
-No	No	Diamond	Gemstone	white-orange
+No	No	Rough Gem	Generic Material	white-orange
+No	No	Rough Topaz	Rough Gem	white-orange
+No	No	Rough Emerald	Rough Gem	white-orange
+No	No	Rough Ruby	Rough Gem	white-orange
+No	No	Rough Sapphire	Rough Gem	white-orange
+No	No	Rough Diamond	Rough Gem	white-orange
 				
 No	No	Scavenged Ingredient	Generic Material	white
 No	No	Mandrake	Scavenged Ingredient	white

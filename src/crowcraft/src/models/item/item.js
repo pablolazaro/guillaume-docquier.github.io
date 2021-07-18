@@ -49,6 +49,7 @@ export class Item {
             this.rarity = this.rarities[0]
         }
 
+        debugger;
         for (const craftingMaterial of this.craftingMaterials) {
             craftingMaterial.item.setRarity(this.rarity);
         }

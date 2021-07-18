@@ -30,11 +30,12 @@ export class CustomizableComponent extends Item {
         if (!this.customization) {
             return this._craftingMaterials;
         }
+        debugger;
 
         const craftingMaterials = []
         let replacementIndex = 0;
         for (const craftingMaterial of this._craftingMaterials) {
-            if (craftingMaterial.item.isGeneric) {
+            if (craftingMaterial.item.isGeneric && replacementIndex < this.customization.replacementMaterials.length) {
                 const replacementMaterial = this.customization.replacementMaterials[replacementIndex];
                 craftingMaterials.push(new CraftingMaterial(craftingMaterial.quantity, replacementMaterial));
                 replacementIndex++;
@@ -62,6 +63,7 @@ export class CustomizableComponent extends Item {
     }
 
     customize(customization) {
+        debugger;
         this.customization = customization;
         this.setRarity(this.rarity);
     }

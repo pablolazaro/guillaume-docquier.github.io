@@ -4,17 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { Rarities } from "models";
-import { Gemstone } from "./gemstone";
+import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { RoughSapphire } from "./rough-sapphire";
 
-export class Emerald extends Gemstone {
+export class PowderedSapphire extends Item {
     constructor() {
         super(
-            "emerald",
-            [],
+            "powdered sapphire",
+            [Professions.Alchemist],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-            [],
-            1
+            [
+                new CraftingMaterial(1, new RoughSapphire()),
+            ],
+            1,
+            "grind resource"
         );
     }
 }

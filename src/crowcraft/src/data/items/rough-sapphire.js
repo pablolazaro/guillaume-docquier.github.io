@@ -5,12 +5,12 @@
 ///////////////////////////////////////////////////
 
 import { Rarities } from "models";
-import { Gemstone } from "./gemstone";
+import { RoughGem } from "./rough-gem";
 
-export class Ruby extends Gemstone {
+export class RoughSapphire extends RoughGem {
     constructor() {
         super(
-            "ruby",
+            "rough sapphire",
             [],
             [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
             [],

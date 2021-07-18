@@ -5,39 +5,53 @@
 ///////////////////////////////////////////////////
 
 import { CraftingMaterial } from "models";
+import { Apple } from "data/items/apple";
+import { Aurelium } from "data/items/aurelium";
+import { ChaosEmber } from "data/items/chaos-ember";
 import { Coal } from "data/items/coal";
+import { CuttingGrit } from "data/items/cutting-grit";
+import { EmptyFlask } from "data/items/empty-flask";
+import { EtherealDust } from "data/items/ethereal-dust";
+import { GroundCinnabar } from "data/items/ground-cinnabar";
+import { GroundHalite } from "data/items/ground-halite";
 import { Hide } from "data/items/hide";
 import { Iron } from "data/items/iron";
 import { LacingSinew } from "data/items/lacing-sinew";
+import { NecklaceBail } from "data/items/necklace-bail";
 import { Ore } from "data/items/ore";
+import { PowderedStone } from "data/items/powdered-stone";
+import { RingSetting } from "data/items/ring-setting";
 import { Sandpaper } from "data/items/sandpaper";
+import { Silver } from "data/items/silver";
+import { Stone } from "data/items/stone";
+import { WaterFlask } from "data/items/water-flask";
 import { Wood } from "data/items/wood";
 
 export const getMaterialsAfterDiscsAndBeltsEffects = (craftingMaterial, crafterConfiguration = {}) => {
-	let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
-	let bestMatsCount = 999_999;
-	for (const profession of craftingMaterial.item.professions) {
-		const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
-		const newMatsCount = getMatsCount(newCraftingMaterials);
-		if (newCraftingMaterials && newMatsCount < bestMatsCount) {
-			bestNewCraftingMaterials = newCraftingMaterials;
-			bestMatsCount = newMatsCount
-		}
-	}
+    let bestNewCraftingMaterials = craftingMaterial.item.craftingMaterials;
+    let bestMatsCount = 999_999;
+    for (const profession of craftingMaterial.item.professions) {
+        const newCraftingMaterials = getNewCraftingMaterials(craftingMaterial.item, profession, crafterConfiguration[profession]);
+        const newMatsCount = getMatsCount(newCraftingMaterials);
+        if (newCraftingMaterials && newMatsCount < bestMatsCount) {
+            bestNewCraftingMaterials = newCraftingMaterials;
+            bestMatsCount = newMatsCount
+        }
+    }
 
-	return bestNewCraftingMaterials;
+    return bestNewCraftingMaterials;
 };
 
 const getNewCraftingMaterials = (item, profession, professionSetting = {}) => {
-	const key = `${item.baseName}.${profession}-disc-${professionSetting.discipline}.${profession}-belt-${professionSetting.belt}`
+    const key = `${item.baseName}.${profession}-disc-${professionSetting.discipline}.${profession}-belt-${professionSetting.belt}`
 
-	return DisciplinesAndBelts[key];
+    return DisciplinesAndBelts[key];
 }
 
 const getMatsCount = (craftingMaterials = []) => craftingMaterials.reduce((count, mat) => count + mat.quantity, 0);
 
-export const DisciplinesAndBelts = {
-	"metal bar.armorsmith-disc-none.armorsmith-belt-none": [
+const DisciplinesAndBelts = {
+    "metal bar.armorsmith-disc-none.armorsmith-belt-none": [
 		new CraftingMaterial(9, new Ore()),
 		new CraftingMaterial(9, new Ore()),
 		new CraftingMaterial(9, new Ore()),
@@ -1752,5 +1766,1383 @@ export const DisciplinesAndBelts = {
 		new CraftingMaterial(3, new Wood()),
 		new CraftingMaterial(3, new Wood()),
 		new CraftingMaterial(4, new Sandpaper()),
+	],
+	"ambrosia.alchemist-disc-none.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(3, new GroundCinnabar()),
+		new CraftingMaterial(3, new WaterFlask()),
+		new CraftingMaterial(3, new GroundHalite()),
+		new CraftingMaterial(3, new Apple()),
+		new CraftingMaterial(12, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-common.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-common.alchemist-belt-uncommon": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-common.alchemist-belt-rare": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-common.alchemist-belt-epic": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-common.alchemist-belt-legendary": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-uncommon.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-uncommon.alchemist-belt-uncommon": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-uncommon.alchemist-belt-rare": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-uncommon.alchemist-belt-epic": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-uncommon.alchemist-belt-legendary": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-rare.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-rare.alchemist-belt-uncommon": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-rare.alchemist-belt-rare": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-rare.alchemist-belt-epic": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-rare.alchemist-belt-legendary": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-epic.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-epic.alchemist-belt-uncommon": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-epic.alchemist-belt-rare": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-epic.alchemist-belt-epic": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-epic.alchemist-belt-legendary": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-legendary.alchemist-belt-none": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-legendary.alchemist-belt-uncommon": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(2, new GroundCinnabar()),
+		new CraftingMaterial(2, new WaterFlask()),
+		new CraftingMaterial(2, new GroundHalite()),
+		new CraftingMaterial(2, new Apple()),
+		new CraftingMaterial(10, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-legendary.alchemist-belt-rare": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-legendary.alchemist-belt-epic": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"ambrosia.alchemist-disc-legendary.alchemist-belt-legendary": [
+		new CraftingMaterial(1, new EmptyFlask()),
+		new CraftingMaterial(1, new GroundCinnabar()),
+		new CraftingMaterial(1, new WaterFlask()),
+		new CraftingMaterial(1, new GroundHalite()),
+		new CraftingMaterial(1, new Apple()),
+		new CraftingMaterial(8, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-none.alchemist-belt-none": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(4, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-common.alchemist-belt-none": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-common.alchemist-belt-uncommon": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-common.alchemist-belt-rare": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-common.alchemist-belt-epic": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-common.alchemist-belt-legendary": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-uncommon.alchemist-belt-none": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-uncommon.alchemist-belt-uncommon": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-uncommon.alchemist-belt-rare": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-uncommon.alchemist-belt-epic": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-uncommon.alchemist-belt-legendary": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-rare.alchemist-belt-none": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-rare.alchemist-belt-uncommon": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-rare.alchemist-belt-rare": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-rare.alchemist-belt-epic": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-rare.alchemist-belt-legendary": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-epic.alchemist-belt-none": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-epic.alchemist-belt-uncommon": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-epic.alchemist-belt-rare": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-epic.alchemist-belt-epic": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-epic.alchemist-belt-legendary": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-legendary.alchemist-belt-none": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-legendary.alchemist-belt-uncommon": [
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new PowderedStone()),
+		new CraftingMaterial(3, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-legendary.alchemist-belt-rare": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-legendary.alchemist-belt-epic": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"empty flask.alchemist-disc-legendary.alchemist-belt-legendary": [
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new PowderedStone()),
+		new CraftingMaterial(2, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-none.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-common.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-common.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-common.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-common.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-common.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-uncommon.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-uncommon.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-uncommon.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-uncommon.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-uncommon.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-rare.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-rare.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-rare.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-rare.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-rare.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-epic.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-epic.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-epic.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-epic.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-epic.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-legendary.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-legendary.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-legendary.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-legendary.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace bail.jewelcrafter-disc-legendary.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Silver()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"necklace chain.jewelcrafter-disc-none.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-common.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-common.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-common.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-common.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-common.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-uncommon.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-uncommon.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-uncommon.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-uncommon.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-uncommon.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-rare.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-rare.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-rare.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-rare.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-rare.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-epic.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-epic.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-epic.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-epic.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-epic.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-legendary.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-legendary.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-legendary.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-legendary.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"necklace chain.jewelcrafter-disc-legendary.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new NecklaceBail()),
+	],
+	"ring band.jewelcrafter-disc-none.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-common.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-common.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-common.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-common.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-common.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-uncommon.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-uncommon.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-uncommon.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-uncommon.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-uncommon.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-rare.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-rare.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-rare.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-rare.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-rare.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-epic.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-epic.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-epic.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-epic.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-epic.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-legendary.jewelcrafter-belt-none": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-legendary.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(8, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-legendary.jewelcrafter-belt-rare": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-legendary.jewelcrafter-belt-epic": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring band.jewelcrafter-disc-legendary.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(2, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(4, new Ore()),
+		new CraftingMaterial(1, new RingSetting()),
+	],
+	"ring setting.jewelcrafter-disc-none.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-common.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-common.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-common.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-common.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-common.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-uncommon.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-uncommon.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-uncommon.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-uncommon.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-uncommon.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-rare.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-rare.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-rare.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-rare.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-rare.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-epic.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-epic.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-epic.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-epic.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-epic.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-legendary.jewelcrafter-belt-none": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-legendary.jewelcrafter-belt-uncommon": [
+		new CraftingMaterial(10, new Ore()),
+		new CraftingMaterial(10, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-legendary.jewelcrafter-belt-rare": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-legendary.jewelcrafter-belt-epic": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"ring setting.jewelcrafter-disc-legendary.jewelcrafter-belt-legendary": [
+		new CraftingMaterial(5, new Ore()),
+		new CraftingMaterial(5, new Aurelium()),
+		new CraftingMaterial(5, new EtherealDust()),
+	],
+	"diamond cutting blade.stonemason-disc-none.stonemason-belt-none": [
+		new CraftingMaterial(9, new Ore()),
+		new CraftingMaterial(3, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-common.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-common.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-common.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-common.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-common.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-uncommon.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-uncommon.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-uncommon.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-uncommon.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-uncommon.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-rare.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-rare.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-rare.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-rare.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-rare.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-epic.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-epic.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-epic.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-epic.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-epic.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-legendary.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-legendary.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-legendary.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-legendary.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"diamond cutting blade.stonemason-disc-legendary.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+	],
+	"chaos ember cutting blade.stonemason-disc-none.stonemason-belt-none": [
+		new CraftingMaterial(9, new Ore()),
+		new CraftingMaterial(3, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-common.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-common.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-common.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-common.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-common.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-uncommon.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-uncommon.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-uncommon.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-uncommon.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-uncommon.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-rare.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-rare.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-rare.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-rare.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-rare.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-epic.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-epic.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-epic.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-epic.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-epic.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-legendary.stonemason-belt-none": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-legendary.stonemason-belt-uncommon": [
+		new CraftingMaterial(6, new Ore()),
+		new CraftingMaterial(2, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-legendary.stonemason-belt-rare": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-legendary.stonemason-belt-epic": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"chaos ember cutting blade.stonemason-disc-legendary.stonemason-belt-legendary": [
+		new CraftingMaterial(3, new Ore()),
+		new CraftingMaterial(1, new CuttingGrit()),
+		new CraftingMaterial(1, new ChaosEmber()),
+	],
+	"grinding wheel.stonemason-disc-none.stonemason-belt-none": [
+		new CraftingMaterial(8, new Stone()),
+		new CraftingMaterial(8, new Stone()),
+		new CraftingMaterial(8, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-common.stonemason-belt-none": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-common.stonemason-belt-uncommon": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-common.stonemason-belt-rare": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-common.stonemason-belt-epic": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-common.stonemason-belt-legendary": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-uncommon.stonemason-belt-none": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-uncommon.stonemason-belt-uncommon": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-uncommon.stonemason-belt-rare": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-uncommon.stonemason-belt-epic": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-uncommon.stonemason-belt-legendary": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-rare.stonemason-belt-none": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-rare.stonemason-belt-uncommon": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-rare.stonemason-belt-rare": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-rare.stonemason-belt-epic": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-rare.stonemason-belt-legendary": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-epic.stonemason-belt-none": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-epic.stonemason-belt-uncommon": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-epic.stonemason-belt-rare": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-epic.stonemason-belt-epic": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-epic.stonemason-belt-legendary": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-legendary.stonemason-belt-none": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-legendary.stonemason-belt-uncommon": [
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+		new CraftingMaterial(4, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-legendary.stonemason-belt-rare": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-legendary.stonemason-belt-epic": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"grinding wheel.stonemason-disc-legendary.stonemason-belt-legendary": [
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+		new CraftingMaterial(2, new Stone()),
+	],
+	"polishing paste.stonemason-disc-none.stonemason-belt-none": [
+		new CraftingMaterial(16, new PowderedStone()),
+		new CraftingMaterial(3, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-common.stonemason-belt-none": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-common.stonemason-belt-uncommon": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-common.stonemason-belt-rare": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-common.stonemason-belt-epic": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-common.stonemason-belt-legendary": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-uncommon.stonemason-belt-none": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-uncommon.stonemason-belt-uncommon": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-uncommon.stonemason-belt-rare": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-uncommon.stonemason-belt-epic": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-uncommon.stonemason-belt-legendary": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-rare.stonemason-belt-none": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-rare.stonemason-belt-uncommon": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-rare.stonemason-belt-rare": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-rare.stonemason-belt-epic": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-rare.stonemason-belt-legendary": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-epic.stonemason-belt-none": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-epic.stonemason-belt-uncommon": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-epic.stonemason-belt-rare": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-epic.stonemason-belt-epic": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-epic.stonemason-belt-legendary": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-legendary.stonemason-belt-none": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-legendary.stonemason-belt-uncommon": [
+		new CraftingMaterial(8, new PowderedStone()),
+		new CraftingMaterial(2, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-legendary.stonemason-belt-rare": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-legendary.stonemason-belt-epic": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
+	],
+	"polishing paste.stonemason-disc-legendary.stonemason-belt-legendary": [
+		new CraftingMaterial(4, new PowderedStone()),
+		new CraftingMaterial(1, new WaterFlask()),
 	],
 }

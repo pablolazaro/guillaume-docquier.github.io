@@ -55,7 +55,7 @@ def extract_item_data(item):
     except:
         print(ConsoleColors.FAIL, f"Invalid item rarities {{{item_rarities}}} for item: {{{item_name}}}", ConsoleColors.ENDC)
 
-    crafting_materials = parse_crafting_materials(item[Columns.MATERIALS])
+    crafting_materials = parse_crafting_materials(item[Columns.MATERIALS], item_name)
 
     quantity_per_craft = item[Columns.QUANTITY_PER_CRAFT]
     is_customizable = item[Columns.CUSTOMIZABLE]
@@ -158,5 +158,5 @@ export class {class_name} extends CustomizableComponent {
 
 if __name__ == '__main__':
     generate_item_files()
-    generate_customizations()
     generate_raw_material_files()
+    generate_customizations()
