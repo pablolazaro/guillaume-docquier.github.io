@@ -29,7 +29,7 @@ export class AdvancedToxin extends CustomizableComponent {
             [
                 new PotentPoisonToxinAdvancedToxinCustomization(),
 				new AdvancedPoisonToxinAdvancedToxinCustomization(),
-				new PoisontoxinAdvancedToxinCustomization(),
+				new PoisonToxinAdvancedToxinCustomization(),
             ],
             ""
         );
@@ -72,10 +72,10 @@ class AdvancedPoisonToxinAdvancedToxinCustomization extends Customization {
     }
 }
 
-class PoisontoxinAdvancedToxinCustomization extends Customization {
+class PoisonToxinAdvancedToxinCustomization extends Customization {
     constructor() {
         super(
-            "poisontoxin",
+            "poison toxin",
             [
                 new Bloodworm(),
             ],

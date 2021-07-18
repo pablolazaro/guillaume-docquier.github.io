@@ -2,12 +2,14 @@ IS IMPLEMENTED	IS CODE UP TO DATE	ITEM NAME	REQUIRED PROF	RARITIES	MATERIALS	QTY
 		Resource Processing							
 No	No	Powdered Animal Bone	Alchemist	white-orange	1x Animal Bone	1	Yes	No	Grind Resource
 									
+No	No	Ground Mineral	Alchemist	white-orange	1x Mineral	1	Yes	No	Grind Resource
 No	No	Ground Halite	Alchemist	white-orange	1x Halite	1	Yes	No	Grind Resource
 No	No	Ground Dolomite	Alchemist	white-orange	1x Dolomite	1	Yes	No	Grind Resource
 No	No	Ground Sulphur	Alchemist	white-orange	1x Sulphur	1	Yes	No	Grind Resource
 No	No	Ground Nitre	Alchemist	white-orange	1x Nitre	1	Yes	No	Grind Resource
 No	No	Ground Cinnabar	Alchemist	white-orange	1x Cinnabar	1	Yes	No	Grind Resource
 									
+No	No	Powdered Stone	Alchemist	white-orange	1x Stone	1	Yes	No	Grind Resource
 No	No	Powdered Granite	Alchemist	white-orange	1x Granite	1	Yes	No	Grind Resource
 No	No	Powdered Limestone	Alchemist	white-orange	1x Limestone	1	Yes	No	Grind Resource
 No	No	Powdered Travertine	Alchemist	white-orange	1x Travertine	1	Yes	No	Grind Resource
@@ -31,17 +33,17 @@ No	No	Philosopher's Stone	Alchemist	white	1x Philosopher's Solution, 1x Transmut
 									
 		Crafting Potions							
 No	No	Potion of Exchange	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Chaos Ember, 6x Powdered Animal Bone	1	No	No	
-No	No	Potion of Spho	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No	
+No	No	Potion of Sapho	Alchemist	green	1x Empty Flask, 1x Animal Blood, 5x Ethereal Dust, 6x Powdered Animal Bone	1	No	No	
 									
 		Harvesting Potions							
 No	No	Potion of Harvest: Beeswax	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Beeswax	1	No	No	
 No	No	Potion of Harvest: Cutting Grit	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 6x Cutting Grit	1	No	No	
 No	No	Potion of Harvest: Gem and Mineral	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Powdered Animal Bone	1	No	No	
-No	No	Potion of Harvest: Digging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No	
-No	No	Potion of Harvest: Logging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No	
-No	No	Potion of Harvest: Mining	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No	
-No	No	Potion of Harvest: Quarrying	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No	
-No	No	Potion of Harvest: Skinning	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No	
+No	No	Potion of Plenty: Digging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Meat	1	No	No	
+No	No	Potion of Plenty: Logging	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Wood	1	No	No	
+No	No	Potion of Plenty: Mining	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Ore	1	No	No	
+No	No	Potion of Plenty: Quarrying	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Stone	1	No	No	
+No	No	Potion of Plenty: Skinning	Alchemist	green	1x Empty Flask, 1x Water Flask, 5x Ethereal Dust, 8x Hide	1	No	No	
 									
 		Toxins							
 No	No	Advanced Toxin	Alchemist	white	1x Empty Flask, 4x Scavenged Ingredient, 10x Ethereal Dust, 1x Animal Blood	1	No	Yes	

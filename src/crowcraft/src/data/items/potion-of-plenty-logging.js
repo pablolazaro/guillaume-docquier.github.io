@@ -7,20 +7,20 @@
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
 import { EmptyFlask } from "./empty-flask";
 import { EtherealDust } from "./ethereal-dust";
-import { Ore } from "./ore";
 import { WaterFlask } from "./water-flask";
+import { Wood } from "./wood";
 
-export class PotionOfHarvestMining extends Item {
+export class PotionOfPlentyLogging extends Item {
     constructor() {
         super(
-            "potion of harvest: mining",
+            "potion of plenty: logging",
             [Professions.Alchemist],
             [Rarities.Uncommon],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
 				new CraftingMaterial(1, new WaterFlask()),
 				new CraftingMaterial(5, new EtherealDust()),
-				new CraftingMaterial(8, new Ore()),
+				new CraftingMaterial(8, new Wood()),
             ],
             1,
             ""

@@ -5,22 +5,22 @@
 ///////////////////////////////////////////////////
 
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
-import { AnimalBlood } from "./animal-blood";
 import { EmptyFlask } from "./empty-flask";
 import { EtherealDust } from "./ethereal-dust";
-import { PowderedAnimalBone } from "./powdered-animal-bone";
+import { Meat } from "./meat";
+import { WaterFlask } from "./water-flask";
 
-export class PotionOfSpho extends Item {
+export class PotionOfPlentyDigging extends Item {
     constructor() {
         super(
-            "potion of spho",
+            "potion of plenty: digging",
             [Professions.Alchemist],
             [Rarities.Uncommon],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
-				new CraftingMaterial(1, new AnimalBlood()),
+				new CraftingMaterial(1, new WaterFlask()),
 				new CraftingMaterial(5, new EtherealDust()),
-				new CraftingMaterial(6, new PowderedAnimalBone()),
+				new CraftingMaterial(8, new Meat()),
             ],
             1,
             ""

@@ -30,7 +30,6 @@ export class CustomizableComponent extends Item {
         if (!this.customization) {
             return this._craftingMaterials;
         }
-        debugger;
 
         const craftingMaterials = []
         let replacementIndex = 0;
@@ -63,7 +62,6 @@ export class CustomizableComponent extends Item {
     }
 
     customize(customization) {
-        debugger;
         this.customization = customization;
         this.setRarity(this.rarity);
     }

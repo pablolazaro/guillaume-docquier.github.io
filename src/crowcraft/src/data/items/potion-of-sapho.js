@@ -5,22 +5,22 @@
 ///////////////////////////////////////////////////
 
 import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { AnimalBlood } from "./animal-blood";
 import { EmptyFlask } from "./empty-flask";
 import { EtherealDust } from "./ethereal-dust";
-import { Stone } from "./stone";
-import { WaterFlask } from "./water-flask";
+import { PowderedAnimalBone } from "./powdered-animal-bone";
 
-export class PotionOfHarvestQuarrying extends Item {
+export class PotionOfSapho extends Item {
     constructor() {
         super(
-            "potion of harvest: quarrying",
+            "potion of sapho",
             [Professions.Alchemist],
             [Rarities.Uncommon],
             [
                 new CraftingMaterial(1, new EmptyFlask()),
-				new CraftingMaterial(1, new WaterFlask()),
+				new CraftingMaterial(1, new AnimalBlood()),
 				new CraftingMaterial(5, new EtherealDust()),
-				new CraftingMaterial(8, new Stone()),
+				new CraftingMaterial(6, new PowderedAnimalBone()),
             ],
             1,
             ""

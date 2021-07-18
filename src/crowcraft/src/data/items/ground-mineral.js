@@ -4,16 +4,20 @@
 //                                               //
 ///////////////////////////////////////////////////
 
-import { GenericMaterial, Rarities } from "models";
+import { Item, CraftingMaterial, Rarities, Professions } from "models";
+import { Mineral } from "./mineral";
 
-export class GroundMineral extends GenericMaterial {
-    constructor(
-        name = "ground mineral",
-        professions = [],
-        rarities = [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
-        craftingMaterials = [],
-        craftingQuantity = 1
-    ) {
-        super(name, professions, rarities, craftingMaterials, craftingQuantity);
+export class GroundMineral extends Item {
+    constructor() {
+        super(
+            "ground mineral",
+            [Professions.Alchemist],
+            [Rarities.Common, Rarities.Uncommon, Rarities.Rare, Rarities.Epic, Rarities.Legendary],
+            [
+                new CraftingMaterial(1, new Mineral()),
+            ],
+            1,
+            "grind resource"
+        );
     }
 }
