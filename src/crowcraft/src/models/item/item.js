@@ -11,13 +11,13 @@ export class Item {
         this.craftingQuantity = craftingQuantity;
         this.craftingRecipeName = craftingRecipeName ? craftingRecipeName : name
 
-        this._id = String.decapitalize(this.constructor.name);
+        this._assetId = String.decapitalize(this.constructor.name);
         this.craftingRank = this.getCraftingRank();
         this.rarity = this.rarities[0];
     }
 
     get id() {
-        return this._id;
+        return [this.name, ...this.craftingMaterials.map(craftingMaterial => craftingMaterial.item.name)].join(".");
     }
 
     get baseName() {
@@ -48,8 +48,8 @@ export class Item {
         return new this.constructor();
     }
 
-    getAssetId() {
-        return this.id;
+    get assetId() {
+        return this._assetId;
     }
 
     setRarity(rarity) {

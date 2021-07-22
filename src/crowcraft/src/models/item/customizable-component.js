@@ -10,14 +10,6 @@ export class CustomizableComponent extends Item {
         this.customization = null;
     }
 
-    get id() {
-        if (!this.customization) {
-            return this._id;
-        }
-
-        return `${this._id}${String.capitalize(this.customization.id)}`;
-    }
-
     get name() {
         if (!this.customization) {
             return this._name;
@@ -44,6 +36,15 @@ export class CustomizableComponent extends Item {
         }
 
         return craftingMaterials;
+    }
+
+    get assetId() {
+        let assetId = super.assetId;
+        if (this.customization) {
+            assetId += String.capitalize(this.customization.id);
+        }
+
+        return assetId;
     }
 
     getCustomizableComponents() {

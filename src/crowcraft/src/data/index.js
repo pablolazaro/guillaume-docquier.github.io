@@ -22,5 +22,12 @@ for (const assetFileName of assetsContext.keys()) {
 }
 
 export const getAsset = assetId => {
-    return assets[String.decapitalize(assetId.split(" ").map(String.capitalize).join(""))] || "";
+    const assetName = String.decapitalize(assetId.replace("'", "").split(" ").map(String.capitalize).join(""));
+    let asset = assets[assetName];
+    if (!asset) {
+        console.error(`Could not find asset '${assetName}' for '${assetId}'`);
+        asset = "";
+    }
+
+    return asset;
 };

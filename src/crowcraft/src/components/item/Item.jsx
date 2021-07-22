@@ -8,7 +8,7 @@ export const Item = ({ item, quantity = null }) => {
 
     return (
         <div className={`resource-container bg-rarity-${item.rarity.name} | relative w-100 h-100`} title={itemName}>
-            <img src={getAsset(item.getAssetId())} alt={itemName} className="resource-image" />
+            <img src={getAsset(item.assetId)} alt={itemName} className="resource-image" />
             <div className="resource-count | absolute cursor-default">{quantity}</div>
         </div>
     )
