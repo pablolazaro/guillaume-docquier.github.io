@@ -67,7 +67,7 @@ export const Crafting = () => {
     return (
         <div className="flex mv3">
             <div className="flex">
-                <div className="mr5">
+                <div className="mr5 mobile-hide">
                     <div className="sticky-sidebar">
                         <CrafterConfiguration onConfigurationChanged={handleConfigurationChanged} />
                     </div>

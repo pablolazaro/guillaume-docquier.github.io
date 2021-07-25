@@ -7,6 +7,10 @@
     margin-bottom: -4rem;
 }
 
+.m0auto {
+    margin: 0 auto;
+}
+
 /* Color Palette */
 .verdigris {
     color: #00AFB9;
@@ -213,4 +217,15 @@ a:visited {
 /* Flex */
 .justify-evenly {
     justify-content: space-evenly
+}
+
+/* Mobile */
+.mobile-hide {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .mobile-hide {
+        display: none;
+    }
 }
