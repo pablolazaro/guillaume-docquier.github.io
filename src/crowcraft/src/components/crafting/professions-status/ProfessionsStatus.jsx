@@ -19,7 +19,7 @@ export const ProfessionsStatus = () => {
     return (
         <div>
             <div className="mb2 f3 fw5">Implemented professions</div>
-            <div className="flex items-center">
+            <div className="flex items-center flex-wrap">
                 {Object.entries(professionsStatus).map(([profession, isReady]) => (
                     <div className="mr2 relative" key={profession}>
                         <div className="w5 h5 flex items-center justify-center">
