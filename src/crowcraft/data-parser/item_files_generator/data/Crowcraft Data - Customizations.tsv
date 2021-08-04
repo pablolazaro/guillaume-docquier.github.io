@@ -14,9 +14,9 @@ Yes	Yes	Metal Section	Aurelium	Aurelium, Aurelium, Aurelium	Organic Resistance	S
 Yes	Yes	Metal Bar	Rose Aurelium	Iron, Aurelium, Aurelium	Support Power	Attack Power
 Yes	Yes	Metal Bar	Sterling	Iron, Silver, Silver	Fire Armor Penetration	Attack Power
 Yes	Yes	Metal Bar	Cunife	Copper, Copper, Iron	Ice Armor Penetration	Attack Power
-Yes	Yes	Metal Bar	Steel	Copper, Iron, Iron	Electricity Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Steel	Copper, Iron, Iron	Slashing Armor Penetration	Attack Power
 Yes	Yes	Metal Bar	Green Aurelium	Tin, Tin, Aurelium	Nature Armor Penetration	Attack Power
-Yes	Yes	Metal Bar	Electrum	Tin, Aurelium, Silver	Slashing Armor Penetration	Attack Power
+Yes	Yes	Metal Bar	Electrum	Tin, Aurelium, Silver	Electricity Armor Penetration	Attack Power
 Yes	Yes	Metal Bar	Blue Steel	Iron, Tin, Silver	Crushing Armor Penetration	Attack Power
 Yes	Yes	Metal Bar	Bronze	Copper, Copper, Tin	Piercing Armor Penetration	Attack Power
 Yes	Yes	Metal Bar	Copper	Copper, Copper, Copper	Critical Strike Chance	Attack Power

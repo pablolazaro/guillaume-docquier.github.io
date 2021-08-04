@@ -6,7 +6,7 @@
 
 import { CraftingMaterial, Rarities, Professions } from "models";
 import { Item } from "models";
-import { BendingFormRecurveBow } from "./bending-form-recurve-bow";
+import { BendingFormCompoundBow } from "./bending-form-compound-bow";
 import { CompositeWoodPlank } from "./composite-wood-plank";
 import { EtherealDust } from "./ethereal-dust";
 
@@ -22,7 +22,7 @@ export class LimbsBowCompound extends Item {
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(1, new CompositeWoodPlank()),
 				new CraftingMaterial(8, new EtherealDust()),
-				new CraftingMaterial(1, new BendingFormRecurveBow()),
+				new CraftingMaterial(1, new BendingFormCompoundBow()),
             ],
             1,
             ""

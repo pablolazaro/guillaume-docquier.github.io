@@ -116,11 +116,11 @@ class SteelMetalBarCustomization extends Customization {
 				new Iron(),
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.ElectricityArmorPenetration],
-                [Rarities.Uncommon.name]: [ItemsStats.ElectricityArmorPenetration],
-                [Rarities.Rare.name]: [ItemsStats.ElectricityArmorPenetration],
-                [Rarities.Epic.name]: [ItemsStats.ElectricityArmorPenetration, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.ElectricityArmorPenetration, ItemsStats.AttackPower],
+                [Rarities.Common.name]: [ItemsStats.SlashingArmorPenetration],
+                [Rarities.Uncommon.name]: [ItemsStats.SlashingArmorPenetration],
+                [Rarities.Rare.name]: [ItemsStats.SlashingArmorPenetration],
+                [Rarities.Epic.name]: [ItemsStats.SlashingArmorPenetration, ItemsStats.AttackPower],
+                [Rarities.Legendary.name]: [ItemsStats.SlashingArmorPenetration, ItemsStats.AttackPower],
             }
         )
     }
@@ -156,11 +156,11 @@ class ElectrumMetalBarCustomization extends Customization {
 				new Silver(),
             ],
             {
-                [Rarities.Common.name]: [ItemsStats.SlashingArmorPenetration],
-                [Rarities.Uncommon.name]: [ItemsStats.SlashingArmorPenetration],
-                [Rarities.Rare.name]: [ItemsStats.SlashingArmorPenetration],
-                [Rarities.Epic.name]: [ItemsStats.SlashingArmorPenetration, ItemsStats.AttackPower],
-                [Rarities.Legendary.name]: [ItemsStats.SlashingArmorPenetration, ItemsStats.AttackPower],
+                [Rarities.Common.name]: [ItemsStats.ElectricityArmorPenetration],
+                [Rarities.Uncommon.name]: [ItemsStats.ElectricityArmorPenetration],
+                [Rarities.Rare.name]: [ItemsStats.ElectricityArmorPenetration],
+                [Rarities.Epic.name]: [ItemsStats.ElectricityArmorPenetration, ItemsStats.AttackPower],
+                [Rarities.Legendary.name]: [ItemsStats.ElectricityArmorPenetration, ItemsStats.AttackPower],
             }
         )
     }
