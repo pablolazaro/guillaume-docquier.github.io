@@ -7,8 +7,9 @@
     margin-bottom: -4rem;
 }
 
-.m0auto {
-    margin: 0 auto;
+.mh-auto {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Color Palette */
@@ -159,6 +160,31 @@ a:visited {
 
 .h6 {
     height: 5rem;
+}
+
+/* Min Heights */
+.minh1 {
+    min-height: 1rem;
+}
+
+.minh2 {
+    min-height: 2rem;
+}
+
+.minh3 {
+    min-height: 2.5rem;
+}
+
+.minh4 {
+    min-height: 3rem;
+}
+
+.minh5 {
+    min-height: 4rem;
+}
+
+.minh6 {
+    min-height: 5rem;
 }
 
 /* Widths */
