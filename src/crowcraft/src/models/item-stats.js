@@ -618,10 +618,10 @@ class Perception extends ItemStat {
     }
 }
 
-class Lifesteal extends ItemStat {
+class LifestealBonus extends ItemStat {
     constructor() {
         super(
-            "lifesteal",
+            "lifesteal bonus",
             {
                 [Rarities.Common.name]: 0,
                 [Rarities.Uncommon.name]: 0,
@@ -1589,7 +1589,7 @@ export const ItemsStats = {
 	CrushingDamageBonus: new CrushingDamageBonus(),
 	PiercingDamageBonus: new PiercingDamageBonus(),
 	Perception: new Perception(),
-	Lifesteal: new Lifesteal(),
+	LifestealBonus: new LifestealBonus(),
 	FireDamageType: new FireDamageType(),
 	IceDamageType: new IceDamageType(),
 	SlashingDamageType: new SlashingDamageType(),

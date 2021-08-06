@@ -39,7 +39,7 @@ Yes	Yes	Slashing Damage Bonus	0.36	0.4	0.43	0.45	0.48
 Yes	Yes	Crushing Damage Bonus	0.36	0.4	0.43	0.45	0.48
 Yes	Yes	Piercing Damage Bonus	0.36	0.4	0.43	0.45	0.48
 Yes	Yes	Perception	0	0	0	0.34	0.37
-Yes	Yes	Lifesteal	0	0	0	0.46	0.49
+Yes	Yes	Lifesteal Bonus	0	0	0	0.46	0.49
 Yes	Yes	Fire Damage Type	1	1	1	1	1
 Yes	Yes	Ice Damage Type	1	1	1	1	1
 Yes	Yes	Slashing Damage Type	1	1	1	1	1

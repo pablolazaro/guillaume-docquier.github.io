@@ -137,8 +137,8 @@ class SuedeStitchedLeatherCustomization extends Customization {
                 [Rarities.Common.name]: [ItemsStats.AttackPower],
                 [Rarities.Uncommon.name]: [ItemsStats.AttackPower],
                 [Rarities.Rare.name]: [ItemsStats.AttackPower],
-                [Rarities.Epic.name]: [ItemsStats.AttackPower, ItemsStats.Lifesteal],
-                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.Lifesteal],
+                [Rarities.Epic.name]: [ItemsStats.AttackPower, ItemsStats.LifestealBonus],
+                [Rarities.Legendary.name]: [ItemsStats.AttackPower, ItemsStats.LifestealBonus],
             }
         )
     }
