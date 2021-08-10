@@ -21,7 +21,7 @@ export const ItemSearch = memo(({ onItemSelected }) => {
     const [matchedItems, setMatchedItems] = useState(allItems);
     const [selectedItemId, setSelectedItemId] = useState(null);
 
-    const filteredItems = useMemo(() => (filter.length === 0 ? allItems : filterItems(filter)), [filter]);
+    const filteredItems = useMemo(() => filter.length === 0 ? allItems : filterItems(filter), [filter]);
 
     useEffect(() => setMatchedItems(filteredItems), [filteredItems]);
 
