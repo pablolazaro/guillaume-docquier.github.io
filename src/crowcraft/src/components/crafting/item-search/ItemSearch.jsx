@@ -16,10 +16,10 @@ const allItems =
 
 const filterItems = text => allItems.filter(item => item.name.includes(text));
 
-export const ItemSearch = memo(({ onItemSelected }) => {
-    const [filter, setFilter] = useState("");
+export const ItemSearch = memo(({ selectedItem, onItemSelected }) => {
+    const [filter, setFilter] = useState((selectedItem && selectedItem.name) || "");
     const [matchedItems, setMatchedItems] = useState(allItems);
-    const [selectedItemId, setSelectedItemId] = useState(null);
+    const [selectedItemId, setSelectedItemId] = useState(selectedItem && selectedItem.id);
     const filteredItems = useMemo(() => filter.length === 0 ? allItems : filterItems(filter), [filter]);
 
     useEffect(() => setMatchedItems(filteredItems), [filteredItems]);

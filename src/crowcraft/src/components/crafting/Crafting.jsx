@@ -9,9 +9,10 @@ import { ProfessionsStatus } from "./professions-status";
 import { CrafterConfiguration } from "./crafter-configuration";
 import { useState, useEffect, useCallback } from "react";
 import { getMaterialsAfterDiscsAndBeltsEffects } from "models";
+import useItemToCraft from "components/hooks/useItemToCraft";
 
 export const Crafting = () => {
-    const [itemToCraft, setItemToCraft] = useState(null);
+    const [itemToCraft, setItemToCraft] = useItemToCraft();
     const [selectedRarity, setSelectedRarity] = useState(null);
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
@@ -77,7 +78,7 @@ export const Crafting = () => {
                         <ProfessionsStatus />
                     </div>
                     <div className="mb4">
-                        <ItemSearch onItemSelected={selectItemToCraft} />
+                        <ItemSearch selectedItem={itemToCraft} onItemSelected={selectItemToCraft} />
                     </div>
                     {!!itemToCraft ?
                         <div className="mb4">

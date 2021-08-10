@@ -1,11 +1,15 @@
 import "./global.css";
 import { Crafting } from "./components/crafting";
 import { Layout } from "./components/layout";
+import { QueryParamProvider } from "use-query-params";
 
 const App = () => (
-    <Layout>
-        <Crafting />
-    </Layout>
+    <QueryParamProvider>
+        <Layout>
+            <Crafting />
+        </Layout>
+    </QueryParamProvider>
+
 );
 
 export default App;
