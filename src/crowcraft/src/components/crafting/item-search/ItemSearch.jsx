@@ -20,13 +20,11 @@ export const ItemSearch = memo(({ onItemSelected }) => {
     const [filter, setFilter] = useState("");
     const [matchedItems, setMatchedItems] = useState(allItems);
     const [selectedItemId, setSelectedItemId] = useState(null);
-
     const filteredItems = useMemo(() => filter.length === 0 ? allItems : filterItems(filter), [filter]);
 
     useEffect(() => setMatchedItems(filteredItems), [filteredItems]);
 
     let searchDebounce = null;
-
     const onFilterChanged = e => {
         clearTimeout(searchDebounce);
         searchDebounce = setTimeout(() => {
