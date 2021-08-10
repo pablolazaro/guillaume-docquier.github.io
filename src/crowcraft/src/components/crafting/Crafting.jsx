@@ -10,15 +10,21 @@ import { CrafterConfiguration } from "./crafter-configuration";
 import { useState, useEffect, useCallback } from "react";
 import { getMaterialsAfterDiscsAndBeltsEffects } from "models";
 import useItemToCraft from "components/hooks/useItemToCraft";
+import useRarity from "components/hooks/useRarity";
 
 export const Crafting = () => {
     const [itemToCraft, setItemToCraft] = useItemToCraft();
-    const [selectedRarity, setSelectedRarity] = useState(null);
+    const [selectedRarity, setSelectedRarity] = useRarity();
     const [rawMaterials, setRawMaterials] = useState(null);
     const [crafts, setCrafts] = useState(null);
     const [triggerItemCraft, setTriggerItemCraft] = useState(false);
     const [itemIsCustomized, setItemIsCustomized] = useState(false);
     const [crafterConfiguration, setCrafterConfiguration] = useState(undefined);
+
+    // TODO This needs to be reviewed
+    if (selectedRarity) {
+        itemToCraft.setRarity(selectedRarity)
+    }
 
     useEffect(
         () => {
@@ -51,7 +57,6 @@ export const Crafting = () => {
 
     const selectRarity = rarity => {
         setSelectedRarity(rarity);
-        itemToCraft.setRarity(rarity);
         setTriggerItemCraft(itemIsCustomized || !itemToCraft.isCustomizable());
     };
 
